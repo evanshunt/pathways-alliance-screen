@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import Application from '../Application.js';
 import EventEmitter from './EventEmitter.js';
 
@@ -18,11 +19,15 @@ export default class Resources extends EventEmitter {
       this.setLoaders();
       this.startLoading();
     }
+    else {
+      this.trigger('ready');
+    }
   }
 
   setLoaders() {
     this.loaders = {};
     this.loaders.textureLoader = new THREE.TextureLoader();
+    this.loaders.fontLoader = new FontLoader();
   }
 
   startLoading() {
@@ -31,8 +36,16 @@ export default class Resources extends EventEmitter {
 
     // Load each source
     for (const source of this.sources) {
-      if(source.type === 'texture') {
+      if (source.type === 'texture') {
         this.loaders.textureLoader.load(
+          source.path,
+          (file) => {
+            this.sourceLoaded(source, file);
+          }
+        )
+      }
+      if (source.type === 'font') {
+        this.loaders.fontLoader.load(
           source.path,
           (file) => {
             this.sourceLoaded(source, file);

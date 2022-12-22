@@ -22,8 +22,6 @@ export default class Time extends EventEmitter {
     this.elapsed = this.current - this.start;
     this.inactivity = this.current - this.lastInteraction;
 
-    console.log(this.inactivity);
-
     this.trigger('tick');
 
     window.requestAnimationFrame(() => {

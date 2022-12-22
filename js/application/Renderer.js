@@ -30,20 +30,9 @@ export default class Renderer {
     this.renderer.setSize(this.viewport.width, this.viewport.height);
     this.renderScene = new RenderPass(this.scene, this.camera.instance);
 
-    // Bloom
-    this.bloomPass = new SelectiveBloomEffect(this.scene, this.camera.instance, {
-      blendFunction: BlendFunction.ADD,
-			mipmapBlur: true,
-			luminanceThreshold: 0.15,
-			luminanceSmoothing: 0.05,
-			intensity: 1.2
-    });
-    this.bloomPass.inverted = true;
-
-    // Compose render and bloom
+    // Compose render
     this.composer = new EffectComposer(this.renderer);
     this.composer.addPass(this.renderScene);
-    this.composer.addPass(new EffectPass(this.camera.instance, this.bloomPass));
   }
 
   resize() {

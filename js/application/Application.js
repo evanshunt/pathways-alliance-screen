@@ -35,11 +35,12 @@ export default class Application {
     this.scene = new THREE.Scene();
     this.progressBar = new ProgressBar();
     this.resources = new Resources(sources);
-    this.pathways = new Pathways();
     this.viewport = new Viewport();
     this.camera = new Camera();
     this.renderer = new Renderer();
     this.controls = new Controls();
+
+    this.pathways = new Pathways();
 
     this.viewport.on('resize', () => {
       this.resize();
@@ -52,29 +53,15 @@ export default class Application {
     this.controls.on('focus', (objectId) => {
       this.changeFocus(objectId); 
     });
-
-    this.resources.on('ready', () => {
-      this.seedButton = new SeedButton();
-    })
-  }
-
-  reset() {
-    this.pathways.reset();
   }
 
   resize() {
-    this.camera.setBounds();
+    this.camera.resize();
     this.renderer.resize();
   }
 
   update() {
     this.pathways.update();
-    this.camera.update();
     this.renderer.update();
-  }
-
-  changeFocus(objectId) {
-    this.pathways.changeFocus(objectId);
-    this.camera.changeFocus(objectId);
   }
 }
