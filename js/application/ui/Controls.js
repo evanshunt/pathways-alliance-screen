@@ -7,10 +7,8 @@ export default class Controls extends EventEmitter {
     super();
 
     this.application = new Application();
-    this.scene = this.application.scene;
-    this.camera = this.application.camera;
-    this.viewport = this.application.viewport;
     this.canvas = this.application.canvas;
+    this.time = this.application.time;
 
     this.canvas.addEventListener('dblclick', (event) => this.dblClick(event));
     this.canvas.addEventListener('pointermove', (event) => this.pointerMove(event));
@@ -29,7 +27,7 @@ export default class Controls extends EventEmitter {
   }
 
   pointerDown(event) {
-    
+    this.time.lastInteraction = Date.now();
   }
 
   pointerEnd(event) {
