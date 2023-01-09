@@ -1,6 +1,6 @@
 import { useThree, extend, useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
-import { MeshReflectorMaterial, Float, Text, Html, Effects } from '@react-three/drei'
+import { Lightformer, Environment, MeshReflectorMaterial, Float, Text, Html, Effects, OrbitControls } from '@react-three/drei'
 import { UnrealBloomPass } from 'three-stdlib'
 import { Mesh } from 'three';
 import { useControls } from 'leva';
@@ -31,23 +31,29 @@ export default function Experience() {
   });
 
   useFrame((state, delta) => {
-    // textRef.current.rotation.z = Math.sin(state.clock.elapsedTime) * 0.04;
     textRef.current.rotation.y = Math.cos(state.clock.elapsedTime * rotationSpeed) * -degreesOfRotation * (Math.PI/180) - (12 * Math.PI/180);
   });
 
   return <>
     { perfVisible && <Perf position="top-left" />}
 
-    <ambientLight intensity={ 0.03 }/>
+    <OrbitControls />
+    <Environment
+      background
+    >
+      <Lightformer position-z={7} scale={8} color="white" form="ring" />
+    </Environment>
 
+    {/* <ambientLight intensity={ 0.03 }/> */}
+    
     <Effects disableGamma>
-      <unrealBloomPass threshold={0.5} strength={0.7} radius={1} />
+      <unrealBloomPass threshold={0.5} strength={0.6} radius={1} />
     </Effects>
     
-    <pointLight position={[0,0,40]} intensity={0.5} />
+    {/* <pointLight position={[0,0,40]} intensity={0.5} /> */}
 
     <Text 
-      ref={textRef} 
+      ref={textRef}
       position={[-0.75,0.75,0]} 
       textAlign="center" 
       maxWidth={10}
@@ -55,22 +61,23 @@ export default function Experience() {
       lineHeight={0.8}
     >
       There is no single path to net zero.
-      <meshStandardMaterial />
+      <meshStandardMaterial color="grey" envMapIntensity={12} metalness={0.5} roughness={0.2} />
     </Text>
 
+    {/* Busted with GUI tools changing values https://github.com/pmndrs/drei/issues/1209 */}
     <mesh position={[0,-0.1,5]} rotation-x={-Math.PI*0.5}>
       <planeGeometry args={[50,50]} />
       <MeshReflectorMaterial 
         resolution={2048}
         blur={[500,500]}
-        mixBlur={0.8}
+        mixBlur={2}
         mirror={1}
-        mixStrength={30}
-        minDepthThreshold={1}
-        maxDepthThreshold={4}
+        mixStrength={8}
+        minDepthThreshold={2}
+        maxDepthThreshold={2}
         roughness={1}
-        depthScale={0.2}
-        metalness={0.5}
+        depthScale={0.05}
+        metalness={0}
       />
     </mesh>
   </>
