@@ -1029,6 +1029,11 @@ glsl-noise@^0.0.0:
   resolved "https://registry.yarnpkg.com/glsl-noise/-/glsl-noise-0.0.0.tgz#367745f3a33382c0eeec4cb54b7e99cfc1d7670b"
   integrity sha512-b/ZCF6amfAUb7dJM/MxRs7AetQEahYzJ8PtgfrmEdtw6uyGOr+ZSGtgjFm6mfsBkxJ4d2W7kg+Nlqzqvn3Bc0w==
 
+"gsap@npm:@gsap/shockingly":
+  version "3.11.4"
+  resolved "https://npm.greensock.com/@gsap%2fshockingly/-/shockingly-3.11.4.tgz#07c9b97eeb496d71dd14713fb3a127bcf1f42478"
+  integrity sha512-Ai0XoH5bXAok7sDzXx+rRMK7qXZJdRaZX85JEcdKsdrGVJLT5hMPzOkVC7cqG2vtn5VW8FieBL007m76ZwUYZg==
+
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
