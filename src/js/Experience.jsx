@@ -1,6 +1,7 @@
 import gsap from "gsap";
+
 import { useThree, extend, useFrame } from "@react-three/fiber";
-import { useRef, useEffect } from "react";
+import React, { useRef, useLayoutEffect, useState } from "react";
 import {
   Lightformer,
   Environment,
@@ -16,10 +17,14 @@ import { Mesh } from "three";
 import { useControls } from "leva";
 import { Perf } from "r3f-perf";
 
+import Timer from "./Timer";
+import Autopilot from "./Autopilot";
+
 extend({ UnrealBloomPass });
 
 export default function Experience() {
   const textRef = useRef();
+  const [isAutopilotActive, setIsAutoPilotActive] = useState(false);
 
   const { perfVisible } = useControls({
     perfVisible: false,
@@ -41,6 +46,7 @@ export default function Experience() {
   });
 
   useFrame((state, delta) => {
+    // console.log(state.clock.getDelta());
     // textRef.current.rotation.z = Math.sin(state.clock.elapsedTime) * 0.04;
     textRef.current.rotation.y =
       Math.cos(state.clock.elapsedTime * rotationSpeed) *
@@ -49,9 +55,8 @@ export default function Experience() {
       (12 * Math.PI) / 180;
   });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      console.log(textRef.current.position.x);
       gsap.to(textRef.current.position, { x: 10, duration: 10 });
     });
     return () => ctx.revert();
@@ -59,6 +64,15 @@ export default function Experience() {
 
   return (
     <>
+      <Timer
+        onTimerFinished={() => {
+          setIsAutoPilotActive(true);
+        }}
+        isTimerActive={true}
+        timerTimeLimit={2}
+      />
+      {isAutopilotActive && <Autopilot />}
+
       <OrbitControls />
       <Environment background>
         <Lightformer position-z={7} scale={8} color="white" form="ring" />
