@@ -17,7 +17,7 @@ const Timer = ({ onTimerFinished, isTimerActive, timerTimeLimit }) => {
   });
 
   useEffect(() => {
-    if (isActive) {
+    if (!isActive) {
       timeElapsed.current = 0;
     }
   }, [isActive]);
