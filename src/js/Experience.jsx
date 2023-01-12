@@ -1,94 +1,47 @@
+import React, { useRef, useLayoutEffect, useEffect } from "react";
 import gsap from "gsap";
-
-import { useThree, extend, useFrame } from "@react-three/fiber";
-import React, { useRef, useLayoutEffect, useState } from "react";
+import { extend } from "@react-three/fiber";
 import {
   Lightformer,
   Environment,
   MeshReflectorMaterial,
-  Float,
   Text,
   Html,
   Effects,
-  OrbitControls,
+  MapControls,
+  Circle,
 } from "@react-three/drei";
 import { UnrealBloomPass } from "three-stdlib";
-import { Mesh } from "three";
-import { useControls } from "leva";
-import { Perf } from "r3f-perf";
 
-import Timer from "./Timer";
 import Autopilot from "./Autopilot";
 
 extend({ UnrealBloomPass });
 
-export default function Experience() {
+const Experience = () => {
   const textRef = useRef();
-  const [isAutopilotActive, setIsAutoPilotActive] = useState(false);
-
-  const { perfVisible } = useControls({
-    perfVisible: false,
-  });
-
-  const { degreesOfRotation, rotationSpeed } = useControls("Text", {
-    degreesOfRotation: {
-      value: 6,
-      min: 0,
-      max: 45,
-      step: 1,
-    },
-    rotationSpeed: {
-      value: 0.5,
-      min: 0,
-      max: 2,
-      step: 0.1,
-    },
-  });
-
-  useFrame((state, delta) => {
-    // console.log(state.clock.getDelta());
-    // textRef.current.rotation.z = Math.sin(state.clock.elapsedTime) * 0.04;
-    textRef.current.rotation.y =
-      Math.cos(state.clock.elapsedTime * rotationSpeed) *
-        -degreesOfRotation *
-        (Math.PI / 180) -
-      (12 * Math.PI) / 180;
-  });
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(textRef.current.position, { x: 10, duration: 10 });
+      // gsap.to(textRef.current.position, { x: 2, duration: 10 });
     });
     return () => ctx.revert();
   }, []);
 
   return (
     <>
-      <Timer
-        onTimerFinished={() => {
-          setIsAutoPilotActive(true);
-        }}
-        isTimerActive={true}
-        timerTimeLimit={2}
-      />
-      {isAutopilotActive && <Autopilot />}
-
-      <OrbitControls />
-      <Environment background>
-        <Lightformer position-z={7} scale={8} color="white" form="ring" />
-      </Environment>
-
-      {/* <ambientLight intensity={ 0.03 }/> */}
-
+      <Autopilot interval={2} />
       <Effects disableGamma>
         <unrealBloomPass threshold={0.5} strength={0.6} radius={1} />
       </Effects>
 
-      {/* <pointLight position={[0,0,40]} intensity={0.5} /> */}
+      <MapControls enableRotate={false} enableZoom={false} />
+      <Environment background>
+        <Lightformer position-z={7} scale={8} color="white" form="ring" />
+      </Environment>
 
       <Text
         ref={textRef}
-        position={[-0.75, 0.75, 0]}
+        position={[-0.75, 2.5, 0]}
         textAlign="center"
         maxWidth={10}
         letterSpacing={-0.08}
@@ -103,8 +56,27 @@ export default function Experience() {
         />
       </Text>
 
+      <Circle scale={[0.5, 0.5, 0.5]} position={[-5, 1, 0]}>
+        <meshStandardMaterial color="hotpink" />
+      </Circle>
+      <Circle scale={[0.5, 0.5, 0.5]} position={[-3, 1, 0]}>
+        <meshStandardMaterial color="hotpink" />
+      </Circle>
+      <Circle scale={[0.5, 0.5, 0.5]} position={[-1, 1, 0]}>
+        <meshStandardMaterial color="hotpink" />
+      </Circle>
+      <Circle scale={[0.5, 0.5, 0.5]} position={[1, 1, 0]}>
+        <meshStandardMaterial color="hotpink" />
+      </Circle>
+      <Circle scale={[0.5, 0.5, 0.5]} position={[3, 1, 0]}>
+        <meshStandardMaterial color="hotpink" />
+      </Circle>
+      <Circle scale={[0.5, 0.5, 0.5]} position={[5, 1, 0]}>
+        <meshStandardMaterial color="hotpink" />
+      </Circle>
+
       {/* Busted with GUI tools changing values https://github.com/pmndrs/drei/issues/1209 */}
-      <mesh position={[0, -0.1, 5]} rotation-x={-Math.PI * 0.5}>
+      <mesh position={[0, -0.5, 5]} rotation-x={-Math.PI * 0.5}>
         <planeGeometry args={[50, 50]} />
         <MeshReflectorMaterial
           resolution={2048}
@@ -121,4 +93,6 @@ export default function Experience() {
       </mesh>
     </>
   );
-}
+};
+
+export default Experience;
