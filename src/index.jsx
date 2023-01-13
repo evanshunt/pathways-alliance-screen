@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
     <Leva collapsed />
-    <Canvas>
+    <Canvas style={{ background: "#0c4be6" }}>
       <Experience />
     </Canvas>
   </StrictMode>

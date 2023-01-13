@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Text } from "@react-three/drei";
 
-const Autopilot = ({ interval }) => {
+const Autopilot = ({ activeTimeout, interval, onIntervalComplete }) => {
   const timeElapsed = useRef(0);
   const [isAutopilotActive, setIsAutoPilotActive] = useState(false);
   const [isTimerActive, setIsTimerActive] = useState(true);
@@ -12,28 +12,40 @@ const Autopilot = ({ interval }) => {
     setIsAutoPilotActive(false);
   };
 
+  const resetTimeElapsed = () => {
+    timeElapsed.current = 0;
+  };
+
   useFrame((state, delta) => {
-    console.log(timeElapsed.current);
+    // console.log("Autopilot timeElapsed: " + timeElapsed.current);
     if (isTimerActive) {
       timeElapsed.current += delta;
 
-      if (timeElapsed.current >= interval) {
-        setIsAutoPilotActive(true);
-        setIsTimerActive(false);
+      if (isAutopilotActive) {
+        if (timeElapsed.current >= interval) {
+          onIntervalComplete();
+          resetTimeElapsed();
+        }
+      } else {
+        if (timeElapsed.current >= activeTimeout) {
+          setIsAutoPilotActive(true);
+          onIntervalComplete();
+          resetTimeElapsed();
+        }
       }
     }
   });
 
   useEffect(() => {
-    window.addEventListener("click", handleWindowClick);
+    window.addEventListener("pointerdown", handleWindowClick);
     return () => {
-      window.removeEventListener("click", handleWindowClick);
+      window.removeEventListener("pointerdown", handleWindowClick);
     };
   }, []);
 
   useEffect(() => {
     if (!isTimerActive) {
-      timeElapsed.current = 0;
+      resetTimeElapsed();
 
       if (!isAutopilotActive) {
         setIsTimerActive(true);
@@ -50,14 +62,13 @@ const Autopilot = ({ interval }) => {
   return (
     isAutopilotActive && (
       <Text
-        position={[-0.75, 0.75, 0]}
+        position={[0, -2, 0]}
         textAlign="center"
         maxWidth={10}
         letterSpacing={-0.08}
         lineHeight={0.8}
       >
         Autopilot active
-        <meshStandardMaterial />
       </Text>
     )
   );
