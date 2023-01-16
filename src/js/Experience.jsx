@@ -4,6 +4,7 @@ import Scene from "./Scene";
 // TODO:
 // Use react-i18next for english/french translation?
 // Or maybe write our own
+// Add wave pattern
 
 const Experience = () => {
   return (
