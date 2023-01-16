@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/shockingly": "3.11.4",
     "@react-three/drei": "^9.51.7",
     "@react-three/fiber": "^8.10.0",
     "gsap": "npm:@gsap/shockingly",
