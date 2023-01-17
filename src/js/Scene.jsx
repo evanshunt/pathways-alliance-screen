@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useLayoutEffect } from "react";
 import { Text, Circle } from "@react-three/drei";
 import gsap from "gsap";
+import { useTranslation } from "react-i18next";
 
 import Autopilot from "./Autopilot";
 
@@ -8,6 +9,7 @@ const Scene = () => {
   const textRef = useRef();
   const items = useRef([]);
   const [activeItemIndex, setActiveItemIndex] = useState(null);
+  const { t, i18n } = useTranslation("common");
 
   const handleAutopilotIntervalComplete = () => {
     if (
@@ -33,12 +35,14 @@ const Scene = () => {
 
   return (
     <>
+      {/* Autopilot */}
       <Autopilot
         activeTimeout={5} // How long before autopilot starts
         interval={2} // How long between onIntervalComplete callbacks
         onIntervalComplete={handleAutopilotIntervalComplete}
       />
 
+      {/* Translatable text */}
       <Text
         ref={textRef}
         position={[0, 2, 0]}
@@ -47,9 +51,10 @@ const Scene = () => {
         letterSpacing={-0.08}
         lineHeight={0.8}
       >
-        There is no single path to net zero.
+        {t("main.title", { test: "Test" })}
       </Text>
 
+      {/* Bubbles */}
       {[...Array(6)].map((x, i) => {
         return (
           <Circle
@@ -69,6 +74,30 @@ const Scene = () => {
           </Circle>
         );
       })}
+
+      {/* Language controls */}
+      <Text
+        ref={textRef}
+        position={[-1, -3.5, 0]}
+        textAlign="center"
+        maxWidth={5}
+        letterSpacing={-0.08}
+        lineHeight={0.8}
+        onPointerDown={() => i18n.changeLanguage("en")}
+      >
+        En
+      </Text>
+      <Text
+        ref={textRef}
+        position={[1, -3.5, 0]}
+        textAlign="center"
+        maxWidth={5}
+        letterSpacing={-0.08}
+        lineHeight={0.8}
+        onPointerDown={() => i18n.changeLanguage("fr")}
+      >
+        Fr
+      </Text>
     </>
   );
 };

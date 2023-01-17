@@ -5,6 +5,8 @@ import Scene from "./Scene";
 // Use react-i18next for english/french translation?
 // Or maybe write our own
 // Add wave pattern
+// Create motion with camera to move from bubble to bubble
+// Scale bubbles when they are active
 
 const Experience = () => {
   return (
