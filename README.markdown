@@ -1,4 +1,4 @@
-**Run locally**
+# Project setup
 
 1. GSAP has bonus files that require users to pay a license fee. For them to manage this, GSAP is installed from their private repository. In order to get installation working locally and also on netlify we have to do a couple of steps to get the package installed properly.
 
@@ -11,3 +11,7 @@
 3. After all the required packages have been installed properly, revert the change to `.npmrc` so that the line under "Local install" is commented (make sure to delete the GSAP token from this file) and the line under "Netlify deploy" is uncommented.
 
 4. `docker run --rm -it -p 5173:5173 -v "$(pwd)":/usr/src/app -w /usr/src/app node:18-buster yarn vite --host`
+
+# Development tips
+
+- Localization is done using the `react-i18next` library. We store our language dependent text in separate `.json` files located in either `/translations/en/common.json` or `/translations/fr/common.json` for english and french text respectively. These files should be mirrors of each other but with the text translated.
