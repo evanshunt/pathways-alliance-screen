@@ -36,9 +36,11 @@ const Scene = () => {
   }, []);
 
   useLayoutEffect(() => {
-    gsap.to(threeState.camera.position, {
-      x: items.current[activeItemIndex].position.x,
-    });
+    if (activeItemIndex) {
+      gsap.to(threeState.camera.position, {
+        x: items.current[activeItemIndex].position.x,
+      });
+    }
   }, [activeItemIndex]);
 
   return (
