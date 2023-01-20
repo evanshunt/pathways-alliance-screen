@@ -1,7 +1,8 @@
-import { useState, useRef, useEffect, useLayoutEffect } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
+import { useThree } from "@react-three/fiber";
 import { Text, Circle } from "@react-three/drei";
-import gsap from "gsap";
 import { useTranslation } from "react-i18next";
+import gsap from "gsap";
 
 import Autopilot from "./Autopilot";
 
@@ -10,6 +11,7 @@ const Scene = () => {
   const items = useRef([]);
   const [activeItemIndex, setActiveItemIndex] = useState(null);
   const { t, i18n } = useTranslation("common");
+  const threeState = useThree();
 
   const handleAutopilotIntervalComplete = () => {
     if (
@@ -26,12 +28,18 @@ const Scene = () => {
     let ctx = gsap.context(() => {
       gsap.fromTo(
         textRef.current.rotation,
-        { y: -0.025 },
-        { y: 0.025, duration: 3, yoyo: true, repeat: -1 }
+        { y: -0.05 },
+        { y: 0.05, duration: 3, yoyo: true, repeat: -1 }
       );
     });
     return () => ctx.revert();
   }, []);
+
+  useLayoutEffect(() => {
+    gsap.to(threeState.camera.position, {
+      x: items.current[activeItemIndex].position.x,
+    });
+  }, [activeItemIndex]);
 
   return (
     <>
@@ -51,7 +59,7 @@ const Scene = () => {
         letterSpacing={-0.08}
         lineHeight={0.8}
       >
-        {t("main.title", { test: "Test" })}
+        {t("main.title")}
       </Text>
 
       {/* Bubbles */}
@@ -59,7 +67,7 @@ const Scene = () => {
         return (
           <Circle
             scale={[0.5, 0.5, 0.5]}
-            position={[-5 + i * 2, 0, 0]}
+            position={[-25 + i * 10, 0, 0]}
             key={`circle=${i}`}
             ref={(el) => {
               items.current[i] = el;
@@ -77,7 +85,6 @@ const Scene = () => {
 
       {/* Language controls */}
       <Text
-        ref={textRef}
         position={[-1, -3.5, 0]}
         textAlign="center"
         maxWidth={5}
@@ -88,7 +95,6 @@ const Scene = () => {
         En
       </Text>
       <Text
-        ref={textRef}
         position={[1, -3.5, 0]}
         textAlign="center"
         maxWidth={5}

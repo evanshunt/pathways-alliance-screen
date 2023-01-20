@@ -29,7 +29,10 @@ root.render(
   <StrictMode>
     <I18nextProvider i18n={i18next}>
       <Leva collapsed />
-      <Canvas style={{ background: "#0c4be6" }}>
+      <Canvas
+        style={{ background: "#0c4be6" }}
+        camera={{ position: [0, 0, 10] }}
+      >
         <Experience />
       </Canvas>
     </I18nextProvider>
