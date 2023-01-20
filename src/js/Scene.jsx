@@ -36,7 +36,7 @@ const Scene = () => {
   }, []);
 
   useLayoutEffect(() => {
-    if (activeItemIndex) {
+    if (activeItemIndex != null) {
       gsap.to(threeState.camera.position, {
         x: items.current[activeItemIndex].position.x,
       });
