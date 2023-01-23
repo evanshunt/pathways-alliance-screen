@@ -1,6 +1,6 @@
 import { useState, useRef, useLayoutEffect } from "react";
 import { useThree } from "@react-three/fiber";
-import { Text, Circle } from "@react-three/drei";
+import { Text, Circle, OrbitControls } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 
@@ -10,7 +10,7 @@ const Scene = () => {
   const textRef = useRef();
   const items = useRef([]);
   const [activeItemIndex, setActiveItemIndex] = useState(null);
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
   const threeState = useThree();
 
   const handleAutopilotIntervalComplete = () => {
@@ -62,7 +62,8 @@ const Scene = () => {
 
   return (
     <>
-      {/* Autopilot */}
+      <ambientLight intensity={1} />
+      <OrbitControls enableRotate={false} enableZoom={false} />
       <Autopilot
         activeTimeout={60} // How long before autopilot starts
         interval={5} // How long between onIntervalComplete callbacks
@@ -101,28 +102,6 @@ const Scene = () => {
           </Circle>
         );
       })}
-
-      {/* Language controls */}
-      <Text
-        position={[-1, -3.5, 0]}
-        textAlign="center"
-        maxWidth={5}
-        letterSpacing={-0.08}
-        lineHeight={0.8}
-        onPointerDown={() => i18n.changeLanguage("en")}
-      >
-        En
-      </Text>
-      <Text
-        position={[1, -3.5, 0]}
-        textAlign="center"
-        maxWidth={5}
-        letterSpacing={-0.08}
-        lineHeight={0.8}
-        onPointerDown={() => i18n.changeLanguage("fr")}
-      >
-        Fr
-      </Text>
     </>
   );
 };

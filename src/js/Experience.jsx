@@ -1,5 +1,5 @@
-import { Html, OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import Controls from "./Controls";
 import Scene from "./Scene";
 
 // TODO:
@@ -21,9 +21,7 @@ const Experience = () => {
 
   return (
     <>
-      <OrbitControls enableRotate={false} enableZoom={false} />
-      <ambientLight intensity={1} />
-
+      <Controls />
       <Scene />
     </>
   );
