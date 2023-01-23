@@ -32,6 +32,23 @@ const Scene = () => {
         { y: 0.05, duration: 3, yoyo: true, repeat: -1 }
       );
     });
+
+    const bubbleTimeline = gsap.timeline();
+
+    items.current.forEach((el, index) => {
+      bubbleTimeline.to(
+        el.position,
+        {
+          y: 0.5,
+          yoyo: true,
+          repeat: -1,
+          ease: "sine.inOut",
+          duration: 5,
+        },
+        index * 2
+      );
+    });
+
     return () => ctx.revert();
   }, []);
 
@@ -47,8 +64,8 @@ const Scene = () => {
     <>
       {/* Autopilot */}
       <Autopilot
-        activeTimeout={5} // How long before autopilot starts
-        interval={2} // How long between onIntervalComplete callbacks
+        activeTimeout={60} // How long before autopilot starts
+        interval={5} // How long between onIntervalComplete callbacks
         onIntervalComplete={handleAutopilotIntervalComplete}
       />
 
@@ -69,7 +86,7 @@ const Scene = () => {
         return (
           <Circle
             scale={[0.5, 0.5, 0.5]}
-            position={[-25 + i * 10, 0, 0]}
+            position={[i * 15, -0.5, 0]}
             key={`circle=${i}`}
             ref={(el) => {
               items.current[i] = el;
