@@ -3,7 +3,7 @@ import { Hud, OrthographicCamera, Text } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 
 const Controls = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
-  const { i18n } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
   const cameraRef = useRef();
   const aspectRatio = window.innerWidth / window.innerHeight;
   const frustumSize = 10;
@@ -12,7 +12,6 @@ const Controls = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
   const topBound = frustumSize / 2;
   const bottomBound = -frustumSize / 2;
   const padding = 1;
-
   return (
     <Hud renderPriority={1}>
       <OrthographicCamera
@@ -28,26 +27,21 @@ const Controls = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
       >
         {/* Language controls */}
         <Text
-          position={[leftBound + padding, bottomBound + padding, 0]}
-          textAlign="center"
-          maxWidth={5}
+          position={[leftBound + padding + 0.5, bottomBound + padding, 0]}
           letterSpacing={-0.08}
           lineHeight={0.8}
-          onPointerDown={() => i18n.changeLanguage("en")}
-        >
-          En
-        </Text>
-        <Text
-          position={[leftBound + padding + 1.5, bottomBound + padding, 0]}
-          textAlign="center"
+          fontSize={0.25}
           maxWidth={5}
-          letterSpacing={-0.08}
-          lineHeight={0.8}
-          onPointerDown={() => i18n.changeLanguage("fr")}
+          onPointerDown={() => {
+            if (i18n.language === "en") {
+              i18n.changeLanguage("fr");
+            } else if (i18n.language === "fr") {
+              i18n.changeLanguage("en");
+            }
+          }}
         >
-          Fr
+          {t("main.languageControl")}
         </Text>
-
         {/* Arrows */}
         <Text
           position={[rightBound + padding - 3.5, bottomBound + padding, 0]}

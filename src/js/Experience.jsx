@@ -7,11 +7,10 @@ import Scene from "./Scene";
 
 // TODO:
 // Add wave pattern
-// Create motion with camera to move from bubble to bubble
 // Scale bubbles when they are active
 // Add polish like slight shake to an element when it's touched
-// Setup a separate camera to display UI controls (language switching and left/right arrows)
 // Use context to pass global states around (autopilot active, etc)
+// Make sure you can use your finger to pan around the experience
 
 const Experience = () => {
   const bubblesRef = useRef([]);
