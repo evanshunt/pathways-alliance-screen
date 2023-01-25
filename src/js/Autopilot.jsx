@@ -58,20 +58,6 @@ const Autopilot = ({ activeTimeout, interval, onIntervalComplete }) => {
       setIsTimerActive(true);
     }
   }, [isAutopilotActive]);
-
-  return (
-    isAutopilotActive && (
-      <Text
-        position={[0, -2, 0]}
-        textAlign="center"
-        maxWidth={10}
-        letterSpacing={-0.08}
-        lineHeight={0.8}
-      >
-        Autopilot active
-      </Text>
-    )
-  );
 };
 
 export default Autopilot;

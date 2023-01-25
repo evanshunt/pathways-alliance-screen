@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 
 import Autopilot from "./Autopilot";
@@ -11,10 +11,11 @@ import Scene from "./Scene";
 // Add polish like slight shake to an element when it's touched
 // Use context to pass global states around (autopilot active, etc)
 // Make sure you can use your finger to pan around the experience
+// Add custom fonts
 
 const Experience = () => {
   const bubblesRef = useRef([]);
-  const [activeItemIndex, setActiveItemIndex] = useState(0);
+  const [activeItemIndex, setActiveItemIndex] = useState(null);
 
   useFrame((state) => {
     // Lock camera to x-axis while panning
@@ -61,8 +62,8 @@ const Experience = () => {
       />
 
       <Autopilot
-        activeTimeout={20} // How long before autopilot starts
-        interval={5} // How long between onIntervalComplete callbacks
+        activeTimeout={60} // How long before autopilot starts
+        interval={10} // How long between onIntervalComplete callbacks
         onIntervalComplete={handleAutopilotIntervalComplete}
       />
     </>
