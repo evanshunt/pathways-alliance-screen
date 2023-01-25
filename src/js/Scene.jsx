@@ -74,6 +74,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
             // Optional array of RGB values for each point
             // {...lineProps} // All THREE.Line2 props are valid
             // {...materialProps} // All THREE.LineMaterial props are valid
+            key={`line-${i}`}
           />
         );
       })}
