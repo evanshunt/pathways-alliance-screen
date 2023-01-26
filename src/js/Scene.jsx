@@ -1,8 +1,9 @@
 import { useRef, useLayoutEffect } from "react";
 import { useThree } from "@react-three/fiber";
-import { Text, Circle, OrbitControls, Line } from "@react-three/drei";
+import { Text, OrbitControls, Line } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
+import Bubble from "./Bubble";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
   const textRef = useRef();
@@ -82,21 +83,18 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
       {/* Bubbles */}
       {[...Array(7)].map((x, i) => {
         return (
-          <Circle
+          <Bubble 
+            key={`circle=${i}`} 
             scale={[4, 4, 4]}
             position={[i * 25 + 10, -1, 0]}
-            key={`circle=${i}`}
             ref={(el) => {
               bubblesRef.current[i] = el;
             }}
+            active={activeItemIndex == i && (true)}
             onPointerDown={() => {
               setActiveItemIndex(i);
             }}
-          >
-            <meshStandardMaterial
-              color={activeItemIndex === i ? "green" : "hotpink"}
-            />
-          </Circle>
+          />
         );
       })}
     </>
