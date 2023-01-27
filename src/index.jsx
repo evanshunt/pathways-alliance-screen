@@ -9,6 +9,9 @@ import i18next from "i18next";
 import common_en from "../translations/en/common.json";
 import common_fr from "../translations/fr/common.json";
 
+const queryString = new URLSearchParams(window.location.hash.slice(1));
+const debug = queryString.has('debug');
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 i18next.init({
   interpolation: {
@@ -30,7 +33,7 @@ root.render(
     <I18nextProvider i18n={i18next}>
       <Leva collapsed />
       <Canvas camera={{ position: [0, 0, 10] }}>
-        <Experience />
+        <Experience debug={debug} />
       </Canvas>
     </I18nextProvider>
   </StrictMode>

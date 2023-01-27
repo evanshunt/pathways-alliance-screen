@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-
+import { Perf } from 'r3f-perf'
 import Autopilot from "./Autopilot";
 import Controls from "./Controls";
 import Scene from "./Scene";
@@ -13,7 +13,7 @@ import Scene from "./Scene";
 // Make sure you can use your finger to pan around the experience
 // Add custom fonts
 
-const Experience = () => {
+const Experience = ({debug}) => {
   const bubblesRef = useRef([]);
   const [activeItemIndex, setActiveItemIndex] = useState(null);
 
@@ -49,6 +49,7 @@ const Experience = () => {
 
   return (
     <>
+      { debug && <Perf position="top-left" /> }
       <Controls
         bubblesRef={bubblesRef}
         activeItemIndex={activeItemIndex}
