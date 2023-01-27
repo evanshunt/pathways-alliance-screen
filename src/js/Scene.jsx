@@ -1,6 +1,6 @@
 import { useRef, useLayoutEffect } from "react";
 import { useThree } from "@react-three/fiber";
-import { Text, OrbitControls, Line } from "@react-three/drei";
+import { Text, OrbitControls, CubicBezierLine } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import Bubble from "./Bubble";
@@ -54,7 +54,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
       {/* Translatable text */}
       <Text
         ref={textRef}
-        position={[-8, 3.5, 0]}
+        position={[-5, 4, 0]}
         fontSize={1.8}
         maxWidth={16}
         letterSpacing={-0.08}
@@ -64,17 +64,14 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
       </Text>
       {[...Array(20)].map((x, i) => {
         return (
-          <Line
-            points={[
-              [-100, i * 0.2 - 2, 0],
-              [300, i * 0.2 - 2, 0],
-            ]} // Array of points, Array<Vector3 | Vector2 | [number, number, number] | [number, number] | number>
+          <CubicBezierLine
+            start={[-25, 0 + 0.2 * i, 0]}
+            end={[20, 0 + 0.2 * i, 0]}
+            midA={[0, -8 + 0.2 * i, 0]}
+            midB={[0, 8 + 0.2 * i, 0]}
             color="#00EEFA" // Default
             lineWidth={1} // In pixels (default)
-            segments // If true, renders a THREE.LineSegments2. Otherwise, renders a THREE.Line2
-            // Optional array of RGB values for each point
-            // {...lineProps} // All THREE.Line2 props are valid
-            // {...materialProps} // All THREE.LineMaterial props are valid
+            segments={100} // If true, renders a THREE.LineSegments2. Otherwise, renders a THREE.Line2
             key={`line-${i}`}
           />
         );
@@ -83,14 +80,14 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
       {/* Bubbles */}
       {[...Array(7)].map((x, i) => {
         return (
-          <Bubble 
-            key={`circle=${i}`} 
+          <Bubble
+            key={`circle=${i}`}
             scale={[4, 4, 4]}
             position={[i * 25 + 10, -1, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;
             }}
-            active={activeItemIndex == i && (true)}
+            active={activeItemIndex == i && true}
             onPointerDown={() => {
               setActiveItemIndex(i);
             }}

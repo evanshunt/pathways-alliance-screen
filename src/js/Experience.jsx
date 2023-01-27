@@ -5,14 +5,6 @@ import Autopilot from "./Autopilot";
 import Controls from "./Controls";
 import Scene from "./Scene";
 
-// TODO:
-// Add wave pattern
-// Scale bubbles when they are active
-// Add polish like slight shake to an element when it's touched
-// Use context to pass global states around (autopilot active, etc)
-// Make sure you can use your finger to pan around the experience
-// Add custom fonts
-
 const Experience = ({debug}) => {
   const bubblesRef = useRef([]);
   const [activeItemIndex, setActiveItemIndex] = useState(null);
