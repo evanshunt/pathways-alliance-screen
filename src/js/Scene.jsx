@@ -14,10 +14,12 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
   const threeState = useThree();
   let dragPointer = false;
   let currentDragPosition = null;
+  let dragLength = null;
 
   const pointerStart = (event) => {
     if (!dragPointer) {
       dragPointer = event.pointerId;
+      dragLength = 0;
       currentDragPosition = null;
     }
   };
@@ -33,8 +35,12 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
           x: newDragPosition.x - currentDragPosition.x,
           y: newDragPosition.y - currentDragPosition.y
         }
-        modifiedCameraPosition.x -= dragMovement.x * 50;
+        modifiedCameraPosition.x -= dragMovement.x * 30;
+        dragLength -= dragMovement.x;
         if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
+      }
+      if (Math.abs(dragLength) > 0.5) {
+        setActiveItemIndex(null);
       }
       currentDragPosition = newDragPosition;
     }
