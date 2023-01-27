@@ -42,8 +42,8 @@ const Controls = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
         >
           {t("main.languageControl")}
         </Text>
-        {/* Arrows */}
-        <Text
+
+        {/* <Text
           position={[rightBound + padding - 3.5, bottomBound + padding, 0]}
           textAlign="center"
           maxWidth={5}
@@ -74,7 +74,7 @@ const Controls = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
           }}
         >
           &raquo;
-        </Text>
+        </Text> */}
       </OrthographicCamera>
     </Hud>
   );

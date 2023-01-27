@@ -1,5 +1,6 @@
-import { useRef, useLayoutEffect } from "react";
-import { useThree } from "@react-three/fiber";
+import { useRef, useState, useEffect, useLayoutEffect } from "react";
+import { useFrame, useThree } from "@react-three/fiber";
+import * as THREE from 'three';
 import { Text, OrbitControls, CubicBezierLine } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
@@ -7,9 +8,55 @@ import Bubble from "./Bubble";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
   const textRef = useRef();
-
+  const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
+  const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
   const { t } = useTranslation("common");
   const threeState = useThree();
+  let dragPointer = false;
+  let currentDragPosition = null;
+
+  const pointerStart = (event) => {
+    if (!dragPointer) {
+      dragPointer = event.pointerId;
+      currentDragPosition = null;
+    }
+  };
+
+  const pointerMove = (event) => {
+    if (dragPointer === event.pointerId) {
+      const newDragPosition = {
+        x: (event.clientX / window.innerWidth) * 2 - 1,
+        y: (event.clientY / window.innerHeight) * 2 - 1
+      }
+      if (currentDragPosition) {
+        const dragMovement = {
+          x: newDragPosition.x - currentDragPosition.x,
+          y: newDragPosition.y - currentDragPosition.y
+        }
+        modifiedCameraPosition.x -= dragMovement.x * 50;
+        if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
+      }
+      currentDragPosition = newDragPosition;
+    }
+  };
+
+  const pointerEnd = (event) => {
+    if (dragPointer === event.pointerId) {
+      dragPointer = false;
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("pointermove", (event) => pointerMove(event));
+    window.addEventListener("pointerdown", (event) => pointerStart(event));
+    window.addEventListener("pointerup", (event) => pointerEnd(event));
+
+    return () => {
+      window.removeEventListener("pointermove", (event) => pointerMove(event));
+      window.removeEventListener("pointerdown", (event) => pointerStart(event));
+      window.removeEventListener("pointerup", (event) => pointerEnd(event));
+    };
+  }, []);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -40,11 +87,16 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
 
   useLayoutEffect(() => {
     if (activeItemIndex != null) {
-      gsap.to(threeState.camera.position, {
+      gsap.to(modifiedCameraPosition, {
         x: bubblesRef.current[activeItemIndex].position.x,
       });
     }
   }, [activeItemIndex]);
+
+  useFrame((state, delta) => {
+    smoothedCameraPosition.lerp(modifiedCameraPosition, 5 * delta);
+    state.camera.position.copy(smoothedCameraPosition);
+  });
 
   return (
     <>
