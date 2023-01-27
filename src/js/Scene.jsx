@@ -11,15 +11,14 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
   const { t } = useTranslation("common");
-  const threeState = useThree();
   let dragPointer = false;
   let currentDragPosition = null;
-  let dragLength = null;
+  // let dragLength = null;
 
   const pointerStart = (event) => {
     if (!dragPointer) {
       dragPointer = event.pointerId;
-      dragLength = 0;
+      // dragLength = 0;
       currentDragPosition = null;
     }
   };
@@ -36,12 +35,12 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
           y: newDragPosition.y - currentDragPosition.y
         }
         modifiedCameraPosition.x -= dragMovement.x * 40;
-        dragLength -= dragMovement.x;
+        // dragLength -= dragMovement.x;
         if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
       }
-      if (Math.abs(dragLength) > 0.5) {
-        setActiveItemIndex(null);
-      }
+      // if (Math.abs(dragLength) > 0.5) {
+      //   setActiveItemIndex(null);
+      // }
       currentDragPosition = newDragPosition;
     }
   };
@@ -87,6 +86,13 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
   useFrame((state, delta) => {
     smoothedCameraPosition.lerp(modifiedCameraPosition, 5 * delta);
     state.camera.position.copy(smoothedCameraPosition);
+
+    // Check if camera is near a bubble an activate it
+    bubblesRef.current.forEach((element, index) => {
+      if (Math.abs(state.camera.position.x - element.position.x) < 3) {
+        setActiveItemIndex(index);
+      }
+    });
   });
 
   return (
@@ -131,9 +137,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
               bubblesRef.current[i] = el;
             }}
             active={activeItemIndex == i && true}
-            onPointerDown={() => {
-              setActiveItemIndex(i);
-            }}
+            setActiveItemIndex={setActiveItemIndex}
           />
         );
       })}

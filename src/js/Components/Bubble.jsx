@@ -5,12 +5,21 @@ import * as THREE from 'three';
 import gsap from "gsap";
 import DetailViewCollaboration from './DetailViewCollaboration';
 
-export default forwardRef(function({index, position, onPointerDown, active=false}, ref) {
+export default forwardRef(function({index, position, onPointerDown, active=false, setActiveItemIndex}, ref) {
   const circleRef = useRef();
   useImperativeHandle(ref, () => circleRef.current);
   const [scale] = useState(() => new THREE.Vector3(1, 1, 1));
   const [smoothedScale] = useState(() => new THREE.Vector3(1, 1, 1));
   const [openDetail, setOpenDetail] = useState(false);
+
+  const pointerDown = (event) => {
+    if (active) {
+      setOpenDetail(true);
+    }
+    else {
+      setActiveItemIndex(index);
+    }
+  }
 
   useLayoutEffect(() => {
     gsap.to(
@@ -32,6 +41,7 @@ export default forwardRef(function({index, position, onPointerDown, active=false
     }
     else {
       scale.copy(new THREE.Vector3(1, 1, 1));
+      setOpenDetail(false);
     }
   }, [active]);
 
@@ -45,7 +55,7 @@ export default forwardRef(function({index, position, onPointerDown, active=false
       args={[2,64]}
       ref={circleRef}
       position={position}
-      onPointerDown={onPointerDown}
+      onPointerDown={pointerDown}
     >
       <meshStandardMaterial
         color={active ? "green" : "hotpink"}
