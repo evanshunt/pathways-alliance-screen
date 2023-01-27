@@ -5,8 +5,6 @@ import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import Bubble from "./Bubble";
 
-import waveShader from "../shaders/wave.glsl?raw";
-
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
   const textRef = useRef();
 
