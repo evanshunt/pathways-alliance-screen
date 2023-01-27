@@ -103,7 +103,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
       {/* Translatable text */}
       <Text
         ref={textRef}
-        position={[-5, 4, 0]}
+        position={[-2, 4, 0]}
         fontSize={1.8}
         maxWidth={16}
         letterSpacing={-0.08}

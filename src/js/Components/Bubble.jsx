@@ -8,8 +8,8 @@ import DetailViewCollaboration from './DetailViewCollaboration';
 export default forwardRef(function({index, position, onPointerDown, active=false, setActiveItemIndex}, ref) {
   const circleRef = useRef();
   useImperativeHandle(ref, () => circleRef.current);
-  const [scale] = useState(() => new THREE.Vector3(1, 1, 1));
-  const [smoothedScale] = useState(() => new THREE.Vector3(1, 1, 1));
+  const [scale] = useState(() => new THREE.Vector3());
+  const [smoothedScale] = useState(() => new THREE.Vector3());
   const [openDetail, setOpenDetail] = useState(false);
 
   const pointerDown = (event) => {
@@ -37,10 +37,10 @@ export default forwardRef(function({index, position, onPointerDown, active=false
 
   useLayoutEffect(() => {
     if (active) {
-      scale.copy(new THREE.Vector3(2, 2, 2));
+      scale.copy(new THREE.Vector3(1, 1, 1));
     }
     else {
-      scale.copy(new THREE.Vector3(1, 1, 1));
+      scale.copy(new THREE.Vector3(0.5, 0.5, 0.5));
       setOpenDetail(false);
     }
   }, [active]);
@@ -52,7 +52,7 @@ export default forwardRef(function({index, position, onPointerDown, active=false
 
   return(
     <Circle 
-      args={[2,64]}
+      args={[4,64]}
       ref={circleRef}
       position={position}
       onPointerDown={pointerDown}

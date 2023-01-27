@@ -1,8 +1,7 @@
 import { useState, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Perf } from 'r3f-perf'
-import Autopilot from "./Autopilot";
-import Controls from "./Controls";
+import Autopilot from "./Controls/Autopilot";
 import Scene from "./Scene";
 
 const Experience = ({debug}) => {
@@ -42,12 +41,6 @@ const Experience = ({debug}) => {
   return (
     <>
       { debug && <Perf position="top-left" /> }
-      <Controls
-        bubblesRef={bubblesRef}
-        activeItemIndex={activeItemIndex}
-        setActiveItemIndex={setActiveItemIndex}
-      />
-
       <Scene
         bubblesRef={bubblesRef}
         activeItemIndex={activeItemIndex}
