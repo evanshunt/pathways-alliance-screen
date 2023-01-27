@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-const Controls = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
+export default () => {
   const { i18n } = useTranslation("common");
 
   return (
@@ -18,5 +18,3 @@ const Controls = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
     </button>
   );
 };
-
-export default Controls;
