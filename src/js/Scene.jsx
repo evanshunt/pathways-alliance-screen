@@ -4,7 +4,7 @@ import * as THREE from 'three';
 import { Text, OrbitControls, CubicBezierLine } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
-import Bubble from "./Bubble";
+import Bubble from "./Components/Bubble";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
   const textRef = useRef();
@@ -73,21 +73,6 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
       );
     });
 
-    const bubbleTimeline = gsap.timeline();
-    bubblesRef.current.forEach((el, index) => {
-      bubbleTimeline.to(
-        el.position,
-        {
-          y: 1,
-          yoyo: true,
-          repeat: -1,
-          ease: "sine.inOut",
-          duration: 7,
-        },
-        index * 2
-      );
-    });
-
     return () => ctx.revert();
   }, []);
 
@@ -140,6 +125,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
         return (
           <Bubble
             key={`circle=${i}`}
+            index={i}
             position={[i * 25 + 10, -1, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;

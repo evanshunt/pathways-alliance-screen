@@ -2,12 +2,29 @@ import { forwardRef, useState, useLayoutEffect, useRef, useImperativeHandle } fr
 import { useFrame } from "@react-three/fiber";
 import { Circle } from "@react-three/drei";
 import * as THREE from 'three';
+import gsap from "gsap";
+import DetailViewCollaboration from './DetailViewCollaboration';
 
-export default forwardRef(function({position, onPointerDown, active=false}, ref) {
+export default forwardRef(function({index, position, onPointerDown, active=false}, ref) {
   const circleRef = useRef();
   useImperativeHandle(ref, () => circleRef.current);
   const [scale] = useState(() => new THREE.Vector3(1, 1, 1));
   const [smoothedScale] = useState(() => new THREE.Vector3(1, 1, 1));
+  const [openDetail, setOpenDetail] = useState(false);
+
+  useLayoutEffect(() => {
+    gsap.to(
+      circleRef.current.position,
+      {
+        y: 1,
+        yoyo: true,
+        repeat: -1,
+        ease: "sine.inOut",
+        duration: 7,
+      },
+      index * 2
+    );
+  });
 
   useLayoutEffect(() => {
     if (active) {
@@ -33,6 +50,7 @@ export default forwardRef(function({position, onPointerDown, active=false}, ref)
       <meshStandardMaterial
         color={active ? "green" : "hotpink"}
       />
+      { openDetail && <DetailViewCollaboration />}
     </Circle>
   );
 });
