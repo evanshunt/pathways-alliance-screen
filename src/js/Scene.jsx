@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import Bubble from "./Components/Bubble";
 
-const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
+const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
   const textRef = useRef();
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
@@ -16,7 +16,8 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
   // let dragLength = null;
 
   const pointerStart = (event) => {
-    if (!dragPointer) {
+    // openItemIndex is always null.. why? 
+    if (!dragPointer && !openItemIndex) {
       dragPointer = event.pointerId;
       // dragLength = 0;
       currentDragPosition = null;
@@ -138,6 +139,8 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
             }}
             active={activeItemIndex == i && true}
             setActiveItemIndex={setActiveItemIndex}
+            open={openItemIndex == i && true}
+            setOpenItemIndex={setOpenItemIndex}
           />
         );
       })}

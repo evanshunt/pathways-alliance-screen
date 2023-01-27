@@ -5,16 +5,15 @@ import * as THREE from 'three';
 import gsap from "gsap";
 import DetailViewCollaboration from './DetailViewCollaboration';
 
-export default forwardRef(function({index, position, onPointerDown, active=false, setActiveItemIndex}, ref) {
+export default forwardRef(function({index, position, onPointerDown, active=false, setActiveItemIndex, open=false, setOpenItemIndex}, ref) {
   const circleRef = useRef();
   useImperativeHandle(ref, () => circleRef.current);
   const [scale] = useState(() => new THREE.Vector3());
   const [smoothedScale] = useState(() => new THREE.Vector3());
-  const [openDetail, setOpenDetail] = useState(false);
 
   const pointerDown = (event) => {
     if (active) {
-      setOpenDetail(true);
+      setOpenItemIndex(index);
     }
     else {
       setActiveItemIndex(index);
@@ -41,7 +40,7 @@ export default forwardRef(function({index, position, onPointerDown, active=false
     }
     else {
       scale.copy(new THREE.Vector3(0.5, 0.5, 0.5));
-      setOpenDetail(false);
+      setOpenItemIndex();
     }
   }, [active]);
 
@@ -60,7 +59,7 @@ export default forwardRef(function({index, position, onPointerDown, active=false
       <meshStandardMaterial
         color={active ? "green" : "hotpink"}
       />
-      { openDetail && <DetailViewCollaboration />}
+      { open && <DetailViewCollaboration />}
     </Circle>
   );
 });

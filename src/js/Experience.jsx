@@ -7,6 +7,7 @@ import Scene from "./Scene";
 const Experience = ({debug}) => {
   const bubblesRef = useRef([]);
   const [activeItemIndex, setActiveItemIndex] = useState(null);
+  const [openItemIndex, setOpenItemIndex] = useState(null);
 
   useFrame((state) => {
     // Lock camera to x-axis while panning
@@ -45,6 +46,8 @@ const Experience = ({debug}) => {
         bubblesRef={bubblesRef}
         activeItemIndex={activeItemIndex}
         setActiveItemIndex={setActiveItemIndex}
+        openItemIndex={openItemIndex}
+        setOpenItemIndex={setOpenItemIndex}
       />
 
       <Autopilot

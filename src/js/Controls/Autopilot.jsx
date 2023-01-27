@@ -1,6 +1,5 @@
 import { useRef, useEffect, useState } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Text } from "@react-three/drei";
 
 const Autopilot = ({ activeTimeout, interval, onIntervalComplete }) => {
   const timeElapsed = useRef(0);

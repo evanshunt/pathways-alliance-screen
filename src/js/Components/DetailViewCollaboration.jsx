@@ -4,6 +4,7 @@ export default () => {
   return (
     <Html
       transform
+      scale={0.2}
     >
       <section className="detailview">
         <div className="content">
