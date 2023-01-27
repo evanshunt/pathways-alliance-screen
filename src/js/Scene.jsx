@@ -35,7 +35,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
           x: newDragPosition.x - currentDragPosition.x,
           y: newDragPosition.y - currentDragPosition.y
         }
-        modifiedCameraPosition.x -= dragMovement.x * 30;
+        modifiedCameraPosition.x -= dragMovement.x * 40;
         dragLength -= dragMovement.x;
         if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
       }
@@ -140,7 +140,6 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex }) => {
         return (
           <Bubble
             key={`circle=${i}`}
-            scale={[4, 4, 4]}
             position={[i * 25 + 10, -1, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;
