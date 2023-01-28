@@ -35,7 +35,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
           x: newDragPosition.x - currentDragPosition.x,
           y: newDragPosition.y - currentDragPosition.y
         }
-        modifiedCameraPosition.x -= dragMovement.x * 40;
+        modifiedCameraPosition.x -= dragMovement.x * 50;
         // dragLength -= dragMovement.x;
         if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
       }
