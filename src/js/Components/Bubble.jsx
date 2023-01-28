@@ -2,7 +2,6 @@ import { forwardRef, useState, useLayoutEffect, useRef, useImperativeHandle } fr
 import { useFrame } from "@react-three/fiber";
 import { Circle } from "@react-three/drei";
 import * as THREE from 'three';
-import gsap from "gsap";
 import DetailViewCollaboration from './DetailViewCollaboration';
 
 export default forwardRef(function({index, position, onPointerDown, active=false, setActiveItemIndex, open=false, setOpenItemIndex}, ref) {
@@ -21,20 +20,6 @@ export default forwardRef(function({index, position, onPointerDown, active=false
   }
 
   useLayoutEffect(() => {
-    gsap.to(
-      circleRef.current.position,
-      {
-        y: 1,
-        yoyo: true,
-        repeat: -1,
-        ease: "sine.inOut",
-        duration: 7,
-      },
-      index * 2
-    );
-  });
-
-  useLayoutEffect(() => {
     if (active) {
       scale.copy(new THREE.Vector3(1, 1, 1));
     }
@@ -47,6 +32,7 @@ export default forwardRef(function({index, position, onPointerDown, active=false
   useFrame((state, delta) => {
     smoothedScale.lerp(scale, 0.1);
     circleRef.current.scale.copy(smoothedScale);
+    circleRef.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.5 + index);
   });
 
   return(
