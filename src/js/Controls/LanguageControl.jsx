@@ -4,7 +4,7 @@ export default () => {
   const { i18n } = useTranslation("common");
 
   return (
-    <button id="languagetoggle" className={i18n.language === "fr" && 'right'}
+    <button id="languagetoggle" className={i18n.language === "fr" ? 'right' : 'left'}
       onPointerDown={() => {
         if (i18n.language === "en") {
           i18n.changeLanguage("fr");
@@ -13,8 +13,8 @@ export default () => {
         }
       }}
     >
-      <span className={i18n.language === "en" && 'active'}>EN</span>
-      <span className={i18n.language === "fr" && 'active'}>FR</span>
+      <span className={i18n.language === "en" ? 'active' : 'inactive'}>EN</span>
+      <span className={i18n.language === "fr" ? 'active' : 'inactive'}>FR</span>
     </button>
   );
 };
