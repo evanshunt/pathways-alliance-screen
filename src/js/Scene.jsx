@@ -1,76 +1,18 @@
-import { useRef, useState, useEffect, useLayoutEffect } from "react";
-import { useFrame, useThree } from "@react-three/fiber";
+import { useRef, useState, useLayoutEffect } from "react";
+import { useFrame } from "@react-three/fiber";
 import * as THREE from 'three';
 import { Text, OrbitControls, CubicBezierLine } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
-import Bubble from "./Components/Bubble";
+import DragControl from './Controls/DragControl.jsx';
+import Bubble from "./Components/Bubble.jsx";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
   const textRef = useRef();
+  const dragRef = useRef();
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
   const { t } = useTranslation("common");
-  let dragPointer = false;
-  let currentDragPosition = null;
-  let dragLength = 0;
-
-  const pointerDown = (event) => {
-    // Retrieve openItemIndex from State outside of initial listener
-    // https://stackoverflow.com/a/60316873/5683437
-    setOpenItemIndex(openItemIndex => {
-      if (!dragPointer && isNaN(openItemIndex)) {
-        dragPointer = event.pointerId;
-        dragLength = 0;
-        currentDragPosition = null;
-      }
-      return openItemIndex;
-    });
-  };
-
-  const pointerMove = (event) => {
-    if (dragPointer === event.pointerId) {
-      const newDragPosition = {
-        x: (event.clientX / window.innerWidth) * 2 - 1,
-        y: (event.clientY / window.innerHeight) * 2 - 1
-      }
-      if (currentDragPosition) {
-        const dragMovement = {
-          x: newDragPosition.x - currentDragPosition.x,
-          y: newDragPosition.y - currentDragPosition.y
-        }
-        modifiedCameraPosition.x -= dragMovement.x * 50;
-        dragLength += Math.abs(dragMovement.x);
-        if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
-      }
-      currentDragPosition = newDragPosition;
-    }
-  };
-
-  const pointerUp = (event) => {
-    if (dragPointer === event.pointerId) {
-      dragPointer = false;
-      // If the user is in a proper drag, don't issue events to bubbles underneath
-      if (dragLength > 0.05) {
-        console.log('Cancel pointerUp');
-        // This is getting called but it's not preventing bubble's pointerUp event from executing
-        // I suspect it's because this is on the Window and not in React itself
-        event.stopPropagation();
-      }
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("pointermove", (event) => pointerMove(event));
-    window.addEventListener("pointerdown", (event) => pointerDown(event));
-    window.addEventListener("pointerup", (event) => pointerUp(event));
-
-    return () => {
-      window.removeEventListener("pointermove", (event) => pointerMove(event));
-      window.removeEventListener("pointerdown", (event) => pointerDown(event));
-      window.removeEventListener("pointerup", (event) => pointerUp(event));
-    };
-  }, []);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -95,6 +37,8 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   useFrame((state, delta) => {
     smoothedCameraPosition.lerp(modifiedCameraPosition, 5 * delta);
     state.camera.position.copy(smoothedCameraPosition);
+    // Keep drag control hotspot in front of camera at all times
+    dragRef.current.position.x = smoothedCameraPosition.x;
 
     // Check if camera is near a bubble an activate it
     bubblesRef.current.forEach((element, index) => {
@@ -108,6 +52,11 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     <>
       <ambientLight intensity={1} />
       <OrbitControls enableRotate={false} enableZoom={false} />
+      <DragControl 
+        ref={dragRef}
+        dragDisabled={isNaN(openItemIndex) && true} 
+        modifiedCameraPosition={modifiedCameraPosition} 
+      />
 
       {/* Translatable text */}
       <Text
