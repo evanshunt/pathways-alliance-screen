@@ -16,12 +16,16 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   // let dragLength = null;
 
   const pointerStart = (event) => {
-    // openItemIndex is always null.. why? 
-    if (!dragPointer && !openItemIndex) {
-      dragPointer = event.pointerId;
-      // dragLength = 0;
-      currentDragPosition = null;
-    }
+    // Retrieve openItemIndex from State outside of initial listener
+    // https://stackoverflow.com/a/60316873/5683437
+    setOpenItemIndex(openItemIndex => {
+      if (!dragPointer && isNaN(openItemIndex)) {
+        dragPointer = event.pointerId;
+        // dragLength = 0;
+        currentDragPosition = null;
+      }
+      return openItemIndex;
+    });
   };
 
   const pointerMove = (event) => {
