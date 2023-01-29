@@ -1,6 +1,8 @@
 {
   "main": {
-    "title": "We’re building many paths to net zero",
-    "languageControl": "Switch to French"
+    "title": "We’re building many paths to net zero"
+  },
+  "controls": {
+    "home": "Home"
   }
 }

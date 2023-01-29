@@ -1,6 +1,8 @@
 {
   "main": {
-    "title": "Nous construisons de nombreux chemins vers le net zéro",
-    "languageControl": "Switch to English"
+    "title": "Nous construisons de nombreux chemins vers le net zéro"
+  },
+  "controls": {
+    "home": "Accueil"
   }
 }

@@ -1,6 +1,9 @@
 import { Html } from "@react-three/drei";
+import { useTranslation } from "react-i18next";
 
 export default ({openItemIndex, setOpenItemIndex}) => {
+  const { t } = useTranslation("common");
+
   return (
     <Html
       fullscreen
@@ -17,7 +20,7 @@ export default ({openItemIndex, setOpenItemIndex}) => {
             <path d="M2 22.834H97.8333" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </span>
-        <span>Home</span>
+        <span>{t("controls.home")}</span>
       </button>
     </Html>
   );
