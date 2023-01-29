@@ -4,7 +4,7 @@ import { Circle } from "@react-three/drei";
 import * as THREE from 'three';
 import DetailViewCollaboration from './DetailViewCollaboration';
 
-export default forwardRef(function({index, position, onPointerDown, active=false, setActiveItemIndex, open=false, setOpenItemIndex}, ref) {
+export default forwardRef(function({index, position, active=false, setMoveToIndex, open=false, setOpenItemIndex}, ref) {
   const circleRef = useRef();
   useImperativeHandle(ref, () => circleRef.current);
   const [scale] = useState(() => new THREE.Vector3());
@@ -15,29 +15,44 @@ export default forwardRef(function({index, position, onPointerDown, active=false
       setOpenItemIndex(index);
     }
     else {
-      setActiveItemIndex(index);
+      setMoveToIndex(index);
     }
   }
 
   useLayoutEffect(() => {
     if (active) {
-      scale.copy(new THREE.Vector3(1, 1, 1));
+      scale.copy(new THREE.Vector3(2, 2, 2));
     }
     else {
-      scale.copy(new THREE.Vector3(0.5, 0.5, 0.5));
-      setOpenItemIndex();
+      scale.copy(new THREE.Vector3(1, 1, 1));
+      setOpenItemIndex(-1);
     }
   }, [active]);
+
+  useLayoutEffect(() => {
+    if (open) {
+      // This isn't satisfactory
+      // We will need to make sure the camera locks onto the exact dimensions
+      scale.copy(new THREE.Vector3(10, 10, 10));
+    }
+    else {
+      scale.copy(new THREE.Vector3(1, 1, 1));
+      setOpenItemIndex(-1);
+    }
+  }, [open]);
 
   useFrame((state, delta) => {
     smoothedScale.lerp(scale, 0.1);
     circleRef.current.scale.copy(smoothedScale);
-    circleRef.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.5 + index);
+
+    if (!active) {
+      circleRef.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.5 + index);
+    }
   });
 
   return(
     <Circle 
-      args={[4,64]}
+      args={[2,64]}
       ref={circleRef}
       position={position}
       onPointerUp={pointerDown}

@@ -1,17 +1,19 @@
-import { forwardRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { useRef, useState } from "react";
 
-export default forwardRef(({dragDisabled, modifiedCameraPosition}, ref) => {
-  let dragPointer = false;
-  let currentDragPosition = null;
-  let dragLength = 0;
+export default ({dragDisabled, modifiedCameraPosition}) => {
+  const dragRef = useRef();
+  const [dragPointer, setDragPointer] = useState(false);
+  const [currentDragPosition, setCurrentDragPosition] = useState(false);
+  const [dragLength, setDragLength] = useState(0);
 
   const pointerDown = (event) => {
     // Only start a drag on the first finger press
     // And only if drag hasn't been disabled
     if (!dragPointer && dragDisabled) {
-      dragPointer = event.pointerId;
-      dragLength = 0;
-      currentDragPosition = null;
+      setDragPointer(event.pointerId);
+      setDragLength(0);
+      setCurrentDragPosition(null);
     }
   };
 
@@ -29,35 +31,42 @@ export default forwardRef(({dragDisabled, modifiedCameraPosition}, ref) => {
           y: newDragPosition.y - currentDragPosition.y
         }
         modifiedCameraPosition.x -= dragMovement.x * 50;
-        dragLength += Math.abs(dragMovement.x);
+        setDragLength(dragLength + Math.abs(dragMovement.x));
         if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
       }
-      currentDragPosition = newDragPosition;
+      setCurrentDragPosition(newDragPosition);
     }
   };
 
   const pointerUp = (event) => {
     if (dragPointer === event.pointerId) {
-      dragPointer = false;
       // If the user is in a proper drag, don't issue events to bubbles underneath
       // 0.05 is 5% of the viewport
       if (dragLength > 0.05) {
         event.stopPropagation();
       }
+      setDragPointer(false);
     }
   };
 
+  useFrame((state, delta) => {
+    // Keep drag control hotspot in front of camera at all times
+    dragRef.current.position.x = state.camera.position.x;
+  });
+
   return (
-    <mesh ref={ref}
-    // Puts it close up to the camera
-    // This doesn't feel amazing, would rather sync mesh size to viewable area by camera
-    position={[0,0,9.9]} 
-    visible={false}
-    onPointerDown={(event) => pointerDown(event)}
-    onPointerMove={(event) => pointerMove(event)}
-    onPointerUp={(event) => pointerUp(event)}
+    <mesh
+      ref={dragRef}
+      // Puts it close up to the camera
+      // This doesn't feel amazing, would rather sync mesh size to viewable area by camera
+      position={[0,0,9.9]} 
+      visible={false}
+      onPointerDown={(event) => pointerDown(event)}
+      onPointerMove={(event) => pointerMove(event)}
+      onPointerUp={(event) => pointerUp(event)}
+      onPointerLeave={(event) => pointerUp(event)}
     >
-    <planeGeometry args={[1, 1]} />
+    <planeGeometry args={[10, 1]} />
     </mesh>
   );
-});
+}

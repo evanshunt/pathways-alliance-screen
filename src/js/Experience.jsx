@@ -7,8 +7,8 @@ import HomeControl from "./Controls/HomeControl";
 
 const Experience = ({debug}) => {
   const bubblesRef = useRef([]);
-  const [activeItemIndex, setActiveItemIndex] = useState(null);
-  const [openItemIndex, setOpenItemIndex] = useState(null);
+  const [activeItemIndex, setActiveItemIndex] = useState(-1);
+  const [openItemIndex, setOpenItemIndex] = useState(-1);
 
   useFrame((state) => {
     // Lock camera to x-axis while panning
@@ -60,6 +60,7 @@ const Experience = ({debug}) => {
       <HomeControl
         openItemIndex={openItemIndex}
         setOpenItemIndex={setOpenItemIndex}
+        setActiveItemIndex={setActiveItemIndex}
       />
     </>
   );

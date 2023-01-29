@@ -1,7 +1,7 @@
 import { Html } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 
-export default ({openItemIndex, setOpenItemIndex}) => {
+export default ({openItemIndex, setOpenItemIndex, setActiveItemIndex}) => {
   const { t } = useTranslation("common");
 
   return (
@@ -9,9 +9,10 @@ export default ({openItemIndex, setOpenItemIndex}) => {
       fullscreen
       zIndexRange={[100, 0]}
     >
-      <button id="home" disabled={isNaN(openItemIndex) ? true : false}
+      <button id="home" disabled={openItemIndex > -1 ? false : true}
         onPointerDown={() => {
-          setOpenItemIndex();
+          setOpenItemIndex(-1);
+          setActiveItemIndex(-1);
         }}
       >
         <span>

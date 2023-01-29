@@ -9,9 +9,9 @@ import Bubble from "./Components/Bubble.jsx";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
   const textRef = useRef();
-  const dragRef = useRef();
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
+  const [ moveToIndex, setMoveToIndex] = useState(-1);
   const { t } = useTranslation("common");
 
   useLayoutEffect(() => {
@@ -26,26 +26,28 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     return () => ctx.revert();
   }, []);
 
-  useLayoutEffect(() => {
-    if (activeItemIndex != null) {
-      gsap.to(modifiedCameraPosition, {
-        x: bubblesRef.current[activeItemIndex].position.x,
-      });
+  useLayoutEffect((state, delta) => {
+    if (bubblesRef.current[moveToIndex] != null) {
+      modifiedCameraPosition.lerp(bubblesRef.current[moveToIndex].position, 1);
+      setMoveToIndex(-1);
     }
-  }, [activeItemIndex]);
+  }, [moveToIndex]);
 
   useFrame((state, delta) => {
     smoothedCameraPosition.lerp(modifiedCameraPosition, 5 * delta);
     state.camera.position.copy(smoothedCameraPosition);
-    // Keep drag control hotspot in front of camera at all times
-    dragRef.current.position.x = smoothedCameraPosition.x;
 
     // Check if camera is near a bubble an activate it
+    let closeMatch = false;
     bubblesRef.current.forEach((element, index) => {
-      if (Math.abs(state.camera.position.x - element.position.x) < 3) {
+      if (Math.abs(state.camera.position.x - element.position.x) < 6) {
         setActiveItemIndex(index);
+        closeMatch = true;
       }
     });
+    if (!closeMatch) {
+      setActiveItemIndex(-1);
+    }
   });
 
   return (
@@ -53,8 +55,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
       <ambientLight intensity={1} />
       <OrbitControls enableRotate={false} enableZoom={false} />
       <DragControl 
-        ref={dragRef}
-        dragDisabled={isNaN(openItemIndex) && true} 
+        dragDisabled={openItemIndex == -1 && moveToIndex == -1 && true} 
         modifiedCameraPosition={modifiedCameraPosition} 
       />
 
@@ -98,6 +99,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
             setActiveItemIndex={setActiveItemIndex}
             open={openItemIndex == i && true}
             setOpenItemIndex={setOpenItemIndex}
+            setMoveToIndex={setMoveToIndex}
           />
         );
       })}

@@ -5,6 +5,7 @@ export default () => {
     <Html
       transform
       scale={0.2}
+      zIndexRange={[100, 0]}
     >
       <section className="detailview">
         <div className="content">
