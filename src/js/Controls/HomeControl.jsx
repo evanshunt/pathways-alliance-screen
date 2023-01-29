@@ -4,6 +4,7 @@ export default ({openItemIndex, setOpenItemIndex}) => {
   return (
     <Html
       fullscreen
+      zIndexRange={[100, 0]}
     >
       <button id="home" disabled={isNaN(openItemIndex) ? true : false}
         onPointerDown={() => {
