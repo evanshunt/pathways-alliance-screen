@@ -13,15 +13,15 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   const { t } = useTranslation("common");
   let dragPointer = false;
   let currentDragPosition = null;
-  // let dragLength = null;
+  let dragLength = 0;
 
-  const pointerStart = (event) => {
+  const pointerDown = (event) => {
     // Retrieve openItemIndex from State outside of initial listener
     // https://stackoverflow.com/a/60316873/5683437
     setOpenItemIndex(openItemIndex => {
       if (!dragPointer && isNaN(openItemIndex)) {
         dragPointer = event.pointerId;
-        // dragLength = 0;
+        dragLength = 0;
         currentDragPosition = null;
       }
       return openItemIndex;
@@ -40,31 +40,35 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
           y: newDragPosition.y - currentDragPosition.y
         }
         modifiedCameraPosition.x -= dragMovement.x * 50;
-        // dragLength -= dragMovement.x;
+        dragLength += Math.abs(dragMovement.x);
         if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
       }
-      // if (Math.abs(dragLength) > 0.5) {
-      //   setActiveItemIndex(null);
-      // }
       currentDragPosition = newDragPosition;
     }
   };
 
-  const pointerEnd = (event) => {
+  const pointerUp = (event) => {
     if (dragPointer === event.pointerId) {
       dragPointer = false;
+      // If the user is in a proper drag, don't issue events to bubbles underneath
+      if (dragLength > 0.05) {
+        console.log('Cancel pointerUp');
+        // This is getting called but it's not preventing bubble's pointerUp event from executing
+        // I suspect it's because this is on the Window and not in React itself
+        event.stopPropagation();
+      }
     }
   };
 
   useEffect(() => {
     window.addEventListener("pointermove", (event) => pointerMove(event));
-    window.addEventListener("pointerdown", (event) => pointerStart(event));
-    window.addEventListener("pointerup", (event) => pointerEnd(event));
+    window.addEventListener("pointerdown", (event) => pointerDown(event));
+    window.addEventListener("pointerup", (event) => pointerUp(event));
 
     return () => {
       window.removeEventListener("pointermove", (event) => pointerMove(event));
-      window.removeEventListener("pointerdown", (event) => pointerStart(event));
-      window.removeEventListener("pointerup", (event) => pointerEnd(event));
+      window.removeEventListener("pointerdown", (event) => pointerDown(event));
+      window.removeEventListener("pointerup", (event) => pointerUp(event));
     };
   }, []);
 

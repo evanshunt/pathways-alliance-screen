@@ -40,7 +40,7 @@ export default forwardRef(function({index, position, onPointerDown, active=false
       args={[4,64]}
       ref={circleRef}
       position={position}
-      onPointerDown={pointerDown}
+      onPointerUp={pointerDown}
     >
       <meshStandardMaterial
         color={active ? "green" : "hotpink"}
