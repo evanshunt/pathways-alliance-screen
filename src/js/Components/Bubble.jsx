@@ -58,13 +58,12 @@ export default forwardRef(function({index, position, texture, active=false, setM
         <meshStandardMaterial
           map={texture}
           transparent={true}
-          opacity={active ? "1" : "0.8"}
+          opacity={active ? "1" : "0.6"}
         />
       </Circle>
       <Html
-        center
         className={active ? "bubbletext active" : "bubbletext inactive"}
-        position={[3,0,0]}
+        position={index % 2 === 0 ? [3,-1,0] : [3,3,0]}
       >
         <h2>Uniting an industry</h2>
         <h3>What happens when competitors collaborate?</h3>

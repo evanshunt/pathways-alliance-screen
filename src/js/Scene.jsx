@@ -92,7 +92,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
             key={`circle=${i}`}
             index={i}
             texture={industryTexture}
-            position={[i * 25 + 10, -1, 0]}
+            position={[i * 16 + 10, -1, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;
             }}

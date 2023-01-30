@@ -1,9 +1,42 @@
 div.bubbletext {
+  width: 25em;
   color: white;
   opacity: 0;
-  transition: 0.3s opacity;
+  transition: 0.6s all;
+  margin-left: 0;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    right: 26em;
+    top: 2em;
+    width: 0;
+    transition: 0.6s all;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    height: 0.5em;
+    width: 0.5em;
+    background-color: white;
+    border-radius: 0.25em;
+    position: absolute;
+    left: -1em;
+    top: 2em;
+    transform: translate(-50%, -50%);
+  }
 
   &.active {
     opacity: 1;
+    margin-left: 7em;
+
+    &::before {
+      width: 6em;
+    }
   }
 }
