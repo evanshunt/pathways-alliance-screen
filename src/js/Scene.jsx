@@ -1,7 +1,7 @@
 import { useRef, useState, useLayoutEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from 'three';
-import { Text, OrbitControls, CubicBezierLine } from "@react-three/drei";
+import { Text, CubicBezierLine, useTexture } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import DragControl from './Controls/DragControl.jsx';
@@ -9,6 +9,7 @@ import Bubble from "./Components/Bubble.jsx";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
   const textRef = useRef();
+  const [ industryTexture ] = useTexture(['/industry.png'])
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ moveToIndex, setMoveToIndex] = useState(-1);
@@ -53,7 +54,6 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   return (
     <>
       <ambientLight intensity={1} />
-      <OrbitControls enableRotate={false} enableZoom={false} />
       <DragControl 
         dragDisabled={openItemIndex == -1 && moveToIndex == -1 && true} 
         modifiedCameraPosition={modifiedCameraPosition} 
@@ -91,6 +91,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
           <Bubble
             key={`circle=${i}`}
             index={i}
+            texture={industryTexture}
             position={[i * 25 + 10, -1, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;

@@ -22,9 +22,7 @@ const Experience = ({debug}) => {
 
     state.camera.position.y = 0;
     state.camera.position.z = 10;
-    state.camera.rotation.x = 0;
-    state.camera.rotation.y = 0;
-    state.camera.rotation.z = 0;
+    state.camera.lookAt(state.camera.position.x, 0, 0);
   });
 
   const handleAutopilotIntervalComplete = () => {
