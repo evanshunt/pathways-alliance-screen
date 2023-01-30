@@ -17,7 +17,7 @@ export default forwardRef(function({index, position, view, texture, active=false
     if (active) {
       setOpenItemIndex(index);
     }
-    else {
+    else if (!open) {
       setMoveToIndex(index);
     }
   }
@@ -28,21 +28,8 @@ export default forwardRef(function({index, position, view, texture, active=false
     }
     else {
       scale.copy(new THREE.Vector3(1, 1, 1));
-      setOpenItemIndex(-1);
     }
   }, [active]);
-
-  useLayoutEffect(() => {
-    if (open) {
-      // This isn't satisfactory
-      // We will need to make sure the camera locks onto the exact dimensions
-      scale.copy(new THREE.Vector3(10, 10, 10));
-    }
-    else {
-      scale.copy(new THREE.Vector3(1, 1, 1));
-      setOpenItemIndex(-1);
-    }
-  }, [open]);
 
   useFrame((state, delta) => {
     smoothedScale.lerp(scale, 0.1);

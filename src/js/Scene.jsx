@@ -1,5 +1,6 @@
-import { useState, useLayoutEffect } from "react";
+import { useRef, useState, useLayoutEffect } from "react";
 import { useFrame } from "@react-three/fiber";
+import { EffectComposer, Vignette } from '@react-three/postprocessing'
 import * as THREE from 'three';
 import { CubicBezierLine, useTexture } from "@react-three/drei";
 import DragControl from './Controls/DragControl.jsx';
@@ -7,6 +8,7 @@ import Bubble from "./Components/Bubble.jsx";
 import Headline from "./Components/Headline.jsx";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
+  const backgroundRef = useRef();
   const textures = useTexture({
     capture: '/images/capture.png',
     dollars: '/images/dollars.png',
@@ -25,7 +27,21 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     'network',
     'storage',
     'innovation'
-  ]
+  ];
+  const sceneLength = bubbles.length * 16 + 20;
+  const backgroundStartColour = new THREE.Color(0x252154);
+  const backgroundEarlyMidColour = new THREE.Color(0x163bae);
+  const backgroundLateMidColour = new THREE.Color(0x0c4eea);
+  const backgroundEndColour = new THREE.Color(0x00eefa);
+
+  useLayoutEffect((state, delta) => {
+    // If a bubble has been opened, move the camera to the center of it
+    // And maybe do more stuff, TBD!
+    setActiveItemIndex(-1);
+    if (bubblesRef.current[openItemIndex] != null) {
+      modifiedCameraPosition.lerp(new THREE.Vector3(bubblesRef.current[openItemIndex].position.x, 0, 0), 1);
+    }
+  }, [openItemIndex]);
 
   useLayoutEffect((state, delta) => {
     // If a bubble has been activated, move the camera to it
@@ -40,24 +56,48 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     smoothedCameraPosition.lerp(modifiedCameraPosition, 5 * delta);
     state.camera.position.copy(smoothedCameraPosition);
 
-    // Check if camera is near a bubble and activate it
-    let closeMatch = false;
-    bubblesRef.current.forEach((element, index) => {
-      if (Math.abs(state.camera.position.x - (element.position.x + 3)) < 6) {
-        setActiveItemIndex(index);
-        closeMatch = true;
+    // Check if camera is near a bubble and activate it if not already open
+    if (openItemIndex == -1) {
+      let closeMatch = false;
+      bubblesRef.current.forEach((element, index) => {
+        if (Math.abs(state.camera.position.x - (element.position.x + 3)) < 6) {
+          setActiveItemIndex(index);
+          closeMatch = true;
+        }
+      });
+      // Otherwise close the bubbles
+      if (!closeMatch) {
+        setActiveItemIndex(-1);
       }
-    });
-    // Otherwise close the bubbles
-    if (!closeMatch) {
-      setActiveItemIndex(-1);
     }
+
+    // Set background colour based on position
+    let backgroundColour = new THREE.Color();
+    const sceneTravelled = state.camera.position.x / sceneLength;
+    if (sceneTravelled <= 0.2) {
+      backgroundColour.lerpColors(backgroundStartColour, backgroundEarlyMidColour, (sceneTravelled-0)/0.2);
+    }
+    else if (sceneTravelled <= 0.8) {
+      backgroundColour.lerpColors(backgroundEarlyMidColour, backgroundLateMidColour, (sceneTravelled-0.2)/0.6);
+    }
+    else {
+      backgroundColour.lerpColors(backgroundLateMidColour, backgroundEndColour, (sceneTravelled-0.8)/0.2);
+    }
+
+    backgroundRef.current.r = backgroundColour.r;
+    backgroundRef.current.g = backgroundColour.g;
+    backgroundRef.current.b = backgroundColour.b;
   });
 
   return (
     <>
+      <EffectComposer>
+        <Vignette eskil={true} offset={0.5} darkness={0.35} />
+      </EffectComposer>
+      <color ref={backgroundRef} attach="background" />
       <ambientLight intensity={1} />
       <DragControl 
+        sceneLength={sceneLength}
         dragDisabled={openItemIndex == -1 && moveToIndex == -1 && true} 
         modifiedCameraPosition={modifiedCameraPosition} 
       />
@@ -78,7 +118,6 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
         );
       })}
 
-      {/* Bubbles */}
       {bubbles.map((view, i) => {
         return (
           <Bubble

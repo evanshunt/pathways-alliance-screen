@@ -12,6 +12,7 @@
     "@gsap/shockingly": "3.11.4",
     "@react-three/drei": "^9.51.7",
     "@react-three/fiber": "^8.10.0",
+    "@react-three/postprocessing": "2.7.0",
     "gsap": "npm:@gsap/shockingly",
     "i18next": "^22.4.9",
     "leva": "^0.9.34",

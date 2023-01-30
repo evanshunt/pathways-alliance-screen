@@ -1,7 +1,7 @@
 import { useFrame } from "@react-three/fiber";
 import { useRef, useState } from "react";
 
-export default ({dragDisabled, modifiedCameraPosition}) => {
+export default ({sceneLength, dragDisabled, modifiedCameraPosition}) => {
   const dragRef = useRef();
   const [dragPointer, setDragPointer] = useState(false);
   const [currentDragPosition, setCurrentDragPosition] = useState(false);
@@ -36,7 +36,7 @@ export default ({dragDisabled, modifiedCameraPosition}) => {
         // Bounds of drag
         if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
         // This 100 value should come from the size of the scene
-        if (modifiedCameraPosition.x > 100) modifiedCameraPosition.x = 100;
+        if (modifiedCameraPosition.x > sceneLength) modifiedCameraPosition.x = sceneLength;
       }
       setCurrentDragPosition(newDragPosition);
     }
