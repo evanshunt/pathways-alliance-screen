@@ -5,7 +5,8 @@ export default () => {
 
   return (
     <button id="languagetoggle" className={i18n.language === "fr" ? 'right' : 'left'}
-      onPointerDown={() => {
+      onPointerDown={(event) => {
+        event.stopPropagation();
         if (i18n.language === "en") {
           i18n.changeLanguage("fr");
         } else if (i18n.language === "fr") {

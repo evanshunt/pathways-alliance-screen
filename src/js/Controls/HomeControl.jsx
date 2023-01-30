@@ -10,7 +10,8 @@ export default ({openItemIndex, setOpenItemIndex, setActiveItemIndex}) => {
       zIndexRange={[100, 0]}
     >
       <button id="home" disabled={openItemIndex > -1 ? false : true}
-        onPointerDown={() => {
+        onPointerDown={(event) => {
+          event.stopPropagation();
           setOpenItemIndex(-1);
           setActiveItemIndex(-1);
         }}

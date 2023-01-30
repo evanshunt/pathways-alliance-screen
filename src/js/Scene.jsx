@@ -40,7 +40,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     // Check if camera is near a bubble an activate it
     let closeMatch = false;
     bubblesRef.current.forEach((element, index) => {
-      if (Math.abs(state.camera.position.x - element.position.x) < 6) {
+      if (Math.abs(state.camera.position.x - element.position.x) < 8) {
         setActiveItemIndex(index);
         closeMatch = true;
       }

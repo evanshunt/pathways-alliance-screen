@@ -9,6 +9,7 @@ export default forwardRef(function({index, position, active=false, setMoveToInde
   useImperativeHandle(ref, () => circleRef.current);
   const [scale] = useState(() => new THREE.Vector3());
   const [smoothedScale] = useState(() => new THREE.Vector3());
+  const [bubbleTime, setBubbleTime] = useState(0);
 
   const pointerDown = (event) => {
     if (active) {
@@ -46,7 +47,8 @@ export default forwardRef(function({index, position, active=false, setMoveToInde
     circleRef.current.scale.copy(smoothedScale);
 
     if (!active) {
-      circleRef.current.position.y = Math.sin(state.clock.getElapsedTime() * 0.5 + index);
+      setBubbleTime(bubbleTime + delta);
+      circleRef.current.position.y = Math.sin(bubbleTime * 0.5 + index);
     }
   });
 
