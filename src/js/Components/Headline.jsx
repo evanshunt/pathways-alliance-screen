@@ -8,14 +8,13 @@ export default () => {
   const textRef = useRef();
 
   useFrame((state, delta) => {
-    console.log(state.elapsedTime);
     textRef.current.rotation.y = Math.sin(state.clock.getElapsedTime()*0.3) * 0.04 + 0.04;
   });
 
   return ( 
     <Text
       ref={textRef}
-      position={[-2, 2, 3]}
+      position={[-1, 2, 3]}
       fontSize={1.2}
       maxWidth={10}
       letterSpacing={-0.08}
