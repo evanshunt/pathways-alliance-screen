@@ -45,7 +45,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   useLayoutEffect((state, delta) => {
     // If a bubble has been activated, move the camera to it
     if (bubblesRef.current[moveToIndex] != null) {
-      modifiedCameraPosition.lerp(bubblesRef.current[moveToIndex].position, 1);
+      modifiedCameraPosition.lerp(new THREE.Vector3(bubblesRef.current[moveToIndex].position.x + 3, 0, 0), 1);
       setMoveToIndex(-1);
     }
   }, [moveToIndex]);
@@ -58,7 +58,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     // Check if camera is near a bubble and activate it
     let closeMatch = false;
     bubblesRef.current.forEach((element, index) => {
-      if (Math.abs(state.camera.position.x - element.position.x) < 8) {
+      if (Math.abs(state.camera.position.x - (element.position.x + 3)) < 6) {
         setActiveItemIndex(index);
         closeMatch = true;
       }

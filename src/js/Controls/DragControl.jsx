@@ -32,7 +32,11 @@ export default ({dragDisabled, modifiedCameraPosition}) => {
         }
         modifiedCameraPosition.x -= dragMovement.x * 50;
         setDragLength(dragLength + Math.abs(dragMovement.x));
+
+        // Bounds of drag
         if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
+        // This 100 value should come from the size of the scene
+        if (modifiedCameraPosition.x > 100) modifiedCameraPosition.x = 100;
       }
       setCurrentDragPosition(newDragPosition);
     }

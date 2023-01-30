@@ -11,15 +11,6 @@ const Experience = ({debug}) => {
   const [openItemIndex, setOpenItemIndex] = useState(-1);
 
   useFrame((state) => {
-    // Lock camera to x-axis while panning
-    const lastBubblePositionX =
-      bubblesRef.current[bubblesRef.current.length - 1].position.x;
-    if (state.camera.position.x < 0) {
-      state.camera.position.x = 0;
-    } else if (state.camera.position.x > lastBubblePositionX) {
-      state.camera.position.x = lastBubblePositionX;
-    }
-
     state.camera.position.y = 0;
     state.camera.position.z = 10;
     state.camera.lookAt(state.camera.position.x, 0, 0);
