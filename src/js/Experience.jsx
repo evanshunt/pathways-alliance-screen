@@ -32,6 +32,7 @@ const Experience = ({debug}) => {
   return (
     <>
       { debug && <Perf position="top-left" /> }
+      <color attach="background" args={["#163bae"]} />
       <Scene
         bubblesRef={bubblesRef}
         activeItemIndex={activeItemIndex}

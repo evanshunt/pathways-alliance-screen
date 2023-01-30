@@ -1,14 +1,12 @@
-import { useMemo, useRef, useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from 'three';
-import { Text, CubicBezierLine, useTexture } from "@react-three/drei";
-import { useTranslation } from "react-i18next";
-import gsap from "gsap";
+import { CubicBezierLine, useTexture } from "@react-three/drei";
 import DragControl from './Controls/DragControl.jsx';
 import Bubble from "./Components/Bubble.jsx";
+import Headline from "./Components/Headline.jsx";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
-  const textRef = useRef();
   const textures = useTexture({
     capture: '/images/capture.png',
     dollars: '/images/dollars.png',
@@ -20,7 +18,6 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ moveToIndex, setMoveToIndex] = useState(-1);
-  const { t } = useTranslation("common");
   const bubbles = [
     'industry',
     'dollars',
@@ -29,18 +26,6 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     'storage',
     'innovation'
   ]
-
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.fromTo(
-        textRef.current.rotation,
-        { y: -0.02 },
-        { y: 0.02, duration: 5, yoyo: true, repeat: -1 }
-      );
-    });
-
-    return () => ctx.revert();
-  }, []);
 
   useLayoutEffect((state, delta) => {
     // If a bubble has been activated, move the camera to it
@@ -76,18 +61,8 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
         dragDisabled={openItemIndex == -1 && moveToIndex == -1 && true} 
         modifiedCameraPosition={modifiedCameraPosition} 
       />
+      <Headline />
 
-      {/* Translatable text */}
-      <Text
-        ref={textRef}
-        position={[-2, 4, 0]}
-        fontSize={1.8}
-        maxWidth={16}
-        letterSpacing={-0.08}
-        lineHeight={0.8}
-      >
-        {t("main.title")}
-      </Text>
       {[...Array(20)].map((x, i) => {
         return (
           <CubicBezierLine
