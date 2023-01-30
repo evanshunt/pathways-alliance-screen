@@ -5,7 +5,7 @@ button#languagetoggle {
   right: 2em;
   background-color: rgba(#fff, 0.2);
   color: $blue;
-  padding: 0.5em 0em;
+  padding: 0.75em 0em;
   display: flex;
   justify-content: space-around;
   width: 6em;
@@ -19,12 +19,13 @@ button#languagetoggle {
     top: 0;
     left: 0;
     background-color: white;
-    border-radius: 1em;
+    border-radius: 2em;
     transition: left 0.3s;
   }
 
   span {
     z-index: 1;
+    width: 2em;
   }
 
   &.right::before {
