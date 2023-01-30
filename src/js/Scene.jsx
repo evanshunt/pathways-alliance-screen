@@ -9,11 +9,26 @@ import Bubble from "./Components/Bubble.jsx";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
   const textRef = useRef();
-  const [ captureText, dollarsTexture, industryTexture, innovationTexture, networkTexture, storageTexture  ] = useTexture(['/images/capture.png', '/images/dollars.png', '/images/industry.png', '/images/innovation.png', '/images/network.png', '/images/storage.png']);
+  const textures = useTexture({
+    capture: '/images/capture.png',
+    dollars: '/images/dollars.png',
+    industry: '/images/industry.png',
+    innovation: '/images/innovation.png',
+    network: '/images/network.png',
+    storage: '/images/storage.png'
+  });
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ moveToIndex, setMoveToIndex] = useState(-1);
   const { t } = useTranslation("common");
+  const bubbles = [
+    'industry',
+    'dollars',
+    'capture',
+    'network',
+    'storage',
+    'innovation'
+  ]
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -89,12 +104,13 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
       })}
 
       {/* Bubbles */}
-      {[...Array(7)].map((x, i) => {
+      {bubbles.map((view, i) => {
         return (
           <Bubble
             key={`circle=${i}`}
             index={i}
-            texture={industryTexture}
+            view={view}
+            texture={textures[view]}
             position={[i * 16 + 10, -1, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;

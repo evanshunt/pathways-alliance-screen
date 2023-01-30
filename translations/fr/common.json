@@ -9,6 +9,26 @@
     "industry": {
       "headline": "Fédérer une industrie",
       "subhead": "Que se passe-t-il lorsque des concurrents collaborent?"
+    },
+    "dollars": {
+      "headline": "Diriger des dollars",
+      "subhead": "Combien de milliards s'ajoutent au zéro net?"
+    },
+    "capture": {
+      "headline": "Capter le CO2",
+      "subhead": "Comment capter une molécule?"
+    },
+    "network": {
+      "headline": "Créer un réseau",
+      "subhead": "Jusqu'où une installation peut-elle atteindre?"
+    },
+    "storage": {
+      "headline": "Stocker le CO2",
+      "subhead": "Où va le CO2 capté ?"
+    },
+    "innovation": {
+      "headline": "Stimuler l'innovation",
+      "subhead": "Quelle est la prochaine étape pour notre projet net-zero?"
     }
   }
 }

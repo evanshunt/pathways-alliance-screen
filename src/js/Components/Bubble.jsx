@@ -5,7 +5,7 @@ import * as THREE from 'three';
 import { useTranslation } from "react-i18next";
 import DetailViewCollaboration from './DetailViewCollaboration';
 
-export default forwardRef(function({index, position, texture, active=false, setMoveToIndex, open=false, setOpenItemIndex}, ref) {
+export default forwardRef(function({index, position, view, texture, active=false, setMoveToIndex, open=false, setOpenItemIndex}, ref) {
   const bubbleRef = useRef();
   useImperativeHandle(ref, () => bubbleRef.current);
   const [scale] = useState(() => new THREE.Vector3());
@@ -67,8 +67,8 @@ export default forwardRef(function({index, position, texture, active=false, setM
         className={active ? "bubbletext active" : "bubbletext inactive"}
         position={index % 2 === 0 ? [3,-1,0] : [3,3,0]}
       >
-        <h2>{t("bubbles.industry.headline")}</h2>
-        <h3>{t("bubbles.industry.subhead")}</h3>
+        <h2>{t("bubbles." + view + ".headline")}</h2>
+        <h3>{t("bubbles." + view + ".subhead")}</h3>
       </Html>
       { open && <DetailViewCollaboration />}
     </group>

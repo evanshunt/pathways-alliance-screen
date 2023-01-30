@@ -9,6 +9,26 @@
     "industry": {
       "headline": "Uniting an industry",
       "subhead": "What happens when competitors collaborate?"
+    },
+    "dollars": {
+      "headline": "Directing dollars",
+      "subhead": "How many billions add up to net zero?"
+    },
+    "capture": {
+      "headline": "Capturing CO2",
+      "subhead": "How do you catch a molecule?"
+    },
+    "network": {
+      "headline": "Creating a network",
+      "subhead": "How far can one facility reach?"
+    },
+    "storage": {
+      "headline": "Storing CO2",
+      "subhead": "Where does captured CO2 go?"
+    },
+    "innovation": {
+      "headline": "Driving innovation",
+      "subhead": "What's next for our net-zero project?"
     }
   }
 }
