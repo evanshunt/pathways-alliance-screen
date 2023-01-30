@@ -4,5 +4,11 @@
   },
   "controls": {
     "home": "Home"
+  },
+  "bubbles": {
+    "industry": {
+      "headline": "Uniting an industry",
+      "subhead": "What happens when competitors collaborate?"
+    }
   }
 }

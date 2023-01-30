@@ -4,5 +4,11 @@
   },
   "controls": {
     "home": "Accueil"
+  },
+  "bubbles": {
+    "industry": {
+      "headline": "Fédérer une industrie",
+      "subhead": "Que se passe-t-il lorsque des concurrents collaborent?"
+    }
   }
 }

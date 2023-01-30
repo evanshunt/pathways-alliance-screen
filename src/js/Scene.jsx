@@ -1,4 +1,4 @@
-import { useRef, useState, useLayoutEffect } from "react";
+import { useMemo, useRef, useState, useLayoutEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from 'three';
 import { Text, CubicBezierLine, useTexture } from "@react-three/drei";
@@ -9,7 +9,7 @@ import Bubble from "./Components/Bubble.jsx";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
   const textRef = useRef();
-  const [ industryTexture ] = useTexture(['/industry.png'])
+  const [ captureText, dollarsTexture, industryTexture, innovationTexture, networkTexture, storageTexture  ] = useTexture(['/images/capture.png', '/images/dollars.png', '/images/industry.png', '/images/innovation.png', '/images/network.png', '/images/storage.png']);
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ moveToIndex, setMoveToIndex] = useState(-1);
@@ -28,6 +28,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   }, []);
 
   useLayoutEffect((state, delta) => {
+    // If a bubble has been activated, move the camera to it
     if (bubblesRef.current[moveToIndex] != null) {
       modifiedCameraPosition.lerp(bubblesRef.current[moveToIndex].position, 1);
       setMoveToIndex(-1);
@@ -35,10 +36,11 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   }, [moveToIndex]);
 
   useFrame((state, delta) => {
+    // Pull the camera towards the new position, smoothly
     smoothedCameraPosition.lerp(modifiedCameraPosition, 5 * delta);
     state.camera.position.copy(smoothedCameraPosition);
 
-    // Check if camera is near a bubble an activate it
+    // Check if camera is near a bubble and activate it
     let closeMatch = false;
     bubblesRef.current.forEach((element, index) => {
       if (Math.abs(state.camera.position.x - element.position.x) < 8) {
@@ -46,6 +48,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
         closeMatch = true;
       }
     });
+    // Otherwise close the bubbles
     if (!closeMatch) {
       setActiveItemIndex(-1);
     }

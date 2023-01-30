@@ -2,6 +2,7 @@ import { forwardRef, useState, useLayoutEffect, useRef, useImperativeHandle } fr
 import { useFrame } from "@react-three/fiber";
 import { Circle, Html } from "@react-three/drei";
 import * as THREE from 'three';
+import { useTranslation } from "react-i18next";
 import DetailViewCollaboration from './DetailViewCollaboration';
 
 export default forwardRef(function({index, position, texture, active=false, setMoveToIndex, open=false, setOpenItemIndex}, ref) {
@@ -10,6 +11,7 @@ export default forwardRef(function({index, position, texture, active=false, setM
   const [scale] = useState(() => new THREE.Vector3());
   const [smoothedScale] = useState(() => new THREE.Vector3());
   const [bubbleTime, setBubbleTime] = useState(0);
+  const { t } = useTranslation("common");
 
   const pointerDown = (event) => {
     if (active) {
@@ -65,8 +67,8 @@ export default forwardRef(function({index, position, texture, active=false, setM
         className={active ? "bubbletext active" : "bubbletext inactive"}
         position={index % 2 === 0 ? [3,-1,0] : [3,3,0]}
       >
-        <h2>Uniting an industry</h2>
-        <h3>What happens when competitors collaborate?</h3>
+        <h2>{t("bubbles.industry.headline")}</h2>
+        <h3>{t("bubbles.industry.subhead")}</h3>
       </Html>
       { open && <DetailViewCollaboration />}
     </group>
