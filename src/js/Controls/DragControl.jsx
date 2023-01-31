@@ -1,8 +1,6 @@
-import { useFrame } from "@react-three/fiber";
-import { useRef, useState } from "react";
+import { forwardRef, useState } from "react";
 
-export default ({sceneLength, dragDisabled, modifiedCameraPosition}) => {
-  const dragRef = useRef();
+export default forwardRef(({sceneLength, dragDisabled, modifiedCameraPosition}, ref) => {
   const [dragPointer, setDragPointer] = useState(false);
   const [currentDragPosition, setCurrentDragPosition] = useState(false);
   const [dragLength, setDragLength] = useState(0);
@@ -53,14 +51,9 @@ export default ({sceneLength, dragDisabled, modifiedCameraPosition}) => {
     }
   };
 
-  useFrame((state, delta) => {
-    // Keep drag control hotspot in front of camera at all times
-    dragRef.current.position.x = state.camera.position.x;
-  });
-
   return (
     <mesh
-      ref={dragRef}
+      ref={ref}
       // Puts it close up to the camera
       // This doesn't feel amazing, would rather sync mesh size to viewable area by camera
       position={[0,0,9.9]} 
@@ -73,4 +66,4 @@ export default ({sceneLength, dragDisabled, modifiedCameraPosition}) => {
       <planeGeometry args={[10, 1]} />
     </mesh>
   );
-}
+});

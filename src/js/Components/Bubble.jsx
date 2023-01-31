@@ -46,7 +46,7 @@ export default forwardRef(function({index, position, view, texture, active=false
         <meshStandardMaterial
           map={texture}
           transparent={true}
-          opacity={active ? "1" : "0.6"}
+          opacity={active ? "1" : "0.9"}
         />
       </Circle>
       <Html

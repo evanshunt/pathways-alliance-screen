@@ -1,23 +1,19 @@
-import { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
+import { forwardRef } from "react";
 import { Html } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 
-export default ({openItemIndex, setOpenItemIndex, setActiveItemIndex}) => {
-  const homeRef = useRef();
+export default forwardRef(({openItemIndex, setOpenItemIndex, setActiveItemIndex}, ref) => {
   const { t } = useTranslation("common");
 
-  useFrame((state, delta) => {
-    // Keep home button control hotspot in front of camera at all times
-    homeRef.current.position.x = state.camera.position.x;
-    homeRef.current.position.y = state.camera.position.y;
-  });
-
   return (
-    <group ref={homeRef}>
+    <group ref={ref} >
       <Html
         fullscreen
         zIndexRange={[100, 0]}
+        // Not sure why I need this rule
+        style={{
+          transform: 'translate(50%, 50%)'
+        }}
       >
         <button id="home" disabled={openItemIndex > -1 ? false : true}
           onPointerDown={(event) => {
@@ -37,4 +33,4 @@ export default ({openItemIndex, setOpenItemIndex, setActiveItemIndex}) => {
       </Html>
     </group>
   );
-};
+});

@@ -4,11 +4,14 @@ import { EffectComposer, Vignette } from '@react-three/postprocessing'
 import * as THREE from 'three';
 import { CubicBezierLine, useTexture } from "@react-three/drei";
 import DragControl from './Controls/DragControl.jsx';
+import HomeControl from "./Controls/HomeControl.jsx";
 import Bubble from "./Components/Bubble.jsx";
 import Headline from "./Components/Headline.jsx";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
   const backgroundRef = useRef();
+  const dragControlRef = useRef();
+  const homeControlRef = useRef();
   const textures = useTexture({
     capture: '/images/capture.png',
     dollars: '/images/dollars.png',
@@ -20,6 +23,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
   const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3(0, 0, 10));
   const [ moveToIndex, setMoveToIndex] = useState(-1);
+  const bubbleDistance = 15;
   const bubbles = [
     'industry',
     'dollars',
@@ -28,7 +32,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     'storage',
     'innovation'
   ];
-  const sceneLength = bubbles.length * 14 + 20;
+  const sceneLength = bubbles.length * bubbleDistance + 20;
   const backgroundStartColour = new THREE.Color(0x252154);
   const backgroundEarlyMidColour = new THREE.Color(0x163bae);
   const backgroundLateMidColour = new THREE.Color(0x0c4eea);
@@ -59,6 +63,12 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     smoothedCameraPosition.lerp(modifiedCameraPosition, 5 * delta);
     state.camera.position.copy(smoothedCameraPosition);
 
+    // Keep the controls pinned
+    dragControlRef.current.position.x = smoothedCameraPosition.x;
+    dragControlRef.current.position.y = smoothedCameraPosition.y;
+    homeControlRef.current.position.x = smoothedCameraPosition.x;
+    homeControlRef.current.position.y = smoothedCameraPosition.y;
+
     // Check if camera is near a bubble and activate it if not already open
     if (openItemIndex == -1) {
       let closeMatch = false;
@@ -77,14 +87,14 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     // Set background colour based on position
     let backgroundColour = new THREE.Color();
     const sceneTravelled = state.camera.position.x / sceneLength;
-    if (sceneTravelled <= 0.3) {
-      backgroundColour.lerpColors(backgroundStartColour, backgroundEarlyMidColour, (sceneTravelled-0)/0.3);
+    if (sceneTravelled <= 0.2) {
+      backgroundColour.lerpColors(backgroundStartColour, backgroundEarlyMidColour, (sceneTravelled-0)/0.2);
     }
-    else if (sceneTravelled <= 0.7) {
-      backgroundColour.lerpColors(backgroundEarlyMidColour, backgroundLateMidColour, (sceneTravelled-0.3)/0.7);
+    else if (sceneTravelled <= 0.8) {
+      backgroundColour.lerpColors(backgroundEarlyMidColour, backgroundLateMidColour, (sceneTravelled-0.2)/0.8);
     }
     else {
-      backgroundColour.lerpColors(backgroundLateMidColour, backgroundEndColour, (sceneTravelled-0.7)/0.3);
+      backgroundColour.lerpColors(backgroundLateMidColour, backgroundEndColour, (sceneTravelled-0.8)/0.2);
     }
 
     backgroundRef.current.r = backgroundColour.r;
@@ -100,9 +110,16 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
       <color ref={backgroundRef} attach="background" />
       <ambientLight intensity={1} />
       <DragControl 
+        ref={dragControlRef}
         sceneLength={sceneLength}
         dragDisabled={openItemIndex == -1 && moveToIndex == -1 && true} 
         modifiedCameraPosition={modifiedCameraPosition} 
+      />
+      <HomeControl
+        ref={homeControlRef}
+        openItemIndex={openItemIndex}
+        setOpenItemIndex={setOpenItemIndex}
+        setActiveItemIndex={setActiveItemIndex}
       />
       <Headline />
 
@@ -128,7 +145,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
             index={i}
             view={view}
             texture={textures[view]}
-            position={[i * 14 + 10, -1, 0]}
+            position={[i * bubbleDistance + 10, -1, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;
             }}
