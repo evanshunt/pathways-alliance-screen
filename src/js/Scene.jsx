@@ -34,7 +34,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     'storage',
     'innovation'
   ];
-  const sceneLength = bubbles.length * bubbleDistance + 30;
+  const sceneLength = bubbles.length * bubbleDistance + 40;
   const backgroundStartColour = new THREE.Color(0x252154);
   const backgroundEarlyMidColour = new THREE.Color(0x163bae);
   const backgroundLateMidColour = new THREE.Color(0x0c4eea);
@@ -128,7 +128,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
         setActiveItemIndex={setActiveItemIndex}
       />
       <Headline position={[-1, 2, 3]} />
-      <Payoff position={[sceneLength-15, 0, -2]} />
+      <Payoff position={[sceneLength-25, 0, -2]} />
       <Waves sceneLength={sceneLength} />
 
       {bubbles.map((view, i) => {
