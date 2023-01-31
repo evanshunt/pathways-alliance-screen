@@ -32,11 +32,11 @@ const Experience = ({debug}) => {
         setOpenItemIndex={setOpenItemIndex}
       />
 
-      <Autopilot
+      {/* <Autopilot
         activeTimeout={60} // How long before autopilot starts
         interval={10} // How long between onIntervalComplete callbacks
         onIntervalComplete={handleAutopilotIntervalComplete}
-      />
+      /> */}
     </>
   );
 };

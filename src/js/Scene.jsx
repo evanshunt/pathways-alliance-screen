@@ -1,38 +1,44 @@
 import { useRef, useState, useLayoutEffect } from "react";
 import { useFrame } from "@react-three/fiber";
-import { EffectComposer, Vignette } from '@react-three/postprocessing'
-import * as THREE from 'three';
+import { EffectComposer, Vignette } from "@react-three/postprocessing";
+import * as THREE from "three";
 import { useTexture } from "@react-three/drei";
-import DragControl from './Controls/DragControl.jsx';
+import DragControl from "./Controls/DragControl.jsx";
 import HomeControl from "./Controls/HomeControl.jsx";
 import Bubble from "./Components/Bubble.jsx";
 import Headline from "./Components/Headline.jsx";
 import Payoff from "./Components/Payoff.jsx";
 import Waves from "./Components/Waves.jsx";
 
-const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
+const Scene = ({
+  bubblesRef,
+  activeItemIndex,
+  setActiveItemIndex,
+  openItemIndex,
+  setOpenItemIndex,
+}) => {
   const backgroundRef = useRef();
   const dragControlRef = useRef();
   const homeControlRef = useRef();
   const textures = useTexture({
-    capture: '/images/capture.png',
-    dollars: '/images/dollars.png',
-    industry: '/images/industry.png',
-    innovation: '/images/innovation.png',
-    network: '/images/network.png',
-    storage: '/images/storage.png'
+    capture: "/images/capture.png",
+    dollars: "/images/dollars.png",
+    industry: "/images/industry.png",
+    innovation: "/images/innovation.png",
+    network: "/images/network.png",
+    storage: "/images/storage.png",
   });
-  const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
-  const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3(0, 0, 10));
-  const [ moveToIndex, setMoveToIndex] = useState(-1);
+  const [smoothedCameraPosition] = useState(() => new THREE.Vector3());
+  const [modifiedCameraPosition] = useState(() => new THREE.Vector3(0, 0, 10));
+  const [moveToIndex, setMoveToIndex] = useState(-1);
   const bubbleDistance = 15;
   const bubbles = [
-    'industry',
-    'dollars',
-    'capture',
-    'network',
-    'storage',
-    'innovation'
+    "industry",
+    "dollars",
+    "capture",
+    "network",
+    "storage",
+    "innovation",
   ];
   const sceneLength = bubbles.length * bubbleDistance + 40;
   const backgroundStartColour = new THREE.Color(0x252154);
@@ -40,25 +46,31 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
   const backgroundLateMidColour = new THREE.Color(0x0c4eea);
   const backgroundEndColour = new THREE.Color(0x00eefa);
 
-  useLayoutEffect((state, delta) => {
-    // If a bubble has been opened, move the camera to the center of it
-    // And maybe do more stuff, TBD!
-    setActiveItemIndex(-1);
-    if (bubblesRef.current[openItemIndex] != null) {
-      modifiedCameraPosition.y = -13;
-    }
-    else {
-      modifiedCameraPosition.y = 0;
-    }
-  }, [openItemIndex]);
+  useLayoutEffect(
+    (state, delta) => {
+      // If a bubble has been opened, move the camera to the center of it
+      // And maybe do more stuff, TBD!
+      setActiveItemIndex(-1);
+      if (bubblesRef.current[openItemIndex] != null) {
+        modifiedCameraPosition.y = -13;
+      } else {
+        modifiedCameraPosition.y = 0;
+      }
+    },
+    [openItemIndex]
+  );
 
-  useLayoutEffect((state, delta) => {
-    // If a bubble has been activated, move the camera to it
-    if (bubblesRef.current[moveToIndex] != null) {
-      modifiedCameraPosition.x = bubblesRef.current[moveToIndex].position.x + 3;
-      setMoveToIndex(-1);
-    }
-  }, [moveToIndex]);
+  useLayoutEffect(
+    (state, delta) => {
+      // If a bubble has been activated, move the camera to it
+      if (bubblesRef.current[moveToIndex] != null) {
+        modifiedCameraPosition.x =
+          bubblesRef.current[moveToIndex].position.x + 3;
+        setMoveToIndex(-1);
+      }
+    },
+    [moveToIndex]
+  );
 
   useFrame((state, delta) => {
     // Pull the camera towards the new position, smoothly
@@ -90,10 +102,30 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     let backgroundColour = new THREE.Color();
     const sceneTravelled = state.camera.position.x / sceneLength;
     if (sceneTravelled <= -0.5) backgroundColour.copy(backgroundEndColour);
-    else if (sceneTravelled < 0) backgroundColour.lerpColors(backgroundEndColour, backgroundStartColour, (0.5+sceneTravelled)/0.5);
-    else if (sceneTravelled <= 0.2) backgroundColour.lerpColors(backgroundStartColour, backgroundEarlyMidColour, (sceneTravelled-0)/0.2);
-    else if (sceneTravelled <= 0.8) backgroundColour.lerpColors(backgroundEarlyMidColour, backgroundLateMidColour, (sceneTravelled-0.2)/0.8);
-    else if (sceneTravelled <= 1) backgroundColour.lerpColors(backgroundLateMidColour, backgroundEndColour, (sceneTravelled-0.8)/0.2);
+    else if (sceneTravelled < 0)
+      backgroundColour.lerpColors(
+        backgroundEndColour,
+        backgroundStartColour,
+        (0.5 + sceneTravelled) / 0.5
+      );
+    else if (sceneTravelled <= 0.2)
+      backgroundColour.lerpColors(
+        backgroundStartColour,
+        backgroundEarlyMidColour,
+        (sceneTravelled - 0) / 0.2
+      );
+    else if (sceneTravelled <= 0.8)
+      backgroundColour.lerpColors(
+        backgroundEarlyMidColour,
+        backgroundLateMidColour,
+        (sceneTravelled - 0.2) / 0.8
+      );
+    else if (sceneTravelled <= 1)
+      backgroundColour.lerpColors(
+        backgroundLateMidColour,
+        backgroundEndColour,
+        (sceneTravelled - 0.8) / 0.2
+      );
     else backgroundColour.copy(backgroundEndColour);
 
     backgroundRef.current.r = backgroundColour.r;
@@ -103,8 +135,8 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     // Check if we've gone to the bounds and flip back
     if (sceneTravelled > 0.99) {
       modifiedCameraPosition.x = 0;
-      smoothedCameraPosition.x = -0.5*sceneLength;
-      state.camera.position.x = -0.5*sceneLength;
+      smoothedCameraPosition.x = -0.5 * sceneLength;
+      state.camera.position.x = -0.5 * sceneLength;
     }
   });
 
@@ -115,11 +147,11 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
       </EffectComposer>
       <color ref={backgroundRef} attach="background" />
       <ambientLight intensity={1} />
-      <DragControl 
+      <DragControl
         ref={dragControlRef}
         sceneLength={sceneLength}
-        dragDisabled={openItemIndex == -1 && moveToIndex == -1 && true} 
-        modifiedCameraPosition={modifiedCameraPosition} 
+        dragDisabled={openItemIndex == -1 && moveToIndex == -1 && true}
+        modifiedCameraPosition={modifiedCameraPosition}
       />
       <HomeControl
         ref={homeControlRef}
@@ -128,7 +160,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
         setActiveItemIndex={setActiveItemIndex}
       />
       <Headline position={[-1, 2, 3]} />
-      <Payoff position={[sceneLength-25, 0, -2]} />
+      <Payoff position={[sceneLength - 25, 0, -2]} />
       <Waves sceneLength={sceneLength} />
 
       {bubbles.map((view, i) => {
