@@ -36,7 +36,7 @@ export default forwardRef(function({index, position, view, texture, active=false
 
     if (!active) {
       setBubbleTime(bubbleTime + delta);
-      bubbleRef.current.position.y = Math.sin(bubbleTime * 0.5 + index);
+      bubbleRef.current.position.y += Math.sin(bubbleTime * 0.5) * 0.005;
     }
   });
 

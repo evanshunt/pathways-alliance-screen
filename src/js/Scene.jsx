@@ -87,25 +87,29 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     // Set background colour based on position
     let backgroundColour = new THREE.Color();
     const sceneTravelled = state.camera.position.x / sceneLength;
-    if (sceneTravelled <= 0.2) {
-      backgroundColour.lerpColors(backgroundStartColour, backgroundEarlyMidColour, (sceneTravelled-0)/0.2);
-    }
-    else if (sceneTravelled <= 0.8) {
-      backgroundColour.lerpColors(backgroundEarlyMidColour, backgroundLateMidColour, (sceneTravelled-0.2)/0.8);
-    }
-    else {
-      backgroundColour.lerpColors(backgroundLateMidColour, backgroundEndColour, (sceneTravelled-0.8)/0.2);
-    }
+    if (sceneTravelled <= -0.5) backgroundColour.copy(backgroundEndColour);
+    else if (sceneTravelled < 0) backgroundColour.lerpColors(backgroundEndColour, backgroundStartColour, (0.5+sceneTravelled)/0.5);
+    else if (sceneTravelled <= 0.2) backgroundColour.lerpColors(backgroundStartColour, backgroundEarlyMidColour, (sceneTravelled-0)/0.2);
+    else if (sceneTravelled <= 0.8) backgroundColour.lerpColors(backgroundEarlyMidColour, backgroundLateMidColour, (sceneTravelled-0.2)/0.8);
+    else if (sceneTravelled <= 1) backgroundColour.lerpColors(backgroundLateMidColour, backgroundEndColour, (sceneTravelled-0.8)/0.2);
+    else backgroundColour.copy(backgroundEndColour);
 
     backgroundRef.current.r = backgroundColour.r;
     backgroundRef.current.g = backgroundColour.g;
     backgroundRef.current.b = backgroundColour.b;
+
+    // Check if we've gone to the bounds and flip back
+    if (sceneTravelled > 0.99) {
+      modifiedCameraPosition.x = 0;
+      smoothedCameraPosition.x = -0.5*sceneLength;
+      state.camera.position.x = -0.5*sceneLength;
+    }
   });
 
   return (
     <>
       <EffectComposer>
-        <Vignette eskil={true} offset={0.5} darkness={0.35} />
+        <Vignette eskil={true} offset={0.5} darkness={0.5} />
       </EffectComposer>
       <color ref={backgroundRef} attach="background" />
       <ambientLight intensity={1} />
@@ -145,7 +149,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
             index={i}
             view={view}
             texture={textures[view]}
-            position={[i * bubbleDistance + 10, -1, 0]}
+            position={[i * bubbleDistance + 10, i % 2 === 0 ? -1.8 : 2.3, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;
             }}
