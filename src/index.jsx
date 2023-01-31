@@ -33,7 +33,11 @@ root.render(
   <StrictMode>
     <I18nextProvider i18n={i18next}>
       <Leva collapsed />
-      <Canvas camera={{ position: [0, 0, 10] }}>
+      <Canvas 
+        camera={{
+          position: [ 0, 0, 0 ]
+        }}
+      >
         <Experience debug={debug} />
       </Canvas>
       <LanguageControl />

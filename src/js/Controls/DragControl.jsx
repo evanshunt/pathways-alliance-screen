@@ -70,7 +70,7 @@ export default ({sceneLength, dragDisabled, modifiedCameraPosition}) => {
       onPointerUp={(event) => pointerUp(event)}
       onPointerLeave={(event) => pointerUp(event)}
     >
-    <planeGeometry args={[10, 1]} />
+      <planeGeometry args={[10, 1]} />
     </mesh>
   );
 }

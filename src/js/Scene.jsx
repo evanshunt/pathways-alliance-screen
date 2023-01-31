@@ -18,7 +18,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     storage: '/images/storage.png'
   });
   const [ smoothedCameraPosition ] = useState(() => new THREE.Vector3());
-  const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3());
+  const [ modifiedCameraPosition ] = useState(() => new THREE.Vector3(0, 0, 10));
   const [ moveToIndex, setMoveToIndex] = useState(-1);
   const bubbles = [
     'industry',

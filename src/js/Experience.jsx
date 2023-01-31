@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import { useFrame } from "@react-three/fiber";
 import { Perf } from 'r3f-perf'
 import Autopilot from "./Controls/Autopilot";
 import Scene from "./Scene";
@@ -9,12 +8,6 @@ const Experience = ({debug}) => {
   const bubblesRef = useRef([]);
   const [activeItemIndex, setActiveItemIndex] = useState(-1);
   const [openItemIndex, setOpenItemIndex] = useState(-1);
-
-  useFrame((state) => {
-    state.camera.position.y = 0;
-    state.camera.position.z = 10;
-    state.camera.lookAt(state.camera.position.x, 0, 0);
-  });
 
   const handleAutopilotIntervalComplete = () => {
     if (
