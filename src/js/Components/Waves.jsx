@@ -1,18 +1,60 @@
-import { CubicBezierLine } from "@react-three/drei";
+import { useRef } from "react";
+import { extend, useFrame } from "@react-three/fiber";
+import { MeshLine, MeshLineMaterial } from "three.meshline";
 
-export default ({sceneLength}) => {
-  {[...Array(20)].map((x, i) => {
+extend({ MeshLine, MeshLineMaterial });
+
+// TODO: Add Leva controls
+const Waves = () => {
+  const meshlinesRef = useRef([]);
+  const numWaves = 20;
+  const amplitude = 4;
+  const frequency = 8;
+  const numPoints = 200;
+  const xLength = 220;
+  const xOffset = -30;
+  const xOffsetMultiplier = 0.4;
+  const yOffset = 0;
+  const yOffsetMultiplier = 0.1;
+  let time = 0;
+
+  useFrame((state, delta) => {
+    time += delta;
+
+    [...Array(numWaves)].map((el, i) => {
+      const points = [];
+      for (let point = 1; point < numPoints; point += 1) {
+        points.push(
+          (point / numPoints) * xLength + xOffset + i * xOffsetMultiplier,
+          amplitude * Math.sin(point / frequency + yOffset + time) +
+            +i * yOffsetMultiplier,
+          -1
+        );
+      }
+
+      if (meshlinesRef.current[i]) {
+        meshlinesRef.current[i].setPoints(points);
+      }
+    });
+  });
+
+  return [...Array(numWaves)].map((el, i) => {
     return (
-      <CubicBezierLine
-        start={[-25, 0 + 0.2 * i, -5]}
-        end={[sceneLength, 0 + 0.2 * i, -5]}
-        midA={[sceneLength/2, -8 + 0.2 * i, -5]}
-        midB={[sceneLength/2, 8 + 0.2 * i, -5]}
-        color="#00EEFA"
-        lineWidth={1}
-        segments={100}
-        key={`line-${i}`}
-      />
+      <mesh key={`waveline-${i}`}>
+        <meshLine
+          attach="geometry"
+          ref={(el) => {
+            meshlinesRef.current[i] = el;
+          }}
+        />
+        <meshLineMaterial
+          attach="material"
+          lineWidth={0.03}
+          color={[0, 238, 250]} // #00eefa
+        />
+      </mesh>
     );
-  })}
-}
+  });
+};
+
+export default Waves;
