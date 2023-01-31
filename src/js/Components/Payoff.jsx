@@ -10,12 +10,14 @@ export default ({position}) => {
     <Text
       ref={textRef}
       position={position}
-      fontSize={1.2}
-      maxWidth={10}
+      fontSize={3}
+      maxWidth={12}
       letterSpacing={-0.08}
       lineHeight={0.8}
+      anchorX={"center"}
+      anchorY={"middle"}
     >
-      {t("main.title")}
+      {t("main.payoff")}
     </Text>
   );
 }

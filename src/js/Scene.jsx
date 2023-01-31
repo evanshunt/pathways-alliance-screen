@@ -2,11 +2,13 @@ import { useRef, useState, useLayoutEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 import { EffectComposer, Vignette } from '@react-three/postprocessing'
 import * as THREE from 'three';
-import { CubicBezierLine, useTexture } from "@react-three/drei";
+import { useTexture } from "@react-three/drei";
 import DragControl from './Controls/DragControl.jsx';
 import HomeControl from "./Controls/HomeControl.jsx";
 import Bubble from "./Components/Bubble.jsx";
 import Headline from "./Components/Headline.jsx";
+import Payoff from "./Components/Payoff.jsx";
+import Waves from "./Components/Waves.jsx";
 
 const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex, setOpenItemIndex }) => {
   const backgroundRef = useRef();
@@ -32,7 +34,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     'storage',
     'innovation'
   ];
-  const sceneLength = bubbles.length * bubbleDistance + 20;
+  const sceneLength = bubbles.length * bubbleDistance + 30;
   const backgroundStartColour = new THREE.Color(0x252154);
   const backgroundEarlyMidColour = new THREE.Color(0x163bae);
   const backgroundLateMidColour = new THREE.Color(0x0c4eea);
@@ -60,7 +62,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
 
   useFrame((state, delta) => {
     // Pull the camera towards the new position, smoothly
-    smoothedCameraPosition.lerp(modifiedCameraPosition, 5 * delta);
+    smoothedCameraPosition.lerp(modifiedCameraPosition, 4 * delta);
     state.camera.position.copy(smoothedCameraPosition);
 
     // Keep the controls pinned
@@ -125,22 +127,9 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
         setOpenItemIndex={setOpenItemIndex}
         setActiveItemIndex={setActiveItemIndex}
       />
-      <Headline />
-
-      {[...Array(20)].map((x, i) => {
-        return (
-          <CubicBezierLine
-            start={[-25, 0 + 0.2 * i, -5]}
-            end={[sceneLength, 0 + 0.2 * i, -5]}
-            midA={[sceneLength/2, -8 + 0.2 * i, -5]}
-            midB={[sceneLength/2, 8 + 0.2 * i, -5]}
-            color="#00EEFA" // Default
-            lineWidth={1} // In pixels (default)
-            segments={100} // If true, renders a THREE.LineSegments2. Otherwise, renders a THREE.Line2
-            key={`line-${i}`}
-          />
-        );
-      })}
+      <Headline position={[-1, 2, 3]} />
+      <Payoff position={[sceneLength-15, 0, -2]} />
+      <Waves sceneLength={sceneLength} />
 
       {bubbles.map((view, i) => {
         return (
