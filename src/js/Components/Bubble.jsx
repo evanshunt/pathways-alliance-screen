@@ -50,6 +50,7 @@ export default forwardRef(function({index, position, view, texture, active=false
         />
       </Circle>
       <Html
+        zIndexRange={[100, 0]}
         className={active ? "bubbletext active" : "bubbletext inactive"}
         position={index % 2 === 0 ? [3,-1,0] : [3,3,0]}
       >

@@ -9,7 +9,7 @@ export default forwardRef(({openItemIndex, setOpenItemIndex, setActiveItemIndex}
     <group ref={ref} >
       <Html
         fullscreen
-        zIndexRange={[100, 0]}
+        zIndexRange={[200, 100]}
         // Not sure why I need this rule
         style={{
           transform: 'translate(50%, 50%)'
