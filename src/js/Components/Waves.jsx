@@ -48,7 +48,7 @@ const Waves = ({ sceneLength }) => {
         />
         <meshLineMaterial
           attach="material"
-          lineWidth={0.03}
+          lineWidth={0.02}
           color={[0, 238, 250]} // #00eefa
         />
       </mesh>

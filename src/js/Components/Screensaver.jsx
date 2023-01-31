@@ -1,33 +1,43 @@
 import { useRef, useEffect, useState } from "react";
 import { useFrame } from "@react-three/fiber";
+import { Html } from "@react-three/drei";
+import * as THREE from "three";
 
-const Autopilot = ({ activeTimeout, interval, onIntervalComplete }) => {
+const Screensaver = ({
+  activeTimeout,
+  interval,
+  onScreensaverStart,
+  onScreensaverEnd,
+}) => {
   const timeElapsed = useRef(0);
-  const [isAutopilotActive, setIsAutoPilotActive] = useState(false);
+  const [isScreensaverActive, setIsScreensaverActive] = useState(false);
   const [isTimerActive, setIsTimerActive] = useState(true);
 
   const handleWindowClick = (event) => {
     setIsTimerActive(false);
-    setIsAutoPilotActive(false);
+    setIsScreensaverActive(false);
   };
 
   const resetTimeElapsed = () => {
     timeElapsed.current = 0;
   };
 
+  const onIntervalComplete = () => {};
+
   useFrame((state, delta) => {
-    // console.log("Autopilot timeElapsed: " + timeElapsed.current);
+    // console.log("Screensaver timeElapsed: " + timeElapsed.current);
     if (isTimerActive) {
       timeElapsed.current += delta;
 
-      if (isAutopilotActive) {
+      if (isScreensaverActive) {
         if (timeElapsed.current >= interval) {
           onIntervalComplete();
           resetTimeElapsed();
         }
       } else {
         if (timeElapsed.current >= activeTimeout) {
-          setIsAutoPilotActive(true);
+          setIsScreensaverActive(true);
+          onScreensaverStart();
           onIntervalComplete();
           resetTimeElapsed();
         }
@@ -46,17 +56,26 @@ const Autopilot = ({ activeTimeout, interval, onIntervalComplete }) => {
     if (!isTimerActive) {
       resetTimeElapsed();
 
-      if (!isAutopilotActive) {
+      if (!isScreensaverActive) {
         setIsTimerActive(true);
       }
     }
   }, [isTimerActive]);
 
   useEffect(() => {
-    if (!isAutopilotActive) {
+    if (!isScreensaverActive) {
       setIsTimerActive(true);
+      onScreensaverEnd();
     }
-  }, [isAutopilotActive]);
+  }, [isScreensaverActive]);
+
+  return (
+    <group position={new THREE.Vector3()}>
+      <Html>
+        <h2>Screensaver</h2>
+      </Html>
+    </group>
+  );
 };
 
-export default Autopilot;
+export default Screensaver;

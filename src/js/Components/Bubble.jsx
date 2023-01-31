@@ -17,6 +17,7 @@ export default forwardRef(function (
     view,
     texture,
     active = false,
+    onActive,
     setMoveToIndex,
     open = false,
     setOpenItemIndex,
@@ -33,6 +34,7 @@ export default forwardRef(function (
   const pointerDown = (event) => {
     if (active) {
       setOpenItemIndex(index);
+      onActive();
     } else if (!open) {
       setMoveToIndex(index);
     }

@@ -5,6 +5,7 @@ import * as THREE from "three";
 import { useTexture } from "@react-three/drei";
 import DragControl from "./Controls/DragControl.jsx";
 import HomeControl from "./Controls/HomeControl.jsx";
+import Screensaver from "./Components/Screensaver";
 import Bubble from "./Components/Bubble.jsx";
 import Headline from "./Components/Headline.jsx";
 import Payoff from "./Components/Payoff.jsx";
@@ -17,6 +18,11 @@ const Scene = ({
   openItemIndex,
   setOpenItemIndex,
 }) => {
+  const Mode = Object.freeze({
+    Screensaver: "Screensaver",
+    Pathway: "Pathway",
+    Detail: "Detail",
+  });
   const backgroundRef = useRef();
   const dragControlRef = useRef();
   const homeControlRef = useRef();
@@ -31,6 +37,7 @@ const Scene = ({
   const [smoothedCameraPosition] = useState(() => new THREE.Vector3());
   const [modifiedCameraPosition] = useState(() => new THREE.Vector3(0, 0, 10));
   const [moveToIndex, setMoveToIndex] = useState(-1);
+  const [mode, setMode] = useState(Mode.Pathway);
   const bubbleDistance = 15;
   const bubbles = [
     "industry",
@@ -46,31 +53,33 @@ const Scene = ({
   const backgroundLateMidColour = new THREE.Color(0x0c4eea);
   const backgroundEndColour = new THREE.Color(0x00eefa);
 
-  useLayoutEffect(
-    (state, delta) => {
-      // If a bubble has been opened, move the camera to the center of it
-      // And maybe do more stuff, TBD!
-      setActiveItemIndex(-1);
-      if (bubblesRef.current[openItemIndex] != null) {
-        modifiedCameraPosition.y = -13;
-      } else {
-        modifiedCameraPosition.y = 0;
-      }
-    },
-    [openItemIndex]
-  );
+  useLayoutEffect(() => {
+    // If a bubble has been opened, move the camera to the center of it
+    // And maybe do more stuff, TBD!
+    setActiveItemIndex(-1);
+  }, [openItemIndex, mode]);
 
-  useLayoutEffect(
-    (state, delta) => {
-      // If a bubble has been activated, move the camera to it
-      if (bubblesRef.current[moveToIndex] != null) {
-        modifiedCameraPosition.x =
-          bubblesRef.current[moveToIndex].position.x + 3;
-        setMoveToIndex(-1);
-      }
-    },
-    [moveToIndex]
-  );
+  useLayoutEffect(() => {
+    if (mode === Mode.Screensaver) {
+      modifiedCameraPosition.y = 13;
+    } else if (mode === Mode.Pathway) {
+      modifiedCameraPosition.y = 0;
+    } else if (mode === Mode.Detail) {
+      modifiedCameraPosition.y = -13;
+    }
+
+    if (activeItemIndex === -1 && mode === Mode.Screensaver) {
+      modifiedCameraPosition.x = 0;
+    }
+  }, [activeItemIndex, mode]);
+
+  useLayoutEffect(() => {
+    // If a bubble has been activated, move the camera to it
+    if (bubblesRef.current[moveToIndex] != null) {
+      modifiedCameraPosition.x = bubblesRef.current[moveToIndex].position.x + 3;
+      setMoveToIndex(-1);
+    }
+  }, [moveToIndex]);
 
   useFrame((state, delta) => {
     // Pull the camera towards the new position, smoothly
@@ -145,8 +154,9 @@ const Scene = ({
       <EffectComposer>
         <Vignette eskil={true} offset={0.5} darkness={0.5} />
       </EffectComposer>
-      <color ref={backgroundRef} attach="background" />
       <ambientLight intensity={1} />
+      <color ref={backgroundRef} attach="background" />
+      <Waves sceneLength={sceneLength} />
       <DragControl
         ref={dragControlRef}
         sceneLength={sceneLength}
@@ -156,12 +166,26 @@ const Scene = ({
       <HomeControl
         ref={homeControlRef}
         openItemIndex={openItemIndex}
-        setOpenItemIndex={setOpenItemIndex}
-        setActiveItemIndex={setActiveItemIndex}
+        onPointerDown={() => {
+          setMode(Mode.Pathway);
+          setOpenItemIndex(-1);
+          setActiveItemIndex(-1);
+        }}
       />
+
+      <Screensaver
+        activeTimeout={10} // How long before Screensaver starts
+        interval={5} // How long between slides
+        onScreensaverStart={() => {
+          setMode(Mode.Screensaver);
+          setOpenItemIndex(-1);
+          setActiveItemIndex(-1);
+        }}
+        onScreensaverEnd={() => setMode(Mode.Pathway)}
+      />
+
       <Headline position={[-1, 2, 3]} />
       <Payoff position={[sceneLength - 25, 0, -2]} />
-      <Waves sceneLength={sceneLength} />
 
       {bubbles.map((view, i) => {
         return (
@@ -175,6 +199,7 @@ const Scene = ({
               bubblesRef.current[i] = el;
             }}
             active={activeItemIndex == i && true}
+            onActive={() => setMode(Mode.Detail)}
             setActiveItemIndex={setActiveItemIndex}
             open={openItemIndex == i && true}
             setOpenItemIndex={setOpenItemIndex}
