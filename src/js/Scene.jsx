@@ -39,14 +39,14 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     // And maybe do more stuff, TBD!
     setActiveItemIndex(-1);
     if (bubblesRef.current[openItemIndex] != null) {
-      modifiedCameraPosition.lerp(new THREE.Vector3(bubblesRef.current[openItemIndex].position.x, 0, 0), 1);
+      modifiedCameraPosition.x = bubblesRef.current[openItemIndex].position.x;
     }
   }, [openItemIndex]);
 
   useLayoutEffect((state, delta) => {
     // If a bubble has been activated, move the camera to it
     if (bubblesRef.current[moveToIndex] != null) {
-      modifiedCameraPosition.lerp(new THREE.Vector3(bubblesRef.current[moveToIndex].position.x + 3, 0, 0), 1);
+      modifiedCameraPosition.x = bubblesRef.current[moveToIndex].position.x + 3;
       setMoveToIndex(-1);
     }
   }, [moveToIndex]);

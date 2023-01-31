@@ -3,7 +3,6 @@ import { useFrame } from "@react-three/fiber";
 import { Circle, Html } from "@react-three/drei";
 import * as THREE from 'three';
 import { useTranslation } from "react-i18next";
-import DetailViewCollaboration from './DetailViewCollaboration';
 
 export default forwardRef(function({index, position, view, texture, active=false, setMoveToIndex, open=false, setOpenItemIndex}, ref) {
   const bubbleRef = useRef();
@@ -57,7 +56,6 @@ export default forwardRef(function({index, position, view, texture, active=false
         <h2>{t("bubbles." + view + ".headline")}</h2>
         <h3>{t("bubbles." + view + ".subhead")}</h3>
       </Html>
-      { open && <DetailViewCollaboration />}
     </group>
   );
 });
