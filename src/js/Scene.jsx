@@ -28,7 +28,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     'storage',
     'innovation'
   ];
-  const sceneLength = bubbles.length * 16 + 20;
+  const sceneLength = bubbles.length * 14 + 20;
   const backgroundStartColour = new THREE.Color(0x252154);
   const backgroundEarlyMidColour = new THREE.Color(0x163bae);
   const backgroundLateMidColour = new THREE.Color(0x0c4eea);
@@ -39,7 +39,10 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     // And maybe do more stuff, TBD!
     setActiveItemIndex(-1);
     if (bubblesRef.current[openItemIndex] != null) {
-      modifiedCameraPosition.x = bubblesRef.current[openItemIndex].position.x;
+      modifiedCameraPosition.y = -13;
+    }
+    else {
+      modifiedCameraPosition.y = 0;
     }
   }, [openItemIndex]);
 
@@ -74,14 +77,14 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
     // Set background colour based on position
     let backgroundColour = new THREE.Color();
     const sceneTravelled = state.camera.position.x / sceneLength;
-    if (sceneTravelled <= 0.2) {
-      backgroundColour.lerpColors(backgroundStartColour, backgroundEarlyMidColour, (sceneTravelled-0)/0.2);
+    if (sceneTravelled <= 0.3) {
+      backgroundColour.lerpColors(backgroundStartColour, backgroundEarlyMidColour, (sceneTravelled-0)/0.3);
     }
-    else if (sceneTravelled <= 0.8) {
-      backgroundColour.lerpColors(backgroundEarlyMidColour, backgroundLateMidColour, (sceneTravelled-0.2)/0.6);
+    else if (sceneTravelled <= 0.7) {
+      backgroundColour.lerpColors(backgroundEarlyMidColour, backgroundLateMidColour, (sceneTravelled-0.3)/0.7);
     }
     else {
-      backgroundColour.lerpColors(backgroundLateMidColour, backgroundEndColour, (sceneTravelled-0.8)/0.2);
+      backgroundColour.lerpColors(backgroundLateMidColour, backgroundEndColour, (sceneTravelled-0.7)/0.3);
     }
 
     backgroundRef.current.r = backgroundColour.r;
@@ -106,10 +109,10 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
       {[...Array(20)].map((x, i) => {
         return (
           <CubicBezierLine
-            start={[-25, 0 + 0.2 * i, 0]}
-            end={[20, 0 + 0.2 * i, 0]}
-            midA={[0, -8 + 0.2 * i, 0]}
-            midB={[0, 8 + 0.2 * i, 0]}
+            start={[-25, 0 + 0.2 * i, -5]}
+            end={[sceneLength, 0 + 0.2 * i, -5]}
+            midA={[sceneLength/2, -8 + 0.2 * i, -5]}
+            midB={[sceneLength/2, 8 + 0.2 * i, -5]}
             color="#00EEFA" // Default
             lineWidth={1} // In pixels (default)
             segments={100} // If true, renders a THREE.LineSegments2. Otherwise, renders a THREE.Line2
@@ -125,7 +128,7 @@ const Scene = ({ bubblesRef, activeItemIndex, setActiveItemIndex, openItemIndex,
             index={i}
             view={view}
             texture={textures[view]}
-            position={[i * 16 + 10, -1, 0]}
+            position={[i * 14 + 10, -1, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;
             }}
