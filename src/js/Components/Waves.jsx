@@ -5,30 +5,27 @@ import { MeshLine, MeshLineMaterial } from "three.meshline";
 extend({ MeshLine, MeshLineMaterial });
 
 // TODO: Add Leva controls
-const Waves = () => {
+const Waves = ({sceneLength}) => {
   const meshlinesRef = useRef([]);
-  const time = useRef(0);
   const numWaves = 20;
-  const amplitude = 4;
-  const frequency = 8;
+  const amplitude = 3;
+  const frequency = 4;
   const numPoints = 200;
-  const xLength = 220;
-  const xOffset = -30;
-  const xOffsetMultiplier = 0.4;
+  const xLength = sceneLength*2.5;
+  const xOffset = -sceneLength;
+  const xOffsetMultiplier = 0.5;
   const yOffset = 0;
   const yOffsetMultiplier = 0.1;
 
   useFrame((state, delta) => {
-    time.current += delta;
-
     [...Array(numWaves)].map((el, i) => {
       const points = [];
       for (let point = 1; point < numPoints; point += 1) {
         points.push(
           (point / numPoints) * xLength + xOffset + i * xOffsetMultiplier,
-          amplitude * Math.sin(point / frequency + yOffset + time.current) +
-            +i * yOffsetMultiplier,
-          -1
+          amplitude * Math.sin(point / frequency + state.clock.elapsedTime * 0.2) +
+            +i * yOffsetMultiplier + yOffset,
+          -4
         );
       }
 
@@ -51,7 +48,6 @@ const Waves = () => {
           attach="material"
           lineWidth={0.03}
           color={[0, 238, 250]} // #00eefa
-          transparent
         />
       </mesh>
     );
