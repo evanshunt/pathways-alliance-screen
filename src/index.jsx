@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import { Leva } from "leva";
+
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 import Experience from "./js/Experience.jsx";
@@ -11,7 +12,7 @@ import common_en from "../translations/en/common.json";
 import common_fr from "../translations/fr/common.json";
 
 const queryString = new URLSearchParams(window.location.hash.slice(1));
-const debug = queryString.has('debug');
+const debug = queryString.has("debug");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 i18next.init({
@@ -32,10 +33,15 @@ i18next.init({
 root.render(
   <StrictMode>
     <I18nextProvider i18n={i18next}>
-      <Leva collapsed />
-      <Canvas 
+      <Leva
+        collapsed
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      />
+      <Canvas
         camera={{
-          position: [ 0, 0, 0 ]
+          position: [0, 0, 0],
         }}
       >
         <Experience debug={debug} />

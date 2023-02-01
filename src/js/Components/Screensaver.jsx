@@ -1,46 +1,46 @@
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import Slide from "./Slide";
 import * as THREE from "three";
+import { useControls } from "leva";
 
-const Screensaver = ({
-  activeTimeout,
-  interval,
-  onScreensaverStart,
-  onScreensaverEnd,
-}) => {
-  const timeElapsed = useRef(0);
-  const [isScreensaverActive, setIsScreensaverActive] = useState(false);
-  const [isTimerActive, setIsTimerActive] = useState(true);
+const Screensaver = (props) => {
+  const { onScreensaverStart, onScreensaverEnd } = props;
+  const [isActiveTimeoutComplete, setIsActiveTimeoutComplete] = useState(false);
+  const [isTimerActive, setIsTimerActive] = useState(false);
+  const [{ timeElapsed, activeTimeout, intervalTimeout }, setLeva] =
+    useControls("Screensaver", () => ({
+      activeTimeout: props.activeTimeout,
+      intervalTimeout: props.intervalTimeout,
+      timeElapsed: 0,
+    }));
 
   const handleWindowClick = (event) => {
     setIsTimerActive(false);
-    setIsScreensaverActive(false);
+    setIsActiveTimeoutComplete(false);
   };
 
   const resetTimeElapsed = () => {
-    timeElapsed.current = 0;
+    setLeva({ timeElapsed: 0 });
   };
 
-  const onIntervalComplete = () => {
+  const onIntervalTimeoutComplete = () => {
     console.log("interval complete");
   };
 
   useFrame((state, delta) => {
-    // console.log("Screensaver timeElapsed: " + timeElapsed.current);
     if (isTimerActive) {
-      timeElapsed.current += delta;
+      setLeva({ timeElapsed: timeElapsed + delta });
 
-      if (isScreensaverActive) {
-        if (timeElapsed.current >= interval) {
-          onIntervalComplete();
+      if (isActiveTimeoutComplete) {
+        if (timeElapsed >= intervalTimeout) {
+          onIntervalTimeoutComplete();
           resetTimeElapsed();
         }
       } else {
-        if (timeElapsed.current >= activeTimeout) {
-          setIsScreensaverActive(true);
-          onScreensaverStart();
-          onIntervalComplete();
+        if (timeElapsed >= activeTimeout) {
+          setIsActiveTimeoutComplete(true);
+          onIntervalTimeoutComplete();
           resetTimeElapsed();
         }
       }
@@ -58,22 +58,26 @@ const Screensaver = ({
     if (!isTimerActive) {
       resetTimeElapsed();
 
-      if (!isScreensaverActive) {
+      if (!isActiveTimeoutComplete) {
         setIsTimerActive(true);
       }
     }
   }, [isTimerActive]);
 
   useEffect(() => {
-    if (!isScreensaverActive) {
+    if (!isActiveTimeoutComplete) {
       setIsTimerActive(true);
       onScreensaverEnd();
+    } else {
+      onScreensaverStart();
     }
-  }, [isScreensaverActive]);
+  }, [isActiveTimeoutComplete]);
 
   return (
     <group position={new THREE.Vector3()}>
-      <Slide />
+      {[...Array(4)].map((el, i) => {
+        return <Slide position={[0 + 35 * i, 15, 0]} key={`slide-${i}`} />;
+      })}
     </group>
   );
 };

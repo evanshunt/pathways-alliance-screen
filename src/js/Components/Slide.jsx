@@ -1,14 +1,16 @@
 import { forwardRef } from "react";
 import { Html } from "@react-three/drei";
 
-export default forwardRef(({}, ref) => {
+export default forwardRef(({ active, position }, ref) => {
   return (
-    <group ref={ref} position={[0, 15, 0]}>
+    <group ref={ref} position={position}>
       <Html fullscreen zIndexRange={[100, 0]}>
-        <section className="detailview">
+        <section
+          className={active ? "detailview active" : "detailview inactive"}
+        >
           <div className="content">
             <div className="text">
-              <h2>Climate change means we all need to change</h2>
+              <h2>Climate change is a critical challenge</h2>
               <p>
                 Canada's oil sands have a shared goal: net-zero by 2050. But no
                 company can get there alone.
@@ -25,7 +27,28 @@ export default forwardRef(({}, ref) => {
                 million tonnes per year.
               </p>
             </div>
-            <div className="illustration"></div>
+            <div className="illustration">
+              <ul className="logos">
+                <li>
+                  <img src="/images/logos/canadian-natural.png" />
+                </li>
+                <li>
+                  <img src="/images/logos/cenovus.png" />
+                </li>
+                <li>
+                  <img src="/images/logos/conoco-phillips.png" />
+                </li>
+                <li>
+                  <img src="/images/logos/imperial.png" />
+                </li>
+                <li>
+                  <img src="/images/logos/meg.png" />
+                </li>
+                <li>
+                  <img src="/images/logos/suncor.png" />
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </Html>

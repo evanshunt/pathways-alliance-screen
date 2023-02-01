@@ -128,7 +128,7 @@ export default ({ debug }) => {
 
       <Screensaver
         activeTimeout={30} // How long before Screensaver starts
-        interval={5} // How long between slides
+        intervalTimeout={5} // How long between slides
         onScreensaverStart={() => {
           setMode(Mode.Screensaver);
           setOpenItemIndex(-1);
@@ -162,7 +162,7 @@ export default ({ debug }) => {
       })}
 
       <DetailView
-        active={mode === Mode.Detail? true : false}
+        active={mode === Mode.Detail ? true : false}
         ref={detailViewRef}
       />
     </>
