@@ -54,7 +54,7 @@ export default forwardRef(function (
 
     if (!active) {
       setBubbleTime(bubbleTime + delta);
-      bubbleRef.current.position.y += Math.sin(bubbleTime * 0.5) * 0.005;
+      bubbleRef.current.position.y += Math.sin(bubbleTime * 0.5) * 0.003;
     }
   });
 
@@ -63,8 +63,6 @@ export default forwardRef(function (
       <Circle args={[2, 64]} onPointerUp={pointerDown}>
         <meshStandardMaterial
           map={texture}
-          // transparent
-          // opacity={active ? "1" : "0.9"}
         />
       </Circle>
       <Html

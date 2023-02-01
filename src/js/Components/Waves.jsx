@@ -13,9 +13,10 @@ const Waves = ({ sceneLength }) => {
   const numPoints = 200;
   const xLength = sceneLength * 2.5;
   const xOffset = -sceneLength;
-  const xOffsetMultiplier = 0.5;
+  const xOffsetMultiplier = 0.6;
   const yOffset = 0;
-  const yOffsetMultiplier = 0.1;
+  const yOffsetMultiplier = 0.13;
+  const zOffset = -8;
 
   useFrame((state, delta) => {
     [...Array(numWaves)].map((el, i) => {
@@ -27,7 +28,7 @@ const Waves = ({ sceneLength }) => {
             Math.sin(point / frequency + state.clock.elapsedTime * 0.2) +
             +i * yOffsetMultiplier +
             yOffset,
-          -4
+          zOffset
         );
       }
 
