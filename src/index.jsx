@@ -33,12 +33,7 @@ i18next.init({
 root.render(
   <StrictMode>
     <I18nextProvider i18n={i18next}>
-      <Leva
-        collapsed
-        onClick={(e) => {
-          e.stopPropagation();
-        }}
-      />
+      <Leva collapsed />
       <Canvas
         camera={{
           position: [0, 0, 0],
