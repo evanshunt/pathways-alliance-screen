@@ -59,11 +59,11 @@ export default ({debug}) => {
 
   useLayoutEffect(() => {
     if (mode === Mode.Screensaver) {
-      modifiedCameraPosition.y = 13;
+      modifiedCameraPosition.y = 15;
     } else if (mode === Mode.Pathway) {
       modifiedCameraPosition.y = 0;
     } else if (mode === Mode.Detail) {
-      modifiedCameraPosition.y = -13;
+      modifiedCameraPosition.y = -20;
     }
   }, [activeItemIndex, mode]);
 

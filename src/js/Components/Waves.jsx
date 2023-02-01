@@ -8,15 +8,15 @@ extend({ MeshLine, MeshLineMaterial });
 const Waves = ({ sceneLength }) => {
   const meshlinesRef = useRef([]);
   const numWaves = 20;
-  const amplitude = 3;
-  const frequency = 4;
+  const amplitude = 3.5;
+  const frequency = 4.5;
   const numPoints = 200;
   const xLength = sceneLength * 2.5;
   const xOffset = -sceneLength;
   const xOffsetMultiplier = 0.6;
   const yOffset = 0;
   const yOffsetMultiplier = 0.13;
-  const zOffset = -8;
+  const zOffset = -10;
 
   useFrame((state, delta) => {
     [...Array(numWaves)].map((el, i) => {
