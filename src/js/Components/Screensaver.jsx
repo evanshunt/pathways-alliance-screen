@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Html } from "@react-three/drei";
+import Slide from "./Slide";
 import * as THREE from "three";
 
 const Screensaver = ({
@@ -22,7 +22,9 @@ const Screensaver = ({
     timeElapsed.current = 0;
   };
 
-  const onIntervalComplete = () => {};
+  const onIntervalComplete = () => {
+    console.log("interval complete");
+  };
 
   useFrame((state, delta) => {
     // console.log("Screensaver timeElapsed: " + timeElapsed.current);
@@ -71,9 +73,7 @@ const Screensaver = ({
 
   return (
     <group position={new THREE.Vector3()}>
-      <Html>
-        <h2>Screensaver</h2>
-      </Html>
+      <Slide />
     </group>
   );
 };

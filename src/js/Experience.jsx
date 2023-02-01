@@ -32,12 +32,12 @@ export default ({ debug }) => {
     network: "/images/bubbles/network.png",
     storage: "/images/bubbles/storage.png",
   });
+  const [mode, setMode] = useState(Mode.Pathway);
   const [smoothedCameraPosition] = useState(() => new THREE.Vector3());
   const [modifiedCameraPosition] = useState(() => new THREE.Vector3(0, 0, 10));
   const [activeItemIndex, setActiveItemIndex] = useState(-1);
   const [openItemIndex, setOpenItemIndex] = useState(-1);
   const [moveToIndex, setMoveToIndex] = useState(-1);
-  const [mode, setMode] = useState(Mode.Pathway);
   const bubbleDistance = 15;
   const bubbles = [
     "industry",
