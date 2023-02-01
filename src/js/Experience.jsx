@@ -25,12 +25,12 @@ export default ({debug}) => {
   const homeControlRef = useRef();
   const detailViewRef = useRef([]);
   const textures = useTexture({
-    capture: "/images/capture.png",
-    dollars: "/images/dollars.png",
-    industry: "/images/industry.png",
-    innovation: "/images/innovation.png",
-    network: "/images/network.png",
-    storage: "/images/storage.png",
+    capture: "/images/bubbles/capture.png",
+    dollars: "/images/bubbles/dollars.png",
+    industry: "/images/bubbles/industry.png",
+    innovation: "/images/bubbles/innovation.png",
+    network: "/images/bubbles/network.png",
+    storage: "/images/bubbles/storage.png",
   });
   const [smoothedCameraPosition] = useState(() => new THREE.Vector3());
   const [modifiedCameraPosition] = useState(() => new THREE.Vector3(0, 0, 10));
@@ -172,7 +172,7 @@ export default ({debug}) => {
       />
 
       <Screensaver
-        activeTimeout={10} // How long before Screensaver starts
+        activeTimeout={30} // How long before Screensaver starts
         interval={5} // How long between slides
         onScreensaverStart={() => {
           setMode(Mode.Screensaver);
@@ -207,6 +207,7 @@ export default ({debug}) => {
       })}
 
       <DetailView
+        active={mode === Mode.Detail? true : false}
         ref={detailViewRef}
       />
     </>
