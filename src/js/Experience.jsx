@@ -1,26 +1,26 @@
 import { useRef, useState, useLayoutEffect } from "react";
 import { Perf } from "r3f-perf";
 import { useFrame } from "@react-three/fiber";
-import { EffectComposer, Vignette } from "@react-three/postprocessing";
+
 import * as THREE from "three";
 import { useTexture } from "@react-three/drei";
 import DragControl from "./Controls/DragControl.jsx";
 import HomeControl from "./Controls/HomeControl.jsx";
+import Background from "./Components/Background.jsx";
+import Waves from "./Components/Waves.jsx";
 import Screensaver from "./Components/Screensaver";
 import Bubble from "./Components/Bubble.jsx";
 import Headline from "./Components/Headline.jsx";
 import Payoff from "./Components/Payoff.jsx";
-import Waves from "./Components/Waves.jsx";
 import DetailView from "./Components/DetailView.jsx";
 
-export default ({debug}) => {
+export default ({ debug }) => {
   const Mode = Object.freeze({
     Screensaver: "Screensaver",
     Pathway: "Pathway",
     Detail: "Detail",
   });
   const bubblesRef = useRef([]);
-  const backgroundRef = useRef();
   const dragControlRef = useRef();
   const homeControlRef = useRef();
   const detailViewRef = useRef([]);
@@ -48,10 +48,6 @@ export default ({debug}) => {
     "innovation",
   ];
   const sceneLength = bubbles.length * bubbleDistance + 40;
-  const backgroundStartColour = new THREE.Color(0x252154);
-  const backgroundEarlyMidColour = new THREE.Color(0x163bae);
-  const backgroundLateMidColour = new THREE.Color(0x0c4eea);
-  const backgroundEndColour = new THREE.Color(0x00eefa);
 
   useLayoutEffect(() => {
     // If a bubble has been opened, move the camera to the center of it
@@ -103,57 +99,16 @@ export default ({debug}) => {
         setActiveItemIndex(-1);
       }
     }
-
-    // Set background colour based on position
-    let backgroundColour = new THREE.Color();
-    const sceneTravelled = state.camera.position.x / sceneLength;
-    if (sceneTravelled <= -0.5) backgroundColour.copy(backgroundEndColour);
-    else if (sceneTravelled < 0)
-      backgroundColour.lerpColors(
-        backgroundEndColour,
-        backgroundStartColour,
-        (0.5 + sceneTravelled) / 0.5
-      );
-    else if (sceneTravelled <= 0.2)
-      backgroundColour.lerpColors(
-        backgroundStartColour,
-        backgroundEarlyMidColour,
-        (sceneTravelled - 0) / 0.2
-      );
-    else if (sceneTravelled <= 0.7)
-      backgroundColour.lerpColors(
-        backgroundEarlyMidColour,
-        backgroundLateMidColour,
-        (sceneTravelled - 0.2) / 0.5
-      );
-    else if (sceneTravelled <= 1)
-      backgroundColour.lerpColors(
-        backgroundLateMidColour,
-        backgroundEndColour,
-        (sceneTravelled - 0.7) / 0.3
-      );
-    else backgroundColour.copy(backgroundEndColour);
-
-    backgroundRef.current.r = backgroundColour.r;
-    backgroundRef.current.g = backgroundColour.g;
-    backgroundRef.current.b = backgroundColour.b;
-
-    // Check if we've gone to the bounds and flip back
-    if (sceneTravelled > 0.99) {
-      modifiedCameraPosition.x = 0;
-      smoothedCameraPosition.x = -0.5 * sceneLength;
-      state.camera.position.x = -0.5 * sceneLength;
-    }
   });
 
   return (
     <>
       {debug && <Perf position="top-left" />}
-      <EffectComposer>
-        <Vignette eskil={true} offset={0.5} darkness={0.5} />
-      </EffectComposer>
-      <ambientLight intensity={1} />
-      <color ref={backgroundRef} attach="background" />
+      <Background
+        sceneLength={sceneLength}
+        modifiedCameraPosition={modifiedCameraPosition}
+        smoothedCameraPosition={smoothedCameraPosition}
+      />
       <Waves sceneLength={sceneLength} />
       <DragControl
         ref={dragControlRef}
@@ -206,9 +161,7 @@ export default ({debug}) => {
         );
       })}
 
-      <DetailView
-        ref={detailViewRef}
-      />
+      <DetailView ref={detailViewRef} />
     </>
   );
 };
