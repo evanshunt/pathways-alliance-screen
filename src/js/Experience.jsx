@@ -11,6 +11,7 @@ import Bubble from "./Components/Bubble.jsx";
 import Headline from "./Components/Headline.jsx";
 import Payoff from "./Components/Payoff.jsx";
 import Waves from "./Components/Waves.jsx";
+import DetailView from "./Components/DetailView.jsx";
 
 export default ({debug}) => {
   const Mode = Object.freeze({
@@ -22,6 +23,7 @@ export default ({debug}) => {
   const backgroundRef = useRef();
   const dragControlRef = useRef();
   const homeControlRef = useRef();
+  const detailViewRef = useRef([]);
   const textures = useTexture({
     capture: "/images/capture.png",
     dollars: "/images/dollars.png",
@@ -80,11 +82,12 @@ export default ({debug}) => {
     smoothedCameraPosition.lerp(modifiedCameraPosition, 4 * delta);
     state.camera.position.copy(smoothedCameraPosition);
 
-    // Keep the controls pinned
+    // Keep the controls and different views pinned
     dragControlRef.current.position.x = smoothedCameraPosition.x;
     dragControlRef.current.position.y = smoothedCameraPosition.y;
     homeControlRef.current.position.x = smoothedCameraPosition.x;
     homeControlRef.current.position.y = smoothedCameraPosition.y;
+    detailViewRef.current.position.x = smoothedCameraPosition.x;
 
     // Check if camera is near a bubble and activate it if not already open
     if (openItemIndex == -1) {
@@ -202,6 +205,10 @@ export default ({debug}) => {
           />
         );
       })}
+
+      <DetailView
+        ref={detailViewRef}
+      />
     </>
   );
 };
