@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useContext } from "react";
 import { extend, useFrame } from "@react-three/fiber";
 import { MeshLine, MeshLineMaterial } from "three.meshline";
 

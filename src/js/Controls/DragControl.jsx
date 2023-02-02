@@ -1,6 +1,11 @@
-import { forwardRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
+import { useFrame } from "@react-three/fiber";
 
-export default forwardRef(({sceneLength, dragDisabled, modifiedCameraPosition}, ref) => {
+import { GlobalContext } from "../Context/GlobalContext";
+
+export default ({ sceneLength, isDragDisabled }) => {
+  const GLOBAL = useContext(GlobalContext);
+  const controlRef = useRef();
   const [dragPointer, setDragPointer] = useState(false);
   const [currentDragPosition, setCurrentDragPosition] = useState(false);
   const [dragLength, setDragLength] = useState(0);
@@ -8,7 +13,7 @@ export default forwardRef(({sceneLength, dragDisabled, modifiedCameraPosition}, 
   const pointerDown = (event) => {
     // Only start a drag on the first finger press
     // And only if drag hasn't been disabled
-    if (!dragPointer && dragDisabled) {
+    if (!dragPointer && !isDragDisabled) {
       setDragPointer(event.pointerId);
       setDragLength(0);
       setCurrentDragPosition(null);
@@ -16,24 +21,26 @@ export default forwardRef(({sceneLength, dragDisabled, modifiedCameraPosition}, 
   };
 
   const pointerMove = (event) => {
-    // Considering dragging calculations if the pointer 
+    // Considering dragging calculations if the pointer
     // that's moving is the one that started the drag
     if (dragPointer === event.pointerId) {
       const newDragPosition = {
         x: (event.clientX / window.innerWidth) * 2 - 1,
-        y: (event.clientY / window.innerHeight) * 2 - 1
-      }
+        y: (event.clientY / window.innerHeight) * 2 - 1,
+      };
       if (currentDragPosition) {
         const dragMovement = {
           x: newDragPosition.x - currentDragPosition.x,
-          y: newDragPosition.y - currentDragPosition.y
-        }
-        modifiedCameraPosition.x -= dragMovement.x * 50;
+          y: newDragPosition.y - currentDragPosition.y,
+        };
+        GLOBAL.cameraPositionTarget.x -= dragMovement.x * 50;
         setDragLength(dragLength + Math.abs(dragMovement.x));
 
         // Bounds of drag
-        if (modifiedCameraPosition.x < 0) modifiedCameraPosition.x = 0;
-        if (modifiedCameraPosition.x > sceneLength) modifiedCameraPosition.x = sceneLength;
+        if (GLOBAL.cameraPositionTarget.x < 0)
+          GLOBAL.cameraPositionTarget.x = 0;
+        if (GLOBAL.cameraPositionTarget.x > sceneLength)
+          GLOBAL.cameraPositionTarget.x = sceneLength;
       }
       setCurrentDragPosition(newDragPosition);
     }
@@ -50,12 +57,17 @@ export default forwardRef(({sceneLength, dragDisabled, modifiedCameraPosition}, 
     }
   };
 
+  useFrame((state, delta) => {
+    controlRef.current.position.x = GLOBAL.cameraPositionLerped.x;
+    controlRef.current.position.y = GLOBAL.cameraPositionLerped.y;
+  });
+
   return (
     <mesh
-      ref={ref}
+      ref={controlRef}
       // Puts it close up to the camera
       // This doesn't feel amazing, would rather sync mesh size to viewable area by camera
-      position={[0,0,9.9]} 
+      position={[0, 0, 9.9]}
       visible={false}
       onPointerDown={(event) => pointerDown(event)}
       onPointerMove={(event) => pointerMove(event)}
@@ -65,4 +77,4 @@ export default forwardRef(({sceneLength, dragDisabled, modifiedCameraPosition}, 
       <planeGeometry args={[10, 1]} />
     </mesh>
   );
-});
+};

@@ -1,12 +1,21 @@
-import { forwardRef } from "react";
+import { useRef, useContext } from "react";
 import { Html } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 import { useTranslation } from "react-i18next";
 
-export default forwardRef(({ openItemIndex, onPointerDown }, ref) => {
+import { GlobalContext } from "../Context/GlobalContext";
+
+export default ({ openItemIndex, onPointerDown }) => {
+  const GLOBAL = useContext(GlobalContext);
+  const controlRef = useRef();
   const { t } = useTranslation("common");
+  useFrame((state, delta) => {
+    controlRef.current.position.x = GLOBAL.cameraPositionLerped.x;
+    controlRef.current.position.y = GLOBAL.cameraPositionLerped.y;
+  });
 
   return (
-    <group ref={ref}>
+    <group ref={controlRef}>
       <Html
         fullscreen
         zIndexRange={[200, 100]}
@@ -52,4 +61,4 @@ export default forwardRef(({ openItemIndex, onPointerDown }, ref) => {
       </Html>
     </group>
   );
-});
+};

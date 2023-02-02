@@ -2,9 +2,9 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import { Leva } from "leva";
-
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
+
 import Experience from "./js/Experience.jsx";
 import LanguageControl from "./js/Controls/LanguageControl.jsx";
 

@@ -1,19 +1,27 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext, forwardRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import Slide from "./Slide";
 import * as THREE from "three";
 import { useControls } from "leva";
 
-const Screensaver = (props) => {
-  const { onScreensaverStart, onScreensaverEnd } = props;
+import { GlobalContext } from "../Context/GlobalContext";
+
+const Screensaver = forwardRef((props, ref) => {
+  const GLOBAL = useContext(GlobalContext);
+  const { sceneLength, setSceneLength, onScreensaverStart, onScreensaverEnd } =
+    props;
   const [isActiveTimeoutComplete, setIsActiveTimeoutComplete] = useState(false);
   const [isTimerActive, setIsTimerActive] = useState(false);
-  const [{ timeElapsed, activeTimeout, intervalTimeout }, setLeva] =
-    useControls("Screensaver", () => ({
-      activeTimeout: props.activeTimeout,
-      intervalTimeout: props.intervalTimeout,
-      timeElapsed: 0,
-    }));
+  const numSlides = 8;
+  const [
+    { timeElapsed, activeTimeout, intervalTimeout, slideDistance },
+    setLeva,
+  ] = useControls("Screensaver", () => ({
+    timeElapsed: 0,
+    activeTimeout: props.activeTimeout,
+    intervalTimeout: props.intervalTimeout,
+    slideDistance: 35,
+  }));
 
   const handleWindowClick = (event) => {
     setIsTimerActive(false);
@@ -25,7 +33,8 @@ const Screensaver = (props) => {
   };
 
   const onIntervalTimeoutComplete = () => {
-    console.log("interval complete");
+    GLOBAL.cameraPositionTarget.x =
+      GLOBAL.cameraPositionTarget.x + slideDistance;
   };
 
   useFrame((state, delta) => {
@@ -48,7 +57,13 @@ const Screensaver = (props) => {
   });
 
   useEffect(() => {
+    const calculatedSceneLength = numSlides * slideDistance + 40;
+    if (calculatedSceneLength > sceneLength) {
+      setSceneLength(numSlides * slideDistance + 40);
+    }
+
     window.addEventListener("pointerdown", handleWindowClick);
+
     return () => {
       window.removeEventListener("pointerdown", handleWindowClick);
     };
@@ -75,11 +90,13 @@ const Screensaver = (props) => {
 
   return (
     <group position={new THREE.Vector3()}>
-      {[...Array(4)].map((el, i) => {
-        return <Slide position={[0 + 35 * i, 15, 0]} key={`slide-${i}`} />;
+      {[...Array(numSlides)].map((el, i) => {
+        return (
+          <Slide position={[0 + slideDistance * i, 15, 0]} key={`slide-${i}`} />
+        );
       })}
     </group>
   );
-};
+});
 
 export default Screensaver;
