@@ -62,6 +62,8 @@ export default ({ debug }) => {
       />
 
       <Background sceneLength={sceneLength} />
+
+      {/* TODO: Fix wave length to only be set once, whichever is longer (bubbles or slides) */}
       <Waves sceneLength={sceneLength} />
 
       <Screensaver

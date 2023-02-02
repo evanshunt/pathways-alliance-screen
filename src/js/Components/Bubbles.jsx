@@ -37,11 +37,13 @@ const Bubbles = ({
   ];
 
   useLayoutEffect(() => {
-    const calculatedSceneLength = bubbles.length * distance + 40;
-    if (calculatedSceneLength > sceneLength) {
-      setSceneLength(bubbles.length * distance + 40);
+    if (GLOBAL.mode === GLOBAL.MODE.Pathway) {
+      const calculatedSceneLength = bubbles.length * distance + 40;
+      if (calculatedSceneLength > sceneLength) {
+        setSceneLength(bubbles.length * distance + 40);
+      }
     }
-  }, []);
+  }, [GLOBAL.mode]);
 
   useLayoutEffect(() => {
     // If a bubble has been activated, move the camera to it

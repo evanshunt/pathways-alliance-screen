@@ -57,17 +57,21 @@ const Screensaver = forwardRef((props, ref) => {
   });
 
   useEffect(() => {
-    const calculatedSceneLength = numSlides * slideDistance + 40;
-    if (calculatedSceneLength > sceneLength) {
-      setSceneLength(numSlides * slideDistance + 40);
-    }
-
     window.addEventListener("pointerdown", handleWindowClick);
 
     return () => {
       window.removeEventListener("pointerdown", handleWindowClick);
     };
   }, []);
+
+  useEffect(() => {
+    if (GLOBAL.mode === GLOBAL.MODE.Screensaver) {
+      const calculatedSceneLength = numSlides * slideDistance;
+      if (calculatedSceneLength > sceneLength) {
+        setSceneLength(numSlides * slideDistance);
+      }
+    }
+  }, [GLOBAL.mode]);
 
   useEffect(() => {
     if (!isTimerActive) {
