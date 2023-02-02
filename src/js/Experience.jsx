@@ -57,6 +57,7 @@ export default ({ debug }) => {
 
   useLayoutEffect(() => {
     if (mode === Mode.Screensaver) {
+      modifiedCameraPosition.x = 0;
       modifiedCameraPosition.y = 15;
     } else if (mode === Mode.Pathway) {
       modifiedCameraPosition.y = 0;
