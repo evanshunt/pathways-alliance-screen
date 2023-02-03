@@ -10,8 +10,8 @@ export default ({ openItemIndex, onPointerDown }) => {
   const controlRef = useRef();
   const { t } = useTranslation("common");
   useFrame((state, delta) => {
-    controlRef.current.position.x = GLOBAL.cameraPositionLerped.current.x;
-    controlRef.current.position.y = GLOBAL.cameraPositionLerped.current.y;
+    controlRef.current.position.x = GLOBAL.cameraPositionTarget.current.x;
+    controlRef.current.position.y = GLOBAL.cameraPositionTarget.current.y;
   }, 1);
 
   return (
@@ -19,7 +19,7 @@ export default ({ openItemIndex, onPointerDown }) => {
       <Html fullscreen zIndexRange={[200, 100]}>
         <button
           id="home"
-          disabled={openItemIndex > -1 ? false : true}
+          disabled={GLOBAL.mode !== GLOBAL.MODE.Detail}
           onPointerDown={(event) => {
             event.stopPropagation();
             onPointerDown();

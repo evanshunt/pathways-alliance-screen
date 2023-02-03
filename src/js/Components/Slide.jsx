@@ -5,9 +5,7 @@ export default forwardRef(({ active, position }, ref) => {
   return (
     <group ref={ref} position={position}>
       <Html fullscreen zIndexRange={[100, 0]}>
-        <section
-          className={active ? "detailview active" : "detailview inactive"}
-        >
+        <section className={active ? "slide active" : "slide inactive"}>
           <div className="content">
             <div className="text">
               <h2>Climate change is a critical challenge</h2>
