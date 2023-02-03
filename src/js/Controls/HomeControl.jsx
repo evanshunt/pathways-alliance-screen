@@ -20,9 +20,9 @@ export default ({ openItemIndex, onPointerDown }) => {
         fullscreen
         zIndexRange={[200, 100]}
         // Not sure why I need this rule
-        style={{
-          transform: "translate(50%, 50%)",
-        }}
+        // style={{
+        //   transform: "translate(50%, 50%)",
+        // }}
       >
         <button
           id="home"
