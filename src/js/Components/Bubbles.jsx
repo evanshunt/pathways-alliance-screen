@@ -49,10 +49,12 @@ const Bubbles = ({
 
   useLayoutEffect(() => {
     // If a bubble has been activated, move the camera to it
-    if (bubblesRef.current[moveToIndex] != null) {
-      GLOBAL.cameraPositionTarget.current.x =
-        bubblesRef.current[moveToIndex].position.x + 3;
-      setMoveToIndex(-1);
+    if (GLOBAL.mode === GLOBAL.MODE.Pathway) {
+      if (bubblesRef.current[moveToIndex] != null) {
+        GLOBAL.cameraPositionTarget.current.x =
+          bubblesRef.current[moveToIndex].position.x + 3;
+        setMoveToIndex(-1);
+      }
     }
   }, [moveToIndex]);
 

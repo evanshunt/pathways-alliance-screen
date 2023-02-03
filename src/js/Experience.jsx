@@ -39,6 +39,13 @@ export default ({ debug }) => {
     cameraPositionLerped,
   };
 
+  useLayoutEffect(() => {
+    if (mode !== MODE.Pathway) {
+      setOpenItemIndex(-1);
+      setActiveItemIndex(-1);
+    }
+  }, [mode]);
+
   return (
     <GlobalContext.Provider value={globalContextValue}>
       {debug && <Perf position="top-left" />}
@@ -52,8 +59,6 @@ export default ({ debug }) => {
         openItemIndex={openItemIndex}
         onPointerDown={() => {
           setMode(MODE.Pathway);
-          setOpenItemIndex(-1);
-          setActiveItemIndex(-1);
         }}
       />
 
@@ -68,8 +73,6 @@ export default ({ debug }) => {
         intervalTimeout={5} // How long between slides
         onScreensaverStart={() => {
           setMode(MODE.Screensaver);
-          setOpenItemIndex(-1);
-          setActiveItemIndex(-1);
         }}
         onScreensaverEnd={() => setMode(MODE.Pathway)}
       />
