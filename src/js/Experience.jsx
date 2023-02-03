@@ -28,6 +28,7 @@ export default ({ debug }) => {
   const [activeItemIndex, setActiveItemIndex] = useState(-1);
   const [openItemIndex, setOpenItemIndex] = useState(-1);
   const [moveToIndex, setMoveToIndex] = useState(-1);
+  const [maxSceneLength, setMaxSceneLength] = useState(0);
   const [sceneLength, setSceneLength] = useState(0);
 
   useLayoutEffect(() => {
@@ -47,6 +48,7 @@ export default ({ debug }) => {
   return (
     <GlobalContext.Provider value={globalContextValue}>
       {debug && <Perf position="top-left" />}
+
       <Camera sceneLength={sceneLength} />
       <DragControl
         sceneLength={sceneLength}
@@ -62,13 +64,12 @@ export default ({ debug }) => {
       />
 
       <Background sceneLength={sceneLength} />
-
-      {/* TODO: Fix wave length to only be set once, whichever is longer (bubbles or slides) */}
-      <Waves sceneLength={sceneLength} />
+      <Waves maxSceneLength={maxSceneLength} />
 
       <Screensaver
-        sceneLength={sceneLength}
         setSceneLength={setSceneLength}
+        maxSceneLength={maxSceneLength}
+        setMaxSceneLength={setMaxSceneLength}
         activeTimeout={30} // How long before Screensaver starts
         intervalTimeout={5} // How long between slides
         onScreensaverStart={() => {
@@ -78,14 +79,13 @@ export default ({ debug }) => {
         }}
         onScreensaverEnd={() => setMode(MODE.Pathway)}
       />
-
       <Headline position={[-1, 2, 3]} />
       <Payoff position={[sceneLength - 23, 0, -2]} />
-
       <Bubbles
         distance={15}
-        sceneLength={sceneLength}
         setSceneLength={setSceneLength}
+        maxSceneLength={maxSceneLength}
+        setMaxSceneLength={setMaxSceneLength}
         activeItemIndex={activeItemIndex}
         setActiveItemIndex={setActiveItemIndex}
         openItemIndex={openItemIndex}
@@ -93,7 +93,6 @@ export default ({ debug }) => {
         moveToIndex={moveToIndex}
         setMoveToIndex={setMoveToIndex}
       />
-
       <DetailView active={mode === MODE.Detail ? true : false} />
     </GlobalContext.Provider>
   );

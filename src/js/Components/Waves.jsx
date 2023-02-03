@@ -1,18 +1,18 @@
-import { useRef, useContext } from "react";
+import { useRef, useLayoutEffect } from "react";
 import { extend, useFrame } from "@react-three/fiber";
 import { MeshLine, MeshLineMaterial } from "three.meshline";
 
 extend({ MeshLine, MeshLineMaterial });
 
 // TODO: Add Leva controls
-const Waves = ({ sceneLength }) => {
+const Waves = ({ maxSceneLength }) => {
   const meshlinesRef = useRef([]);
   const numWaves = 20;
   const amplitude = 3.5;
   const frequency = 4.5;
-  const numPoints = 200;
-  const xLength = sceneLength * 2.5;
-  const xOffset = -sceneLength;
+  const numPoints = maxSceneLength * 1.65;
+  const xLength = maxSceneLength * 2.5;
+  const xOffset = -maxSceneLength;
   const xOffsetMultiplier = 0.6;
   const yOffset = 0;
   const yOffsetMultiplier = 0.13;

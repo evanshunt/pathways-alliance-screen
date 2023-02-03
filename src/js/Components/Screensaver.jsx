@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext, forwardRef } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useFrame } from "@react-three/fiber";
 import Slide from "./Slide";
 import * as THREE from "three";
@@ -6,10 +6,15 @@ import { useControls } from "leva";
 
 import { GlobalContext } from "../Context/GlobalContext";
 
-const Screensaver = forwardRef((props, ref) => {
+const Screensaver = (props) => {
   const GLOBAL = useContext(GlobalContext);
-  const { sceneLength, setSceneLength, onScreensaverStart, onScreensaverEnd } =
-    props;
+  const {
+    setSceneLength,
+    maxSceneLength,
+    setMaxSceneLength,
+    onScreensaverStart,
+    onScreensaverEnd,
+  } = props;
   const [isActiveTimeoutComplete, setIsActiveTimeoutComplete] = useState(false);
   const [isTimerActive, setIsTimerActive] = useState(false);
   const numSlides = 8;
@@ -66,9 +71,10 @@ const Screensaver = forwardRef((props, ref) => {
 
   useEffect(() => {
     if (GLOBAL.mode === GLOBAL.MODE.Screensaver) {
-      const calculatedSceneLength = numSlides * slideDistance;
-      if (calculatedSceneLength > sceneLength) {
-        setSceneLength(numSlides * slideDistance);
+      setSceneLength(numSlides * slideDistance);
+      const calculatedMaxSceneLength = numSlides * slideDistance;
+      if (calculatedMaxSceneLength > maxSceneLength) {
+        setMaxSceneLength(calculatedMaxSceneLength);
       }
     }
   }, [GLOBAL.mode]);
@@ -101,6 +107,6 @@ const Screensaver = forwardRef((props, ref) => {
       })}
     </group>
   );
-});
+};
 
 export default Screensaver;

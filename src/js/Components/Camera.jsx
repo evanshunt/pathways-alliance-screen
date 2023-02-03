@@ -1,10 +1,11 @@
-import { useContext, useLayoutEffect } from "react";
+import { useContext, useLayoutEffect, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 
 import { GlobalContext } from "../Context/GlobalContext";
 
 const Camera = ({ sceneLength }) => {
   const GLOBAL = useContext(GlobalContext);
+
   useFrame((state, delta) => {
     // Update camera position to target, smoothly
     GLOBAL.cameraPositionLerped.current.lerp(

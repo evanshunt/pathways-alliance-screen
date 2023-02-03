@@ -7,8 +7,9 @@ import Bubble from "./Bubble.jsx";
 
 const Bubbles = ({
   distance,
-  sceneLength,
   setSceneLength,
+  maxSceneLength,
+  setMaxSceneLength,
   activeItemIndex,
   setActiveItemIndex,
   openItemIndex,
@@ -38,9 +39,10 @@ const Bubbles = ({
 
   useLayoutEffect(() => {
     if (GLOBAL.mode === GLOBAL.MODE.Pathway) {
-      const calculatedSceneLength = bubbles.length * distance + 40;
-      if (calculatedSceneLength > sceneLength) {
-        setSceneLength(bubbles.length * distance + 40);
+      setSceneLength(bubbles.length * distance + 40);
+      const calculatedMaxSceneLength = bubbles.length * distance + 40;
+      if (calculatedMaxSceneLength > maxSceneLength) {
+        setMaxSceneLength(calculatedMaxSceneLength);
       }
     }
   }, [GLOBAL.mode]);
