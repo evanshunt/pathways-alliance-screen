@@ -10,20 +10,13 @@ export default ({ openItemIndex, onPointerDown }) => {
   const controlRef = useRef();
   const { t } = useTranslation("common");
   useFrame((state, delta) => {
-    controlRef.current.position.x = GLOBAL.cameraPositionLerped.x;
-    controlRef.current.position.y = GLOBAL.cameraPositionLerped.y;
-  });
+    controlRef.current.position.x = GLOBAL.cameraPositionLerped.current.x;
+    controlRef.current.position.y = GLOBAL.cameraPositionLerped.current.y;
+  }, 1);
 
   return (
     <group ref={controlRef}>
-      <Html
-        fullscreen
-        zIndexRange={[200, 100]}
-        // Not sure why I need this rule
-        // style={{
-        //   transform: "translate(50%, 50%)",
-        // }}
-      >
+      <Html fullscreen zIndexRange={[200, 100]}>
         <button
           id="home"
           disabled={openItemIndex > -1 ? false : true}

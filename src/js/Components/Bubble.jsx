@@ -61,9 +61,7 @@ export default forwardRef(function (
   return (
     <group ref={bubbleRef} position={position}>
       <Circle args={[2, 64]} onPointerUp={pointerDown}>
-        <meshStandardMaterial
-          map={texture}
-        />
+        <meshStandardMaterial map={texture} />
       </Circle>
       <Html
         zIndexRange={[100, 0]}

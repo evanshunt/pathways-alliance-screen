@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect, useRef } from "react";
 import { Perf } from "r3f-perf";
 
 import * as THREE from "three";
@@ -23,8 +23,8 @@ export default ({ debug }) => {
   });
   const [mode, setMode] = useState(MODE.Pathway);
 
-  const [cameraPositionTarget] = useState(() => new THREE.Vector3(0, 0, 10));
-  const [cameraPositionLerped] = useState(() => new THREE.Vector3());
+  const cameraPositionTarget = useRef(new THREE.Vector3(0, 0, 10));
+  const cameraPositionLerped = useRef(new THREE.Vector3());
   const [activeItemIndex, setActiveItemIndex] = useState(-1);
   const [openItemIndex, setOpenItemIndex] = useState(-1);
   const [moveToIndex, setMoveToIndex] = useState(-1);

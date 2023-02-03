@@ -10,10 +10,10 @@ export default ({ active }) => {
 
   useFrame((state, delta) => {
     if (active) {
-      controlRef.current.position.x = GLOBAL.cameraPositionLerped.x;
-      controlRef.current.position.y = GLOBAL.cameraPositionLerped.y;
+      controlRef.current.position.x = GLOBAL.cameraPositionLerped.current.x;
+      controlRef.current.position.y = GLOBAL.cameraPositionLerped.current.y;
     }
-  });
+  }, 1);
 
   return (
     <group ref={controlRef} position={[0, -20, 0]}>

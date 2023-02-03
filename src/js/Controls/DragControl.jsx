@@ -33,14 +33,14 @@ export default ({ sceneLength, isDragDisabled }) => {
           x: newDragPosition.x - currentDragPosition.x,
           y: newDragPosition.y - currentDragPosition.y,
         };
-        GLOBAL.cameraPositionTarget.x -= dragMovement.x * 50;
+        GLOBAL.cameraPositionTarget.current.x -= dragMovement.x * 50;
         setDragLength(dragLength + Math.abs(dragMovement.x));
 
         // Bounds of drag
-        if (GLOBAL.cameraPositionTarget.x < 0)
-          GLOBAL.cameraPositionTarget.x = 0;
-        if (GLOBAL.cameraPositionTarget.x > sceneLength)
-          GLOBAL.cameraPositionTarget.x = sceneLength;
+        if (GLOBAL.cameraPositionTarget.current.x < 0)
+          GLOBAL.cameraPositionTarget.current.x = 0;
+        if (GLOBAL.cameraPositionTarget.current.x > sceneLength)
+          GLOBAL.cameraPositionTarget.current.x = sceneLength;
       }
       setCurrentDragPosition(newDragPosition);
     }
@@ -58,8 +58,8 @@ export default ({ sceneLength, isDragDisabled }) => {
   };
 
   useFrame((state, delta) => {
-    controlRef.current.position.x = GLOBAL.cameraPositionLerped.x;
-    controlRef.current.position.y = GLOBAL.cameraPositionLerped.y;
+    controlRef.current.position.x = GLOBAL.cameraPositionLerped.current.x;
+    controlRef.current.position.y = GLOBAL.cameraPositionLerped.current.y;
   });
 
   return (

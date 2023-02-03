@@ -33,8 +33,8 @@ const Screensaver = forwardRef((props, ref) => {
   };
 
   const onIntervalTimeoutComplete = () => {
-    GLOBAL.cameraPositionTarget.x =
-      GLOBAL.cameraPositionTarget.x + slideDistance;
+    GLOBAL.cameraPositionTarget.current.x =
+      GLOBAL.cameraPositionTarget.current.x + slideDistance;
   };
 
   useFrame((state, delta) => {
