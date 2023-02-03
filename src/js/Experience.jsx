@@ -31,12 +31,6 @@ export default ({ debug }) => {
   const [maxSceneLength, setMaxSceneLength] = useState(0);
   const [sceneLength, setSceneLength] = useState(0);
 
-  useLayoutEffect(() => {
-    // If a bubble has been opened, move the camera to the center of it
-    // And maybe do more stuff, TBD!
-    setActiveItemIndex(-1);
-  }, [openItemIndex, mode]);
-
   const globalContextValue = {
     MODE,
     mode,
