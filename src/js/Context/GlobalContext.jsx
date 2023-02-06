@@ -8,4 +8,5 @@ export const GlobalContext = createContext({
   setMode: () => {},
   cameraPositionTarget: null,
   cameraPositionLerped: null,
+  lastPathwayPosition: 0
 });

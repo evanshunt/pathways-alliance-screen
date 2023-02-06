@@ -1,4 +1,5 @@
 import { useState, useLayoutEffect, useRef } from "react";
+import { useThree } from "@react-three/fiber";
 import { Perf } from "r3f-perf";
 
 import * as THREE from "three";
@@ -16,12 +17,14 @@ import Payoff from "./Components/Payoff.jsx";
 import DetailView from "./Components/DetailView.jsx";
 
 export default ({ debug }) => {
+  const { camera } = useThree();
   const MODE = Object.freeze({
     Screensaver: "Screensaver",
     Pathway: "Pathway",
     Detail: "Detail",
   });
   const [mode, setMode] = useState(MODE.Pathway);
+  const [lastPathwayPosition, setLastPathwayPosition] = useState(0);
 
   const cameraPositionTarget = useRef(new THREE.Vector3(0, 0, 10));
   const cameraPositionLerped = useRef(new THREE.Vector3());
@@ -37,12 +40,19 @@ export default ({ debug }) => {
     setMode,
     cameraPositionTarget,
     cameraPositionLerped,
+    lastPathwayPosition
   };
 
   useLayoutEffect(() => {
     if (mode !== MODE.Pathway) {
       setOpenItemIndex(-1);
       setActiveItemIndex(-1);
+    }
+    if (mode === MODE.Detail) {
+      setLastPathwayPosition(camera.position.x);
+    }
+    else {
+      setLastPathwayPosition(0);
     }
   }, [mode]);
 
