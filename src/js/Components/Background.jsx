@@ -1,7 +1,8 @@
-import { useRef } from "react";
+import { useRef, useContext } from "react";
 import { EffectComposer, Vignette } from "@react-three/postprocessing";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { GlobalContext } from "../Context/GlobalContext";
 
 const Background = ({ sceneLength }) => {
   const backgroundRef = useRef();
@@ -11,10 +12,16 @@ const Background = ({ sceneLength }) => {
   const backgroundLateMidColour = new THREE.Color(0x0c4eea);
   const backgroundEndColour = new THREE.Color(0x00eefa);
 
+  const GLOBAL = useContext(GlobalContext);
+
   useFrame((state, delta) => {
     // Set background colour based on position
     let backgroundColour = new THREE.Color();
-    const sceneTravelled = state.camera.position.x / sceneLength;
+    let sceneTravelled = state.camera.position.x / sceneLength;
+    // Unless we're in screensaver, then lock the background colour
+    if (GLOBAL.mode === GLOBAL.MODE.Screensaver) { 
+      sceneTravelled = 0.5;
+    }
     if (sceneTravelled <= -0.5) backgroundColour.copy(backgroundEndColour);
     else if (sceneTravelled < 0)
       backgroundColour.lerpColors(
