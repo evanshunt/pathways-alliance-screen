@@ -1,0 +1,94 @@
+div.bubble {
+  button {
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    transition: 0.3s all;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &#capture {
+      background-image: url('/images/bubbles/capture.png');
+    }
+
+    &#dollars {
+      background-image: url('/images/bubbles/dollars.png');
+    }
+
+    &#industry {
+      background-image: url('/images/bubbles/industry.png');
+    }
+
+    &#innovation {
+      background-image: url('/images/bubbles/innovation.png');
+    }
+
+    &#network {
+      background-image: url('/images/bubbles/network.png');
+    }
+
+    &#storage {
+      background-image: url('/images/bubbles/storage.png');
+    }
+  }
+
+  .bubbletext {
+    width: 18em;
+    color: white;
+    opacity: 0;
+    transition: 0.6s all;
+    margin-left: 10em;
+    position: relative;
+
+    &.up {
+      transform: translateY(-7em);
+    }
+
+    &.down {
+      transform: translateY(2em);
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: white;
+      position: absolute;
+      right: 19em;
+      top: 0.9em;
+      width: 0;
+      transition: 0.6s all;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 0.5em;
+      width: 0.5em;
+      background-color: white;
+      border-radius: 0.25em;
+      position: absolute;
+      left: -1em;
+      top: 0.9em;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &.active {
+    button {
+      transform: translate(-50%, -50%) scale(2);
+    }
+
+    .bubbletext {
+      opacity: 1;
+      margin-left: 14em;
+
+      &::before {
+        width: 6em;
+      }
+    }
+  }
+}

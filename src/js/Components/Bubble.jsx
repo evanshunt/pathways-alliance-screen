@@ -1,13 +1,11 @@
 import {
   forwardRef,
   useState,
-  useLayoutEffect,
   useRef,
   useImperativeHandle,
 } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Circle, Html } from "@react-three/drei";
-import * as THREE from "three";
+import { Html } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 
 export default forwardRef(function (
@@ -26,8 +24,6 @@ export default forwardRef(function (
 ) {
   const bubbleRef = useRef();
   useImperativeHandle(ref, () => bubbleRef.current);
-  const [scale] = useState(() => new THREE.Vector3());
-  const [smoothedScale] = useState(() => new THREE.Vector3());
   const [bubbleTime, setBubbleTime] = useState(0);
   const { t } = useTranslation("common");
 
@@ -40,18 +36,7 @@ export default forwardRef(function (
     }
   };
 
-  useLayoutEffect(() => {
-    if (active) {
-      scale.copy(new THREE.Vector3(2, 2, 2));
-    } else {
-      scale.copy(new THREE.Vector3(1, 1, 1));
-    }
-  }, [active]);
-
   useFrame((state, delta) => {
-    smoothedScale.lerp(scale, 0.1);
-    bubbleRef.current.children[0].scale.copy(smoothedScale);
-
     if (!active) {
       setBubbleTime(bubbleTime + delta);
       bubbleRef.current.position.y += Math.sin(bubbleTime * 0.5) * 0.003;
@@ -60,16 +45,15 @@ export default forwardRef(function (
 
   return (
     <group ref={bubbleRef} position={position}>
-      <Circle args={[2, 64]} onPointerUp={pointerDown}>
-        <meshStandardMaterial map={texture} />
-      </Circle>
       <Html
-        zIndexRange={[100, 0]}
-        className={active ? "bubbletext active" : "bubbletext inactive"}
-        position={index % 2 === 0 ? [3, -1, 0] : [3, 3, 0]}
+        zIndexRange={[300, 200]}
+        className={active ? "bubble active" : "bubble inactive"}
       >
-        <h2>{t("bubbles." + view + ".headline")}</h2>
-        <h3>{t("bubbles." + view + ".subhead")}</h3>
+        <button id={view} onPointerUp={pointerDown} />
+        <div className={index % 2 ? "bubbletext up" : "bubbletext down"}>
+          <h2>{t("bubbles." + view + ".headline")}</h2>
+          <h3>{t("bubbles." + view + ".subhead")}</h3>
+        </div>
       </Html>
     </group>
   );
