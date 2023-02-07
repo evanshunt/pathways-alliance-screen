@@ -1,4 +1,6 @@
 div.bubble {
+  pointer-events: none;
+
   button {
     display: block;
     position: absolute;

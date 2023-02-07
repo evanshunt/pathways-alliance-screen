@@ -49,8 +49,8 @@ export default ({ sceneLength, isDragDisabled }) => {
   const pointerUp = (event) => {
     if (dragPointer === event.pointerId) {
       // If the user is in a proper drag, don't issue events to bubbles underneath
-      // 0.05 is 5% of the viewport
-      if (dragLength > 0.05) {
+      // 0.02 is 2% of the viewport
+      if (dragLength > 0.02) {
         event.stopPropagation();
       }
       setDragPointer(false);

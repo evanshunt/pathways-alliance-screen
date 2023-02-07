@@ -5,7 +5,7 @@ import {
   useImperativeHandle,
 } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Html } from "@react-three/drei";
+import { Circle, Html } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 
 export default forwardRef(function (
@@ -45,14 +45,18 @@ export default forwardRef(function (
 
   return (
     <group ref={bubbleRef} position={position}>
+      <Circle args={[4, 64]} onPointerUp={pointerDown}>
+        <meshStandardMaterial visible={false} />
+      </Circle>
       <Html
         zIndexRange={[300, 200]}
         className={active ? "bubble active" : "bubble inactive"}
       >
-        <button id={view} onPointerUp={pointerDown} />
+        <button id={view} />
         <div className={index % 2 ? "bubbletext up" : "bubbletext down"}>
           <h2>{t("bubbles." + view + ".headline")}</h2>
           <h3>{t("bubbles." + view + ".subhead")}</h3>
+          <button />
         </div>
       </Html>
     </group>
