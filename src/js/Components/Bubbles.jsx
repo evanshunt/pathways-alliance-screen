@@ -29,12 +29,15 @@ const Bubbles = ({
   ];
 
   useLayoutEffect(() => {
+    const calculatedMaxSceneLength = bubbles.length * distance + 40;
+    if (calculatedMaxSceneLength > maxSceneLength) {
+      setMaxSceneLength(calculatedMaxSceneLength);
+    }
+  }, []);
+
+  useLayoutEffect(() => {
     if (GLOBAL.mode === GLOBAL.MODE.Pathway) {
       setSceneLength(bubbles.length * distance + 40);
-      const calculatedMaxSceneLength = bubbles.length * distance + 40;
-      if (calculatedMaxSceneLength > maxSceneLength) {
-        setMaxSceneLength(calculatedMaxSceneLength);
-      }
     }
   }, [GLOBAL.mode]);
 

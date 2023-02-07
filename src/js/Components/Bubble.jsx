@@ -1,9 +1,4 @@
-import {
-  forwardRef,
-  useState,
-  useRef,
-  useImperativeHandle,
-} from "react";
+import { forwardRef, useState, useRef, useImperativeHandle } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Circle, Html } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
@@ -13,7 +8,6 @@ export default forwardRef(function (
     index,
     position,
     view,
-    texture,
     active = false,
     onActive,
     setMoveToIndex,

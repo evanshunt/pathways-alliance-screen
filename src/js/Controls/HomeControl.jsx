@@ -21,7 +21,6 @@ export default ({ openItemIndex, onPointerDown }) => {
           id="home"
           disabled={GLOBAL.mode !== GLOBAL.MODE.Detail}
           onPointerDown={(event) => {
-            event.stopPropagation();
             onPointerDown();
           }}
         >
