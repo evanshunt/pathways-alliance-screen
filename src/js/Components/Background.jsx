@@ -34,11 +34,11 @@ const Background = ({ sceneLength }) => {
         backgroundLateMidColour,
         (sceneTravelled - 0.2) / 0.5
       );
-    else if (sceneTravelled <= 1)
+    else if (sceneTravelled <= 0.9)
       backgroundColour.lerpColors(
         backgroundLateMidColour,
         backgroundEndColour,
-        (sceneTravelled - 0.7) / 0.3
+        (sceneTravelled - 0.7) / 0.2
       );
     else backgroundColour.copy(backgroundEndColour);
 
