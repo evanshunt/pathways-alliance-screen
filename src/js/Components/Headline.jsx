@@ -2,11 +2,11 @@ import { useRef } from "react";
 import { Text } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 
-export default ({position}) => {
+export default ({ position }) => {
   const { t } = useTranslation("common");
   const textRef = useRef();
 
-  return ( 
+  return (
     <Text
       ref={textRef}
       position={position}
@@ -18,4 +18,4 @@ export default ({position}) => {
       {t("main.title")}
     </Text>
   );
-}
+};

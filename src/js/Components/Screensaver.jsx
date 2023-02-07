@@ -1,10 +1,13 @@
-import { useEffect, useState, useContext } from "react";
+import { useEffect, useState, useContext, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-import Slide from "./Slide";
 import * as THREE from "three";
 import { useControls } from "leva";
 
 import { GlobalContext } from "../Context/GlobalContext";
+
+import Slide from "./Slide";
+import SlideCompanies from "./Slides/SlideCompanies";
+import SlideTogether from "./Slides/SlideTogether";
 
 const Screensaver = (props) => {
   const GLOBAL = useContext(GlobalContext);
@@ -17,24 +20,23 @@ const Screensaver = (props) => {
   } = props;
   const [isActiveTimeoutComplete, setIsActiveTimeoutComplete] = useState(false);
   const [isTimerActive, setIsTimerActive] = useState(false);
-  const numSlides = 8;
-  const [
-    { timeElapsed, activeTimeout, intervalTimeout, slideDistance },
-    setLeva,
-  ] = useControls("Screensaver", () => ({
-    timeElapsed: 0,
-    activeTimeout: props.activeTimeout,
-    intervalTimeout: props.intervalTimeout,
-    slideDistance: 35,
-  }));
+  const timeElapsed = useRef(0);
+  const slides = [<SlideCompanies />, <SlideTogether />];
+  const [{ isTimerPaused, activeTimeout, intervalTimeout, slideDistance }] =
+    useControls("Screensaver", () => ({
+      isTimerPaused: false,
+      activeTimeout: props.activeTimeout,
+      intervalTimeout: props.intervalTimeout,
+      slideDistance: 35,
+    }));
 
-  const handleWindowClick = (event) => {
+  const handleCanvasClick = (event) => {
     setIsTimerActive(false);
     setIsActiveTimeoutComplete(false);
   };
 
   const resetTimeElapsed = () => {
-    setLeva({ timeElapsed: 0 });
+    timeElapsed.current = 0;
   };
 
   const onIntervalTimeoutComplete = () => {
@@ -43,16 +45,16 @@ const Screensaver = (props) => {
   };
 
   useFrame((state, delta) => {
-    if (isTimerActive) {
-      setLeva({ timeElapsed: timeElapsed + delta });
+    if (isTimerActive && !isTimerPaused) {
+      timeElapsed.current = timeElapsed.current + delta;
 
       if (isActiveTimeoutComplete) {
-        if (timeElapsed >= intervalTimeout) {
+        if (timeElapsed.current >= intervalTimeout) {
           onIntervalTimeoutComplete();
           resetTimeElapsed();
         }
       } else {
-        if (timeElapsed >= activeTimeout) {
+        if (timeElapsed.current >= activeTimeout) {
           setIsActiveTimeoutComplete(true);
           onIntervalTimeoutComplete();
           resetTimeElapsed();
@@ -62,20 +64,25 @@ const Screensaver = (props) => {
   });
 
   useEffect(() => {
-    window.addEventListener("pointerdown", handleWindowClick);
+    document
+      .getElementById("canvas")
+      .addEventListener("pointerdown", handleCanvasClick);
+
+    const calculatedMaxSceneLength = slides * slideDistance;
+    if (calculatedMaxSceneLength > maxSceneLength) {
+      setMaxSceneLength(calculatedMaxSceneLength);
+    }
 
     return () => {
-      window.removeEventListener("pointerdown", handleWindowClick);
+      document
+        .getElementById("canvas")
+        .removeEventListener("pointerdown", handleCanvasClick);
     };
   }, []);
 
   useEffect(() => {
     if (GLOBAL.mode === GLOBAL.MODE.Screensaver) {
-      setSceneLength(numSlides * slideDistance);
-      const calculatedMaxSceneLength = numSlides * slideDistance;
-      if (calculatedMaxSceneLength > maxSceneLength) {
-        setMaxSceneLength(calculatedMaxSceneLength);
-      }
+      setSceneLength(slides.length * slideDistance);
     }
   }, [GLOBAL.mode]);
 
@@ -100,9 +107,11 @@ const Screensaver = (props) => {
 
   return (
     <group position={new THREE.Vector3()}>
-      {[...Array(numSlides)].map((el, i) => {
+      {slides.map((slide, i) => {
         return (
-          <Slide position={[0 + slideDistance * i, 15, 0]} key={`slide-${i}`} />
+          <Slide position={[0 + slideDistance * i, 15, 0]} key={`slide-${i}`}>
+            {slide}
+          </Slide>
         );
       })}
     </group>

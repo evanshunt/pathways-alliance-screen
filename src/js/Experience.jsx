@@ -1,20 +1,19 @@
 import { useState, useLayoutEffect, useRef } from "react";
 import { useThree } from "@react-three/fiber";
 import { Perf } from "r3f-perf";
-
 import * as THREE from "three";
 
-import { GlobalContext } from "./Context/GlobalContext.jsx";
-import DragControl from "./Controls/DragControl.jsx";
-import HomeControl from "./Controls/HomeControl.jsx";
-import Camera from "./Components/Camera.jsx";
-import Background from "./Components/Background.jsx";
-import Waves from "./Components/Waves.jsx";
+import { GlobalContext } from "./Context/GlobalContext";
+import DragControl from "./Controls/DragControl";
+import HomeControl from "./Controls/HomeControl";
+import Camera from "./Components/Camera";
+import Background from "./Components/Background";
+import Waves from "./Components/Waves";
 import Screensaver from "./Components/Screensaver";
-import Bubbles from "./Components/Bubbles.jsx";
-import Headline from "./Components/Headline.jsx";
-import Payoff from "./Components/Payoff.jsx";
-import DetailView from "./Components/DetailView.jsx";
+import Bubbles from "./Components/Bubbles";
+import Headline from "./Components/Headline";
+import Payoff from "./Components/Payoff";
+import DetailView from "./Components/DetailView";
 
 export default ({ debug }) => {
   const { camera } = useThree();

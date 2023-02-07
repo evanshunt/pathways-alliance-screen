@@ -34,8 +34,9 @@ i18next.init({
 root.render(
   <StrictMode>
     <I18nextProvider i18n={i18next}>
-      <Leva hidden={debug ? false: true} />
+      <Leva hidden={debug ? false : true} collapsed />
       <Canvas
+        id="canvas"
         camera={{
           position: [0, 0, 0],
         }}

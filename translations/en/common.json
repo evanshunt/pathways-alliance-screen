@@ -31,5 +31,23 @@
       "headline": "Driving innovation",
       "subhead": "What's next for our net-zero project?"
     }
+  },
+  "slides": {
+    "companies": {
+      "number1": "6",
+      "headline1": "Canadian oil sands companies",
+      "number2": "1",
+      "headline2": "shared goal"
+    },
+    "together": {
+      "highlightPercentage": "95%",
+      "highlightText": "of oil sands producers working together",
+      "bucket1Heading": "$16.5 billion",
+      "bucket1Text": "to support one of the world’s largest carbon capture and storage projects",
+      "bucket2Heading": "$7.6 billion",
+      "bucket2Text": "to support more emissions-reduction projects and technologies",
+      "bucket3Heading": "35,000 jobs",
+      "bucket3Text": "Potential to create"
+    }
   }
 }

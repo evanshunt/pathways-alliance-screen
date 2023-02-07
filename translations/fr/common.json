@@ -31,5 +31,23 @@
       "headline": "Stimuler l'innovation",
       "subhead": "Quelle est la prochaine étape pour notre projet net-zero?"
     }
+  },
+  "slides": {
+    "companies": {
+      "number1": "6",
+      "headline1": "Entreprises canadiennes de sables bitumineux",
+      "number2": "1",
+      "headline2": "objectif partagé"
+    },
+    "together": {
+      "highlightPercentage": "95%",
+      "highlightText": "des producteurs de sables bitumineux travaillant ensemble",
+      "bucket1Heading": "$16.5 milliard",
+      "bucket1Text": "pour soutenir l'un des plus grands projets de captage et de stockage du carbone au monde",
+      "bucket2Heading": "$7.6 milliard",
+      "bucket2Text": "pour soutenir davantage de projets et de technologies de réduction des émissions",
+      "bucket3Heading": "35,000 emplois",
+      "bucket3Text": "Potentiel de création"
+    }
   }
 }

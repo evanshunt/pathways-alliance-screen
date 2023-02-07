@@ -1,0 +1,74 @@
+div#slide-together {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .highlight {
+    flex: 1;
+    display: flex;
+    color: #0c4ce9;
+    background: url("/images/slides/together-highlight-bg.png") no-repeat;
+    background-size: contain;
+    padding: 4em;
+    border-radius: 50%;
+    max-width: fit-content;
+
+    h1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: white;
+      margin: 0;
+      padding: 2em;
+      border-radius: 50%;
+      min-height: 10em;
+    }
+
+    .number {
+      display: block;
+      font-size: 3em;
+    }
+    .text {
+      display: block;
+      font-size: 0.5em;
+      font-weight: normal;
+      max-width: 10em;
+    }
+  }
+
+  .stats {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2em;
+
+    div {
+      flex: 1 0 50%;
+      font-size: 0.8em;
+      padding-left: 2em;
+    }
+    .bucket {
+      margin-bottom: 1em;
+      h2 {
+        font-size: 2.7em;
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .reverse {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        order: 2;
+      }
+      p {
+        order: 1;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
