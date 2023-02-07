@@ -50,7 +50,6 @@ export default forwardRef(function (
         <div className={index % 2 ? "bubbletext up" : "bubbletext down"}>
           <h2>{t("bubbles." + view + ".headline")}</h2>
           <h3>{t("bubbles." + view + ".subhead")}</h3>
-          <button />
         </div>
       </Html>
     </group>
