@@ -48,6 +48,17 @@
       "bucket2Text": "pour soutenir davantage de projets et de technologies de réduction des émissions",
       "bucket3Heading": "35,000 emplois",
       "bucket3Text": "Potentiel de création"
+    },
+    "transportation": {
+      "headline1": "400+ km",
+      "description1": "de la ligne de transport",
+      "headline2": "10–12 milliard",
+      "description2": "tonnes de CO₂ captées annuellement d'ici 2030",
+      "headline3": "14+",
+      "description3": "installations de sables bitumineux à desservir"
+    },
+    "netZero": {
+      "text": "Net zéro par"
     }
   }
 }
