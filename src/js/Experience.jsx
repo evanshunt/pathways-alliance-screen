@@ -72,7 +72,7 @@ export default ({ debug }) => {
       />
 
       <Background sceneLength={sceneLength} />
-      {/* <Waves maxSceneLength={maxSceneLength} /> */}
+      <Waves maxSceneLength={maxSceneLength} />
 
       <Screensaver
         setSceneLength={setSceneLength}
