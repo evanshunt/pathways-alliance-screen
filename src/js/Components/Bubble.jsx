@@ -18,7 +18,7 @@ export default forwardRef(function (
 ) {
   const bubbleRef = useRef();
   useImperativeHandle(ref, () => bubbleRef.current);
-  const [bubbleTime, setBubbleTime] = useState(0);
+  const bubbleTime = useRef(0);
   const { t } = useTranslation("common");
 
   const pointerDown = (event) => {
@@ -32,8 +32,9 @@ export default forwardRef(function (
 
   useFrame((state, delta) => {
     if (!active) {
-      setBubbleTime(bubbleTime + delta);
-      bubbleRef.current.position.y += Math.sin(bubbleTime * 0.5) * 0.003;
+      bubbleTime.current += delta;
+      bubbleRef.current.position.y +=
+        Math.sin(bubbleTime.current * 0.5) * 0.003;
     }
   });
 
