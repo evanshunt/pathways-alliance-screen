@@ -1,0 +1,15 @@
+#detail-directing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  .text {
+    width: 35%;
+  }
+
+  .illustration {
+    width: 65%;
+    padding-left: 2em;
+  }
+}

@@ -13,7 +13,7 @@ import Screensaver from "./Components/Screensaver";
 import Bubbles from "./Components/Bubbles";
 import Headline from "./Components/Headline";
 import Payoff from "./Components/Payoff";
-import DetailView from "./Components/DetailView";
+import Details from "./Components/Details";
 
 export default ({ debug }) => {
   const { camera } = useThree();
@@ -39,19 +39,19 @@ export default ({ debug }) => {
     setMode,
     cameraPositionTarget,
     cameraPositionLerped,
-    lastPathwayPosition
+    lastPathwayPosition,
   };
 
   useLayoutEffect(() => {
     if (mode !== MODE.Pathway) {
-      setOpenItemIndex(-1);
       setActiveItemIndex(-1);
     }
+
     if (mode === MODE.Detail) {
       setLastPathwayPosition(camera.position.x);
-    }
-    else {
+    } else {
       setLastPathwayPosition(0);
+      setOpenItemIndex(-1);
     }
   }, [mode]);
 
@@ -99,7 +99,7 @@ export default ({ debug }) => {
         moveToIndex={moveToIndex}
         setMoveToIndex={setMoveToIndex}
       />
-      <DetailView active={mode === MODE.Detail ? true : false} />
+      <Details openItemIndex={openItemIndex} />
     </GlobalContext.Provider>
   );
 };

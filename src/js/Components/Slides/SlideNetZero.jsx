@@ -1,4 +1,4 @@
-const SlideNetZero = ({ t }) => {
+export default ({ t }) => {
   return (
     <div id="slide-net-zero">
       <h1>
@@ -8,5 +8,3 @@ const SlideNetZero = ({ t }) => {
     </div>
   );
 };
-
-export default SlideNetZero;

@@ -1,5 +1,5 @@
 import { useContext, useLayoutEffect } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 
 import { GlobalContext } from "../Context/GlobalContext";
 

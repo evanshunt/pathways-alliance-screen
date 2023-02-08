@@ -1,4 +1,4 @@
-const SlideTransportation = ({ t }) => {
+export default ({ t }) => {
   return (
     <div id="slide-transportation">
       <div className="illustration">
@@ -21,5 +21,3 @@ const SlideTransportation = ({ t }) => {
     </div>
   );
 };
-
-export default SlideTransportation;

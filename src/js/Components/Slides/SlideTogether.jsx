@@ -1,4 +1,4 @@
-const SlideCompanies = ({ t }) => {
+export default ({ t }) => {
   return (
     <div id="slide-together">
       <div className="highlight">
@@ -26,5 +26,3 @@ const SlideCompanies = ({ t }) => {
     </div>
   );
 };
-
-export default SlideCompanies;
