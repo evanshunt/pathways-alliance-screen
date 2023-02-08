@@ -56,9 +56,7 @@ const Background = ({ sceneLength }) => {
 
   return (
     <>
-      <EffectComposer>
-        <Vignette eskil={true} offset={0.5} darkness={0.5} />
-      </EffectComposer>
+      <EffectComposer />
       <ambientLight intensity={1} />
       <color ref={backgroundRef} attach="background" />
     </>
