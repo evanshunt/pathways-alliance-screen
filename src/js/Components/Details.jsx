@@ -6,11 +6,22 @@ import { GlobalContext } from "../Context/GlobalContext";
 
 import DetailUniting from "./Details/DetailUniting";
 import DetailDirecting from "./Details/DetailDirecting";
+import DetailCapturing from "./Details/DetailCapturing";
+import DetailTransport from "./Details/DetailTransport";
+import DetailStorage from "./Details/DetailStorage";
+import DetailInnovation from "./Details/DetailInnovation";
 
 export default ({ openItemIndex }) => {
   const GLOBAL = useContext(GlobalContext);
   const ref = useRef();
-  const detailViews = [<DetailUniting />, <DetailDirecting />];
+  const detailViews = [
+    <DetailUniting />,
+    <DetailDirecting />,
+    <DetailCapturing />,
+    <DetailTransport />,
+    <DetailStorage />,
+    <DetailInnovation />,
+  ];
 
   useFrame(() => {
     if (GLOBAL.mode === GLOBAL.MODE.Detail) {
