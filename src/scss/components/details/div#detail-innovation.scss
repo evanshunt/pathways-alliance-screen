@@ -1,0 +1,42 @@
+#detail-innovation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .heading {
+    width: 40%;
+    margin-bottom: 4em;
+  }
+
+  .buckets {
+    display: flex;
+
+    .bucket {
+      padding-right: 3em;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      .illustration {
+        display: flex;
+        align-items: center;
+        height: 12em;
+        padding: 2em;
+
+        img {
+          object-fit: contain;
+        }
+      }
+
+      .text {
+        font-size: 0.8em;
+
+        h3 {
+          font-size: 1.2em;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}

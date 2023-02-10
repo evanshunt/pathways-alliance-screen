@@ -21,7 +21,7 @@ export default forwardRef(function (
   const bubbleTime = useRef(0);
   const { t } = useTranslation("common");
 
-  const pointerDown = (event) => {
+  const handlePointerUp = (event) => {
     if (active) {
       setOpenItemIndex(index);
       onActive();
@@ -40,7 +40,7 @@ export default forwardRef(function (
 
   return (
     <group ref={bubbleRef} position={position}>
-      <Circle args={[4, 64]} onPointerUp={pointerDown}>
+      <Circle args={[4, 64]} onPointerUp={handlePointerUp}>
         <meshStandardMaterial visible={false} />
       </Circle>
       <Html
