@@ -1,11 +1,18 @@
-import { useLayoutEffect, useState, useContext, useRef } from "react";
-import { act, useFrame } from "@react-three/fiber";
+import {
+  useLayoutEffect,
+  useState,
+  useContext,
+  useRef,
+  cloneElement,
+} from "react";
 import * as THREE from "three";
+import { useFrame } from "@react-three/fiber";
+import { Html } from "@react-three/drei";
 import { useControls } from "leva";
+import { useTranslation } from "react-i18next";
 
 import { GlobalContext } from "../Context/GlobalContext";
 
-import Slide from "./Slide";
 import SlideCompanies from "./Slides/SlideCompanies";
 import SlideTogether from "./Slides/SlideTogether";
 import SlideTransportation from "./Slides/SlideTransportation";
@@ -24,6 +31,7 @@ const Screensaver = (props) => {
   const [isTimerActive, setIsTimerActive] = useState(false);
   const [activeSlide, setActiveSlide] = useState(-1);
   const timeElapsed = useRef(0);
+  const { t } = useTranslation("common");
   const slides = [
     <SlideCompanies />,
     <SlideTogether />,
@@ -134,9 +142,14 @@ const Screensaver = (props) => {
     <group position={new THREE.Vector3()}>
       {slides.map((slide, i) => {
         return (
-          <Slide position={[0 + slideDistance * i, 15, 0]} key={`slide-${i}`}>
-            {slide}
-          </Slide>
+          <Html
+            fullscreen
+            zIndexRange={[100, 0]}
+            position={[0 + slideDistance * i, 15, 0]}
+            key={`slide-${i}`}
+          >
+            <section className={"slide"}>{cloneElement(slide, { t })}</section>
+          </Html>
         );
       })}
     </group>

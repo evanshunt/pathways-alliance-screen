@@ -51,6 +51,14 @@ const Waves = ({ maxSceneLength }) => {
     });
   });
 
+  const meshLineMaterial = (
+    <meshLineMaterial
+      attach="material"
+      lineWidth={0.02}
+      color={[0, 238, 250]} // #00eefa
+    />
+  );
+
   return [...Array(numWaves)].map((el, i) => {
     return (
       <mesh key={`waveline-${i}`}>
@@ -60,11 +68,7 @@ const Waves = ({ maxSceneLength }) => {
             meshlinesRef.current[i] = el;
           }}
         />
-        <meshLineMaterial
-          attach="material"
-          lineWidth={0.02}
-          color={[0, 238, 250]} // #00eefa
-        />
+        {meshLineMaterial}
       </mesh>
     );
   });

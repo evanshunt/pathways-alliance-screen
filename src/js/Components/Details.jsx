@@ -1,6 +1,7 @@
-import { useRef, useContext } from "react";
+import { useRef, useContext, cloneElement } from "react";
 import { Html } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import { useTranslation } from "react-i18next";
 
 import { GlobalContext } from "../Context/GlobalContext";
 
@@ -14,6 +15,7 @@ import DetailInnovation from "./Details/DetailInnovation";
 export default ({ openItemIndex }) => {
   const GLOBAL = useContext(GlobalContext);
   const ref = useRef();
+  const { t } = useTranslation("common");
   const detailViews = [
     <DetailUniting />,
     <DetailDirecting />,
@@ -39,7 +41,8 @@ export default ({ openItemIndex }) => {
               : "detailview inactive"
           }
         >
-          {GLOBAL.mode === GLOBAL.MODE.Detail && detailViews[openItemIndex]}
+          {GLOBAL.mode === GLOBAL.MODE.Detail &&
+            cloneElement(detailViews[openItemIndex], { t })}
         </section>
       </Html>
     </group>

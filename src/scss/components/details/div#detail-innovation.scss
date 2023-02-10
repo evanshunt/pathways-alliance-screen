@@ -4,7 +4,7 @@
   height: 100%;
 
   .heading {
-    width: 40%;
+    width: 35%;
     margin-bottom: 4em;
   }
 
@@ -20,9 +20,9 @@
 
       .illustration {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         height: 12em;
-        padding: 2em;
+        padding: 4em 4em 2em;
 
         img {
           object-fit: contain;

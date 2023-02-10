@@ -1,8 +1,8 @@
-export default () => {
+export default ({ t }) => {
   return (
     <div id="detail-innovation">
       <div className="heading">
-        <h2>Innovation opens more paths to net zero</h2>
+        <h2>{t("details.innovation.heading")}</h2>
       </div>
       <div className="buckets">
         <div className="bucket">
@@ -13,11 +13,8 @@ export default () => {
             />
           </div>
           <div className="text">
-            <h3>Hydrogen</h3>
-            <p>
-              An alternative fuel source that could reduce the need for natural
-              gas in industrial processes.
-            </p>
+            <h3>{t("details.innovation.bucket1Heading")}</h3>
+            <p>{t("details.innovation.bucket1Text")}</p>
           </div>
         </div>
         <div className="bucket">
@@ -28,11 +25,8 @@ export default () => {
             />
           </div>
           <div className="text">
-            <h3>Electrification</h3>
-            <p>
-              An alternative, efficient fuel source for mine haul trucks, to
-              reduce their reliance on diesel.
-            </p>
+            <h3>{t("details.innovation.bucket2Heading")}</h3>
+            <p>{t("details.innovation.bucket2Text")}</p>
           </div>
         </div>
         <div className="bucket">
@@ -43,11 +37,8 @@ export default () => {
             />
           </div>
           <div className="text">
-            <h3>Direct air capture</h3>
-            <p>
-              A new technology that can remove CO2 directly from the air,
-              transport it and storeit permanently underground.
-            </p>
+            <h3>{t("details.innovation.bucket3Heading")}</h3>
+            <p>{t("details.innovation.bucket3Text")}</p>
           </div>
         </div>
         <div className="bucket">
@@ -58,11 +49,8 @@ export default () => {
             />
           </div>
           <div className="text">
-            <h3>Geothermal</h3>
-            <p>
-              A low-carbon source of hot water and steam for bitumen production,
-              to reduce natural gas use.
-            </p>
+            <h3>{t("details.innovation.bucket4Heading")}</h3>
+            <p>{t("details.innovation.bucket4Text")}</p>
           </div>
         </div>
         <div className="bucket">
@@ -73,11 +61,8 @@ export default () => {
             />
           </div>
           <div className="text">
-            <h3>Small modular reactors</h3>
-            <p>
-              A safe, scalable source of zero-emissions energy for applications
-              like heat, steam and electricity.
-            </p>
+            <h3>{t("details.innovation.bucket5Heading")}</h3>
+            <p>{t("details.innovation.bucket5Text")}</p>
           </div>
         </div>
       </div>
