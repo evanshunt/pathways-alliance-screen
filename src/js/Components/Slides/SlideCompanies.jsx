@@ -1,18 +1,24 @@
+import AnimSlideUpFadeIn from "../Animations/AnimSlideUpFadeIn";
+
 export default ({ t }) => {
   return (
     <div id="slide-companies">
       <div className="stats">
         <div className="companies">
-          <h1>
-            <span className="number">{t("slides.companies.number1")}</span>{" "}
-            <span>{t("slides.companies.headline1")}</span>
-          </h1>
+          <AnimSlideUpFadeIn>
+            <h1>
+              <span className="number">{t("slides.companies.number1")}</span>{" "}
+              <span>{t("slides.companies.headline1")}</span>
+            </h1>
+          </AnimSlideUpFadeIn>
         </div>
         <div className="goal">
-          <h1>
-            <span className="number">{t("slides.companies.number2")}</span>{" "}
-            <span>{t("slides.companies.headline2")}</span>
-          </h1>
+          <AnimSlideUpFadeIn delay=".2">
+            <h1>
+              <span className="number">{t("slides.companies.number2")}</span>{" "}
+              <span>{t("slides.companies.headline2")}</span>
+            </h1>
+          </AnimSlideUpFadeIn>
         </div>
       </div>
       <div>
