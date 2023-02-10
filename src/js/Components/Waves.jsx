@@ -1,22 +1,35 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { extend, useFrame } from "@react-three/fiber";
 import { MeshLine, MeshLineMaterial } from "three.meshline";
+import { useControls } from "leva";
 
 extend({ MeshLine, MeshLineMaterial });
 
 // TODO: Add Leva controls
 const Waves = ({ maxSceneLength }) => {
   const meshlinesRef = useRef([]);
-  const numWaves = 20;
-  const amplitude = 3.5;
-  const frequency = 4.5;
-  const numPoints = maxSceneLength * 1.65;
-  const xLength = maxSceneLength * 2.5;
-  const xOffset = -maxSceneLength;
-  const xOffsetMultiplier = 0.6;
-  const yOffset = 0;
-  const yOffsetMultiplier = 0.13;
-  const zOffset = -10;
+
+  const [{ numWaves, amplitude, frequency, numPoints, xLength, xOffset, xOffsetMultiplier, yOffset, yOffsetMultiplier, zOffset }, set] =
+  useControls("Waves", () => ({
+    numWaves: 20,
+    amplitude: 3.5,
+    frequency: 4.5,
+    numPoints: 0,
+    xLength: 0,
+    xOffset: 0,
+    xOffsetMultiplier: 0.6,
+    yOffset: 0,
+    yOffsetMultiplier: 0.13,
+    zOffset: -10
+  }));
+
+  useEffect(() => {
+    set({
+      numPoints: maxSceneLength * 1.65,
+      xLength: maxSceneLength * 2.5,
+      xOffset: -maxSceneLength,
+    });
+  }, [maxSceneLength]);
 
   useFrame((state, delta) => {
     [...Array(numWaves)].map((el, i) => {

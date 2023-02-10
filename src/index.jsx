@@ -37,6 +37,8 @@ root.render(
       <Leva hidden={debug ? false : true} collapsed />
       <Canvas
         id="canvas"
+        className={debug ? "debug" : "no-debug"}
+        dpr={[1, 2]}
         camera={{
           position: [0, 0, 0],
         }}

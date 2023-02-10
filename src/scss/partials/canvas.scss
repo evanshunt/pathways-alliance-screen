@@ -1,4 +1,8 @@
 canvas {
   height: 100% !important;
   width: 100% !important;
+
+  &.prod {
+    cursor: none;
+  }
 }
