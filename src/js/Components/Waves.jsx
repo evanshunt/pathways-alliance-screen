@@ -5,12 +5,24 @@ import { useControls } from "leva";
 
 extend({ MeshLine, MeshLineMaterial });
 
-// TODO: Add Leva controls
 const Waves = ({ maxSceneLength }) => {
   const meshlinesRef = useRef([]);
 
-  const [{ numWaves, amplitude, frequency, numPoints, xLength, xOffset, xOffsetMultiplier, yOffset, yOffsetMultiplier, zOffset }, set] =
-  useControls("Waves", () => ({
+  const [
+    {
+      numWaves,
+      amplitude,
+      frequency,
+      numPoints,
+      xLength,
+      xOffset,
+      xOffsetMultiplier,
+      yOffset,
+      yOffsetMultiplier,
+      zOffset,
+    },
+    set,
+  ] = useControls("Waves", () => ({
     numWaves: 20,
     amplitude: 3.5,
     frequency: 4.5,
@@ -20,7 +32,7 @@ const Waves = ({ maxSceneLength }) => {
     xOffsetMultiplier: 0.6,
     yOffset: 0,
     yOffsetMultiplier: 0.13,
-    zOffset: -10
+    zOffset: -10,
   }));
 
   useEffect(() => {

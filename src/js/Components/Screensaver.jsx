@@ -148,7 +148,9 @@ const Screensaver = (props) => {
             position={[0 + slideDistance * i, 15, 0]}
             key={`slide-${i}`}
           >
-            <section className={"slide"}>{cloneElement(slide, { t })}</section>
+            <section className={"slide"}>
+              {cloneElement(slide, { t, isActive: activeSlide === i })}
+            </section>
           </Html>
         );
       })}

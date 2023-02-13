@@ -1,11 +1,11 @@
 import AnimSlideUpFadeIn from "../Animations/AnimSlideUpFadeIn";
 
-export default ({ t }) => {
+export default ({ t, isActive }) => {
   return (
     <div id="slide-companies">
       <div className="stats">
         <div className="companies">
-          <AnimSlideUpFadeIn>
+          <AnimSlideUpFadeIn isActive={isActive}>
             <h1>
               <span className="number">{t("slides.companies.number1")}</span>{" "}
               <span>{t("slides.companies.headline1")}</span>
@@ -13,7 +13,7 @@ export default ({ t }) => {
           </AnimSlideUpFadeIn>
         </div>
         <div className="goal">
-          <AnimSlideUpFadeIn delay=".2">
+          <AnimSlideUpFadeIn isActive={isActive} delay={0.2}>
             <h1>
               <span className="number">{t("slides.companies.number2")}</span>{" "}
               <span>{t("slides.companies.headline2")}</span>
@@ -24,22 +24,34 @@ export default ({ t }) => {
       <div>
         <ul className="logos">
           <li>
-            <img src="/images/logos/canadian-natural.png" />
+            <AnimSlideUpFadeIn isActive={isActive} delay={0.3}>
+              <img src="/images/logos/canadian-natural.png" />
+            </AnimSlideUpFadeIn>
           </li>
           <li>
-            <img src="/images/logos/cenovus.png" />
+            <AnimSlideUpFadeIn isActive={isActive} delay={0.4}>
+              <img src="/images/logos/cenovus.png" />
+            </AnimSlideUpFadeIn>
           </li>
           <li>
-            <img src="/images/logos/conoco-phillips.png" />
+            <AnimSlideUpFadeIn isActive={isActive} delay={0.5}>
+              <img src="/images/logos/conoco-phillips.png" />
+            </AnimSlideUpFadeIn>
           </li>
           <li>
-            <img src="/images/logos/imperial.png" />
+            <AnimSlideUpFadeIn isActive={isActive} delay={0.6}>
+              <img src="/images/logos/imperial.png" />
+            </AnimSlideUpFadeIn>
           </li>
           <li>
-            <img src="/images/logos/meg.png" />
+            <AnimSlideUpFadeIn isActive={isActive} delay={0.7}>
+              <img src="/images/logos/meg.png" />
+            </AnimSlideUpFadeIn>
           </li>
           <li>
-            <img src="/images/logos/suncor.png" />
+            <AnimSlideUpFadeIn isActive={isActive} delay={0.8}>
+              <img src="/images/logos/suncor.png" />
+            </AnimSlideUpFadeIn>
           </li>
         </ul>
       </div>
