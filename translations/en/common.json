@@ -73,13 +73,13 @@
       "headline2": "shared goal"
     },
     "together": {
-      "highlightPercentage": "95%",
-      "highlightText": "of oil sands producers working together",
-      "bucket1Heading": "$16.5 billion",
+      "highlightBeforeNumberText": "representing",
+      "highlightAfterNumberText": "of oil sands producers working together",
+      "bucket1Heading": "billion",
       "bucket1Text": "to support one of the world’s largest carbon capture and storage projects",
-      "bucket2Heading": "$7.6 billion",
+      "bucket2Heading": "billion",
       "bucket2Text": "to support more emissions-reduction projects and technologies",
-      "bucket3Heading": "35,000 jobs",
+      "bucket3Heading": "jobs",
       "bucket3Text": "Potential to create"
     },
     "transportation": {

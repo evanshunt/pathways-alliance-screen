@@ -73,13 +73,13 @@
       "headline2": "objectif partagé"
     },
     "together": {
-      "highlightPercentage": "95%",
-      "highlightText": "des producteurs de sables bitumineux travaillant ensemble",
-      "bucket1Heading": "$16.5 milliard",
+      "highlightBeforeNumberText": "représentant",
+      "highlightAfterNumberText": "des producteurs de sables bitumineux travaillant ensemble",
+      "bucket1Heading": "milliard",
       "bucket1Text": "pour soutenir l'un des plus grands projets de captage et de stockage du carbone au monde",
-      "bucket2Heading": "$7.6 milliard",
+      "bucket2Heading": "milliard",
       "bucket2Text": "pour soutenir davantage de projets et de technologies de réduction des émissions",
-      "bucket3Heading": "35,000 emplois",
+      "bucket3Heading": "emplois",
       "bucket3Text": "Potentiel de création"
     },
     "transportation": {
