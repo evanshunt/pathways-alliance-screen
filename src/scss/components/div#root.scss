@@ -1,3 +1,11 @@
 div#root {
   height: 100%;
+
+  &.prod {
+    cursor: none;
+
+    button {
+      cursor: none;
+    }
+  }
 }

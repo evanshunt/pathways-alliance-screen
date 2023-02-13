@@ -15,7 +15,9 @@ import common_fr from "../translations/fr/common.json";
 const queryString = new URLSearchParams(window.location.hash.slice(1));
 const debug = queryString.has("debug");
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const rootElement = document.getElementById("root");
+const root = ReactDOM.createRoot(rootElement);
+
 i18next.init({
   interpolation: {
     escapeValue: false, // React already does escaping
@@ -31,13 +33,19 @@ i18next.init({
   },
 });
 
+if (debug) {
+  rootElement.classList.add("debug");
+}
+else {
+  rootElement.classList.add("prod");
+}
+
 root.render(
   <StrictMode>
     <I18nextProvider i18n={i18next}>
       <Leva hidden={debug ? false : true} collapsed />
       <Canvas
         id="canvas"
-        className={debug ? "debug" : "prod"}
         dpr={[1, 2]}
         camera={{
           position: [0, 0, 0],
@@ -49,3 +57,4 @@ root.render(
     </I18nextProvider>
   </StrictMode>
 );
+
