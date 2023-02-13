@@ -1,4 +1,4 @@
-import { forwardRef, useState, useRef, useImperativeHandle } from "react";
+import { forwardRef, useRef, useImperativeHandle } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Circle, Html } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
