@@ -1,21 +1,22 @@
-import { useRef } from "react";
-import { Text } from "@react-three/drei";
+import { useContext } from "react";
+import { Html } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 
-export default ({ position }) => {
-  const { t } = useTranslation("common");
-  const textRef = useRef();
+import { GlobalContext } from "../Context/GlobalContext";
 
+import AnimSlideUpFadeIn from "./Animations/AnimSlideUpFadeIn";
+
+export default ({ position }) => {
+  const GLOBAL = useContext(GlobalContext);
+  const { t } = useTranslation("common");
+  console.log(GLOBAL.cameraPositionTarget.current);
   return (
-    <Text
-      ref={textRef}
-      position={position}
-      fontSize={1.2}
-      maxWidth={10}
-      letterSpacing={-0.08}
-      lineHeight={0.8}
-    >
-      {t("main.title")}
-    </Text>
+    <Html fullscreen zIndexRange={[100, 0]} position={position}>
+      <div id="pathway-headline">
+        <AnimSlideUpFadeIn isActive={GLOBAL.mode === GLOBAL.MODE.Pathway}>
+          <h1>{t("main.title")}</h1>
+        </AnimSlideUpFadeIn>
+      </div>
+    </Html>
   );
 };

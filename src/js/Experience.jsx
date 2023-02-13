@@ -15,6 +15,8 @@ import Headline from "./Components/Headline";
 import Payoff from "./Components/Payoff";
 import Details from "./Components/Details";
 
+import AnimSlideUpFadeIn from "./Components/Animations/AnimSlideUpFadeIn";
+
 export default ({ debug }) => {
   const { camera } = useThree();
   const MODE = Object.freeze({
@@ -85,7 +87,7 @@ export default ({ debug }) => {
         }}
         onScreensaverEnd={() => setMode(MODE.Pathway)}
       />
-      <Headline position={[-1, 2, 3]} />
+      <Headline />
       <Payoff position={[sceneLength - 23, 0, -2]} />
       <Bubbles
         distance={15}

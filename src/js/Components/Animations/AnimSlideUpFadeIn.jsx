@@ -18,7 +18,6 @@ export default ({ children, delay = 0, isActive }) => {
   }, []);
 
   useLayoutEffect(() => {
-    console.log(isActive);
     if (isActive) {
       timeline.current.play(0);
     }

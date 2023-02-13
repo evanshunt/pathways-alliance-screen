@@ -149,7 +149,11 @@ const Screensaver = (props) => {
             key={`slide-${i}`}
           >
             <section className={"slide"}>
-              {cloneElement(slide, { t, isActive: activeSlide === i })}
+              {cloneElement(slide, {
+                t,
+                isActive:
+                  GLOBAL.mode === GLOBAL.MODE.Screensaver && activeSlide === i,
+              })}
             </section>
           </Html>
         );
