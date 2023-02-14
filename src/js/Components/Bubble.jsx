@@ -49,8 +49,15 @@ export default forwardRef(function (
       >
         <button id={view} />
         <div className={index % 2 ? "bubbletext up" : "bubbletext down"}>
-          <h2>{t("bubbles." + view + ".headline")}</h2>
-          <p>{t("bubbles." + view + ".subhead")}</p>
+          <div className="text">
+            <div>
+              <h2>{t("bubbles." + view + ".headline")}</h2>
+              <p>{t("bubbles." + view + ".subhead")}</p>
+            </div>
+            <button className="highlight">
+              <div className="plus"></div>
+            </button>
+          </div>
         </div>
       </Html>
     </group>
