@@ -8,7 +8,13 @@ export default ({ t, isActive }) => {
           <span className="text">{t("slides.netZero.text")}</span>
         </AnimSlideUpFadeIn>
         <AnimSlideUpFadeIn isActive={isActive} delay={0.2}>
-          <span className="number">2050</span>
+          <span className="number">
+            <img
+              src="/images/slides/net-zero-2050.svg"
+              width="50%"
+              alt="2050"
+            />
+          </span>
         </AnimSlideUpFadeIn>
       </h1>
     </div>
