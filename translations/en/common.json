@@ -4,7 +4,7 @@
     "payoff": "Net Zero By 2050"
   },
   "controls": {
-    "home": "Home"
+    "home": "Back"
   },
   "bubbles": {
     "industry": {
@@ -16,7 +16,7 @@
       "subhead": "How many billions add up to net zero?"
     },
     "capture": {
-      "headline": "Capturing CO2",
+      "headline": "Capturing CO₂",
       "subhead": "How do you catch a molecule?"
     },
     "network": {
@@ -24,8 +24,8 @@
       "subhead": "How far can one facility reach?"
     },
     "storage": {
-      "headline": "Storing CO2",
-      "subhead": "Where does captured CO2 go?"
+      "headline": "Storing CO₂",
+      "subhead": "Where does captured CO₂ go?"
     },
     "innovation": {
       "headline": "Driving innovation",
@@ -35,23 +35,23 @@
   "details": {
     "uniting": {
       "heading": "Climate change is a critical challenge",
-      "text": "Canada's oil sands have a shared goal: net-zero by 2050. But no company can get there alone.\nPathways Alliance is a team-up of Canada's six largest oil sands producers. Our companies make up 95% of Canada's oil sands industry. Together, we can go farther, faster.\nWe're also working with provincial and federal governments to help Canada meet its Paris Climate Agreement goals. By 2030, our plan could reduce absolute CO2 emissions from oil sands by 22 million tonnes per year."
+      "text": "Canada's oil sands have a shared goal: net-zero by 2050. But no company can get there alone.\nPathways Alliance is a team-up of Canada's six largest oil sands producers. Our companies make up 95% of Canada's oil sands industry. Together, we can go farther, faster.\nWe're also working with provincial and federal governments to help Canada meet its Paris Climate Agreement goals. By 2030, our plan could reduce absolute CO₂ emissions from oil sands by 22 million tonnes per year."
     },
     "directing": {
       "heading": "A world-class investment",
       "text": "Carbon capture and storage success stories in other parts of the world have shown us what’s possible. Now, Canada’s is increasing our impact.\nThe Pathways Alliance plan includes investing $16.5 billion in a carbon capture and storage network by 2030. With partnership and co-funding from the Governments of Canada and Alberta, our facility in Western Canada will one of the world’s largest.\nThat’s just one piece of our plan. Emerging emissions-reduction projects and technologies will receive a $7.6 billion investment. With government and industry united behind cleaner energy initiatives, Canada is proving to be a major player in this important global movement."
     },
     "capturing": {
-      "heading": "A ready, reliable CO2 solution",
-      "text": "CCS means carbon capture and storage. It’s a technology that traps, transports and stores industrial CO2 emissions so they never end up in the atmosphere.\nLarge-scale projects in Norway and the U.S. have shown that CCS can reduce emissions safely and reliably.\nThe Pathways CCS project could reduce net CO2 emissions by 10 to 12 million tonnes per year by 2030, from 14 oil sands production facilities. And that’s only the beginning.\nIt’s a big step forward on the path to net zero."
+      "heading": "A ready, reliable CO₂ solution",
+      "text": "CCS means carbon capture and storage. It’s a technology that traps, transports and stores industrial CO₂ emissions so they never end up in the atmosphere.\nLarge-scale projects in Norway and the U.S. have shown that CCS can reduce emissions safely and reliably.\nThe Pathways CCS project could reduce net CO₂ emissions by 10 to 12 million tonnes per year by 2030, from 14 oil sands production facilities. And that’s only the beginning.\nIt’s a big step forward on the path to net zero."
     },
     "transport": {
       "heading": "A transportation line for the region",
-      "text": "Our carbon capture and storage project will serve multiple oil sands facilities, all at once. A transportation line connects each facility to a central storage hub. This line carries captured CO2 in liquid form to a location where it can be stored underground.\nThe transportation line is more than 400 km long. In phase one, it will connect 14 oil sands facilities to the storage hub, eventually serving more than 20.\nThe network isn’t just for the oil sands. In the future, this transportation line can help other industries in the region capture and store CO2."
+      "text": "Our carbon capture and storage project will serve multiple oil sands facilities, all at once. A transportation line connects each facility to a central storage hub. This line carries captured CO₂ in liquid form to a location where it can be stored underground.\nThe transportation line is more than 400 km long. In phase one, it will connect 14 oil sands facilities to the storage hub, eventually serving more than 20.\nThe network isn’t just for the oil sands. In the future, this transportation line can help other industries in the region capture and store CO₂."
     },
     "storage": {
       "heading": "A geological vault",
-      "text": "Once CO2 is captured and transported, it’s stored deep underground. Only certain places have the right geological formations for CO2 storage. The Pathways Alliance storage hub near Cold Lake is ideal.\nThis location has a deep layer of sandstone. Sandstone is porous, which means it’s full of small spaces, like a sponge. When injected underground in liquid form, CO2 fills these miniscule spaces in the rock. The layer could eventually store more than 1.1 billion tonnes of CO2.\nAbove the sandstone layer lies hundreds of metres of rock salt, which act as a natural seal. Beneath is metamorphic basement rock, which is impermeable (it has no spaces).\nConstant monitoring at every depth ensures stored CO2 remains secure and stable."
+      "text": "Once CO₂ is captured and transported, it’s stored deep underground. Only certain places have the right geological formations for CO₂ storage. The Pathways Alliance storage hub near Cold Lake is ideal.\nThis location has a deep layer of sandstone. Sandstone is porous, which means it’s full of small spaces, like a sponge. When injected underground in liquid form, CO₂ fills these miniscule spaces in the rock. The layer could eventually store more than 1.1 billion tonnes of CO₂.\nAbove the sandstone layer lies hundreds of metres of rock salt, which act as a natural seal. Beneath is metamorphic basement rock, which is impermeable (it has no spaces).\nConstant monitoring at every depth ensures stored CO₂ remains secure and stable."
     },
     "innovation": {
       "heading": "Innovation opens more paths to net zero",
@@ -60,7 +60,7 @@
       "bucket2Heading": "Electrification",
       "bucket2Text": "An alternative, efficient fuel source for mine haul trucks, to reduce their reliance on diesel.",
       "bucket3Heading": "Direct air capture",
-      "bucket3Text": "A new technology that can remove CO2 directly from the air, transport it and storeit permanently underground.",
+      "bucket3Text": "A new technology that can remove CO₂ directly from the air, transport it and storeit permanently underground.",
       "bucket4Heading": "Geothermal",
       "bucket4Text": "A low-carbon source of hot water and steam for bitumen production, to reduce natural gas use.",
       "bucket5Heading": "Small modular reactors",
