@@ -1,7 +1,7 @@
 {
   "main": {
     "title": "Nous construisons de nombreux chemins vers le net zéro",
-    "payoff": "Net zéro en 2050"
+    "payoff": "Net zéro en"
   },
   "controls": {
     "home": "Dos"
@@ -16,7 +16,7 @@
       "subhead": "Combien de milliards s'ajoutent au zéro net?"
     },
     "capture": {
-      "headline": "Capter le CO₂",
+      "headline": "Capter le CO2",
       "subhead": "Comment capter une molécule?"
     },
     "network": {
@@ -24,8 +24,8 @@
       "subhead": "Jusqu'où une installation peut-elle atteindre?"
     },
     "storage": {
-      "headline": "Stocker le CO₂",
-      "subhead": "Où va le CO₂ capté ?"
+      "headline": "Stocker le CO2",
+      "subhead": "Où va le CO2 capté ?"
     },
     "innovation": {
       "headline": "Stimuler l'innovation",
@@ -35,23 +35,23 @@
   "details": {
     "uniting": {
       "heading": "Le changement climatique est un défi crucial",
-      "text": "Les sables bitumineux du Canada ont un objectif commun : zéro émission nette d'ici 2050. Mais aucune entreprise ne peut y arriver seule.\nPathways Alliance est une équipe des six plus grands producteurs de sables bitumineux du Canada. Nos entreprises représentent 95 % de l'industrie canadienne des sables bitumineux. Ensemble, nous pouvons aller plus loin, plus vite.\nNous collaborons également avec les gouvernements provinciaux et fédéral pour aider le Canada à atteindre les objectifs de l'Accord de Paris sur le climat. D'ici 2030, notre plan pourrait réduire les émissions absolues de CO₂ des sables bitumineux de 22 millions de tonnes par an."
+      "text": "Les sables bitumineux du Canada ont un objectif commun : zéro émission nette d'ici 2050. Mais aucune entreprise ne peut y arriver seule.\nPathways Alliance est une équipe des six plus grands producteurs de sables bitumineux du Canada. Nos entreprises représentent 95 % de l'industrie canadienne des sables bitumineux. Ensemble, nous pouvons aller plus loin, plus vite.\nNous collaborons également avec les gouvernements provinciaux et fédéral pour aider le Canada à atteindre les objectifs de l'Accord de Paris sur le climat. D'ici 2030, notre plan pourrait réduire les émissions absolues de CO2 des sables bitumineux de 22 millions de tonnes par an."
     },
     "directing": {
       "heading": "Un investissement de classe mondiale",
       "text": "Les réussites du captage et du stockage du carbone dans d'autres parties du monde nous ont montré ce qui est possible. Aujourd'hui, le Canada augmente son impact.\nLe plan de l'Alliance Pathways prévoit d'investir 16,5 milliards de dollars dans un réseau de captage et de stockage du carbone d'ici 2030. Grâce à un partenariat et à un cofinancement des gouvernements du Canada et de l'Alberta, notre installation dans l'Ouest canadien sera l'une des le plus grand du monde.\nCe n'est qu'un élément de notre plan. Les projets et technologies émergents de réduction des émissions recevront un investissement de 7,6 milliards de dollars. Avec le gouvernement et l'industrie unis derrière des initiatives d'énergie plus propre, le Canada s'avère être un acteur majeur dans cet important mouvement mondial."
     },
     "capturing": {
-      "heading": "Une solution CO₂ prête et fiable",
-      "text": "CCS signifie captage et stockage du carbone. Il s'agit d'une technologie qui piège, transporte et stocke les émissions de CO₂ industrielles afin qu'elles ne se retrouvent jamais dans l'atmosphère.\nDes projets à grande échelle en Norvège et aux États-Unis ont montré que le CCS peut réduire les émissions de manière sûre et fiable.\nLe projet Pathways CCS pourrait réduire Émissions de CO₂ de 10 à 12 millions de tonnes par an d'ici 2030, à partir de 14 installations de production de sables bitumineux. Et ce n'est que le début.\nC'est un grand pas en avant sur la voie du net zéro."
+      "heading": "Une solution CO2 prête et fiable",
+      "text": "CCS signifie captage et stockage du carbone. Il s'agit d'une technologie qui piège, transporte et stocke les émissions de CO2 industrielles afin qu'elles ne se retrouvent jamais dans l'atmosphère.\nDes projets à grande échelle en Norvège et aux États-Unis ont montré que le CCS peut réduire les émissions de manière sûre et fiable.\nLe projet Pathways CCS pourrait réduire Émissions de CO2 de 10 à 12 millions de tonnes par an d'ici 2030, à partir de 14 installations de production de sables bitumineux. Et ce n'est que le début.\nC'est un grand pas en avant sur la voie du net zéro."
     },
     "transport": {
       "heading": "Une ligne de transport pour la région",
-      "text": "Notre projet de captage et de stockage du carbone desservira simultanément plusieurs installations de sables bitumineux. Une ligne de transport relie chaque installation à un centre de stockage central. Cette ligne transporte le CO₂ capturé sous forme liquide vers un endroit où il peut être stocké sous terre.\nLa ligne de transport fait plus de 400 km de long. Dans la première phase, il connectera 14 installations de sables bitumineux au centre de stockage, pour en desservir éventuellement plus de 20.\nLe réseau n'est pas réservé aux sables bitumineux. À l'avenir, cette ligne de transport pourra aider d'autres industries de la région à capter et à stocker le CO₂."
+      "text": "Notre projet de captage et de stockage du carbone desservira simultanément plusieurs installations de sables bitumineux. Une ligne de transport relie chaque installation à un centre de stockage central. Cette ligne transporte le CO2 capturé sous forme liquide vers un endroit où il peut être stocké sous terre.\nLa ligne de transport fait plus de 400 km de long. Dans la première phase, il connectera 14 installations de sables bitumineux au centre de stockage, pour en desservir éventuellement plus de 20.\nLe réseau n'est pas réservé aux sables bitumineux. À l'avenir, cette ligne de transport pourra aider d'autres industries de la région à capter et à stocker le CO2."
     },
     "storage": {
       "heading": "Une voûte géologique",
-      "text": "Une fois le CO₂ capté et transporté, il est stocké profondément sous terre. Seuls certains endroits possèdent les formations géologiques adéquates pour le stockage du CO₂. Le centre de stockage Pathways Alliance près de Cold Lake est idéal.\nCet emplacement a une couche profonde de grès. Le grès est poreux, ce qui signifie qu'il est plein de petits espaces, comme une éponge. Lorsqu'il est injecté sous terre sous forme liquide, le CO₂ remplit ces espaces minuscules dans la roche. La couche pourrait éventuellement stocker plus de 1,1 milliard de tonnes de CO₂.\nAu-dessus de la couche de grès se trouvent des centaines de mètres de sel gemme, qui agissent comme un joint naturel. En dessous se trouve la roche métamorphique du sous-sol, qui est imperméable (elle n'a pas d'espace).\nUne surveillance constante à chaque profondeur garantit que le CO₂ stocké reste sûr et stable."
+      "text": "Une fois le CO2 capté et transporté, il est stocké profondément sous terre. Seuls certains endroits possèdent les formations géologiques adéquates pour le stockage du CO2. Le centre de stockage Pathways Alliance près de Cold Lake est idéal.\nCet emplacement a une couche profonde de grès. Le grès est poreux, ce qui signifie qu'il est plein de petits espaces, comme une éponge. Lorsqu'il est injecté sous terre sous forme liquide, le CO2 remplit ces espaces minuscules dans la roche. La couche pourrait éventuellement stocker plus de 1,1 milliard de tonnes de CO2.\nAu-dessus de la couche de grès se trouvent des centaines de mètres de sel gemme, qui agissent comme un joint naturel. En dessous se trouve la roche métamorphique du sous-sol, qui est imperméable (elle n'a pas d'espace).\nUne surveillance constante à chaque profondeur garantit que le CO2 stocké reste sûr et stable."
     },
     "innovation": {
       "heading": "L'innovation ouvre davantage de voies vers le net zéro",
@@ -60,7 +60,7 @@
       "bucket2Heading": "Électrification",
       "bucket2Text": "Une source de carburant alternative et efficace pour les camions de transport minier, afin de réduire leur dépendance au diesel.",
       "bucket3Heading": "Capture d'air directe",
-      "bucket3Text": "Une nouvelle technologie qui permet d'extraire le CO₂ directement de l'air, de le transporter et de le stocker en permanence sous terre.",
+      "bucket3Text": "Une nouvelle technologie qui permet d'extraire le CO2 directement de l'air, de le transporter et de le stocker en permanence sous terre.",
       "bucket4Heading": "Géothermie",
       "bucket4Text": "Une source d'eau chaude et de vapeur à faible émission de carbone pour la production de bitume, afin de réduire l'utilisation du gaz naturel.",
       "bucket5Heading": "Petits réacteurs modulaires",
