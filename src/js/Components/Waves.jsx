@@ -26,7 +26,7 @@ const Waves = ({ maxSceneLength }) => {
     numWaves: 20,
     amplitude: 3.5,
     frequency: 4.5,
-    numPoints: 0,
+    numPoints: { value: 0, min: 0, step: 1 },
     xLength: 0,
     xOffset: 0,
     xOffsetMultiplier: 0.6,

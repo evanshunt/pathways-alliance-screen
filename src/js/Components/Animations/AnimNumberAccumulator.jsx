@@ -1,7 +1,7 @@
 import { useState, useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 
-export default ({ number, delay = 0, isActive, toFixed = 0 }) => {
+export default ({ number, delay = 0, duration = 1, isActive, toFixed = 0 }) => {
   const tweenObj = { count: 0 };
   const timeline = useRef();
   const [countedNumber, setCountedNumber] = useState(0);
@@ -11,9 +11,11 @@ export default ({ number, delay = 0, isActive, toFixed = 0 }) => {
       timeline.current = gsap.timeline().to(tweenObj, {
         count: number,
         delay: 0.8 + delay, // TODO: Adding a bit of delay to account for camera tweening to complete, make this dynamic?
-        duration: 1,
+        duration: duration,
         onUpdate: function () {
-          setCountedNumber(tweenObj.count.toFixed(toFixed));
+          setCountedNumber(
+            Number(tweenObj.count.toFixed(toFixed)).toLocaleString("en-US")
+          );
         },
       });
     });
@@ -28,6 +30,5 @@ export default ({ number, delay = 0, isActive, toFixed = 0 }) => {
     }
   }, [isActive]);
 
-  // TODO: Add commas to numbers, maybe use toLocaleString()
   return <>{countedNumber}</>;
 };
