@@ -39,12 +39,12 @@ export default ({ t, isActive }) => {
     <div id="slide-together">
       <div className="highlight">
         <div className="background">
-          <svg width="555" height="555" preserveAspectRatio="xMidYMid meet">
+          <svg width="600" height="600" preserveAspectRatio="xMidYMid meet">
             <mask id="svg-mask">
               <circle
                 stroke="#ffffff"
-                cx="280"
-                cy="280"
+                cx="300"
+                cy="300"
                 r="150"
                 ref={circleRef}
               ></circle>
