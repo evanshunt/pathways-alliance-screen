@@ -1,4 +1,5 @@
-export default () => {
+import { forwardRef } from "react";
+export default forwardRef((props, ref) => {
   return (
     <svg
       width="75%"
@@ -7,6 +8,7 @@ export default () => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 914.22 549.02"
+      ref={ref}
     >
       <defs>
         <pattern
@@ -8130,4 +8132,4 @@ export default () => {
       </g>
     </svg>
   );
-};
+});
