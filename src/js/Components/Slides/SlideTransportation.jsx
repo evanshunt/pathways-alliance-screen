@@ -1,11 +1,15 @@
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+
 import AnimSlideUpFadeIn from "../Animations/AnimSlideUpFadeIn";
 import AnimNumberAccumulator from "../Animations/AnimNumberAccumulator";
+import SVGTransportationIllustration from "../SVGs/SVGTransportationIllustration";
 
 export default ({ t, isActive }) => {
   return (
     <div id="slide-transportation">
       <div className="illustration">
-        <img src="/images/slides/transportation-illustration.png" alt="" />
+        <SVGTransportationIllustration />
       </div>
       <div className="text">
         <div className="bucket bucket1">
