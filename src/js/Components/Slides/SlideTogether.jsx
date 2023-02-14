@@ -9,7 +9,7 @@ gsap.registerPlugin(DrawSVGPlugin);
 
 export default ({ t, isActive }) => {
   const circleRef = useRef();
-  const timeline = useRef();
+  const timelineRef = useRef();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -19,7 +19,7 @@ export default ({ t, isActive }) => {
         transformOrigin: "center center",
       });
 
-      timeline.current = gsap.timeline().to(circleRef.current, {
+      timelineRef.current = gsap.timeline().to(circleRef.current, {
         drawSVG: "0% 100%",
         delay: 0.8 + 0.5,
         duration: 1,
@@ -31,7 +31,7 @@ export default ({ t, isActive }) => {
 
   useLayoutEffect(() => {
     if (isActive) {
-      timeline.current.play(0);
+      timelineRef.current.play(0);
     }
   }, [isActive]);
 
