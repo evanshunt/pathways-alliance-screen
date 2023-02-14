@@ -7,34 +7,46 @@ div#slide-together {
     flex: 1;
     display: flex;
     color: #0c4ce9;
-    background: url("/images/slides/together-highlight-bg.png") no-repeat;
-    background-size: contain;
-    padding: 4em;
-    border-radius: 50%;
-    max-width: fit-content;
+    position: relative;
 
-    h1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: white;
-      margin: 0;
-      padding: 2em;
+    .background {
+      circle {
+        stroke-width: 250px;
+      }
+    }
+
+    .heading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
       border-radius: 50%;
-      min-height: 10em;
-    }
 
-    .number {
-      display: block;
-      font-size: 3em;
-    }
-    .text {
-      display: block;
-      font-size: 0.5em;
-      font-weight: normal;
-      max-width: 10em;
+      h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: white;
+        margin: 0;
+        padding: 2em;
+        border-radius: 50%;
+        min-height: 10em;
+        font-family: sans-serif;
+      }
+
+      .number {
+        display: block;
+        font-size: 3em;
+        min-width: 2em;
+      }
+      .text {
+        display: block;
+        font-size: 0.5em;
+        font-weight: normal;
+        max-width: 10em;
+      }
     }
   }
 

@@ -8,12 +8,11 @@ div.bubble {
     height: 10em;
     transition: 0.3s all;
     transform: translate(-50%, -50%);
-    opacity: 0.85;
     background: none;
     border: 0;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 100%;
@@ -22,11 +21,15 @@ div.bubble {
       top: 0;
       border-radius: 100%;
       z-index: 1;
-      background: radial-gradient(circle, rgba($highlight,1) 50%, rgba($highlight,0) 70%);
+      background: radial-gradient(
+        circle,
+        rgba($highlight, 1) 50%,
+        rgba($highlight, 0) 70%
+      );
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 100%;
@@ -40,27 +43,27 @@ div.bubble {
     }
 
     &#capture::after {
-      background-image: url('/images/bubbles/capture.png');
+      background-image: url("/images/bubbles/capture.png");
     }
 
     &#dollars::after {
-      background-image: url('/images/bubbles/dollars.png');
+      background-image: url("/images/bubbles/dollars.png");
     }
 
     &#industry::after {
-      background-image: url('/images/bubbles/industry.png');
+      background-image: url("/images/bubbles/industry.png");
     }
 
     &#innovation::after {
-      background-image: url('/images/bubbles/innovation.png');
+      background-image: url("/images/bubbles/innovation.png");
     }
 
     &#network::after {
-      background-image: url('/images/bubbles/network.png');
+      background-image: url("/images/bubbles/network.png");
     }
 
     &#storage::after {
-      background-image: url('/images/bubbles/storage.png');
+      background-image: url("/images/bubbles/storage.png");
     }
   }
 
@@ -81,7 +84,7 @@ div.bubble {
     }
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       height: 1px;
       background-color: white;
@@ -94,7 +97,7 @@ div.bubble {
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       height: 0.5em;
       width: 0.5em;
@@ -107,7 +110,7 @@ div.bubble {
     }
 
     h2 {
-      font-family: 'Tiro Tamil', serif;
+      font-family: "Tiro Tamil", serif;
     }
   }
 
@@ -117,7 +120,8 @@ div.bubble {
       opacity: 1;
 
       &::before {
-        animation: 2s ease-out 0s 1 normal running glowon, 1.5s ease-in-out 2s infinite alternate running glow;
+        animation: 2s ease-out 0s 1 normal running glowon,
+          1.5s ease-in-out 2s infinite alternate running glow;
       }
     }
 

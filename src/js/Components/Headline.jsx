@@ -10,7 +10,7 @@ import AnimSlideUpFadeIn from "./Animations/AnimSlideUpFadeIn";
 export default ({ position = new Vector3() }) => {
   const GLOBAL = useContext(GlobalContext);
   const { t } = useTranslation("common");
-  console.log(GLOBAL.cameraPositionTarget.current);
+
   return (
     <Html fullscreen zIndexRange={[100, 0]} position={position}>
       <div id="pathway-headline">
