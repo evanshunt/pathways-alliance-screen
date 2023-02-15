@@ -18,6 +18,7 @@ export default ({ openItemIndex, onPointerDown }) => {
     <group ref={controlRef}>
       <Html fullscreen zIndexRange={[200, 100]}>
         <button
+          className="highlight"
           id="home"
           disabled={GLOBAL.mode !== GLOBAL.MODE.Detail}
           onPointerDown={(event) => {
