@@ -43,6 +43,16 @@ export default forwardRef(function (
       <Circle args={[4, 64]} onPointerUp={handlePointerUp}>
         <meshStandardMaterial visible={false} />
       </Circle>
+      {/* I don't love the manual positioning here for this button hot
+      spot. It lines up with the HTML button well enough to be suitable, 
+      but it is just an approximation. There's probably a better way to
+      do it, but attaching the pointer event to the HTML button itself
+      doesn't work because the drag control can no longer stop its
+      activation */}
+      {active && <Circle args={[1, 64]} position={index % 2 ? [9.8,1.2,0] : [9.8,-1.2,0]} onPointerUp={handlePointerUp}>
+        <meshStandardMaterial visible={false} />
+      </Circle>
+      }
       <Html
         zIndexRange={[300, 200]}
         className={active ? "bubble active" : "bubble inactive"}
