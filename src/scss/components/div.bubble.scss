@@ -1,3 +1,5 @@
+$bubbleTextWidth: 35vw;
+
 div.bubble {
   pointer-events: none;
 
@@ -68,7 +70,7 @@ div.bubble {
   }
 
   .bubbletext {
-    width: 27vw;
+    width: $bubbleTextWidth;
     color: white;
     opacity: 0;
     transition: 0.6s all;
@@ -137,7 +139,7 @@ div.bubble {
       height: 1px;
       background-color: white;
       position: absolute;
-      right: 28.7vw;
+      right: $bubbleTextWidth + 1.7vw;
       top: 1.4vw;
       width: 0;
       transition: 0.6s all;

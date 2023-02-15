@@ -45,11 +45,13 @@ export default forwardRef(function (
       </Circle>
       {/* I don't love the manual positioning here for this button hot
       spot. It lines up with the HTML button well enough to be suitable, 
-      but it is just an approximation. There's probably a better way to
-      do it, but attaching the pointer event to the HTML button itself
-      doesn't work because the drag control can no longer stop its
-      activation */}
-      {active && <Circle args={[1, 64]} position={index % 2 ? [9.8,1.2,0] : [9.8,-1.2,0]} onPointerUp={handlePointerUp}>
+      but it has to be made bigger to encompass the range of flexible
+      button positions based off the text content of the HTML. There's
+      probably a better way to do it, but attaching the pointer event to
+      the HTML button itself doesn't work because the drag control can
+      no longer stop its activation. Turn on visibility to see how
+      crummy this is. In real life usage though it should be decent. */}
+      {active && <Circle args={[2.5, 64]} position={index % 2 ? [12,1.6,0] : [12,-1.2,0]} onPointerUp={handlePointerUp}>
         <meshStandardMaterial visible={false} />
       </Circle>
       }
