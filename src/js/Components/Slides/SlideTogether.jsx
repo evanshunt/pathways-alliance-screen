@@ -45,7 +45,7 @@ export default ({ t, isActive }) => {
                 stroke="#ffffff"
                 cx="275"
                 cy="275"
-                r="150"
+                r="125"
                 ref={circleRef}
               ></circle>
             </mask>
