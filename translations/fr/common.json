@@ -1,10 +1,10 @@
 {
   "main": {
     "title": "Nous construisons de nombreux chemins vers le net zéro",
-    "payoff": "Net zéro en 2050"
+    "payoff": "Net zéro en"
   },
   "controls": {
-    "home": "Accueil"
+    "home": "Dos"
   },
   "bubbles": {
     "industry": {

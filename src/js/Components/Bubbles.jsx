@@ -1,5 +1,5 @@
 import { useRef, useContext, useLayoutEffect } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 
 import { GlobalContext } from "../Context/GlobalContext";
 import Bubble from "./Bubble.jsx";
@@ -18,6 +18,7 @@ const Bubbles = ({
 }) => {
   const GLOBAL = useContext(GlobalContext);
   const bubblesRef = useRef([]);
+  const state = useThree();
 
   const bubbles = [
     "industry",
@@ -77,7 +78,7 @@ const Bubbles = ({
             key={`circle=${i}`}
             index={i}
             view={view}
-            position={[i * distance + 10, i % 2 === 0 ? -1.8 : 1.5, 0]}
+            position={[i * distance + 8, i % 2 === 0 ? -1.8 : 1.5, 0]}
             ref={(el) => {
               bubblesRef.current[i] = el;
             }}

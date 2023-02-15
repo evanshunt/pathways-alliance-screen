@@ -11,7 +11,8 @@ div#slide-together {
 
     .background {
       circle {
-        stroke-width: 250px;
+        // stroke-width: 250px;
+        stroke-width: 17vw;
       }
     }
 
@@ -30,7 +31,7 @@ div#slide-together {
         text-align: center;
         background: white;
         margin: 0;
-        padding: 2em;
+        padding: 4vw;
         border-radius: 50%;
         min-height: 10em;
         font-family: sans-serif;
@@ -38,12 +39,12 @@ div#slide-together {
 
       .number {
         display: block;
-        font-size: 3em;
-        min-width: 2em;
+        font-size: 7vw;
+        min-width: 15vw;
       }
       .text {
         display: block;
-        font-size: 0.5em;
+        font-size: 1.5vw;
         font-weight: normal;
         max-width: 10em;
       }

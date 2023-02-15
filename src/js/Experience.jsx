@@ -5,7 +5,7 @@ import * as THREE from "three";
 
 import { GlobalContext } from "./Context/GlobalContext";
 import DragControl from "./Controls/DragControl";
-import HomeControl from "./Controls/HomeControl";
+import BackControl from "./Controls/BackControl";
 import Camera from "./Components/Camera";
 import Background from "./Components/Background";
 import Waves from "./Components/Waves";
@@ -16,17 +16,16 @@ import Payoff from "./Components/Payoff";
 import Details from "./Components/Details";
 
 export default ({ debug }) => {
-  const { camera } = useThree();
   const MODE = Object.freeze({
     Screensaver: "Screensaver",
     Pathway: "Pathway",
     Detail: "Detail",
   });
-  const [mode, setMode] = useState(MODE.Pathway);
-  const [lastPathwayPosition, setLastPathwayPosition] = useState(0);
-
+  const { camera } = useThree();
   const cameraPositionTarget = useRef(new THREE.Vector3(0, 0, 10));
   const cameraPositionLerped = useRef(new THREE.Vector3());
+  const [mode, setMode] = useState(MODE.Pathway);
+  const [lastPathwayPosition, setLastPathwayPosition] = useState(0);
   const [activeItemIndex, setActiveItemIndex] = useState(-1);
   const [openItemIndex, setOpenItemIndex] = useState(-1);
   const [moveToIndex, setMoveToIndex] = useState(-1);
@@ -64,7 +63,7 @@ export default ({ debug }) => {
         sceneLength={sceneLength}
         isDragDisabled={mode !== MODE.Pathway}
       />
-      <HomeControl
+      <BackControl
         openItemIndex={openItemIndex}
         onPointerDown={() => {
           setMode(MODE.Pathway);

@@ -1,11 +1,32 @@
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { DrawSVGPlugin } from "gsap/all";
+
 import AnimSlideUpFadeIn from "../Animations/AnimSlideUpFadeIn";
 import AnimNumberAccumulator from "../Animations/AnimNumberAccumulator";
+import SVGTransportationIllustration from "../SVGs/SVGTransportationIllustration";
+
+gsap.registerPlugin(DrawSVGPlugin);
 
 export default ({ t, isActive }) => {
+  const illustrationRef = useRef();
+  const timelineRef = useRef();
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      timelineRef.current = gsap.timeline().to("#mainpipeline", {
+        drawSVG: "0% 100%",
+        delay: 0.8 + 0.5,
+      });
+    }, illustrationRef.current);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <div id="slide-transportation">
       <div className="illustration">
-        <img src="/images/slides/transportation-illustration.png" alt="" />
+        <SVGTransportationIllustration ref={illustrationRef} />
       </div>
       <div className="text">
         <div className="bucket bucket1">

@@ -8,7 +8,7 @@ export default ({ t, isActive }) => {
           <AnimSlideUpFadeIn isActive={isActive}>
             <h1>
               <span className="number">
-                <img src="/images/slides/companies-6.svg" alt="6" width="169" />
+                <img src="/images/slides/companies-6.svg" alt="6" />
               </span>
               <span>{t("slides.companies.headline1")}</span>
             </h1>
@@ -18,7 +18,7 @@ export default ({ t, isActive }) => {
           <AnimSlideUpFadeIn isActive={isActive} delay={0.2}>
             <h1>
               <span className="number">
-                <img src="/images/slides/companies-1.svg" alt="1" width="153" />
+                <img src="/images/slides/companies-1.svg" alt="1" />
               </span>
               <span>{t("slides.companies.headline2")}</span>
             </h1>

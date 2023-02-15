@@ -4,8 +4,8 @@ div.bubble {
   & > button {
     display: block;
     position: absolute;
-    width: 10em;
-    height: 10em;
+    width: 16vw;
+    height: 16vw;
     transition: 0.3s all;
     transform: translate(-50%, -50%);
     background: none;
@@ -68,11 +68,10 @@ div.bubble {
   }
 
   .bubbletext {
-    width: 18em;
+    width: 27vw;
     color: white;
     opacity: 0;
     transition: 0.6s all;
-    margin-left: 10em;
     position: relative;
 
     .text {
@@ -125,11 +124,11 @@ div.bubble {
     }
 
     &.up {
-      transform: translateY(-7em);
+      transform: translateY(-9vw);
     }
 
     &.down {
-      transform: translateY(2em);
+      transform: translateY(3vw);
     }
 
     &::before {
@@ -138,8 +137,13 @@ div.bubble {
       height: 1px;
       background-color: white;
       position: absolute;
+<<<<<<< HEAD
       right: 19em;
       top: 0.7em;
+=======
+      right: 28.7vw;
+      top: 1.4vw;
+>>>>>>> 2d1f19d413e9510ffeb6a89599cc4be6bc4dab5d
       width: 0;
       transition: 0.6s all;
       transform: translateY(-50%);
@@ -148,18 +152,23 @@ div.bubble {
     &::after {
       content: "";
       display: block;
-      height: 0.5em;
-      width: 0.5em;
+      height: 0.7vw;
+      width: 0.7vw;
       background-color: white;
       border-radius: 0.25em;
       position: absolute;
+<<<<<<< HEAD
       left: -1em;
       top: 0.7em;
+=======
+      left: -1.5vw;
+      top: 1.4vw;
+>>>>>>> 2d1f19d413e9510ffeb6a89599cc4be6bc4dab5d
       transform: translate(-50%, -50%);
     }
 
     h2 {
-      font-family: "Tiro Tamil", serif;
+      margin-bottom: 0;
     }
   }
 
@@ -176,10 +185,10 @@ div.bubble {
 
     .bubbletext {
       opacity: 1;
-      margin-left: 14em;
+      margin-left: 23.5vw;
 
       &::before {
-        width: 6em;
+        width: 8.7vw;
       }
     }
   }

@@ -2,29 +2,43 @@ div#slide-companies {
   .stats {
     display: flex;
     justify-content: space-between;
-    font-size: 2em;
+    font-size: 3vw;
 
     h1 {
       display: flex;
       align-items: center;
+      font-family: agenda, sans-serif;
     }
 
     .number {
-      margin-right: 0.5em;
+      margin-right: 3vw;
+    }
+
+    .companies {
+      .number img {
+        width: 12vw;
+      }
+    }
+
+    .goal {
+      .number img {
+        width: 10.6vw;
+      }
     }
   }
+
   .logos {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0;
-    margin: 10rem auto 0;
+    margin: 8vw auto 0;
     width: 100%;
     height: 100%;
 
     li {
       display: block;
-      padding: 0 1.5rem;
+      padding: 0 2vw;
       height: 100%;
 
       img {
