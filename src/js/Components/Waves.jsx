@@ -49,8 +49,8 @@ const Waves = ({ maxSceneLength }) => {
       for (let point = 1; point < numPoints; point += 1) {
         points.push(
           (point / numPoints) * xLength + xOffset + i * xOffsetMultiplier,
-          amplitude *
-            Math.sin(point / frequency + state.clock.elapsedTime * 0.2) +
+          amplitude * Math.sin(state.clock.elapsedTime*0.2 + i * 0.05 + point * 0.05) *
+            Math.sin(point / frequency) +
             +i * yOffsetMultiplier +
             yOffset,
           zOffset
