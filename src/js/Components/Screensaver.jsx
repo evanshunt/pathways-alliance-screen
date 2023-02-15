@@ -18,6 +18,8 @@ import SlideTogether from "./Slides/SlideTogether";
 import SlideTransportation from "./Slides/SlideTransportation";
 import SlideNetZero from "./Slides/SlideNetZero";
 
+import TapControl from "../Controls/TapControl";
+
 const Screensaver = (props) => {
   const {
     setSceneLength,
@@ -139,26 +141,30 @@ const Screensaver = (props) => {
   }, [activeSlide]);
 
   return (
-    <group position={new THREE.Vector3()}>
-      {slides.map((slide, i) => {
-        return (
-          <Html
-            fullscreen
-            zIndexRange={[100, 0]}
-            position={[0 + slideDistance * i, 15, 0]}
-            key={`slide-${i}`}
-          >
-            <section className={"slide"}>
-              {cloneElement(slide, {
-                t,
-                isActive:
-                  GLOBAL.mode === GLOBAL.MODE.Screensaver && activeSlide === i,
-              })}
-            </section>
-          </Html>
-        );
-      })}
-    </group>
+    <>
+      <TapControl />
+      <group position={new THREE.Vector3()}>
+        {slides.map((slide, i) => {
+          return (
+            <Html
+              fullscreen
+              zIndexRange={[100, 0]}
+              position={[0 + slideDistance * i, 15, 0]}
+              key={`slide-${i}`}
+            >
+              <section className={"slide"}>
+                {cloneElement(slide, {
+                  t,
+                  isActive:
+                    GLOBAL.mode === GLOBAL.MODE.Screensaver &&
+                    activeSlide === i,
+                })}
+              </section>
+            </Html>
+          );
+        })}
+      </group>
+    </>
   );
 };
 

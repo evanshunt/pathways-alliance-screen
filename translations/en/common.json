@@ -4,7 +4,8 @@
     "payoff": "Net Zero By"
   },
   "controls": {
-    "home": "Back"
+    "back": "Back",
+    "tap": "Tap anywhere to start"
   },
   "bubbles": {
     "industry": {

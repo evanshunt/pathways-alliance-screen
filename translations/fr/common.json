@@ -4,7 +4,8 @@
     "payoff": "Net zéro en"
   },
   "controls": {
-    "home": "Dos"
+    "back": "Dos",
+    "tap": "Appuyez n'importe où pour commencer"
   },
   "bubbles": {
     "industry": {

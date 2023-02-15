@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import { GlobalContext } from "../Context/GlobalContext";
 
-export default ({ openItemIndex, onPointerDown }) => {
+export default ({ onPointerDown }) => {
   const GLOBAL = useContext(GlobalContext);
   const controlRef = useRef();
   const { t } = useTranslation("common");
@@ -19,7 +19,7 @@ export default ({ openItemIndex, onPointerDown }) => {
       <Html fullscreen zIndexRange={[200, 100]}>
         <button
           className="highlight"
-          id="home"
+          id="back"
           disabled={GLOBAL.mode !== GLOBAL.MODE.Detail}
           onPointerDown={(event) => {
             onPointerDown();
@@ -49,7 +49,7 @@ export default ({ openItemIndex, onPointerDown }) => {
               />
             </svg>
           </span>
-          <span>{t("controls.home")}</span>
+          <span>{t("controls.back")}</span>
         </button>
       </Html>
     </group>
