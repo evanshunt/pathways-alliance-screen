@@ -7,6 +7,7 @@ import { GlobalContext } from "./Context/GlobalContext";
 import DragControl from "./Controls/DragControl";
 import BackControl from "./Controls/BackControl";
 import Camera from "./Components/Camera";
+import Logo from "./Components/Logo";
 import Background from "./Components/Background";
 import Waves from "./Components/Waves";
 import Screensaver from "./Components/Screensaver";
@@ -69,7 +70,7 @@ export default ({ debug }) => {
           setMode(MODE.Pathway);
         }}
       />
-
+      <Logo />
       <Background sceneLength={sceneLength} />
       <Waves maxSceneLength={maxSceneLength} />
 
@@ -84,8 +85,10 @@ export default ({ debug }) => {
         }}
         onScreensaverEnd={() => setMode(MODE.Pathway)}
       />
-      <Headline />
-      <Payoff position={[sceneLength - 23, 0, -2]} />
+      <Headline position={[0, 0, -2]} />
+      {mode === MODE.Pathway && (
+        <Payoff position={new THREE.Vector3(sceneLength - 20, 0, -2)} />
+      )}
       <Bubbles
         distance={15}
         setSceneLength={setSceneLength}

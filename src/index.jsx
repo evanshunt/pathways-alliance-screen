@@ -35,8 +35,7 @@ i18next.init({
 
 if (debug) {
   rootElement.classList.add("debug");
-}
-else {
+} else {
   rootElement.classList.add("prod");
 }
 
@@ -53,8 +52,7 @@ root.render(
       >
         <Experience debug={debug} />
       </Canvas>
-      <LanguageControl />
+      {/* <LanguageControl /> */}
     </I18nextProvider>
   </StrictMode>
 );
-

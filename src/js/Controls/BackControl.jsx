@@ -16,7 +16,7 @@ export default ({ onPointerDown }) => {
 
   return (
     <group ref={controlRef}>
-      <Html fullscreen zIndexRange={[300, 100]}>
+      <Html fullscreen zIndexRange={[300, 100]} position={[0, 0, -2]}>
         <button
           className="highlight"
           id="back"

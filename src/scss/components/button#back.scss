@@ -1,10 +1,10 @@
 button#back {
   position: absolute;
-  bottom: 2em;
-  left: 2em;
+  bottom: 3vw;
+  left: 3vw;
   opacity: 1;
   transition: opacity 0.3s;
-  padding: 0.75em 1em;
+  padding: 1.1vw 1.5vw;
   color: $highlight;
   background-color: rgba($highlight, 0.2);
   display: flex;
@@ -17,9 +17,9 @@ button#back {
   }
 
   span:first-child {
-    width: 2em;
+    width: 1.6vw;
     display: flex;
-    margin-right: 1em;
+    margin-right: 0.8vw;
     overflow: hidden;
     transition: width 0.6s;
   }

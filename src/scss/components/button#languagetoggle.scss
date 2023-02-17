@@ -1,17 +1,17 @@
 button#languagetoggle {
   z-index: 1000;
   position: absolute;
-  bottom: 2em;
-  right: 2em;
+  bottom: 3vw;
+  right: 3vw;
   background-color: rgba(#fff, 0.4);
   color: $blue;
-  padding: 0.75em 0em;
+  padding: 1.1vw 0em;
   display: flex;
   justify-content: space-around;
-  width: 6em;
+  width: 9vw;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 50%;
