@@ -8,12 +8,13 @@ div#slide-transportation {
 
   .illustration {
     position: absolute;
-    right: 0;
+    left: 50%;
     bottom: 0;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 80%;
+    width: 65vw;
+    transform: translateX(-45%);
   }
 
   .text {
@@ -23,6 +24,7 @@ div#slide-transportation {
     position: relative;
 
     h2 {
+      font-family: agenda, sans-serif;
       font-size: 3vw;
       margin-top: 0;
       margin-bottom: 0.5vw;
@@ -43,7 +45,7 @@ div#slide-transportation {
     .bucket2 {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 25%;
     }
 
     .bucket3 {

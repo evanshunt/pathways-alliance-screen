@@ -45,11 +45,11 @@ div.bubble {
     }
 
     &#capture::after {
-      background-image: url("/images/bubbles/capture.png");
+      background-image: url("/images/bubbles/capture.jpg");
     }
 
     &#dollars::after {
-      background-image: url("/images/bubbles/dollars.png");
+      background-image: url("/images/bubbles/dollars.jpg");
     }
 
     &#industry::after {
@@ -57,15 +57,15 @@ div.bubble {
     }
 
     &#innovation::after {
-      background-image: url("/images/bubbles/innovation.png");
+      background-image: url("/images/bubbles/innovation.jpg");
     }
 
     &#network::after {
-      background-image: url("/images/bubbles/network.png");
+      background-image: url("/images/bubbles/network.jpg");
     }
 
     &#storage::after {
-      background-image: url("/images/bubbles/storage.png");
+      background-image: url("/images/bubbles/storage.jpg");
     }
   }
 
@@ -102,8 +102,9 @@ div.bubble {
           height: 100%;
         }
 
-        .plus::before, .plus::after {
-          content: '';
+        .plus::before,
+        .plus::after {
+          content: "";
           display: block;
           background-color: white;
           left: 50%;

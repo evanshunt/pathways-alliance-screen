@@ -7,9 +7,7 @@ export default ({ t, isActive }) => {
         <div className="companies">
           <AnimSlideUpFadeIn isActive={isActive}>
             <h1>
-              <span className="number">
-                <img src="/images/slides/companies-6.svg" alt="6" />
-              </span>
+              <span className="number">6</span>
               <span>{t("slides.companies.headline1")}</span>
             </h1>
           </AnimSlideUpFadeIn>
@@ -17,9 +15,7 @@ export default ({ t, isActive }) => {
         <div className="goal">
           <AnimSlideUpFadeIn isActive={isActive} delay={0.2}>
             <h1>
-              <span className="number">
-                <img src="/images/slides/companies-1.svg" alt="1" />
-              </span>
+              <span className="number">1</span>
               <span>{t("slides.companies.headline2")}</span>
             </h1>
           </AnimSlideUpFadeIn>

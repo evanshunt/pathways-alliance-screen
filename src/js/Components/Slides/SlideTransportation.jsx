@@ -14,7 +14,7 @@ export default ({ t, isActive }) => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      timelineRef.current = gsap.timeline({ delay: 0.8 });
+      timelineRef.current = gsap.timeline();
 
       const buildings = [
         "#Fort_Mac_facility",
