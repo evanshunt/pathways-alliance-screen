@@ -48,7 +48,7 @@ export default ({ t, isActive }) => {
       });
 
       const pipes = [
-        { id: "#main_pipline", drawSVG: "100%", duration: 1 },
+        { id: "#main_pipline", drawSVG: "100%", duration: 2 },
         { id: "#map-connectpipe1", drawSVG: "100%" },
         { id: "#map-connectpipe2", drawSVG: "-100%" },
         { id: "#map-connectpipe3", drawSVG: "-100%" },
