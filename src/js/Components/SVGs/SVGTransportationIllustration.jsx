@@ -5,8 +5,8 @@ export default forwardRef((props, ref) => {
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 914.22 549.02"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 2429.16 1413.33"
       ref={ref}
     >
       <defs>
@@ -17,8114 +17,4742 @@ export default forwardRef((props, ref) => {
           y="0"
           width="72"
           height="74.8"
-          patternTransform="translate(-8859.6 -6758.95) rotate(-180) scale(.17 -.17)"
+          patternTransform="translate(-10214.94 -4758.31) rotate(-180) scale(.47 -.47)"
           patternUnits="userSpaceOnUse"
           viewBox="0 0 72 74.8"
         >
           <g>
-            <rect className="cls-1" width="72" height="74.8" />
+            <rect class="cls-1" width="72" height="74.8" />
             <g>
-              <path className="cls-8" d="m72,73.95" />
-              <path className="cls-8" d="m72,72.25" />
-              <path className="cls-8" d="m72,70.55" />
-              <path className="cls-8" d="m72,68.85" />
-              <path className="cls-8" d="m72,67.15" />
-              <path className="cls-8" d="m72,65.45" />
-              <path className="cls-8" d="m72,63.75" />
-              <path className="cls-8" d="m72,62.05" />
-              <path className="cls-8" d="m72,60.35" />
-              <path className="cls-8" d="m72,58.65" />
-              <path className="cls-8" d="m72,56.95" />
-              <path className="cls-8" d="m72,55.25" />
-              <path className="cls-8" d="m72,53.55" />
-              <path className="cls-8" d="m72,51.85" />
-              <path className="cls-8" d="m72,50.15" />
-              <path className="cls-8" d="m72,48.45" />
-              <path className="cls-8" d="m72,46.75" />
-              <path className="cls-8" d="m72,45.05" />
-              <path className="cls-8" d="m72,43.35" />
-              <path className="cls-8" d="m72,41.65" />
-              <path className="cls-8" d="m72,39.95" />
-              <path className="cls-8" d="m72,38.25" />
-              <path className="cls-8" d="m72,36.55" />
-              <path className="cls-8" d="m72,34.85" />
-              <path className="cls-8" d="m72,33.15" />
-              <path className="cls-8" d="m72,31.45" />
-              <path className="cls-8" d="m72,29.75" />
-              <path className="cls-8" d="m72,28.05" />
-              <path className="cls-8" d="m72,26.35" />
-              <path className="cls-8" d="m72,24.65" />
-              <path className="cls-8" d="m72,22.95" />
-              <path className="cls-8" d="m72,21.25" />
-              <path className="cls-8" d="m72,19.55" />
-              <path className="cls-8" d="m72,17.85" />
-              <path className="cls-8" d="m72,16.15" />
-              <path className="cls-8" d="m72,14.45" />
-              <path className="cls-8" d="m72,12.75" />
-              <path className="cls-8" d="m72,11.05" />
-              <path className="cls-8" d="m72,9.35" />
-              <path className="cls-8" d="m72,7.65" />
-              <path className="cls-8" d="m72,5.95" />
-              <path className="cls-8" d="m72,4.25" />
-              <path className="cls-8" d="m72,2.55" />
-              <path className="cls-8" d="m72,.85" />
+              <path class="cls-6" d="m72,73.95" />
+              <path class="cls-6" d="m72,72.25" />
+              <path class="cls-6" d="m72,70.55" />
+              <path class="cls-6" d="m72,68.85" />
+              <path class="cls-6" d="m72,67.15" />
+              <path class="cls-6" d="m72,65.45" />
+              <path class="cls-6" d="m72,63.75" />
+              <path class="cls-6" d="m72,62.05" />
+              <path class="cls-6" d="m72,60.35" />
+              <path class="cls-6" d="m72,58.65" />
+              <path class="cls-6" d="m72,56.95" />
+              <path class="cls-6" d="m72,55.25" />
+              <path class="cls-6" d="m72,53.55" />
+              <path class="cls-6" d="m72,51.85" />
+              <path class="cls-6" d="m72,50.15" />
+              <path class="cls-6" d="m72,48.45" />
+              <path class="cls-6" d="m72,46.75" />
+              <path class="cls-6" d="m72,45.05" />
+              <path class="cls-6" d="m72,43.35" />
+              <path class="cls-6" d="m72,41.65" />
+              <path class="cls-6" d="m72,39.95" />
+              <path class="cls-6" d="m72,38.25" />
+              <path class="cls-6" d="m72,36.55" />
+              <path class="cls-6" d="m72,34.85" />
+              <path class="cls-6" d="m72,33.15" />
+              <path class="cls-6" d="m72,31.45" />
+              <path class="cls-6" d="m72,29.75" />
+              <path class="cls-6" d="m72,28.05" />
+              <path class="cls-6" d="m72,26.35" />
+              <path class="cls-6" d="m72,24.65" />
+              <path class="cls-6" d="m72,22.95" />
+              <path class="cls-6" d="m72,21.25" />
+              <path class="cls-6" d="m72,19.55" />
+              <path class="cls-6" d="m72,17.85" />
+              <path class="cls-6" d="m72,16.15" />
+              <path class="cls-6" d="m72,14.45" />
+              <path class="cls-6" d="m72,12.75" />
+              <path class="cls-6" d="m72,11.05" />
+              <path class="cls-6" d="m72,9.35" />
+              <path class="cls-6" d="m72,7.65" />
+              <path class="cls-6" d="m72,5.95" />
+              <path class="cls-6" d="m72,4.25" />
+              <path class="cls-6" d="m72,2.55" />
+              <path class="cls-6" d="m72,.85" />
             </g>
             <g>
-              <line className="cls-7" y1="73.95" x2="72" y2="73.95" />
-              <line className="cls-7" y1="72.25" x2="72" y2="72.25" />
-              <line className="cls-7" y1="70.55" x2="72" y2="70.55" />
-              <line className="cls-7" y1="68.85" x2="72" y2="68.85" />
-              <line className="cls-7" y1="67.15" x2="72" y2="67.15" />
-              <line className="cls-7" y1="65.45" x2="72" y2="65.45" />
-              <line className="cls-7" y1="63.75" x2="72" y2="63.75" />
-              <line className="cls-7" y1="62.05" x2="72" y2="62.05" />
-              <line className="cls-7" y1="60.35" x2="72" y2="60.35" />
-              <line className="cls-7" y1="58.65" x2="72" y2="58.65" />
-              <line className="cls-7" y1="56.95" x2="72" y2="56.95" />
-              <line className="cls-7" y1="55.25" x2="72" y2="55.25" />
-              <line className="cls-7" y1="53.55" x2="72" y2="53.55" />
-              <line className="cls-7" y1="51.85" x2="72" y2="51.85" />
-              <line className="cls-7" y1="50.15" x2="72" y2="50.15" />
-              <line className="cls-7" y1="48.45" x2="72" y2="48.45" />
-              <line className="cls-7" y1="46.75" x2="72" y2="46.75" />
-              <line className="cls-7" y1="45.05" x2="72" y2="45.05" />
-              <line className="cls-7" y1="43.35" x2="72" y2="43.35" />
-              <line className="cls-7" y1="41.65" x2="72" y2="41.65" />
-              <line className="cls-7" y1="39.95" x2="72" y2="39.95" />
-              <line className="cls-7" y1="38.25" x2="72" y2="38.25" />
-              <line className="cls-7" y1="36.55" x2="72" y2="36.55" />
-              <line className="cls-7" y1="34.85" x2="72" y2="34.85" />
-              <line className="cls-7" y1="33.15" x2="72" y2="33.15" />
-              <line className="cls-7" y1="31.45" x2="72" y2="31.45" />
-              <line className="cls-7" y1="29.75" x2="72" y2="29.75" />
-              <line className="cls-7" y1="28.05" x2="72" y2="28.05" />
-              <line className="cls-7" y1="26.35" x2="72" y2="26.35" />
-              <line className="cls-7" y1="24.65" x2="72" y2="24.65" />
-              <line className="cls-7" y1="22.95" x2="72" y2="22.95" />
-              <line className="cls-7" y1="21.25" x2="72" y2="21.25" />
-              <line className="cls-7" y1="19.55" x2="72" y2="19.55" />
-              <line className="cls-7" y1="17.85" x2="72" y2="17.85" />
-              <line className="cls-7" y1="16.15" x2="72" y2="16.15" />
-              <line className="cls-7" y1="14.45" x2="72" y2="14.45" />
-              <line className="cls-7" y1="12.75" x2="72" y2="12.75" />
-              <line className="cls-7" y1="11.05" x2="72" y2="11.05" />
-              <line className="cls-7" y1="9.35" x2="72" y2="9.35" />
-              <line className="cls-7" y1="7.65" x2="72" y2="7.65" />
-              <line className="cls-7" y1="5.95" x2="72" y2="5.95" />
-              <line className="cls-7" y1="4.25" x2="72" y2="4.25" />
-              <line className="cls-7" y1="2.55" x2="72" y2="2.55" />
-              <line className="cls-7" y1=".85" x2="72" y2=".85" />
+              <line class="cls-5" y1="73.95" x2="72" y2="73.95" />
+              <line class="cls-5" y1="72.25" x2="72" y2="72.25" />
+              <line class="cls-5" y1="70.55" x2="72" y2="70.55" />
+              <line class="cls-5" y1="68.85" x2="72" y2="68.85" />
+              <line class="cls-5" y1="67.15" x2="72" y2="67.15" />
+              <line class="cls-5" y1="65.45" x2="72" y2="65.45" />
+              <line class="cls-5" y1="63.75" x2="72" y2="63.75" />
+              <line class="cls-5" y1="62.05" x2="72" y2="62.05" />
+              <line class="cls-5" y1="60.35" x2="72" y2="60.35" />
+              <line class="cls-5" y1="58.65" x2="72" y2="58.65" />
+              <line class="cls-5" y1="56.95" x2="72" y2="56.95" />
+              <line class="cls-5" y1="55.25" x2="72" y2="55.25" />
+              <line class="cls-5" y1="53.55" x2="72" y2="53.55" />
+              <line class="cls-5" y1="51.85" x2="72" y2="51.85" />
+              <line class="cls-5" y1="50.15" x2="72" y2="50.15" />
+              <line class="cls-5" y1="48.45" x2="72" y2="48.45" />
+              <line class="cls-5" y1="46.75" x2="72" y2="46.75" />
+              <line class="cls-5" y1="45.05" x2="72" y2="45.05" />
+              <line class="cls-5" y1="43.35" x2="72" y2="43.35" />
+              <line class="cls-5" y1="41.65" x2="72" y2="41.65" />
+              <line class="cls-5" y1="39.95" x2="72" y2="39.95" />
+              <line class="cls-5" y1="38.25" x2="72" y2="38.25" />
+              <line class="cls-5" y1="36.55" x2="72" y2="36.55" />
+              <line class="cls-5" y1="34.85" x2="72" y2="34.85" />
+              <line class="cls-5" y1="33.15" x2="72" y2="33.15" />
+              <line class="cls-5" y1="31.45" x2="72" y2="31.45" />
+              <line class="cls-5" y1="29.75" x2="72" y2="29.75" />
+              <line class="cls-5" y1="28.05" x2="72" y2="28.05" />
+              <line class="cls-5" y1="26.35" x2="72" y2="26.35" />
+              <line class="cls-5" y1="24.65" x2="72" y2="24.65" />
+              <line class="cls-5" y1="22.95" x2="72" y2="22.95" />
+              <line class="cls-5" y1="21.25" x2="72" y2="21.25" />
+              <line class="cls-5" y1="19.55" x2="72" y2="19.55" />
+              <line class="cls-5" y1="17.85" x2="72" y2="17.85" />
+              <line class="cls-5" y1="16.15" x2="72" y2="16.15" />
+              <line class="cls-5" y1="14.45" x2="72" y2="14.45" />
+              <line class="cls-5" y1="12.75" x2="72" y2="12.75" />
+              <line class="cls-5" y1="11.05" x2="72" y2="11.05" />
+              <line class="cls-5" y1="9.35" x2="72" y2="9.35" />
+              <line class="cls-5" y1="7.65" x2="72" y2="7.65" />
+              <line class="cls-5" y1="5.95" x2="72" y2="5.95" />
+              <line class="cls-5" y1="4.25" x2="72" y2="4.25" />
+              <line class="cls-5" y1="2.55" x2="72" y2="2.55" />
+              <line class="cls-5" y1=".85" x2="72" y2=".85" />
             </g>
             <g>
-              <path className="cls-8" d="m0,73.95" />
-              <path className="cls-8" d="m0,72.25" />
-              <path className="cls-8" d="m0,70.55" />
-              <path className="cls-8" d="m0,68.85" />
-              <path className="cls-8" d="m0,67.15" />
-              <path className="cls-8" d="m0,65.45" />
-              <path className="cls-8" d="m0,63.75" />
-              <path className="cls-8" d="m0,62.05" />
-              <path className="cls-8" d="m0,60.35" />
-              <path className="cls-8" d="m0,58.65" />
-              <path className="cls-8" d="m0,56.95" />
-              <path className="cls-8" d="m0,55.25" />
-              <path className="cls-8" d="m0,53.55" />
-              <path className="cls-8" d="m0,51.85" />
-              <path className="cls-8" d="m0,50.15" />
-              <path className="cls-8" d="m0,48.45" />
-              <path className="cls-8" d="m0,46.75" />
-              <path className="cls-8" d="m0,45.05" />
-              <path className="cls-8" d="m0,43.35" />
-              <path className="cls-8" d="m0,41.65" />
-              <path className="cls-8" d="m0,39.95" />
-              <path className="cls-8" d="m0,38.25" />
-              <path className="cls-8" d="m0,36.55" />
-              <path className="cls-8" d="m0,34.85" />
-              <path className="cls-8" d="m0,33.15" />
-              <path className="cls-8" d="m0,31.45" />
-              <path className="cls-8" d="m0,29.75" />
-              <path className="cls-8" d="m0,28.05" />
-              <path className="cls-8" d="m0,26.35" />
-              <path className="cls-8" d="m0,24.65" />
-              <path className="cls-8" d="m0,22.95" />
-              <path className="cls-8" d="m0,21.25" />
-              <path className="cls-8" d="m0,19.55" />
-              <path className="cls-8" d="m0,17.85" />
-              <path className="cls-8" d="m0,16.15" />
-              <path className="cls-8" d="m0,14.45" />
-              <path className="cls-8" d="m0,12.75" />
-              <path className="cls-8" d="m0,11.05" />
-              <path className="cls-8" d="m0,9.35" />
-              <path className="cls-8" d="m0,7.65" />
-              <path className="cls-8" d="m0,5.95" />
-              <path className="cls-8" d="m0,4.25" />
-              <path className="cls-8" d="m0,2.55" />
-              <path className="cls-8" d="m0,.85" />
+              <path class="cls-6" d="m0,73.95" />
+              <path class="cls-6" d="m0,72.25" />
+              <path class="cls-6" d="m0,70.55" />
+              <path class="cls-6" d="m0,68.85" />
+              <path class="cls-6" d="m0,67.15" />
+              <path class="cls-6" d="m0,65.45" />
+              <path class="cls-6" d="m0,63.75" />
+              <path class="cls-6" d="m0,62.05" />
+              <path class="cls-6" d="m0,60.35" />
+              <path class="cls-6" d="m0,58.65" />
+              <path class="cls-6" d="m0,56.95" />
+              <path class="cls-6" d="m0,55.25" />
+              <path class="cls-6" d="m0,53.55" />
+              <path class="cls-6" d="m0,51.85" />
+              <path class="cls-6" d="m0,50.15" />
+              <path class="cls-6" d="m0,48.45" />
+              <path class="cls-6" d="m0,46.75" />
+              <path class="cls-6" d="m0,45.05" />
+              <path class="cls-6" d="m0,43.35" />
+              <path class="cls-6" d="m0,41.65" />
+              <path class="cls-6" d="m0,39.95" />
+              <path class="cls-6" d="m0,38.25" />
+              <path class="cls-6" d="m0,36.55" />
+              <path class="cls-6" d="m0,34.85" />
+              <path class="cls-6" d="m0,33.15" />
+              <path class="cls-6" d="m0,31.45" />
+              <path class="cls-6" d="m0,29.75" />
+              <path class="cls-6" d="m0,28.05" />
+              <path class="cls-6" d="m0,26.35" />
+              <path class="cls-6" d="m0,24.65" />
+              <path class="cls-6" d="m0,22.95" />
+              <path class="cls-6" d="m0,21.25" />
+              <path class="cls-6" d="m0,19.55" />
+              <path class="cls-6" d="m0,17.85" />
+              <path class="cls-6" d="m0,16.15" />
+              <path class="cls-6" d="m0,14.45" />
+              <path class="cls-6" d="m0,12.75" />
+              <path class="cls-6" d="m0,11.05" />
+              <path class="cls-6" d="m0,9.35" />
+              <path class="cls-6" d="m0,7.65" />
+              <path class="cls-6" d="m0,5.95" />
+              <path class="cls-6" d="m0,4.25" />
+              <path class="cls-6" d="m0,2.55" />
+              <path class="cls-6" d="m0,.85" />
             </g>
           </g>
         </pattern>
         <pattern
           id="New_Pattern_Swatch_14-2"
           data-name="New Pattern Swatch 14"
-          patternTransform="translate(-6624.37 -5976.89) scale(.23)"
-          xlinkHref="#New_Pattern_Swatch_14"
+          patternTransform="translate(-9449.24 -5262.38) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
           id="New_Pattern_Swatch_14-3"
           data-name="New Pattern Swatch 14"
-          patternTransform="translate(-6624.37 -5976.89) scale(.23)"
-          xlinkHref="#New_Pattern_Swatch_14"
+          patternTransform="translate(-9443.22 -5345.43) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
           id="New_Pattern_Swatch_14-4"
           data-name="New Pattern Swatch 14"
-          patternTransform="translate(-7740.16 -7188.1) scale(.08)"
-          xlinkHref="#New_Pattern_Swatch_14"
+          patternTransform="translate(-9618.42 -5354.18) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12"
-          data-name="New Pattern Swatch 12"
-          x="0"
-          y="0"
-          width="72"
-          height="72"
-          patternTransform="translate(-6581.57 -7485.35) scale(.11)"
-          patternUnits="userSpaceOnUse"
-          viewBox="0 0 72 72"
-        >
-          <g>
-            <rect className="cls-1" width="72" height="72" />
-            <line className="cls-20" x1="-.25" y1="68.4" x2="72.25" y2="68.4" />
-            <line className="cls-20" x1="-.25" y1="54" x2="72.25" y2="54" />
-            <line className="cls-20" x1="-.25" y1="39.6" x2="72.25" y2="39.6" />
-            <line className="cls-20" x1="-.25" y1="25.2" x2="72.25" y2="25.2" />
-            <line className="cls-20" x1="-.25" y1="10.8" x2="72.25" y2="10.8" />
-            <line className="cls-20" x1="-.25" y1="61.2" x2="72.25" y2="61.2" />
-            <line className="cls-20" x1="-.25" y1="46.8" x2="72.25" y2="46.8" />
-            <line className="cls-20" x1="-.25" y1="32.4" x2="72.25" y2="32.4" />
-            <line className="cls-20" x1="-.25" y1="18" x2="72.25" y2="18" />
-            <line className="cls-20" x1="-.25" y1="3.6" x2="72.25" y2="3.6" />
-          </g>
-        </pattern>
-        <pattern
-          id="New_Pattern_Swatch_12-2"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6650.31 -7449.43) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-5"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-9645.12 -5428.5) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-3"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6690.26 -7501.33) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-6"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-9740.85 -5418.2) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-4"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6708.97 -7520.82) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-7"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-9743.24 -5519.65) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-5"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6693.24 -7515.75) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-8"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-9821.3 -5481.15) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-6"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6717.52 -7514.93) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-9"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-9787.08 -5546.79) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-7"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6691.68 -7503.52) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-10"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-9925.91 -5565.18) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-8"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6718.94 -7503.38) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-11"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-9758.94 -5472.25) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-9"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6654.86 -7456.68) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-12"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-9981.11 -5331.9) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-10"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-8539.45 -7496.32) rotate(-174.95) scale(.11 -.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-13"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-10035.03 -5362.77) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-11"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-8504.62 -7428.91) rotate(-180) scale(.11 -.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-14"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-5632.14 -5245.19) scale(.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-12"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6659.65 -7454.51) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-15"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-9726.28 -5235.56) rotate(-180) scale(.37 -.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-13"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6659.65 -7454.51) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-16"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-5784.85 -5444.69) scale(.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-14"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6666.79 -7467.82) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-17"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-5782.52 -5401.2) rotate(-.45) scale(.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
         <pattern
-          id="New_Pattern_Swatch_12-15"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6666.79 -7467.82) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-18"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-5821.74 -5328.07) scale(.37)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
+        <clipPath id="clippath">
+          <path
+            class="cls-1"
+            d="m2074.98,1188.33l7.75-4.74-39.42-23.4s-5.74-3.5-10.76,3.57c0,0-1.17,2.57-.79,12.24,0,0,2.98,5.52,5.5-.5v-7.81s1.93-2.83,4.49-1.13c2.56,1.7,32.43,20.78,32.43,20.78l.79.98Z"
+          />
+        </clipPath>
+        <clipPath id="clippath-1">
+          <path
+            class="cls-1"
+            d="m2059.13,1197.53l7.75-4.74-39.42-23.4s-5.74-3.5-10.76,3.57c0,0-1.17,2.57-.79,12.24,0,0,2.98,5.52,5.5-.5v-7.81s1.93-2.83,4.49-1.13,32.43,20.78,32.43,20.78l.79.98Z"
+          />
+        </clipPath>
         <pattern
-          id="New_Pattern_Swatch_12-16"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-6666.79 -7467.82) scale(.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
+          id="New_Pattern_Swatch_14-19"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-4521.49 -1005.16) scale(.47)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
+        <clipPath id="clippath-2">
+          <polygon
+            class="cls-1"
+            points="2248.7 1312.91 2248.7 1297.28 2222.92 1280.93 2216.52 1311.58 2231.89 1321.65 2248.7 1312.91"
+          />
+        </clipPath>
         <pattern
-          id="New_Pattern_Swatch_12-17"
-          data-name="New Pattern Swatch 12"
-          patternTransform="translate(-8510.62 -7455.32) rotate(-180) scale(.11 -.11)"
-          xlinkHref="#New_Pattern_Swatch_12"
-        />
-        <pattern
-          id="New_Pattern_Swatch_5"
-          data-name="New Pattern Swatch 5"
-          x="0"
-          y="0"
-          width="72"
-          height="74.8"
-          patternTransform="translate(-8673.53 -7124.34) rotate(-180) scale(.14 -.14)"
-          patternUnits="userSpaceOnUse"
-          viewBox="0 0 72 74.8"
-        >
-          <g>
-            <rect className="cls-1" x="0" width="72" height="74.8" />
-            <g>
-              <path className="cls-8" d="m72,73.95" />
-              <path className="cls-8" d="m72,72.25" />
-              <path className="cls-8" d="m72,70.55" />
-              <path className="cls-8" d="m72,68.85" />
-              <path className="cls-8" d="m72,67.15" />
-              <path className="cls-8" d="m72,65.45" />
-              <path className="cls-8" d="m72,63.75" />
-              <path className="cls-8" d="m72,62.05" />
-              <path className="cls-8" d="m72,60.35" />
-              <path className="cls-8" d="m72,58.65" />
-              <path className="cls-8" d="m72,56.95" />
-              <path className="cls-8" d="m72,55.25" />
-              <path className="cls-8" d="m72,53.55" />
-              <path className="cls-8" d="m72,51.85" />
-              <path className="cls-8" d="m72,50.15" />
-              <path className="cls-8" d="m72,48.45" />
-              <path className="cls-8" d="m72,46.75" />
-              <path className="cls-8" d="m72,45.05" />
-              <path className="cls-8" d="m72,43.35" />
-              <path className="cls-8" d="m72,41.65" />
-              <path className="cls-8" d="m72,39.95" />
-              <path className="cls-8" d="m72,38.25" />
-              <path className="cls-8" d="m72,36.55" />
-              <path className="cls-8" d="m72,34.85" />
-              <path className="cls-8" d="m72,33.15" />
-              <path className="cls-8" d="m72,31.45" />
-              <path className="cls-8" d="m72,29.75" />
-              <path className="cls-8" d="m72,28.05" />
-              <path className="cls-8" d="m72,26.35" />
-              <path className="cls-8" d="m72,24.65" />
-              <path className="cls-8" d="m72,22.95" />
-              <path className="cls-8" d="m72,21.25" />
-              <path className="cls-8" d="m72,19.55" />
-              <path className="cls-8" d="m72,17.85" />
-              <path className="cls-8" d="m72,16.15" />
-              <path className="cls-8" d="m72,14.45" />
-              <path className="cls-8" d="m72,12.75" />
-              <path className="cls-8" d="m72,11.05" />
-              <path className="cls-8" d="m72,9.35" />
-              <path className="cls-8" d="m72,7.65" />
-              <path className="cls-8" d="m72,5.95" />
-              <path className="cls-8" d="m72,4.25" />
-              <path className="cls-8" d="m72,2.55" />
-              <path className="cls-8" d="m72,.85" />
-            </g>
-            <g>
-              <line className="cls-8" y1="73.95" x2="72" y2="73.95" />
-              <line className="cls-8" y1="72.25" x2="72" y2="72.25" />
-              <line className="cls-8" y1="70.55" x2="72" y2="70.55" />
-              <line className="cls-8" y1="68.85" x2="72" y2="68.85" />
-              <line className="cls-8" y1="67.15" x2="72" y2="67.15" />
-              <line className="cls-8" y1="65.45" x2="72" y2="65.45" />
-              <line className="cls-8" y1="63.75" x2="72" y2="63.75" />
-              <line className="cls-8" y1="62.05" x2="72" y2="62.05" />
-              <line className="cls-8" y1="60.35" x2="72" y2="60.35" />
-              <line className="cls-8" y1="58.65" x2="72" y2="58.65" />
-              <line className="cls-8" y1="56.95" x2="72" y2="56.95" />
-              <line className="cls-8" y1="55.25" x2="72" y2="55.25" />
-              <line className="cls-8" y1="53.55" x2="72" y2="53.55" />
-              <line className="cls-8" y1="51.85" x2="72" y2="51.85" />
-              <line className="cls-8" y1="50.15" x2="72" y2="50.15" />
-              <line className="cls-8" y1="48.45" x2="72" y2="48.45" />
-              <line className="cls-8" y1="46.75" x2="72" y2="46.75" />
-              <line className="cls-8" y1="45.05" x2="72" y2="45.05" />
-              <line className="cls-8" y1="43.35" x2="72" y2="43.35" />
-              <line className="cls-8" y1="41.65" x2="72" y2="41.65" />
-              <line className="cls-8" y1="39.95" x2="72" y2="39.95" />
-              <line className="cls-8" y1="38.25" x2="72" y2="38.25" />
-              <line className="cls-8" y1="36.55" x2="72" y2="36.55" />
-              <line className="cls-8" y1="34.85" x2="72" y2="34.85" />
-              <line className="cls-8" y1="33.15" x2="72" y2="33.15" />
-              <line className="cls-8" y1="31.45" x2="72" y2="31.45" />
-              <line className="cls-8" y1="29.75" x2="72" y2="29.75" />
-              <line className="cls-8" y1="28.05" x2="72" y2="28.05" />
-              <line className="cls-8" y1="26.35" x2="72" y2="26.35" />
-              <line className="cls-8" y1="24.65" x2="72" y2="24.65" />
-              <line className="cls-8" y1="22.95" x2="72" y2="22.95" />
-              <line className="cls-8" y1="21.25" x2="72" y2="21.25" />
-              <line className="cls-8" y1="19.55" x2="72" y2="19.55" />
-              <line className="cls-8" y1="17.85" x2="72" y2="17.85" />
-              <line className="cls-8" y1="16.15" x2="72" y2="16.15" />
-              <line className="cls-8" y1="14.45" x2="72" y2="14.45" />
-              <line className="cls-8" y1="12.75" x2="72" y2="12.75" />
-              <line className="cls-8" y1="11.05" x2="72" y2="11.05" />
-              <line className="cls-8" y1="9.35" x2="72" y2="9.35" />
-              <line className="cls-8" y1="7.65" x2="72" y2="7.65" />
-              <line className="cls-8" y1="5.95" x2="72" y2="5.95" />
-              <line className="cls-8" y1="4.25" x2="72" y2="4.25" />
-              <line className="cls-8" y1="2.55" x2="72" y2="2.55" />
-              <line className="cls-8" y1=".85" x2="72" y2=".85" />
-            </g>
-            <g>
-              <path className="cls-8" d="m0,73.95" />
-              <path className="cls-8" d="m0,72.25" />
-              <path className="cls-8" d="m0,70.55" />
-              <path className="cls-8" d="m0,68.85" />
-              <path className="cls-8" d="m0,67.15" />
-              <path className="cls-8" d="m0,65.45" />
-              <path className="cls-8" d="m0,63.75" />
-              <path className="cls-8" d="m0,62.05" />
-              <path className="cls-8" d="m0,60.35" />
-              <path className="cls-8" d="m0,58.65" />
-              <path className="cls-8" d="m0,56.95" />
-              <path className="cls-8" d="m0,55.25" />
-              <path className="cls-8" d="m0,53.55" />
-              <path className="cls-8" d="m0,51.85" />
-              <path className="cls-8" d="m0,50.15" />
-              <path className="cls-8" d="m0,48.45" />
-              <path className="cls-8" d="m0,46.75" />
-              <path className="cls-8" d="m0,45.05" />
-              <path className="cls-8" d="m0,43.35" />
-              <path className="cls-8" d="m0,41.65" />
-              <path className="cls-8" d="m0,39.95" />
-              <path className="cls-8" d="m0,38.25" />
-              <path className="cls-8" d="m0,36.55" />
-              <path className="cls-8" d="m0,34.85" />
-              <path className="cls-8" d="m0,33.15" />
-              <path className="cls-8" d="m0,31.45" />
-              <path className="cls-8" d="m0,29.75" />
-              <path className="cls-8" d="m0,28.05" />
-              <path className="cls-8" d="m0,26.35" />
-              <path className="cls-8" d="m0,24.65" />
-              <path className="cls-8" d="m0,22.95" />
-              <path className="cls-8" d="m0,21.25" />
-              <path className="cls-8" d="m0,19.55" />
-              <path className="cls-8" d="m0,17.85" />
-              <path className="cls-8" d="m0,16.15" />
-              <path className="cls-8" d="m0,14.45" />
-              <path className="cls-8" d="m0,12.75" />
-              <path className="cls-8" d="m0,11.05" />
-              <path className="cls-8" d="m0,9.35" />
-              <path className="cls-8" d="m0,7.65" />
-              <path className="cls-8" d="m0,5.95" />
-              <path className="cls-8" d="m0,4.25" />
-              <path className="cls-8" d="m0,2.55" />
-              <path className="cls-8" d="m0,.85" />
-            </g>
-          </g>
-        </pattern>
-        <pattern
-          id="New_Pattern_Swatch_5-2"
-          data-name="New Pattern Swatch 5"
-          patternTransform="translate(-6579.71 -7100.53) scale(.14)"
-          xlinkHref="#New_Pattern_Swatch_5"
-        />
-        <pattern
-          id="New_Pattern_Swatch_5-3"
-          data-name="New Pattern Swatch 5"
-          patternTransform="translate(-6611.55 -7089.75) scale(.14)"
-          xlinkHref="#New_Pattern_Swatch_5"
+          id="New_Pattern_Swatch_14-20"
+          data-name="New Pattern Swatch 14"
+          patternTransform="translate(-5659.39 -1291.27) scale(.22)"
+          xlink:href="#New_Pattern_Swatch_14"
         />
       </defs>
-      <g id="_04-map-final" data-name="04-map-final">
+      <g id="_02d_MAP" data-name="02d_MAP">
         <g id="Fort_Mac_facility" data-name="Fort Mac facility">
           <g id="fm-tower1-5">
             <path
               id="fm-tower1-59"
-              className="cls-35"
-              d="m18.97,93.52c0,1.03-1.13,1.87-2.53,1.87s-2.53-.84-2.53-1.87"
+              class="cls-2"
+              d="m51.23,252.54c0,2.78-3.06,5.04-6.84,5.04s-6.84-2.26-6.84-5.04"
             />
             <path
               id="fm-tower1-57"
-              className="cls-36"
-              d="m18.97,70.92c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m51.23,191.52c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-2"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m18.97,69.09c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m51.23,186.57c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-3"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m18.97,60.39c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m51.23,163.08c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-4"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m18.97,54.09c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m51.23,146.06c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-5"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m18.97,52.14c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m51.23,140.81c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-6"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m18.97,62.18c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m51.23,167.92c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-51"
-              className="cls-35"
-              d="m13.91,93.52v-42.7s-.21-1.92,2.71-1.92c2.53,0,2.35,1.92,2.35,1.92v42.7"
+              class="cls-2"
+              d="m37.55,252.54v-115.3s-.56-5.18,7.33-5.18c6.83,0,6.34,5.18,6.34,5.18v115.3"
             />
             <path
-              className="cls-35"
-              d="m13.9,88.08h-1.05c-.89,0-1.61.72-1.61,1.61v4.01"
+              class="cls-2"
+              d="m37.55,237.85h-2.83c-2.4,0-4.34,1.94-4.34,4.34v10.83"
             />
           </g>
           <g id="fm-tower1-5-2" data-name="fm-tower1-5">
             <path
               id="fm-tower1-59-2"
               data-name="fm-tower1-59"
-              className="cls-35"
-              d="m171.02,77.5c0,1.03-1.13,1.87-2.53,1.87s-2.53-.84-2.53-1.87"
+              class="cls-2"
+              d="m461.82,209.29c0,2.78-3.06,5.04-6.84,5.04s-6.84-2.26-6.84-5.04"
             />
             <path
               id="fm-tower1-57-7"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m171.02,54.91c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m461.82,148.27c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-8"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m171.02,53.08c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m461.82,143.33c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-9"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m171.02,44.38c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m461.82,119.83c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-10"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m171.02,38.07c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m461.82,102.82c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-11"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m171.02,36.13c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m461.82,97.57c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-12"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m171.02,46.17c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m461.82,124.68c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-51-2"
               data-name="fm-tower1-51"
-              className="cls-35"
-              d="m165.96,77.5v-42.7s-.21-1.92,2.71-1.92c2.53,0,2.35,1.92,2.35,1.92v42.7"
+              class="cls-2"
+              d="m448.15,209.29v-115.3s-.56-5.18,7.33-5.18c6.83,0,6.34,5.18,6.34,5.18v115.3"
             />
             <path
-              className="cls-35"
-              d="m165.95,72.07h-1.05c-.89,0-1.61.72-1.61,1.61v4.01"
+              class="cls-2"
+              d="m448.14,194.61h-2.83c-2.4,0-4.34,1.94-4.34,4.34v10.83"
             />
           </g>
           <g id="fm-tower1-5-3" data-name="fm-tower1-5">
             <path
               id="fm-tower1-59-3"
               data-name="fm-tower1-59"
-              className="cls-35"
-              d="m124.32,57.57c0,1.03-1.13,1.87-2.53,1.87s-2.53-.84-2.53-1.87"
+              class="cls-2"
+              d="m335.72,155.45c0,2.78-3.06,5.04-6.84,5.04s-6.84-2.26-6.84-5.04"
             />
             <path
               id="fm-tower1-57-13"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m124.32,34.97c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m335.72,94.43c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-14"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m124.32,33.14c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m335.72,89.49c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-15"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m124.32,24.44c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m335.72,65.99c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-16"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m124.32,18.14c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m335.72,48.98c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-17"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m124.32,16.19c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m335.72,43.73c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-18"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m124.32,26.23c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m335.72,70.84c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-51-3"
               data-name="fm-tower1-51"
-              className="cls-35"
-              d="m119.26,57.57V14.87s-.21-1.92,2.71-1.92c2.53,0,2.35,1.92,2.35,1.92v42.7"
+              class="cls-2"
+              d="m322.05,155.45V40.15s-.56-5.18,7.33-5.18c6.83,0,6.34,5.18,6.34,5.18v115.3"
             />
           </g>
           <g id="fm-tower1-5-4" data-name="fm-tower1-5">
             <path
               id="fm-tower1-59-4"
               data-name="fm-tower1-59"
-              className="cls-35"
-              d="m116.92,69.99c0,1.03-1.13,1.87-2.53,1.87s-2.53-.84-2.53-1.87"
+              class="cls-2"
+              d="m315.74,188.99c0,2.78-3.06,5.04-6.84,5.04s-6.84-2.26-6.84-5.04"
             />
             <path
               id="fm-tower1-57-19"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m116.92,47.39c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m315.74,127.98c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-20"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m116.92,45.56c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m315.74,123.03c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-21"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m116.92,36.86c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m315.74,99.54c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-22"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m116.92,30.56c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m315.74,82.52c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-23"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m116.92,28.61c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m315.74,77.27c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-24"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m116.92,38.65c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m315.74,104.38c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-51-4"
               data-name="fm-tower1-51"
-              className="cls-35"
-              d="m111.86,69.99V27.29s-.21-1.92,2.71-1.92c2.53,0,2.35,1.92,2.35,1.92v42.7"
+              class="cls-2"
+              d="m302.07,188.99v-115.3s-.56-5.18,7.33-5.18c6.83,0,6.34,5.18,6.34,5.18v115.3"
             />
             <path
-              className="cls-35"
-              d="m111.86,64.55h-1.05c-.89,0-1.61.72-1.61,1.61v4.01"
+              class="cls-2"
+              d="m302.06,174.31h-2.83c-2.4,0-4.34,1.94-4.34,4.34v10.83"
             />
           </g>
           <g id="fm-tower1-5-5" data-name="fm-tower1-5">
             <path
               id="fm-tower1-59-5"
               data-name="fm-tower1-59"
-              className="cls-35"
-              d="m181.23,87.71c0,1.03-1.13,1.87-2.53,1.87s-2.53-.84-2.53-1.87"
+              class="cls-2"
+              d="m489.38,236.86c0,2.78-3.06,5.04-6.84,5.04s-6.84-2.26-6.84-5.04"
             />
             <path
               id="fm-tower1-57-25"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m181.23,65.12c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m489.38,175.84c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-26"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m181.23,63.29c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m489.38,170.9c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-27"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m181.23,54.58c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m489.38,147.4c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-28"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m181.23,48.28c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m489.38,130.38c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-29"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m181.23,46.34c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m489.38,125.13c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-30"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m181.23,56.38c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m489.38,152.24c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-51-5"
               data-name="fm-tower1-51"
-              className="cls-35"
-              d="m176.16,87.71v-42.7s-.21-1.92,2.71-1.92c2.53,0,2.35,1.92,2.35,1.92v42.7"
+              class="cls-2"
+              d="m475.71,236.86v-115.3s-.56-5.18,7.33-5.18c6.83,0,6.34,5.18,6.34,5.18v115.3"
             />
             <path
-              className="cls-35"
-              d="m176.16,82.27h-1.05c-.89,0-1.61.72-1.61,1.61v4.01"
+              class="cls-2"
+              d="m475.7,222.17h-2.83c-2.4,0-4.34,1.94-4.34,4.34v10.83"
             />
           </g>
           <g id="fm-tower1-5-6" data-name="fm-tower1-5">
             <path
               id="fm-tower1-59-6"
               data-name="fm-tower1-59"
-              className="cls-35"
-              d="m189.77,79.17c0,1.03-1.13,1.87-2.53,1.87s-2.53-.84-2.53-1.87"
+              class="cls-2"
+              d="m512.44,213.8c0,2.78-3.06,5.04-6.84,5.04s-6.84-2.26-6.84-5.04"
             />
             <path
               id="fm-tower1-57-31"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m189.77,56.58c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m512.44,152.78c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-32"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m189.77,54.75c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m512.44,147.83c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-33"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m189.77,46.04c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m512.44,124.34c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-34"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m189.77,39.74c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m512.44,107.32c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-35"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m189.77,37.8c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m512.44,102.07c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-36"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m189.77,47.84c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m512.44,129.18c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-51-6"
               data-name="fm-tower1-51"
-              className="cls-35"
-              d="m184.7,79.17v-42.7s-.21-1.92,2.71-1.92c2.53,0,2.35,1.92,2.35,1.92v42.7"
+              class="cls-2"
+              d="m498.77,213.8v-115.3s-.56-5.18,7.33-5.18c6.83,0,6.34,5.18,6.34,5.18v115.3"
             />
             <path
-              className="cls-35"
-              d="m184.7,73.73h-1.05c-.89,0-1.61.72-1.61,1.61v4.01"
+              class="cls-2"
+              d="m498.76,199.11h-2.83c-2.4,0-4.34,1.94-4.34,4.34v10.83"
             />
           </g>
           <g id="fm-tower1-5-7" data-name="fm-tower1-5">
             <path
               id="fm-tower1-59-7"
               data-name="fm-tower1-59"
-              className="cls-35"
-              d="m7.98,86.56c0,1.03-1.13,1.87-2.53,1.87s-2.53-.84-2.53-1.87"
+              class="cls-2"
+              d="m21.55,233.75c0,2.78-3.06,5.04-6.84,5.04s-6.84-2.26-6.84-5.04"
             />
             <path
               id="fm-tower1-57-37"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m7.98,63.96c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m21.55,172.73c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-38"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m7.98,62.13c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m21.55,167.78c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-39"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m7.98,53.43c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m21.55,144.29c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-40"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m7.98,47.13c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m21.55,127.27c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-41"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m7.98,45.19c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m21.55,122.02c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-42"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m7.98,55.23c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m21.55,149.13c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-51-7"
               data-name="fm-tower1-51"
-              className="cls-35"
-              d="m2.92,86.56v-42.7s-.21-1.92,2.71-1.92c2.53,0,2.35,1.92,2.35,1.92v42.7"
+              class="cls-2"
+              d="m7.88,233.75v-115.3s-.56-5.18,7.33-5.18c6.83,0,6.34,5.18,6.34,5.18v115.3"
             />
             <path
-              className="cls-35"
-              d="m2.91,81.12h-1.05c-.89,0-1.61.72-1.61,1.61v4.01"
+              class="cls-2"
+              d="m7.87,219.06h-2.83c-2.4,0-4.34,1.94-4.34,4.34v10.83"
             />
           </g>
           <g id="fm-tower1-5-8" data-name="fm-tower1-5">
             <path
               id="fm-tower1-59-8"
               data-name="fm-tower1-59"
-              className="cls-35"
-              d="m29.7,73.33c0,1.03-1.13,1.87-2.53,1.87s-2.53-.84-2.53-1.87"
+              class="cls-2"
+              d="m80.2,198.01c0,2.78-3.06,5.04-6.84,5.04s-6.84-2.26-6.84-5.04"
             />
             <path
               id="fm-tower1-57-43"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m29.7,50.73c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m80.2,136.99c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-44"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m29.7,48.9c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m80.2,132.05c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-45"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m29.7,40.2c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m80.2,108.55c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-46"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m29.7,33.9c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m80.2,91.54c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-47"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m29.7,31.95c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m80.2,86.29c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-57-48"
               data-name="fm-tower1-57"
-              className="cls-36"
-              d="m29.7,41.99c.68.46.85,1.01.85,1.74,0,1.38-1.52,2.49-3.38,2.49s-3.38-1.12-3.38-2.49c0-.69.24-1.2.85-1.66"
+              class="cls-21"
+              d="m80.2,113.4c1.85,1.23,2.3,2.72,2.3,4.7,0,3.72-4.09,6.74-9.14,6.74s-9.14-3.02-9.14-6.74c0-1.86.65-3.25,2.3-4.47"
             />
             <path
               id="fm-tower1-51-8"
               data-name="fm-tower1-51"
-              className="cls-35"
-              d="m24.64,73.33V30.63s-.21-1.92,2.71-1.92c2.53,0,2.35,1.92,2.35,1.92v42.7"
+              class="cls-2"
+              d="m66.53,198.01v-115.3s-.56-5.18,7.33-5.18c6.83,0,6.34,5.18,6.34,5.18v115.3"
             />
             <path
-              className="cls-35"
-              d="m24.63,67.89h-1.05c-.89,0-1.61.72-1.61,1.61v4.01"
+              class="cls-2"
+              d="m66.52,183.33h-2.83c-2.4,0-4.34,1.94-4.34,4.34v10.83"
             />
           </g>
           <g id="fm-tower2-2">
             <path
               id="fm-tower2-27"
-              className="cls-3"
-              d="m36.52,116.66c0,1.66-1.82,3-4.08,3s-4.08-1.34-4.08-3"
+              class="cls-18"
+              d="m98.62,315.03c0,4.48-4.93,8.11-11,8.11s-11-3.63-11-8.11"
             />
             <ellipse
               id="fm-tower2-26"
-              className="cls-3"
-              cx="32.45"
-              cy="93.7"
-              rx="4.08"
-              ry="3"
+              class="cls-18"
+              cx="87.62"
+              cy="253.02"
+              rx="11"
+              ry="8.11"
             />
             <line
               id="fm-tower2-25"
-              className="cls-3"
-              x1="28.37"
-              y1="93.7"
-              x2="28.37"
-              y2="117.66"
+              class="cls-18"
+              x1="76.61"
+              y1="253.02"
+              x2="76.61"
+              y2="317.73"
             />
             <line
               id="fm-tower2-24"
-              className="cls-3"
-              x1="36.52"
-              y1="93.7"
-              x2="36.52"
-              y2="117.66"
+              class="cls-18"
+              x1="98.62"
+              y1="253.02"
+              x2="98.62"
+              y2="317.73"
             />
             <line
               id="fm-tower2-23"
-              className="cls-3"
-              x1="35.67"
-              y1="101.11"
-              x2="38.06"
-              y2="101.11"
+              class="cls-18"
+              x1="96.33"
+              y1="273.04"
+              x2="102.78"
+              y2="273.04"
             />
             <line
               id="fm-tower2-22"
-              className="cls-3"
-              x1="35.67"
-              y1="103.38"
-              x2="38.06"
-              y2="103.38"
+              class="cls-18"
+              x1="96.33"
+              y1="279.16"
+              x2="102.78"
+              y2="279.16"
             />
             <line
               id="fm-tower2-21"
-              className="cls-3"
-              x1="35.67"
-              y1="105.68"
-              x2="38.06"
-              y2="105.68"
+              class="cls-18"
+              x1="96.33"
+              y1="285.38"
+              x2="102.78"
+              y2="285.38"
             />
           </g>
           <g id="fm-tower2-1">
             <path
               id="fm-tower2-17"
-              className="cls-3"
-              d="m78.7,26.31c0,1.66-1.82,3-4.08,3s-4.08-1.34-4.08-3"
+              class="cls-18"
+              d="m212.51,71.06c0,4.48-4.93,8.11-11,8.11s-11-3.63-11-8.11"
             />
             <ellipse
               id="fm-tower2-16"
-              className="cls-3"
-              cx="74.62"
-              cy="3.35"
-              rx="4.08"
-              ry="3"
+              class="cls-18"
+              cx="201.51"
+              cy="9.05"
+              rx="11"
+              ry="8.11"
             />
             <line
               id="fm-tower2-15"
-              className="cls-3"
-              x1="70.55"
-              y1="3.35"
-              x2="70.55"
-              y2="27.32"
+              class="cls-18"
+              x1="190.5"
+              y1="9.05"
+              x2="190.5"
+              y2="73.76"
             />
             <line
               id="fm-tower2-14"
-              className="cls-3"
-              x1="78.7"
-              y1="3.35"
-              x2="78.7"
-              y2="27.32"
+              class="cls-18"
+              x1="212.51"
+              y1="9.05"
+              x2="212.51"
+              y2="73.76"
             />
             <line
               id="fm-tower2-13"
-              className="cls-3"
-              x1="77.85"
-              y1="10.77"
-              x2="80.23"
-              y2="10.77"
+              class="cls-18"
+              x1="210.22"
+              y1="29.07"
+              x2="216.67"
+              y2="29.07"
             />
             <line
               id="fm-tower2-12"
-              className="cls-3"
-              x1="77.85"
-              y1="13.03"
-              x2="80.23"
-              y2="13.03"
+              class="cls-18"
+              x1="210.22"
+              y1="35.19"
+              x2="216.67"
+              y2="35.19"
             />
             <line
               id="fm-tower2-11"
-              className="cls-3"
-              x1="77.85"
-              y1="15.33"
-              x2="80.23"
-              y2="15.33"
+              class="cls-18"
+              x1="210.22"
+              y1="41.41"
+              x2="216.67"
+              y2="41.41"
             />
           </g>
           <g id="fm_wires1">
             <polygon
               id="fm-wires1cc"
-              className="cls-3"
-              points="33.01 65.5 33.01 87.36 59.73 102.85 59.73 81.05 33.01 65.5"
+              class="cls-18"
+              points="89.15 176.87 89.15 235.92 161.29 277.74 161.29 218.86 89.15 176.87"
             />
             <polygon
               id="fm-wires1bb"
-              className="cls-3"
-              points="76.38 70.27 76.38 92.13 59.56 102.98 59.56 81.18 76.38 70.27"
+              class="cls-18"
+              points="206.26 189.75 206.26 248.8 160.83 278.1 160.83 219.22 206.26 189.75"
             />
             <polygon
               id="fm-wires1aa"
-              className="cls-3"
-              points="33.01 65.5 59.56 81.18 76.38 70.27 50.68 55.26 33.01 65.5"
+              class="cls-18"
+              points="89.15 176.87 160.83 219.22 206.26 189.75 136.85 149.22 89.15 176.87"
             />
             <polyline
               id="fm-wires1z"
-              className="cls-36"
-              points="33.01 69.58 59.56 84.97 76.26 74.11"
+              class="cls-21"
+              points="89.15 187.9 160.83 229.46 205.92 200.11"
             />
             <polyline
               id="fm-wires1y"
-              className="cls-36"
-              points="33.01 74.07 59.56 89.46 76.26 78.59"
+              class="cls-21"
+              points="89.15 200.03 160.83 241.59 205.92 212.24"
             />
             <polyline
               id="fm-wires1x"
-              className="cls-36"
-              points="33.01 78.84 59.56 94.23 76.26 83.36"
+              class="cls-21"
+              points="89.15 212.89 160.83 254.45 205.92 225.11"
             />
             <polyline
               id="fm-wires1w"
-              className="cls-36"
-              points="33.01 83.82 59.56 99.21 76.26 88.34"
+              class="cls-21"
+              points="89.15 226.34 160.83 267.9 205.92 238.55"
             />
             <line
               id="fm-wires1v"
-              className="cls-36"
-              x1="36.64"
-              y1="89.46"
-              x2="36.64"
-              y2="67.98"
+              class="cls-21"
+              x1="98.93"
+              y1="241.59"
+              x2="98.93"
+              y2="183.58"
             />
             <line
               id="fm-wires1u"
-              className="cls-36"
-              x1="40.08"
-              y1="91.52"
-              x2="40.08"
-              y2="70.04"
+              class="cls-21"
+              x1="108.23"
+              y1="247.15"
+              x2="108.23"
+              y2="189.15"
             />
             <line
               id="fm-wires1t"
-              className="cls-36"
-              x1="43.71"
-              y1="93.49"
-              x2="43.71"
-              y2="72.01"
+              class="cls-21"
+              x1="118.03"
+              y1="252.45"
+              x2="118.03"
+              y2="194.45"
             />
             <line
               id="fm-wires1s"
-              className="cls-36"
-              x1="47.15"
-              y1="95.55"
-              x2="47.15"
-              y2="74.07"
+              class="cls-21"
+              x1="127.33"
+              y1="258.01"
+              x2="127.33"
+              y2="200.01"
             />
             <line
               id="fm-wires1r"
-              className="cls-36"
-              x1="50.37"
-              y1="97.43"
-              x2="50.37"
-              y2="75.95"
+              class="cls-21"
+              x1="136.02"
+              y1="263.11"
+              x2="136.02"
+              y2="205.11"
             />
             <line
               id="fm-wires1q"
-              className="cls-36"
-              x1="63.29"
-              y1="100.43"
-              x2="63.29"
-              y2="78.95"
+              class="cls-21"
+              x1="170.92"
+              y1="271.2"
+              x2="170.92"
+              y2="213.19"
             />
             <line
               id="fm-wires1p"
-              className="cls-36"
-              x1="67.22"
-              y1="98.27"
-              x2="67.22"
-              y2="76.79"
+              class="cls-21"
+              x1="181.53"
+              y1="265.37"
+              x2="181.53"
+              y2="207.37"
             />
             <line
               id="fm-wires1o"
-              className="cls-36"
-              x1="70.55"
-              y1="95.55"
-              x2="70.55"
-              y2="74.07"
+              class="cls-21"
+              x1="190.5"
+              y1="258.01"
+              x2="190.5"
+              y2="200.01"
             />
             <line
               id="fm-wires1n"
-              className="cls-36"
-              x1="73.28"
-              y1="93.49"
-              x2="73.28"
-              y2="72.01"
+              class="cls-21"
+              x1="197.89"
+              y1="252.45"
+              x2="197.89"
+              y2="194.45"
             />
             <line
               id="fm-wires1b"
-              className="cls-36"
-              x1="53.81"
-              y1="99.5"
-              x2="53.81"
-              y2="78.01"
+              class="cls-21"
+              x1="145.32"
+              y1="268.68"
+              x2="145.32"
+              y2="210.67"
             />
             <line
               id="fm-wires1a"
-              className="cls-36"
-              x1="56.95"
-              y1="101.25"
-              x2="56.95"
-              y2="79.77"
+              class="cls-21"
+              x1="153.8"
+              y1="273.42"
+              x2="153.8"
+              y2="215.42"
             />
           </g>
           <g id="fm_wires1-2" data-name="fm_wires1">
             <polygon
               id="fm-wires1cc-2"
               data-name="fm-wires1cc"
-              className="cls-3"
-              points="63.48 40.96 63.48 62.83 90.2 78.32 90.2 56.51 63.48 40.96"
+              class="cls-18"
+              points="171.43 110.61 171.43 169.66 243.57 211.48 243.57 152.6 171.43 110.61"
             />
             <polygon
               id="fm-wires1bb-2"
               data-name="fm-wires1bb"
-              className="cls-3"
-              points="106.85 45.73 106.85 67.6 90.03 78.45 90.03 56.64 106.85 45.73"
+              class="cls-18"
+              points="288.54 123.49 288.54 182.54 243.11 211.84 243.11 152.96 288.54 123.49"
             />
             <polygon
               id="fm-wires1aa-2"
               data-name="fm-wires1aa"
-              className="cls-3"
-              points="63.48 40.96 90.03 56.64 106.85 45.73 81.15 30.72 63.48 40.96"
+              class="cls-18"
+              points="171.43 110.61 243.11 152.96 288.54 123.49 219.12 82.96 171.43 110.61"
             />
             <polyline
               id="fm-wires1z-2"
               data-name="fm-wires1z"
-              className="cls-36"
-              points="63.48 45.05 90.03 60.44 106.73 49.57"
+              class="cls-21"
+              points="171.43 121.64 243.11 163.2 288.2 133.85"
             />
             <polyline
               id="fm-wires1y-2"
               data-name="fm-wires1y"
-              className="cls-36"
-              points="63.48 49.54 90.03 64.93 106.73 54.06"
+              class="cls-21"
+              points="171.43 133.77 243.11 175.33 288.2 145.98"
             />
             <polyline
               id="fm-wires1x-2"
               data-name="fm-wires1x"
-              className="cls-36"
-              points="63.48 54.3 90.03 69.69 106.73 58.82"
+              class="cls-21"
+              points="171.43 146.64 243.11 188.2 288.2 158.85"
             />
             <polyline
               id="fm-wires1w-2"
               data-name="fm-wires1w"
-              className="cls-36"
-              points="63.48 59.28 90.03 74.67 106.73 63.8"
+              class="cls-21"
+              points="171.43 160.08 243.11 201.64 288.2 172.29"
             />
             <line
               id="fm-wires1v-2"
               data-name="fm-wires1v"
-              className="cls-36"
-              x1="67.11"
-              y1="64.93"
-              x2="67.11"
-              y2="43.45"
+              class="cls-21"
+              x1="181.21"
+              y1="175.33"
+              x2="181.21"
+              y2="117.32"
             />
             <line
               id="fm-wires1u-2"
               data-name="fm-wires1u"
-              className="cls-36"
-              x1="70.55"
-              y1="66.99"
-              x2="70.55"
-              y2="45.51"
+              class="cls-21"
+              x1="190.51"
+              y1="180.89"
+              x2="190.51"
+              y2="122.89"
             />
             <line
               id="fm-wires1t-2"
               data-name="fm-wires1t"
-              className="cls-36"
-              x1="74.18"
-              y1="68.95"
-              x2="74.18"
-              y2="47.47"
+              class="cls-21"
+              x1="200.31"
+              y1="186.19"
+              x2="200.31"
+              y2="128.19"
             />
             <line
               id="fm-wires1s-2"
               data-name="fm-wires1s"
-              className="cls-36"
-              x1="77.62"
-              y1="71.01"
-              x2="77.62"
-              y2="49.53"
+              class="cls-21"
+              x1="209.61"
+              y1="191.76"
+              x2="209.61"
+              y2="133.75"
             />
             <line
               id="fm-wires1r-2"
               data-name="fm-wires1r"
-              className="cls-36"
-              x1="80.84"
-              y1="72.9"
-              x2="80.84"
-              y2="51.42"
+              class="cls-21"
+              x1="218.3"
+              y1="196.85"
+              x2="218.3"
+              y2="138.85"
             />
             <line
               id="fm-wires1q-2"
               data-name="fm-wires1q"
-              className="cls-36"
-              x1="93.76"
-              y1="75.89"
-              x2="93.76"
-              y2="54.41"
+              class="cls-21"
+              x1="253.2"
+              y1="204.94"
+              x2="253.2"
+              y2="146.93"
             />
             <line
               id="fm-wires1p-2"
               data-name="fm-wires1p"
-              className="cls-36"
-              x1="97.69"
-              y1="73.74"
-              x2="97.69"
-              y2="52.26"
+              class="cls-21"
+              x1="263.81"
+              y1="199.12"
+              x2="263.81"
+              y2="141.11"
             />
             <line
               id="fm-wires1o-2"
               data-name="fm-wires1o"
-              className="cls-36"
-              x1="101.02"
-              y1="71.01"
-              x2="101.02"
-              y2="49.53"
+              class="cls-21"
+              x1="272.78"
+              y1="191.76"
+              x2="272.78"
+              y2="133.75"
             />
             <line
               id="fm-wires1n-2"
               data-name="fm-wires1n"
-              className="cls-36"
-              x1="103.75"
-              y1="68.95"
-              x2="103.75"
-              y2="47.47"
+              class="cls-21"
+              x1="280.17"
+              y1="186.19"
+              x2="280.17"
+              y2="128.19"
             />
             <line
               id="fm-wires1b-2"
               data-name="fm-wires1b"
-              className="cls-36"
-              x1="84.28"
-              y1="74.96"
-              x2="84.28"
-              y2="53.48"
+              class="cls-21"
+              x1="227.6"
+              y1="202.42"
+              x2="227.6"
+              y2="144.41"
             />
             <line
               id="fm-wires1a-2"
               data-name="fm-wires1a"
-              className="cls-36"
-              x1="87.42"
-              y1="76.71"
-              x2="87.42"
-              y2="55.23"
+              class="cls-21"
+              x1="236.07"
+              y1="207.16"
+              x2="236.07"
+              y2="149.16"
             />
           </g>
           <path
             id="fm-pipe6"
-            className="cls-3"
-            d="m130.37,80.23c-.25-.76-.23-2.95-.16-4.8.05-1.23-1.28-2.02-2.33-1.38l-82.3,49.85c-1.16.7-1.87,1.97-1.87,3.33v3.02"
+            class="cls-18"
+            d="m352.05,216.65c-.69-2.05-.63-7.96-.43-12.96.13-3.32-3.46-5.45-6.29-3.73l-222.24,134.62c-3.14,1.9-5.06,5.31-5.06,8.99v8.15"
           />
           <path
             id="fm-pipe5"
-            className="cls-3"
-            d="m126.54,79.45c-.25-.76-.23-2.95-.16-4.8.05-1.23-1.28-2.02-2.33-1.38l-82.3,49.85c-1.16.7-1.87,1.97-1.87,3.33v3.02"
+            class="cls-18"
+            d="m341.71,214.54c-.69-2.05-.63-7.96-.43-12.96.13-3.32-3.46-5.45-6.29-3.73l-222.24,134.62c-3.14,1.9-5.06,5.31-5.06,8.99v8.15"
           />
           <path
             id="fm-pipe4"
-            className="cls-3"
-            d="m93.49,159.95v-3.02c0-1.36.71-2.63,1.87-3.33l82.3-49.85c1.05-.63,2.38.15,2.33,1.38v4.5"
+            class="cls-18"
+            d="m252.45,431.92v-8.15c0-3.68,1.92-7.09,5.06-8.99l222.24-134.62c2.83-1.71,6.42.42,6.29,3.73v12.16"
           />
           <path
             id="fm-pipe3"
-            className="cls-3"
-            d="m89.66,159.16v-3.02c0-1.36.71-2.63,1.87-3.33l82.3-49.85c1.05-.63,2.38.15,2.33,1.38v5.15"
+            class="cls-18"
+            d="m242.11,429.8v-8.15c0-3.68,1.92-7.09,5.06-8.99l222.24-134.62c2.83-1.71,6.42.42,6.29,3.73v13.92"
           />
           <path
             id="fm-pipe2"
-            className="cls-3"
-            d="m122.38,67.15c-.11-.5-.12-1.48-.11-2.46.02-1.22,1.35-1.97,2.4-1.36l31.77,18.46c1.27.74,2.06,2.1,2.06,3.58v3.38"
+            class="cls-18"
+            d="m330.47,181.33c-.29-1.35-.33-4.01-.29-6.64.05-3.3,3.63-5.32,6.48-3.67l85.79,49.86c3.43,2,5.55,5.68,5.55,9.66v9.13"
           />
           <path
             id="fm-pipe1"
-            className="cls-3"
-            d="m125.92,65.58c-.11-.5-.12-1.48-.11-2.46.02-1.22,1.35-1.97,2.4-1.36l31.77,18.46c1.27.74,2.06,2.1,2.06,3.58v3.38"
+            class="cls-18"
+            d="m340.03,177.1c-.29-1.35-.33-4.01-.29-6.64.05-3.3,3.63-5.32,6.48-3.67l85.79,49.86c3.43,2,5.55,5.68,5.55,9.66v9.13"
           />
           <g id="fm-tank10">
             <ellipse
               id="fm-tank107"
-              className="cls-3"
-              cx="81.35"
-              cy="140.3"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="219.67"
+              cy="378.88"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank106"
-              className="cls-2"
-              cx="76.83"
-              cy="139.24"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="207.47"
+              cy="376.01"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank105"
-              className="cls-3"
-              d="m88.79,146.75c0,3.03-3.33,5.49-7.45,5.49s-7.45-2.46-7.45-5.49"
+              class="cls-18"
+              d="m239.78,396.28c0,8.19-9,14.82-20.11,14.82s-20.11-6.64-20.11-14.82"
             />
             <line
               id="fm-tank104"
-              className="cls-3"
-              x1="88.79"
-              y1="140.3"
-              x2="88.79"
-              y2="147.92"
+              class="cls-18"
+              x1="239.78"
+              y1="378.88"
+              x2="239.78"
+              y2="399.43"
             />
             <line
               id="fm-tank103"
-              className="cls-3"
-              x1="73.9"
-              y1="140.3"
-              x2="73.9"
-              y2="147.92"
+              class="cls-18"
+              x1="199.56"
+              y1="378.88"
+              x2="199.56"
+              y2="399.43"
             />
             <line
               id="fm-tank102"
-              className="cls-4"
-              x1="81.35"
-              y1="145.79"
-              x2="81.35"
-              y2="152.24"
+              class="cls-17"
+              x1="219.67"
+              y1="393.7"
+              x2="219.67"
+              y2="411.1"
             />
             <line
               id="fm-tank101"
-              className="cls-4"
-              x1="82.54"
-              y1="145.79"
-              x2="82.54"
-              y2="152.24"
+              class="cls-17"
+              x1="222.89"
+              y1="393.7"
+              x2="222.89"
+              y2="411.1"
             />
           </g>
           <g id="fm-tank9">
             <ellipse
               id="fm-tank97"
-              className="cls-3"
-              cx="96.74"
-              cy="129.33"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="261.24"
+              cy="349.26"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank96"
-              className="cls-2"
-              cx="92.22"
-              cy="128.27"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="249.04"
+              cy="346.39"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank95"
-              className="cls-3"
-              d="m104.19,135.78c0,3.03-3.33,5.49-7.45,5.49s-7.45-2.46-7.45-5.49"
+              class="cls-18"
+              d="m281.35,366.66c0,8.19-9,14.82-20.11,14.82s-20.11-6.64-20.11-14.82"
             />
             <line
               id="fm-tank94"
-              className="cls-3"
-              x1="104.19"
-              y1="129.33"
-              x2="104.19"
-              y2="136.95"
+              class="cls-18"
+              x1="281.35"
+              y1="349.26"
+              x2="281.35"
+              y2="369.81"
             />
             <line
               id="fm-tank93"
-              className="cls-3"
-              x1="89.29"
-              y1="129.33"
-              x2="89.29"
-              y2="136.95"
+              class="cls-18"
+              x1="241.13"
+              y1="349.26"
+              x2="241.13"
+              y2="369.81"
             />
             <line
               id="fm-tank92"
-              className="cls-4"
-              x1="96.74"
-              y1="134.82"
-              x2="96.74"
-              y2="141.27"
+              class="cls-17"
+              x1="261.24"
+              y1="364.08"
+              x2="261.24"
+              y2="381.48"
             />
             <line
               id="fm-tank91"
-              className="cls-4"
-              x1="97.93"
-              y1="134.82"
-              x2="97.93"
-              y2="141.27"
+              class="cls-17"
+              x1="264.46"
+              y1="364.08"
+              x2="264.46"
+              y2="381.48"
             />
           </g>
           <g id="fm-tank8">
             <ellipse
               id="fm-tank87"
-              className="cls-3"
-              cx="112.59"
-              cy="120.45"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="304.03"
+              cy="325.26"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank86"
-              className="cls-2"
-              cx="108.07"
-              cy="119.39"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="291.83"
+              cy="322.4"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank85"
-              className="cls-3"
-              d="m120.03,126.89c0,3.03-3.33,5.49-7.45,5.49s-7.45-2.46-7.45-5.49"
+              class="cls-18"
+              d="m324.14,342.66c0,8.19-9,14.82-20.11,14.82s-20.11-6.64-20.11-14.82"
             />
             <line
               id="fm-tank84"
-              className="cls-3"
-              x1="120.03"
-              y1="120.45"
-              x2="120.03"
-              y2="128.06"
+              class="cls-18"
+              x1="324.14"
+              y1="325.26"
+              x2="324.14"
+              y2="345.82"
             />
             <line
               id="fm-tank83"
-              className="cls-3"
-              x1="105.14"
-              y1="120.45"
-              x2="105.14"
-              y2="128.06"
+              class="cls-18"
+              x1="283.92"
+              y1="325.26"
+              x2="283.92"
+              y2="345.82"
             />
             <line
               id="fm-tank82"
-              className="cls-4"
-              x1="112.59"
-              y1="125.94"
-              x2="112.59"
-              y2="132.38"
+              class="cls-17"
+              x1="304.03"
+              y1="340.08"
+              x2="304.03"
+              y2="357.48"
             />
             <line
               id="fm-tank81"
-              className="cls-4"
-              x1="113.78"
-              y1="125.94"
-              x2="113.78"
-              y2="132.38"
+              class="cls-17"
+              x1="307.25"
+              y1="340.08"
+              x2="307.25"
+              y2="357.48"
             />
           </g>
           <g id="fm-tank7">
             <ellipse
               id="fm-tank77"
-              className="cls-3"
-              cx="64.3"
-              cy="125.03"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="173.63"
+              cy="337.64"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank76"
-              className="cls-2"
-              cx="59.78"
-              cy="123.97"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="161.43"
+              cy="334.78"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank75"
-              className="cls-3"
-              d="m71.75,131.48c0,3.03-3.33,5.49-7.45,5.49s-7.45-2.46-7.45-5.49"
+              class="cls-18"
+              d="m193.74,355.04c0,8.19-9,14.82-20.11,14.82s-20.11-6.64-20.11-14.82"
             />
             <line
               id="fm-tank74"
-              className="cls-3"
-              x1="71.75"
-              y1="125.03"
-              x2="71.75"
-              y2="132.65"
+              class="cls-18"
+              x1="193.74"
+              y1="337.64"
+              x2="193.74"
+              y2="358.2"
             />
             <line
               id="fm-tank73"
-              className="cls-3"
-              x1="56.85"
-              y1="125.03"
-              x2="56.85"
-              y2="132.65"
+              class="cls-18"
+              x1="153.52"
+              y1="337.64"
+              x2="153.52"
+              y2="358.2"
             />
             <line
               id="fm-tank72"
-              className="cls-4"
-              x1="64.3"
-              y1="130.52"
-              x2="64.3"
-              y2="136.97"
+              class="cls-17"
+              x1="173.63"
+              y1="352.46"
+              x2="173.63"
+              y2="369.86"
             />
             <line
               id="fm-tank71"
-              className="cls-4"
-              x1="65.49"
-              y1="130.52"
-              x2="65.49"
-              y2="136.97"
+              class="cls-17"
+              x1="176.85"
+              y1="352.46"
+              x2="176.85"
+              y2="369.86"
             />
           </g>
           <g id="fm-tank6">
             <ellipse
               id="fm-tank67"
-              className="cls-3"
-              cx="79.69"
-              cy="114.06"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="215.2"
+              cy="308.02"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank66"
-              className="cls-2"
-              cx="75.17"
-              cy="113"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="203"
+              cy="305.16"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank65"
-              className="cls-3"
-              d="m87.14,120.51c0,3.03-3.33,5.49-7.45,5.49s-7.45-2.46-7.45-5.49"
+              class="cls-18"
+              d="m235.31,325.42c0,8.19-9,14.82-20.11,14.82s-20.11-6.64-20.11-14.82"
             />
             <line
               id="fm-tank64"
-              className="cls-3"
-              x1="87.14"
-              y1="114.06"
-              x2="87.14"
-              y2="121.68"
+              class="cls-18"
+              x1="235.31"
+              y1="308.02"
+              x2="235.31"
+              y2="328.58"
             />
             <line
               id="fm-tank63"
-              className="cls-3"
-              x1="72.25"
-              y1="114.06"
-              x2="72.25"
-              y2="121.68"
+              class="cls-18"
+              x1="195.09"
+              y1="308.02"
+              x2="195.09"
+              y2="328.58"
             />
             <line
               id="fm-tank62"
-              className="cls-4"
-              x1="79.69"
-              y1="119.55"
-              x2="79.69"
-              y2="126"
+              class="cls-17"
+              x1="215.2"
+              y1="322.84"
+              x2="215.2"
+              y2="340.24"
             />
             <line
               id="fm-tank61"
-              className="cls-4"
-              x1="80.89"
-              y1="119.55"
-              x2="80.89"
-              y2="126"
+              class="cls-17"
+              x1="218.42"
+              y1="322.84"
+              x2="218.42"
+              y2="340.24"
             />
           </g>
           <g id="fm-tank5">
             <ellipse
               id="fm-tank57"
-              className="cls-3"
-              cx="95.54"
-              cy="105.18"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="258"
+              cy="284.03"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank56"
-              className="cls-2"
-              cx="91.02"
-              cy="104.12"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="245.8"
+              cy="281.16"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank55"
-              className="cls-3"
-              d="m102.99,111.62c0,3.03-3.33,5.49-7.45,5.49s-7.45-2.46-7.45-5.49"
+              class="cls-18"
+              d="m278.11,301.43c0,8.19-9,14.82-20.11,14.82s-20.11-6.64-20.11-14.82"
             />
             <line
               id="fm-tank54"
-              className="cls-3"
-              x1="102.99"
-              y1="105.18"
-              x2="102.99"
-              y2="112.79"
+              class="cls-18"
+              x1="278.11"
+              y1="284.03"
+              x2="278.11"
+              y2="304.58"
             />
             <line
               id="fm-tank53"
-              className="cls-3"
-              x1="88.09"
-              y1="105.18"
-              x2="88.09"
-              y2="112.79"
+              class="cls-18"
+              x1="237.89"
+              y1="284.03"
+              x2="237.89"
+              y2="304.58"
             />
             <line
               id="fm-tank52"
-              className="cls-4"
-              x1="95.54"
-              y1="110.67"
-              x2="95.54"
-              y2="117.11"
+              class="cls-17"
+              x1="258"
+              y1="298.85"
+              x2="258"
+              y2="316.25"
             />
             <line
               id="fm-tank51"
-              className="cls-4"
-              x1="96.73"
-              y1="110.67"
-              x2="96.73"
-              y2="117.11"
+              class="cls-17"
+              x1="261.22"
+              y1="298.85"
+              x2="261.22"
+              y2="316.25"
             />
           </g>
           <g id="fm-tank4">
             <ellipse
               id="fm-tank47"
-              className="cls-3"
-              cx="41.34"
-              cy="38.89"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="111.63"
+              cy="105.01"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank46"
-              className="cls-2"
-              cx="36.82"
-              cy="37.83"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="99.43"
+              cy="102.15"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank45"
-              className="cls-3"
-              d="m48.78,45.33c0,3.03-3.33,5.49-7.45,5.49s-7.45-2.46-7.45-5.49"
+              class="cls-18"
+              d="m131.74,122.41c0,8.19-9,14.82-20.11,14.82s-20.11-6.64-20.11-14.82"
             />
             <line
               id="fm-tank44"
-              className="cls-3"
-              x1="48.78"
-              y1="38.89"
-              x2="48.78"
-              y2="46.5"
+              class="cls-18"
+              x1="131.74"
+              y1="105.01"
+              x2="131.74"
+              y2="125.57"
             />
             <line
               id="fm-tank43"
-              className="cls-3"
-              x1="33.89"
-              y1="38.89"
-              x2="33.89"
-              y2="46.5"
+              class="cls-18"
+              x1="91.52"
+              y1="105.01"
+              x2="91.52"
+              y2="125.57"
             />
             <line
               id="fm-tank42"
-              className="cls-4"
-              x1="41.34"
-              y1="44.38"
-              x2="41.34"
-              y2="50.82"
+              class="cls-17"
+              x1="111.63"
+              y1="119.83"
+              x2="111.63"
+              y2="137.23"
             />
             <line
               id="fm-tank41"
-              className="cls-4"
-              x1="42.53"
-              y1="44.38"
-              x2="42.53"
-              y2="50.82"
+              class="cls-17"
+              x1="114.85"
+              y1="119.83"
+              x2="114.85"
+              y2="137.23"
             />
           </g>
           <g id="fm-tank3">
             <ellipse
               id="fm-tank37"
-              className="cls-3"
-              cx="56.73"
-              cy="27.92"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="153.2"
+              cy="75.39"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank36"
-              className="cls-2"
-              cx="52.21"
-              cy="26.86"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="141"
+              cy="72.53"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank35"
-              className="cls-3"
-              d="m64.18,34.36c0,3.03-3.33,5.49-7.45,5.49s-7.45-2.46-7.45-5.49"
+              class="cls-18"
+              d="m173.31,92.79c0,8.19-9,14.82-20.11,14.82s-20.11-6.64-20.11-14.82"
             />
             <line
               id="fm-tank34"
-              className="cls-3"
-              x1="64.18"
-              y1="27.92"
-              x2="64.18"
-              y2="35.53"
+              class="cls-18"
+              x1="173.31"
+              y1="75.39"
+              x2="173.31"
+              y2="95.95"
             />
             <line
               id="fm-tank33"
-              className="cls-3"
-              x1="49.28"
-              y1="27.92"
-              x2="49.28"
-              y2="35.53"
+              class="cls-18"
+              x1="133.09"
+              y1="75.39"
+              x2="133.09"
+              y2="95.95"
             />
             <line
               id="fm-tank32"
-              className="cls-4"
-              x1="56.73"
-              y1="33.41"
-              x2="56.73"
-              y2="39.85"
+              class="cls-17"
+              x1="153.2"
+              y1="90.21"
+              x2="153.2"
+              y2="107.61"
             />
             <line
               id="fm-tank31"
-              className="cls-4"
-              x1="57.92"
-              y1="33.41"
-              x2="57.92"
-              y2="39.85"
+              class="cls-17"
+              x1="156.42"
+              y1="90.21"
+              x2="156.42"
+              y2="107.61"
             />
           </g>
           <g id="fm-tank2">
             <ellipse
               id="fm-tank27"
-              className="cls-3"
-              cx="150.59"
-              cy="54.86"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="406.65"
+              cy="148.14"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank26"
-              className="cls-2"
-              cx="155.1"
-              cy="53.8"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="418.85"
+              cy="145.28"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank25"
-              className="cls-3"
-              d="m143.14,61.3c0,3.03,3.33,5.49,7.45,5.49s7.45-2.46,7.45-5.49"
+              class="cls-18"
+              d="m386.54,165.54c0,8.19,9,14.82,20.11,14.82,11.11,0,20.11-6.64,20.11-14.82"
             />
             <line
               id="fm-tank24"
-              className="cls-3"
-              x1="143.14"
-              y1="54.86"
-              x2="143.14"
-              y2="62.47"
+              class="cls-18"
+              x1="386.54"
+              y1="148.14"
+              x2="386.54"
+              y2="168.7"
             />
             <line
               id="fm-tank23"
-              className="cls-3"
-              x1="158.03"
-              y1="54.86"
-              x2="158.03"
-              y2="62.47"
+              class="cls-18"
+              x1="426.75"
+              y1="148.14"
+              x2="426.75"
+              y2="168.7"
             />
             <line
               id="fm-tank22"
-              className="cls-4"
-              x1="150.59"
-              y1="60.35"
-              x2="150.59"
-              y2="66.79"
+              class="cls-17"
+              x1="406.65"
+              y1="162.96"
+              x2="406.65"
+              y2="180.36"
             />
             <line
               id="fm-tank21"
-              className="cls-4"
-              x1="149.39"
-              y1="60.35"
-              x2="149.39"
-              y2="66.79"
+              class="cls-17"
+              x1="403.43"
+              y1="162.96"
+              x2="403.43"
+              y2="180.36"
             />
           </g>
           <g id="fm-tank1">
             <ellipse
               id="fm-tank17"
-              className="cls-3"
-              cx="135.19"
-              cy="43.89"
-              rx="7.45"
-              ry="5.49"
+              class="cls-18"
+              cx="365.08"
+              cy="118.52"
+              rx="20.11"
+              ry="14.82"
             />
             <ellipse
               id="fm-tank16"
-              className="cls-2"
-              cx="139.71"
-              cy="42.83"
-              rx="1.44"
-              ry="1.06"
+              class="cls-8"
+              cx="377.28"
+              cy="115.66"
+              rx="3.88"
+              ry="2.86"
             />
             <path
               id="fm-tank15"
-              className="cls-3"
-              d="m127.75,50.33c0,3.03,3.33,5.49,7.45,5.49s7.45-2.46,7.45-5.49"
+              class="cls-18"
+              d="m344.97,135.92c0,8.19,9,14.82,20.11,14.82,11.11,0,20.11-6.64,20.11-14.82"
             />
             <line
               id="fm-tank14"
-              className="cls-3"
-              x1="127.75"
-              y1="43.89"
-              x2="127.75"
-              y2="51.5"
+              class="cls-18"
+              x1="344.97"
+              y1="118.52"
+              x2="344.97"
+              y2="139.07"
             />
             <line
               id="fm-tank13"
-              className="cls-3"
-              x1="142.64"
-              y1="43.89"
-              x2="142.64"
-              y2="51.5"
+              class="cls-18"
+              x1="385.19"
+              y1="118.52"
+              x2="385.19"
+              y2="139.07"
             />
             <line
               id="fm-tank12"
-              className="cls-4"
-              x1="135.19"
-              y1="49.38"
-              x2="135.19"
-              y2="55.82"
+              class="cls-17"
+              x1="365.08"
+              y1="133.34"
+              x2="365.08"
+              y2="150.74"
             />
             <line
               id="fm-tank11"
-              className="cls-4"
-              x1="134"
-              y1="49.38"
-              x2="134"
-              y2="55.82"
+              class="cls-17"
+              x1="361.86"
+              y1="133.34"
+              x2="361.86"
+              y2="150.74"
             />
           </g>
           <g id="fm_building1">
             <polygon
               id="fm_building1b"
-              className="cls-3"
-              points="106.63 93.72 106.63 101.62 133.34 117.11 133.34 109.27 106.63 93.72"
+              class="cls-18"
+              points="287.95 253.09 287.95 274.42 360.08 316.25 360.08 295.08 287.95 253.09"
             />
             <polygon
               id="fm_building19a"
-              className="cls-3"
-              points="150 98.49 150 106.39 133.17 117.24 133.17 109.4 150 98.49"
+              class="cls-18"
+              points="405.06 265.97 405.06 287.3 359.62 316.6 359.62 295.43 405.06 265.97"
             />
             <polygon
               id="fm_building19"
-              className="cls-3"
-              points="106.68 93.72 133.22 109.4 150.05 98.49 124.34 83.48 106.68 93.72"
+              class="cls-18"
+              points="288.08 253.09 359.76 295.43 405.2 265.97 335.78 225.43 288.08 253.09"
             />
             <polygon
               id="fm_building18"
-              className="cls-4"
-              points="129.37 111.19 129.37 108.85 131.37 110.11 131.37 112.42 129.37 111.19"
+              class="cls-17"
+              points="349.35 300.27 349.35 293.93 354.76 297.34 354.76 303.57 349.35 300.27"
             />
             <polygon
               id="fm_building17"
-              className="cls-4"
-              points="126.36 109.41 126.36 107.06 128.37 108.32 128.37 110.63 126.36 109.41"
+              class="cls-17"
+              points="341.23 295.45 341.23 289.11 346.64 292.51 346.64 298.74 341.23 295.45"
             />
             <polygon
               id="fm_building16"
-              className="cls-4"
-              points="123.41 107.77 123.41 105.43 125.41 106.69 125.41 108.99 123.41 107.77"
+              class="cls-17"
+              points="333.25 291.03 333.25 284.69 338.66 288.1 338.66 294.33 333.25 291.03"
             />
             <polygon
               id="fm_building15"
-              className="cls-4"
-              points="136.57 110.95 136.57 108.6 134.56 109.86 134.56 112.17 136.57 110.95"
+              class="cls-17"
+              points="368.78 299.61 368.78 293.27 363.37 296.68 363.37 302.91 368.78 299.61"
             />
             <polygon
               id="fm_building14"
-              className="cls-4"
-              points="139.42 109.17 139.42 106.82 137.42 108.08 137.42 110.39 139.42 109.17"
+              class="cls-17"
+              points="376.49 294.79 376.49 288.46 371.08 291.86 371.08 298.09 376.49 294.79"
             />
             <polygon
               id="fm_building13"
-              className="cls-4"
-              points="117.63 95.99 127.76 101.8 133.2 98.3 123.33 92.58 117.63 95.99"
+              class="cls-17"
+              points="317.66 259.22 344.99 274.9 359.69 265.46 333.05 250.01 317.66 259.22"
             />
             <polygon
               id="fm_building12"
-              className="cls-4"
-              points="117.62 96.01 117.62 96.21 117.62 97.28 127.86 103.18 127.86 101.79 117.62 96.01"
+              class="cls-17"
+              points="317.63 259.28 317.63 259.81 317.63 262.69 345.26 278.64 345.26 274.87 317.63 259.28"
             />
             <polygon
               id="fm_building11"
-              className="cls-4"
-              points="127.86 101.71 127.86 103.2 133.2 99.79 133.2 98.24 127.86 101.71"
+              class="cls-17"
+              points="345.26 274.66 345.26 278.69 359.69 269.48 359.69 265.28 345.26 274.66"
             />
           </g>
           <g id="fm-building2">
             <polygon
               id="fm-building23"
-              className="cls-40"
-              points="107.04 19.39 94.72 12.04 86.75 16.74 98.83 23.96 107.04 19.39"
+              class="cls-47"
+              points="289.04 52.36 255.78 32.52 234.26 45.22 266.87 64.69 289.04 52.36"
             />
             <polygon
               id="fm-building22"
-              className="cls-3"
-              points="107.09 19.4 107.09 28.88 99.17 33.77 98.88 23.96 107.09 19.4"
+              class="cls-18"
+              points="289.17 52.38 289.17 77.99 267.8 91.2 267 64.69 289.17 52.38"
             />
             <polygon
               id="fm-building21"
-              className="cls-3"
-              points="99.17 33.77 86.63 26.1 86.63 16.7 98.88 23.96 99.17 33.77"
+              class="cls-18"
+              points="267.8 91.2 233.94 70.48 233.94 45.09 267 64.69 267.8 91.2"
             />
           </g>
-        </g>
-        <g id="cold_lake" data-name="cold lake">
-          <path
-            id="cl-mpipe2"
-            className="cls-64"
-            d="m763.36,442.4l-14.66-9.28c-.41-.23-.76-.08-.9,0-.14.08-.45.31-.45.78v2.49s-.22.89-1.02.88-1.02-.88-1.02-.88v-2.49c0-1.06.55-2.01,1.46-2.54.92-.53,2.01-.53,2.93,0l15.95,9.54"
-          />
-          <path
-            id="cl-mpipe1"
-            className="cls-64"
-            d="m757.11,445.52l-14.66-9.28c-.41-.23-.76-.08-.9,0-.14.08-.45.31-.45.78v2.49s-.22.89-1.02.88-1.02-.88-1.02-.88v-2.49c0-1.06.55-2.01,1.46-2.54.92-.53,2.01-.53,2.93,0l15.95,9.54"
-          />
-          <g id="cl-building2">
-            <path
-              id="cl-building2-side"
-              className="cls-14"
-              d="m751.38,468.34c0-.89.15-19.33.15-19.33l9.68-5.59,8.7,15.3v20.32l-18.53-10.7Z"
-            />
-            <polygon
-              id="cl-building2-roof"
-              className="cls-37"
-              points="787.5 428.23 799.9 441.39 769.9 458.71 761.2 443.42 787.5 428.23"
-            />
-            <polygon
-              id="cl-building2-front"
-              className="cls-14"
-              points="769.9 458.71 799.9 441.39 799.9 461.22 769.9 479.03 769.9 458.71"
-            />
-            <line
-              id="cl-building2-antenea2"
-              className="cls-14"
-              x1="778.5"
-              y1="436.08"
-              x2="778.5"
-              y2="417.61"
-            />
-            <line
-              id="cl-building2-antenea1"
-              className="cls-29"
-              x1="769.28"
-              y1="441.09"
-              x2="769.28"
-              y2="432.81"
-            />
-            <polygon
-              id="cl-building2-window1"
-              className="cls-29"
-              points="795.28 454.42 795.28 447.6 792.04 449.34 792.04 456.11 795.28 454.42"
-            />
-            <polygon
-              id="cl-building2-window1-2"
-              data-name="cl-building2-window1"
-              className="cls-29"
-              points="788.48 468.11 788.48 452.83 781.58 456.74 781.58 471.87 788.48 468.11"
-            />
-            <g id="cl-building2-box">
-              <polygon
-                id="cl-building2-box3"
-                className="cls-29"
-                points="771.81 468.41 771.81 473.26 772.91 473.84 772.91 468.09 771.81 467.43 771.81 468.41"
-              />
-              <polygon
-                id="cl-building2-box2"
-                className="cls-29"
-                points="772.87 468.09 772.87 473.84 776.15 472.08 776.15 466.11 772.87 468.09"
-              />
-              <polygon
-                id="cl-building2-box1"
-                className="cls-29"
-                points="771.82 467.38 775.1 465.5 776.18 466.11 772.89 468 771.82 467.38"
-              />
-            </g>
-            <polygon
-              id="cl-building2-window1-3"
-              data-name="cl-building2-window1"
-              className="cls-29"
-              points="753.87 459.91 753.87 453.08 757.11 454.83 757.11 461.59 753.87 459.91"
-            />
-          </g>
-          <path
-            id="cl-mpipe4"
-            className="cls-64"
-            d="m812.95,486.21s.05.7-.91.7-.91-.7-.91-.7v-4.27c0-1.6-.86-2.07-2.25-2.87l-14.29-7.72c-.97-.56-1.55-1.56-1.54-2.68,0-1.12.59-2.12,1.56-2.67l1.32-.75c.78-.44,1.71-.44,2.48.01s1.24,1.26,1.24,2.15v2.26s0,.73-.97.65-.86-.65-.86-.65v-2.26c0-.34-.23-.52-.33-.57-.1-.06-.36-.17-.66,0l-1.32.75c-.4.23-.64.63-.64,1.09,0,.46.23.87.63,1.09l14.29,7.72c1.95,1.13,3.17,2.2,3.17,4.45v4.27Z"
-          />
-          <path
-            id="cl-mpipe3"
-            className="cls-64"
-            d="m809.82,488.49s.02.85-1.02.85-1.02-.85-1.02-.85v-3.39c0-2.54-1.37-2.46-3.57-3.73l-13.99-8c-.41-.23-.76-.08-.9,0-.14.08-.45.31-.45.78v2.49s-.22.89-1.02.88-1.02-.88-1.02-.88v-2.49c0-1.06.55-2.01,1.46-2.54.92-.53,2.01-.53,2.93,0l13.99,8c2.83,1.63,4.59,2.22,4.59,5.49v3.39Z"
-          />
-          <path
-            id="cl-mpipe5"
-            className="cls-64"
-            d="m839.71,498.44l-6.71-4.15c-.41-.23-.76-.08-.9,0-.14.08-.45.31-.45.78v2.49s-.22.89-1.02.88-1.02-.88-1.02-.88v-2.49c0-1.06.55-2.01,1.46-2.54.92-.53,2.01-.53,2.93,0l5.47,3.44"
-          />
-          <path
-            id="cl-mpipe6"
-            className="cls-64"
-            d="m850.98,503.24c-.31,0-.62-.08-.9-.24l-4.1-2.32s-.34-.52-.02-.93.62-.13.62-.13l4.1,2.32c.27.15.51.05.59,0,.09-.05.3-.2.3-.51l.13-10.09c0-.59.32-1.13.83-1.43.51-.3,1.13-.31,1.65-.02l2.21,1.21-.59,1.07-2.21-1.21c-.21-.11-.39-.03-.45,0-.07.04-.22.16-.23.39l-.13,10.09c0,.65-.35,1.23-.91,1.55-.28.16-.59.24-.91.24Z"
-          />
-          <g id="cl-building1">
-            <line
-              id="cl-building1-antenea"
-              className="cls-33"
-              x1="830.74"
-              y1="445.52"
-              x2="830.74"
-              y2="436.29"
-            />
-            <polygon
-              id="cl-building1-window1"
-              className="cls-29"
-              points="847.58 461.62 847.58 454.8 844.35 456.54 844.35 463.3 847.58 461.62"
-            />
-            <polygon
-              id="cl-building1-window1-2"
-              data-name="cl-building1-window1"
-              className="cls-29"
-              points="843.09 464.04 843.09 457.21 839.85 458.95 839.85 465.72 843.09 464.04"
-            />
-            <polygon
-              id="cl-building1-side"
-              className="cls-14"
-              points="819.56 466.74 833 475.05 833 460.08 826.37 447.88 819.56 453.56 819.56 466.74"
-            />
-            <polygon
-              id="cl-building1-front"
-              className="cls-14"
-              points="849.94 450.41 849.94 452.61 849.92 464.99 833 474.79 833 460.31 849.94 450.41"
-            />
-            <polygon
-              id="cl-building1-roof"
-              className="cls-38"
-              points="826.37 447.88 833 460.08 851.46 449.64 842.69 439.69 826.37 447.88"
-            />
-          </g>
-          <g id="cl-fence">
-            <polyline
-              id="cl-fence49"
-              className="cls-14"
-              points="751.46 456.36 722.2 472.04 781.66 506.37 792.6 512.38 875.6 464.76 851.46 451.29"
-            />
-            <line
-              id="cl-fence48"
-              className="cls-6"
-              x1="831.02"
-              y1="439.72"
-              x2="831.02"
-              y2="428.25"
-            />
-            <polyline
-              id="cl-fence47"
-              className="cls-14"
-              points="792.6 432.85 805.21 425.8 837.09 442.04"
-            />
-            <line
-              id="cl-fence46"
-              className="cls-5"
-              x1="792.32"
-              y1="433.37"
-              x2="792.32"
-              y2="423.49"
-            />
-            <line
-              id="cl-fence45"
-              className="cls-6"
-              x1="838.88"
-              y1="441.04"
-              x2="838.88"
-              y2="432.68"
-            />
-            <line
-              id="cl-fence44"
-              className="cls-5"
-              x1="722.2"
-              y1="472.47"
-              x2="722.2"
-              y2="462.6"
-            />
-            <line
-              id="cl-fence43"
-              className="cls-6"
-              x1="730.98"
-              y1="477.1"
-              x2="730.98"
-              y2="466.55"
-            />
-            <line
-              id="cl-fence42"
-              className="cls-6"
-              x1="739.54"
-              y1="481.53"
-              x2="739.54"
-              y2="471.14"
-            />
-            <line
-              id="cl-fence41"
-              className="cls-6"
-              x1="748.01"
-              y1="487.26"
-              x2="748.01"
-              y2="475.79"
-            />
-            <line
-              id="cl-fence40"
-              className="cls-6"
-              x1="755.87"
-              y1="491.69"
-              x2="755.87"
-              y2="480.23"
-            />
-            <line
-              id="cl-fence39"
-              className="cls-6"
-              x1="764.17"
-              y1="496.41"
-              x2="764.17"
-              y2="484.94"
-            />
-            <line
-              id="cl-fence38"
-              className="cls-6"
-              x1="773.25"
-              y1="501.43"
-              x2="773.25"
-              y2="490.62"
-            />
-            <line
-              id="cl-fence37"
-              className="cls-6"
-              x1="782.5"
-              y1="506.83"
-              x2="782.5"
-              y2="495.37"
-            />
-            <line
-              id="cl-fence36"
-              className="cls-17"
-              x1="722.2"
-              y1="463.38"
-              x2="792.6"
-              y2="502.09"
-            />
-            <line
-              id="cl-fence35"
-              className="cls-15"
-              x1="722.2"
-              y1="468.47"
-              x2="792.6"
-              y2="506.89"
-            />
-            <line
-              id="cl-fence34"
-              className="cls-6"
-              x1="805.21"
-              y1="425.8"
-              x2="805.21"
-              y2="414.34"
-            />
-            <line
-              id="cl-fence33"
-              className="cls-6"
-              x1="813.98"
-              y1="430.47"
-              x2="813.98"
-              y2="419"
-            />
-            <line
-              id="cl-fence32"
-              className="cls-6"
-              x1="822.55"
-              y1="435.07"
-              x2="822.55"
-              y2="423.6"
-            />
-            <line
-              id="cl-fence31"
-              className="cls-6"
-              x1="847.17"
-              y1="444.15"
-              x2="847.17"
-              y2="437.4"
-            />
-            <line
-              id="cl-fence30"
-              className="cls-6"
-              x1="856.26"
-              y1="453.97"
-              x2="856.26"
-              y2="443.08"
-            />
-            <line
-              id="cl-fence29"
-              className="cls-6"
-              x1="865.51"
-              y1="459.29"
-              x2="865.51"
-              y2="447.82"
-            />
-            <line
-              id="cl-fence28"
-              className="cls-17"
-              x1="805.21"
-              y1="415.84"
-              x2="875.6"
-              y2="454.54"
-            />
-            <line
-              id="cl-fence27"
-              className="cls-15"
-              x1="805.21"
-              y1="420.92"
-              x2="840.61"
-              y2="439.41"
-            />
-            <line
-              id="cl-fence26"
-              className="cls-15"
-              x1="847.42"
-              y1="443.92"
-              x2="875.6"
-              y2="460.21"
-            />
-            <line
-              id="cl-fence25"
-              className="cls-6"
-              x1="792.6"
-              y1="512.15"
-              x2="792.6"
-              y2="499.55"
-            />
-            <line
-              id="cl-fence24"
-              className="cls-5"
-              x1="862.99"
-              y1="471.97"
-              x2="862.99"
-              y2="462.37"
-            />
-            <line
-              id="cl-fence23"
-              className="cls-5"
-              x1="869.96"
-              y1="468.24"
-              x2="869.96"
-              y2="458.37"
-            />
-            <line
-              id="cl-fence22"
-              className="cls-5"
-              x1="875.41"
-              y1="464.83"
-              x2="875.41"
-              y2="453.21"
-            />
-            <line
-              id="cl-fence21"
-              className="cls-6"
-              x1="854.22"
-              y1="476.88"
-              x2="854.22"
-              y2="466.32"
-            />
-            <line
-              id="cl-fence20"
-              className="cls-6"
-              x1="845.65"
-              y1="481.86"
-              x2="845.65"
-              y2="470.91"
-            />
-            <line
-              id="cl-fence19"
-              className="cls-6"
-              x1="837.18"
-              y1="487.03"
-              x2="837.18"
-              y2="475.56"
-            />
-            <line
-              id="cl-fence18"
-              className="cls-6"
-              x1="829.32"
-              y1="491.46"
-              x2="829.32"
-              y2="480"
-            />
-            <line
-              id="cl-fence17"
-              className="cls-6"
-              x1="821.03"
-              y1="496.18"
-              x2="821.03"
-              y2="484.71"
-            />
-            <line
-              id="cl-fence16"
-              className="cls-6"
-              x1="811.94"
-              y1="501.2"
-              x2="811.94"
-              y2="490.39"
-            />
-            <line
-              id="cl-fence15"
-              className="cls-6"
-              x1="802.69"
-              y1="506.6"
-              x2="802.69"
-              y2="495.14"
-            />
-            <line
-              id="cl-fence14"
-              className="cls-17"
-              x1="792.6"
-              y1="501.86"
-              x2="875.6"
-              y2="455.4"
-            />
-            <line
-              id="cl-fence13"
-              className="cls-10"
-              x1="875.6"
-              y1="460.21"
-              x2="792.6"
-              y2="506.66"
-            />
-            <line
-              id="cl-fence12"
-              className="cls-5"
-              x1="799.29"
-              y1="429.36"
-              x2="799.29"
-              y2="419.49"
-            />
-            <line
-              id="cl-fence11"
-              className="cls-6"
-              x1="783.55"
-              y1="430.47"
-              x2="783.55"
-              y2="427.44"
-            />
-            <line
-              id="cl-fence10"
-              className="cls-6"
-              x1="774.98"
-              y1="435.2"
-              x2="774.98"
-              y2="432.04"
-            />
-            <line
-              id="cl-fence9"
-              className="cls-6"
-              x1="766.51"
-              y1="440.35"
-              x2="766.51"
-              y2="436.69"
-            />
-            <line
-              id="cl-fence8"
-              className="cls-6"
-              x1="758.65"
-              y1="445.52"
-              x2="758.65"
-              y2="441.12"
-            />
-            <line
-              id="cl-fence7"
-              className="cls-6"
-              x1="750.36"
-              y1="457.3"
-              x2="750.36"
-              y2="445.84"
-            />
-            <line
-              id="cl-fence6"
-              className="cls-6"
-              x1="741.27"
-              y1="462.33"
-              x2="741.27"
-              y2="451.51"
-            />
-            <line
-              id="cl-fence5"
-              className="cls-6"
-              x1="732.02"
-              y1="467.73"
-              x2="732.02"
-              y2="456.26"
-            />
-            <line
-              id="cl-fence4"
-              className="cls-6"
-              x1="732.02"
-              y1="467.73"
-              x2="732.02"
-              y2="456.26"
-            />
-            <line
-              id="cl-fence3"
-              className="cls-17"
-              x1="721.93"
-              y1="462.98"
-              x2="805.21"
-              y2="415.84"
-            />
-            <line
-              id="cl-fence2"
-              className="cls-10"
-              x1="751.51"
-              y1="451.72"
-              x2="721.93"
-              y2="467.78"
-            />
-            <line
-              id="cl-fence1"
-              className="cls-10"
-              x1="805.21"
-              y1="420.92"
-              x2="788.89"
-              y2="429.98"
-            />
-          </g>
-          <g id="cl-sm_pipe4">
-            <ellipse
-              id="cl-sm_pipe45"
-              className="cls-29"
-              cx="802.19"
-              cy="467.42"
-              rx="1"
-              ry=".74"
-            />
-            <ellipse
-              id="cl-sm_pipe44"
-              className="cls-29"
-              cx="802.19"
-              cy="462.25"
-              rx="1"
-              ry=".74"
-            />
-            <path
-              id="cl-sm_pipe43"
-              className="cls-29"
-              d="m803.19,462.37c0,.41-.45.74-1,.74s-1-.33-1-.74"
-            />
-            <line
-              id="cl-sm_pipe42"
-              className="cls-29"
-              x1="801.18"
-              y1="467.42"
-              x2="801.18"
-              y2="462.21"
-            />
-            <path
-              id="cl-sm_pipe41"
-              className="cls-29"
-              d="m803.19,467.42v-5.21"
-            />
-          </g>
-          <g id="cl-sm_pipe3">
-            <ellipse
-              id="cl-sm_pipe35"
-              className="cls-29"
-              cx="806.69"
-              cy="467.42"
-              rx="1"
-              ry=".74"
-            />
-            <ellipse
-              id="cl-sm_pipe34"
-              className="cls-29"
-              cx="806.69"
-              cy="462.25"
-              rx="1"
-              ry=".74"
-            />
-            <path
-              id="cl-sm_pipe33"
-              className="cls-29"
-              d="m807.7,462.37c0,.41-.45.74-1,.74s-1-.33-1-.74"
-            />
-            <line
-              id="cl-sm_pipe32"
-              className="cls-29"
-              x1="805.69"
-              y1="467.42"
-              x2="805.69"
-              y2="462.21"
-            />
-            <path
-              id="cl-sm_pipe31"
-              className="cls-29"
-              d="m807.7,467.42v-5.21"
-            />
-          </g>
-          <g id="cl-sm_pipe2">
-            <ellipse
-              id="cl-sm_pipe25"
-              className="cls-29"
-              cx="782.5"
-              cy="481.21"
-              rx="1"
-              ry=".74"
-            />
-            <ellipse
-              id="cl-sm_pipe24"
-              className="cls-29"
-              cx="782.5"
-              cy="476.04"
-              rx="1"
-              ry=".74"
-            />
-            <path
-              id="cl-sm_pipe23"
-              className="cls-29"
-              d="m783.51,476.16c0,.41-.45.74-1,.74s-1-.33-1-.74"
-            />
-            <line
-              id="cl-sm_pipe22"
-              className="cls-29"
-              x1="781.5"
-              y1="481.21"
-              x2="781.5"
-              y2="476"
-            />
-            <path
-              id="cl-sm_pipe21"
-              className="cls-29"
-              d="m783.51,481.21v-5.21"
-            />
-          </g>
-          <g id="cl-sm_pipe1">
-            <ellipse
-              id="cl-sm_pipe15"
-              className="cls-29"
-              cx="778.55"
-              cy="484.83"
-              rx="1"
-              ry=".74"
-            />
-            <ellipse
-              id="cl-sm_pipe14"
-              className="cls-29"
-              cx="778.55"
-              cy="479.66"
-              rx="1"
-              ry=".74"
-            />
-            <path
-              id="cl-sm_pipe13"
-              className="cls-29"
-              d="m779.56,479.78c0,.41-.45.74-1,.74s-1-.33-1-.74"
-            />
-            <line
-              id="cl-sm_pipe12"
-              className="cls-29"
-              x1="777.55"
-              y1="484.83"
-              x2="777.55"
-              y2="479.62"
-            />
-            <path
-              id="cl-sm_pipe11"
-              className="cls-29"
-              d="m779.56,484.83v-5.21"
-            />
-          </g>
-          <g id="cl-monitor1">
-            <path
-              id="cl-monitor19"
-              className="cls-9"
-              d="m801.12,542.05c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor18"
-              className="cls-9"
-              d="m801.12,536.17c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor17"
-              className="cls-9"
-              d="m801.12,530.05c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor17-2"
-              data-name="cl-monitor17"
-              className="cls-32"
-              d="m800.48,525.15c.19,4.9-5.24,6.15-7.16,6.15-4.52,0-9.21-2.74-9.21-6.15"
-            />
-            <ellipse
-              id="cl-monitor16"
-              className="cls-16"
-              cx="792.51"
-              cy="521.33"
-              rx="4.62"
-              ry="3.38"
-            />
-            <line
-              id="cl-monitor15"
-              className="cls-9"
-              x1="801.12"
-              y1="528.38"
-              x2="801.12"
-              y2="542.75"
-            />
-            <line
-              id="cl-monitor14"
-              className="cls-9"
-              x1="793.57"
-              y1="548.48"
-              x2="793.57"
-              y2="524.72"
-            />
-            <path
-              id="cl-monitor13"
-              className="cls-9"
-              d="m801.12,527.26s-.2-6.73-6.58-8.94"
-            />
-            <path
-              id="cl-monitor12"
-              className="cls-9"
-              d="m790.09,518.32s-6.62,1.03-6.58,9.84v14.37"
-            />
-            <path
-              id="cl-monitor11"
-              className="cls-22"
-              d="m783.51,542.53s.66,6.99,10.06,5.95c6.52-.72,7.55-5.73,7.55-5.73v-14.37s-.57-10.41-8.81-10.41c-7.66,0-8.81,7.02-8.81,10.41v14.15Z"
-            />
-          </g>
-          <g id="cl-monitor1-2" data-name="cl-monitor1">
-            <path
-              id="cl-monitor19-2"
-              data-name="cl-monitor19"
-              className="cls-9"
-              d="m830.84,526.49c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor18-2"
-              data-name="cl-monitor18"
-              className="cls-9"
-              d="m830.84,520.61c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor17-3"
-              data-name="cl-monitor17"
-              className="cls-9"
-              d="m830.84,514.48c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor17-4"
-              data-name="cl-monitor17"
-              className="cls-32"
-              d="m830.2,509.59c.19,4.9-5.24,6.15-7.16,6.15-4.52,0-9.21-2.74-9.21-6.15"
-            />
-            <ellipse
-              id="cl-monitor16-2"
-              data-name="cl-monitor16"
-              className="cls-16"
-              cx="822.23"
-              cy="505.77"
-              rx="4.62"
-              ry="3.38"
-            />
-            <line
-              id="cl-monitor15-2"
-              data-name="cl-monitor15"
-              className="cls-9"
-              x1="830.84"
-              y1="512.82"
-              x2="830.84"
-              y2="527.19"
-            />
-            <line
-              id="cl-monitor14-2"
-              data-name="cl-monitor14"
-              className="cls-9"
-              x1="823.29"
-              y1="532.92"
-              x2="823.29"
-              y2="509.16"
-            />
-            <path
-              id="cl-monitor13-2"
-              data-name="cl-monitor13"
-              className="cls-9"
-              d="m830.84,511.69s-.2-6.73-6.58-8.94"
-            />
-            <path
-              id="cl-monitor12-2"
-              data-name="cl-monitor12"
-              className="cls-9"
-              d="m819.8,502.76s-6.62,1.03-6.58,9.84v14.37"
-            />
-            <path
-              id="cl-monitor11-2"
-              data-name="cl-monitor11"
-              className="cls-22"
-              d="m813.22,526.97s.66,6.99,10.06,5.95c6.52-.72,7.55-5.73,7.55-5.73v-14.37s-.57-10.41-8.81-10.41c-7.66,0-8.81,7.02-8.81,10.41v14.15Z"
-            />
-          </g>
-          <g id="cl-monitor1-3" data-name="cl-monitor1">
-            <path
-              id="cl-monitor19-3"
-              data-name="cl-monitor19"
-              className="cls-9"
-              d="m893.03,484.35c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor18-3"
-              data-name="cl-monitor18"
-              className="cls-9"
-              d="m893.03,478.47c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor17-5"
-              data-name="cl-monitor17"
-              className="cls-9"
-              d="m893.03,472.34c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor17-6"
-              data-name="cl-monitor17"
-              className="cls-32"
-              d="m892.39,467.44c.19,4.9-5.24,6.15-7.16,6.15-4.52,0-9.21-2.74-9.21-6.15"
-            />
-            <ellipse
-              id="cl-monitor16-3"
-              data-name="cl-monitor16"
-              className="cls-16"
-              cx="884.41"
-              cy="463.63"
-              rx="4.62"
-              ry="3.38"
-            />
-            <line
-              id="cl-monitor15-3"
-              data-name="cl-monitor15"
-              className="cls-9"
-              x1="893.03"
-              y1="470.67"
-              x2="893.03"
-              y2="485.05"
-            />
-            <line
-              id="cl-monitor14-3"
-              data-name="cl-monitor14"
-              className="cls-9"
-              x1="885.47"
-              y1="490.78"
-              x2="885.47"
-              y2="467.01"
-            />
-            <path
-              id="cl-monitor13-3"
-              data-name="cl-monitor13"
-              className="cls-9"
-              d="m893.03,469.55s-.2-6.73-6.58-8.94"
-            />
-            <path
-              id="cl-monitor12-3"
-              data-name="cl-monitor12"
-              className="cls-9"
-              d="m881.99,460.61s-6.62,1.03-6.58,9.84v14.37"
-            />
-            <path
-              id="cl-monitor11-3"
-              data-name="cl-monitor11"
-              className="cls-22"
-              d="m875.41,484.83s.66,6.99,10.06,5.95c6.52-.72,7.55-5.73,7.55-5.73v-14.37s-.57-10.41-8.81-10.41c-7.66,0-8.81,7.02-8.81,10.41v14.15Z"
-            />
-          </g>
-          <g id="cl-monitor1-4" data-name="cl-monitor1">
-            <path
-              id="cl-monitor19-4"
-              data-name="cl-monitor19"
-              className="cls-9"
-              d="m913.79,468.07c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor18-4"
-              data-name="cl-monitor18"
-              className="cls-9"
-              d="m913.79,462.19c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor17-7"
-              data-name="cl-monitor17"
-              className="cls-9"
-              d="m913.79,456.06c0,3.57-3.94,6.46-8.81,6.46s-8.81-2.89-8.81-6.46"
-            />
-            <path
-              id="cl-monitor17-8"
-              data-name="cl-monitor17"
-              className="cls-32"
-              d="m913.15,451.17c.19,4.9-5.24,6.15-7.16,6.15-4.52,0-9.21-2.74-9.21-6.15"
-            />
-            <ellipse
-              id="cl-monitor16-4"
-              data-name="cl-monitor16"
-              className="cls-16"
-              cx="905.18"
-              cy="447.35"
-              rx="4.62"
-              ry="3.38"
-            />
-            <line
-              id="cl-monitor15-4"
-              data-name="cl-monitor15"
-              className="cls-9"
-              x1="913.79"
-              y1="454.4"
-              x2="913.79"
-              y2="468.77"
-            />
-            <line
-              id="cl-monitor14-4"
-              data-name="cl-monitor14"
-              className="cls-9"
-              x1="906.24"
-              y1="474.5"
-              x2="906.24"
-              y2="450.74"
-            />
-            <path
-              id="cl-monitor13-4"
-              data-name="cl-monitor13"
-              className="cls-9"
-              d="m913.79,453.28s-.2-6.73-6.58-8.94"
-            />
-            <path
-              id="cl-monitor12-4"
-              data-name="cl-monitor12"
-              className="cls-9"
-              d="m902.76,444.34s-6.62,1.03-6.58,9.84v14.37"
-            />
-            <path
-              id="cl-monitor11-4"
-              data-name="cl-monitor11"
-              className="cls-22"
-              d="m896.17,468.55s.66,6.99,10.06,5.95c6.52-.72,7.55-5.73,7.55-5.73v-14.37s-.57-10.41-8.81-10.41c-7.66,0-8.81,7.02-8.81,10.41v14.15Z"
-            />
-          </g>
-          <g id="cl-injection-box">
-            <polygon
-              id="cl-injection-box5"
-              className="cls-43"
-              points="839.73 495.27 845.44 491.88 849.13 494.04 843.54 497.37 839.73 495.27"
-            />
-            <polygon
-              id="cl-injection-box4"
-              className="cls-29"
-              points="839.71 495.27 839.71 503.5 843.38 505.75 843.52 497.37 839.71 495.27"
-            />
-            <polyline
-              id="cl-injection-box3"
-              className="cls-21"
-              points="849.19 502.22 845.43 500.15 839.5 503.57"
-            />
-            <line
-              id="cl-injection-box2"
-              className="cls-21"
-              x1="845.46"
-              y1="500.15"
-              x2="845.46"
-              y2="492.08"
-            />
-            <polygon
-              id="cl-injection-box1"
-              className="cls-29"
-              points="843.38 505.75 849.19 502.22 849.19 494.02 843.52 497.37 843.38 505.75"
-            />
-          </g>
-          <g id="cl-injectorpipe1">
-            <ellipse
-              id="cl-injectorpipe17"
-              className="cls-13"
-              cx="857.85"
-              cy="493.4"
-              rx="3.03"
-              ry="2.2"
-            />
-            <ellipse
-              id="cl-injectorpipe16"
-              className="cls-13"
-              cx="857.85"
-              cy="503.75"
-              rx="3.03"
-              ry="2.2"
-            />
-            <ellipse
-              id="cl-injectorpipe15"
-              className="cls-13"
-              cx="857.85"
-              cy="500.18"
-              rx="3.03"
-              ry="2.2"
-            />
-            <ellipse
-              id="cl-injectorpipe14"
-              className="cls-13"
-              cx="857.85"
-              cy="497.66"
-              rx="3.03"
-              ry="2.2"
-            />
-            <line
-              id="cl-injectorpipe13"
-              className="cls-13"
-              x1="854.82"
-              y1="493.4"
-              x2="854.82"
-              y2="504.33"
-            />
-            <line
-              id="cl-injectorpipe12"
-              className="cls-13"
-              x1="860.88"
-              y1="493.4"
-              x2="860.88"
-              y2="504.33"
-            />
-            <line
-              id="cl-injectorpipe11"
-              className="cls-13"
-              x1="858.94"
-              y1="495.61"
-              x2="858.94"
-              y2="505.73"
-            />
-          </g>
-          <path
-            id="cl-injectorpipe2"
-            className="cls-13"
-            d="m857.07,493.4c-.21-.33,0-7.15,0-7.15,0,0,.16.56.89.51s.99-.51.99-.51v7.15s-1.16,1.11-1.88,0Z"
-          />
-          <circle
-            id="cl-injectorpipe-circle"
-            className="cls-52"
-            cx="857.89"
-            cy="484.79"
-            r="1.97"
-          />
         </g>
         <path
-          id="mainpipeline"
-          className="cls-63"
-          d="m730,423.59c-.05-.06-.09-.14-.09-.22v-2.8c0-4.19-2.22-8.14-5.8-10.31l-374.05-222.57c-4.86-2.86-10.91-2.88-15.79-.06l-52.67,30.41c-2.43,1.4-5.42,1.39-7.83-.04h0s-122.58-73.64-122.58-73.64c-1.18-.68-2.59-.68-3.78,0-1.16.67-1.86,1.85-1.89,3.18-.02.91-.53,1.77-1.4,2.03-1.38.41-2.64-.61-2.64-1.93,0-3.56,2.32-6.66,6.01-7.64,1.94-.52,4.01-.16,5.74.86l.03.02,122.58,73.64c1.17.67,2.61.67,3.78,0l52.64-30.39c6.14-3.54,13.75-3.51,19.86.08l374.06,222.58.9.54c4.27,2.55,6.89,7.15,6.89,12.13v3.07c0,1.74-2.19,2.96-3.96,1.07Z"
-        />
-        <g id="carbon-capture-facility17">
-          <polygon
-            id="cc-left_top"
-            data-name="cc-left top"
-            className="cls-34"
-            points="754.73 390.1 754.68 382.21 750.52 379.33 747.15 386.52 747.15 394.44 754.73 390.1"
-          />
-          <polygon
-            id="cc-roof"
-            className="cls-39"
-            points="750.52 379.33 728.1 366.78 723.43 373.28 746.74 387.04 750.52 379.33"
-          />
-          <polygon
-            id="cc-righttop"
-            className="cls-24"
-            points="724.22 373.75 724.21 380.53 747.15 394.44 747.15 387.28 724.22 373.75"
-          />
-          <polygon
-            id="cc-rightbottom"
-            className="cls-24"
-            points="724.21 380.53 724.21 390.54 747.15 404.86 747.15 394.45 724.21 380.53"
-          />
-          <polygon
-            id="cc_front-bottom"
-            className="cls-11"
-            points="754.73 390.3 754.73 400.31 747.15 404.86 747.15 394.45 754.73 390.3"
-          />
-          <line
-            id="cc-overhang"
-            className="cls-19"
-            x1="755.09"
-            y1="382.54"
-            x2="754.37"
-            y2="382.05"
-          />
-          <line
-            id="cc-pipe2"
-            className="cls-12"
-            x1="748.78"
-            y1="388.25"
-            x2="748.78"
-            y2="401.6"
-          />
-          <polyline
-            id="cc-pipe1"
-            className="cls-12"
-            points="749.75 401.27 749.75 389.66 747.96 390.3"
-          />
-          <polygon
-            id="cc-window"
-            className="cls-27"
-            points="733.84 387.58 730.91 385.77 730.91 389.58 733.84 391.56 733.84 387.58"
-          />
-          <polygon
-            id="cc-door"
-            className="cls-27"
-            points="739.1 393.71 736.98 392.38 736.98 396.41 739.1 397.68 739.1 393.71"
-          />
-          <polyline
-            id="cc-foundation"
-            className="cls-27"
-            points="747.94 393.98 754.73 398.14 747.15 402.62 724.21 388.66 730.23 384.99"
-          />
-          <g id="cc-railing">
-            <polyline
-              id="cc-railing13"
-              className="cls-12"
-              points="738.61 398.49 721.85 388.13 721.85 390.47 738.55 400.94 738.61 398.49"
-            />
-            <line
-              id="cc-railing12"
-              className="cls-12"
-              x1="737.42"
-              y1="397.77"
-              x2="737.42"
-              y2="400.23"
-            />
-            <line
-              id="cc-railing11"
-              className="cls-12"
-              x1="735.84"
-              y1="396.79"
-              x2="735.84"
-              y2="401.76"
-            />
-            <line
-              id="cc-railing10"
-              className="cls-12"
-              x1="734.34"
-              y1="395.74"
-              x2="734.34"
-              y2="398.2"
-            />
-            <line
-              id="cc-railing9"
-              className="cls-12"
-              x1="732.97"
-              y1="394.87"
-              x2="732.97"
-              y2="400.07"
-            />
-            <line
-              id="cc-railing8"
-              className="cls-12"
-              x1="731.55"
-              y1="393.98"
-              x2="731.55"
-              y2="396.45"
-            />
-            <line
-              id="cc-railing7"
-              className="cls-12"
-              x1="730.15"
-              y1="392.99"
-              x2="730.15"
-              y2="398.3"
-            />
-            <line
-              id="cc-railing6"
-              className="cls-12"
-              x1="728.6"
-              y1="392.2"
-              x2="728.6"
-              y2="394.66"
-            />
-            <line
-              id="cc-railing5"
-              className="cls-12"
-              x1="727.02"
-              y1="391.21"
-              x2="727.02"
-              y2="396.55"
-            />
-            <line
-              id="cc-railing4"
-              className="cls-12"
-              x1="725.52"
-              y1="390.17"
-              x2="725.52"
-              y2="392.63"
-            />
-            <line
-              id="cc-railing3"
-              className="cls-12"
-              x1="723.05"
-              y1="388.94"
-              x2="723.05"
-              y2="391.4"
-            />
-            <line
-              id="cc-railing2"
-              className="cls-12"
-              x1="724.15"
-              y1="389.3"
-              x2="724.15"
-              y2="394.86"
-            />
-            <line
-              id="cc-railing1"
-              className="cls-12"
-              x1="721.85"
-              y1="388.24"
-              x2="721.85"
-              y2="393.48"
-            />
-          </g>
-          <line
-            id="cc-antena-1"
-            className="cls-27"
-            x1="745.32"
-            y1="380.53"
-            x2="745.32"
-            y2="373.02"
-          />
-          <line
-            id="cc-antena-2"
-            className="cls-27"
-            x1="735.84"
-            y1="371"
-            x2="735.84"
-            y2="367.61"
-          />
-          <g id="cc-stairs">
-            <polyline
-              id="cc-stairs16"
-              className="cls-23"
-              points="741.65 399.27 738.55 400.94 738.55 403.57"
-            />
-            <line
-              id="cc-stairs15"
-              className="cls-23"
-              x1="741.74"
-              y1="400.09"
-              x2="739.21"
-              y2="401.62"
-            />
-            <line
-              id="cc-stairs14"
-              className="cls-23"
-              x1="742.17"
-              y1="401.01"
-              x2="739.65"
-              y2="402.53"
-            />
-            <line
-              id="cc-stairs13"
-              className="cls-25"
-              x1="742.92"
-              y1="401.85"
-              x2="740.1"
-              y2="403.38"
-            />
-            <line
-              id="cc-stairs12"
-              className="cls-23"
-              x1="738.55"
-              y1="400.94"
-              x2="740.1"
-              y2="403.38"
-            />
-            <line
-              id="cc-stairs11"
-              className="cls-23"
-              x1="741.51"
-              y1="399.63"
-              x2="743.06"
-              y2="402.07"
-            />
-          </g>
-          <line
-            id="cc-topfloor"
-            className="cls-27"
-            x1="754.37"
-            y1="390.86"
-            x2="747.15"
-            y2="386.52"
-          />
-          <path
-            id="cc-topfloor2"
-            className="cls-23"
-            d="m724.21,380.53l5.95-3.28s.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility16">
-          <polygon
-            id="cc-left_top-2"
-            data-name="cc-left top"
-            className="cls-34"
-            points="685.99 426.02 685.93 418.13 681.77 415.25 678.4 422.44 678.4 430.36 685.99 426.02"
-          />
-          <polygon
-            id="cc-roof-2"
-            data-name="cc-roof"
-            className="cls-49"
-            points="681.77 415.25 659.35 402.7 654.69 409.21 677.99 422.96 681.77 415.25"
-          />
-          <polygon
-            id="cc-righttop-2"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="655.48 409.67 655.46 416.46 678.4 430.36 678.4 423.2 655.48 409.67"
-          />
-          <polygon
-            id="cc-rightbottom-2"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="655.46 416.46 655.46 426.47 678.4 440.78 678.4 430.37 655.46 416.46"
-          />
-          <polygon
-            id="cc_front-bottom-2"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="685.99 426.22 685.98 436.23 678.4 440.78 678.4 430.37 685.99 426.22"
-          />
-          <line
-            id="cc-overhang-2"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="686.35"
-            y1="418.46"
-            x2="685.62"
-            y2="417.97"
-          />
-          <line
-            id="cc-pipe2-2"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="680.04"
-            y1="424.17"
-            x2="680.04"
-            y2="437.52"
-          />
-          <polyline
-            id="cc-pipe1-2"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="681 437.19 681 425.58 679.21 426.22"
-          />
-          <polygon
-            id="cc-window-2"
-            data-name="cc-window"
-            className="cls-27"
-            points="665.1 423.5 662.16 421.69 662.16 425.5 665.1 427.48 665.1 423.5"
-          />
-          <polygon
-            id="cc-door-2"
-            data-name="cc-door"
-            className="cls-27"
-            points="670.35 429.63 668.23 428.3 668.23 432.34 670.35 433.6 670.35 429.63"
-          />
-          <polyline
-            id="cc-foundation-2"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="679.2 429.9 685.99 434.06 678.4 438.54 655.46 424.58 661.48 420.91"
-          />
-          <g id="cc-railing-2" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-2"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="669.86 434.41 653.11 424.05 653.11 426.39 669.8 436.86 669.86 434.41"
-            />
-            <line
-              id="cc-railing12-2"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="668.67"
-              y1="433.69"
-              x2="668.67"
-              y2="436.16"
-            />
-            <line
-              id="cc-railing11-2"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="667.09"
-              y1="432.71"
-              x2="667.09"
-              y2="437.68"
-            />
-            <line
-              id="cc-railing10-2"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="665.59"
-              y1="431.66"
-              x2="665.59"
-              y2="434.13"
-            />
-            <line
-              id="cc-railing9-2"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="664.23"
-              y1="430.79"
-              x2="664.23"
-              y2="435.99"
-            />
-            <line
-              id="cc-railing8-2"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="662.8"
-              y1="429.9"
-              x2="662.8"
-              y2="432.37"
-            />
-            <line
-              id="cc-railing7-2"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="661.41"
-              y1="428.91"
-              x2="661.41"
-              y2="434.22"
-            />
-            <line
-              id="cc-railing6-2"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="659.85"
-              y1="428.12"
-              x2="659.85"
-              y2="430.58"
-            />
-            <line
-              id="cc-railing5-2"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="658.27"
-              y1="427.14"
-              x2="658.27"
-              y2="432.47"
-            />
-            <line
-              id="cc-railing4-2"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="656.77"
-              y1="426.09"
-              x2="656.77"
-              y2="428.55"
-            />
-            <line
-              id="cc-railing3-2"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="654.31"
-              y1="424.86"
-              x2="654.31"
-              y2="427.32"
-            />
-            <line
-              id="cc-railing2-2"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="655.4"
-              y1="425.22"
-              x2="655.4"
-              y2="430.78"
-            />
-            <line
-              id="cc-railing1-2"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="653.11"
-              y1="424.16"
-              x2="653.11"
-              y2="429.4"
-            />
-          </g>
-          <line
-            id="cc-antena-1-2"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="676.58"
-            y1="416.46"
-            x2="676.58"
-            y2="408.94"
-          />
-          <line
-            id="cc-antena-2-2"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="667.09"
-            y1="406.92"
-            x2="667.09"
-            y2="403.53"
-          />
-          <g id="cc-stairs-2" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-2"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="672.91 435.19 669.8 436.86 669.8 439.49"
-            />
-            <line
-              id="cc-stairs15-2"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="672.99"
-              y1="436.01"
-              x2="670.47"
-              y2="437.54"
-            />
-            <line
-              id="cc-stairs14-2"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="673.43"
-              y1="436.93"
-              x2="670.9"
-              y2="438.45"
-            />
-            <line
-              id="cc-stairs13-2"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="674.18"
-              y1="437.77"
-              x2="671.35"
-              y2="439.3"
-            />
-            <line
-              id="cc-stairs12-2"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="669.8"
-              y1="436.86"
-              x2="671.35"
-              y2="439.3"
-            />
-            <line
-              id="cc-stairs11-2"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="672.76"
-              y1="435.56"
-              x2="674.32"
-              y2="438"
-            />
-          </g>
-          <line
-            id="cc-topfloor-2"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="685.62"
-            y1="426.78"
-            x2="678.4"
-            y2="422.44"
-          />
-          <path
-            id="cc-topfloor2-2"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m655.46,416.46l5.95-3.28s.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility15">
-          <polygon
-            id="cc-left_top-3"
-            data-name="cc-left top"
-            className="cls-34"
-            points="656.88 338.54 656.93 330.65 661.09 327.77 664.46 334.96 664.46 342.88 656.88 338.54"
-          />
-          <polygon
-            id="cc-roof-3"
-            data-name="cc-roof"
-            className="cls-50"
-            points="661.09 327.77 683.51 315.22 688.18 321.72 664.87 335.48 661.09 327.77"
-          />
-          <polygon
-            id="cc-righttop-3"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="687.39 322.19 687.41 328.97 664.46 342.88 664.46 335.72 687.39 322.19"
-          />
-          <polygon
-            id="cc-rightbottom-3"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="687.41 328.97 687.4 338.98 664.46 353.3 664.46 342.89 687.41 328.97"
-          />
-          <polygon
-            id="cc_front-bottom-3"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="656.88 338.74 656.88 348.75 664.46 353.3 664.46 342.89 656.88 338.74"
-          />
-          <line
-            id="cc-overhang-3"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="656.52"
-            y1="330.98"
-            x2="657.24"
-            y2="330.49"
-          />
-          <line
-            id="cc-pipe2-3"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="662.83"
-            y1="336.69"
-            x2="662.83"
-            y2="350.04"
-          />
-          <polyline
-            id="cc-pipe1-3"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="661.86 349.71 661.86 338.1 663.65 338.74"
-          />
-          <polygon
-            id="cc-window-3"
-            data-name="cc-window"
-            className="cls-27"
-            points="677.77 336.02 680.7 334.21 680.7 338.02 677.77 340 677.77 336.02"
-          />
-          <polygon
-            id="cc-door-3"
-            data-name="cc-door"
-            className="cls-27"
-            points="672.51 342.15 674.63 340.82 674.63 344.85 672.51 346.12 672.51 342.15"
-          />
-          <polyline
-            id="cc-foundation-3"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="663.67 342.42 656.88 346.58 664.46 351.06 687.4 337.1 681.38 333.42"
-          />
-          <g id="cc-railing-3" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-3"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="673.01 346.93 689.76 336.57 689.76 338.91 673.07 349.38 673.01 346.93"
-            />
-            <line
-              id="cc-railing12-3"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="674.19"
-              y1="346.21"
-              x2="674.19"
-              y2="348.67"
-            />
-            <line
-              id="cc-railing11-3"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="675.77"
-              y1="345.23"
-              x2="675.77"
-              y2="350.2"
-            />
-            <line
-              id="cc-railing10-3"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="677.27"
-              y1="344.18"
-              x2="677.27"
-              y2="346.64"
-            />
-            <line
-              id="cc-railing9-3"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="678.64"
-              y1="343.31"
-              x2="678.64"
-              y2="348.51"
-            />
-            <line
-              id="cc-railing8-3"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="680.06"
-              y1="342.42"
-              x2="680.06"
-              y2="344.89"
-            />
-            <line
-              id="cc-railing7-3"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="681.46"
-              y1="341.43"
-              x2="681.46"
-              y2="346.74"
-            />
-            <line
-              id="cc-railing6-3"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="683.01"
-              y1="340.64"
-              x2="683.01"
-              y2="343.1"
-            />
-            <line
-              id="cc-railing5-3"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="684.6"
-              y1="339.65"
-              x2="684.6"
-              y2="344.99"
-            />
-            <line
-              id="cc-railing4-3"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="686.1"
-              y1="338.61"
-              x2="686.1"
-              y2="341.07"
-            />
-            <line
-              id="cc-railing3-3"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="688.56"
-              y1="337.38"
-              x2="688.56"
-              y2="339.84"
-            />
-            <line
-              id="cc-railing2-3"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="687.46"
-              y1="337.74"
-              x2="687.46"
-              y2="343.3"
-            />
-            <line
-              id="cc-railing1-3"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="689.76"
-              y1="336.68"
-              x2="689.76"
-              y2="341.92"
-            />
-          </g>
-          <line
-            id="cc-antena-1-3"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="666.29"
-            y1="328.97"
-            x2="666.29"
-            y2="321.46"
-          />
-          <line
-            id="cc-antena-2-3"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="675.77"
-            y1="319.44"
-            x2="675.77"
-            y2="316.05"
-          />
-          <g id="cc-stairs-3" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-3"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="669.96 347.71 673.07 349.38 673.07 352.01"
-            />
-            <line
-              id="cc-stairs15-3"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="669.87"
-              y1="348.53"
-              x2="672.4"
-              y2="350.06"
-            />
-            <line
-              id="cc-stairs14-3"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="669.44"
-              y1="349.44"
-              x2="671.96"
-              y2="350.97"
-            />
-            <line
-              id="cc-stairs13-3"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="668.69"
-              y1="350.29"
-              x2="671.51"
-              y2="351.82"
-            />
-            <line
-              id="cc-stairs12-3"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="673.07"
-              y1="349.38"
-              x2="671.51"
-              y2="351.82"
-            />
-            <line
-              id="cc-stairs11-3"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="670.1"
-              y1="348.07"
-              x2="668.55"
-              y2="350.51"
-            />
-          </g>
-          <line
-            id="cc-topfloor-3"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="657.24"
-            y1="339.3"
-            x2="664.46"
-            y2="334.96"
-          />
-          <path
-            id="cc-topfloor2-3"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m687.41,328.97l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility14">
-          <polygon
-            id="cc-left_top-4"
-            data-name="cc-left top"
-            className="cls-34"
-            points="584.65 389.4 584.7 381.51 588.86 378.63 592.23 385.82 592.23 393.74 584.65 389.4"
-          />
-          <polygon
-            id="cc-roof-4"
-            data-name="cc-roof"
-            className="cls-51"
-            points="588.86 378.63 611.29 366.08 615.95 372.58 592.65 386.34 588.86 378.63"
-          />
-          <polygon
-            id="cc-righttop-4"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="615.16 373.05 615.18 379.83 592.23 393.74 592.23 386.58 615.16 373.05"
-          />
-          <polygon
-            id="cc-rightbottom-4"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="615.18 379.83 615.17 389.84 592.23 404.16 592.23 393.75 615.18 379.83"
-          />
-          <polygon
-            id="cc_front-bottom-4"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="584.65 389.6 584.65 399.61 592.23 404.16 592.23 393.75 584.65 389.6"
-          />
-          <line
-            id="cc-overhang-4"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="584.29"
-            y1="381.84"
-            x2="585.01"
-            y2="381.35"
-          />
-          <line
-            id="cc-pipe2-4"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="590.6"
-            y1="387.55"
-            x2="590.6"
-            y2="400.9"
-          />
-          <polyline
-            id="cc-pipe1-4"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="589.63 400.57 589.63 388.96 591.43 389.6"
-          />
-          <polygon
-            id="cc-window-4"
-            data-name="cc-window"
-            className="cls-27"
-            points="605.54 386.88 608.47 385.07 608.47 388.88 605.54 390.86 605.54 386.88"
-          />
-          <polygon
-            id="cc-door-4"
-            data-name="cc-door"
-            className="cls-27"
-            points="600.28 393.01 602.41 391.68 602.41 395.71 600.28 396.98 600.28 393.01"
-          />
-          <polyline
-            id="cc-foundation-4"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="591.44 393.28 584.65 397.44 592.23 401.92 615.17 387.96 609.15 384.28"
-          />
-          <g id="cc-railing-4" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-4"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="600.78 397.79 617.53 387.43 617.53 389.77 600.84 400.24 600.78 397.79"
-            />
-            <line
-              id="cc-railing12-4"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="601.96"
-              y1="397.07"
-              x2="601.96"
-              y2="399.53"
-            />
-            <line
-              id="cc-railing11-4"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="603.54"
-              y1="396.09"
-              x2="603.54"
-              y2="401.06"
-            />
-            <line
-              id="cc-railing10-4"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="605.04"
-              y1="395.04"
-              x2="605.04"
-              y2="397.5"
-            />
-            <line
-              id="cc-railing9-4"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="606.41"
-              y1="394.17"
-              x2="606.41"
-              y2="399.37"
-            />
-            <line
-              id="cc-railing8-4"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="607.83"
-              y1="393.28"
-              x2="607.83"
-              y2="395.75"
-            />
-            <line
-              id="cc-railing7-4"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="609.23"
-              y1="392.29"
-              x2="609.23"
-              y2="397.6"
-            />
-            <line
-              id="cc-railing6-4"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="610.79"
-              y1="391.5"
-              x2="610.79"
-              y2="393.96"
-            />
-            <line
-              id="cc-railing5-4"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="612.37"
-              y1="390.51"
-              x2="612.37"
-              y2="395.85"
-            />
-            <line
-              id="cc-railing4-4"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="613.87"
-              y1="389.47"
-              x2="613.87"
-              y2="391.93"
-            />
-            <line
-              id="cc-railing3-4"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="616.33"
-              y1="388.24"
-              x2="616.33"
-              y2="390.7"
-            />
-            <line
-              id="cc-railing2-4"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="615.23"
-              y1="388.6"
-              x2="615.23"
-              y2="394.16"
-            />
-            <line
-              id="cc-railing1-4"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="617.53"
-              y1="387.54"
-              x2="617.53"
-              y2="392.78"
-            />
-          </g>
-          <line
-            id="cc-antena-1-4"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="594.06"
-            y1="379.83"
-            x2="594.06"
-            y2="372.32"
-          />
-          <line
-            id="cc-antena-2-4"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="603.54"
-            y1="370.3"
-            x2="603.54"
-            y2="366.91"
-          />
-          <g id="cc-stairs-4" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-4"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="597.73 398.57 600.84 400.24 600.84 402.87"
-            />
-            <line
-              id="cc-stairs15-4"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="597.64"
-              y1="399.39"
-              x2="600.17"
-              y2="400.92"
-            />
-            <line
-              id="cc-stairs14-4"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="597.21"
-              y1="400.3"
-              x2="599.73"
-              y2="401.83"
-            />
-            <line
-              id="cc-stairs13-4"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="596.46"
-              y1="401.15"
-              x2="599.28"
-              y2="402.68"
-            />
-            <line
-              id="cc-stairs12-4"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="600.84"
-              y1="400.24"
-              x2="599.28"
-              y2="402.68"
-            />
-            <line
-              id="cc-stairs11-4"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="597.87"
-              y1="398.93"
-              x2="596.32"
-              y2="401.37"
-            />
-          </g>
-          <line
-            id="cc-topfloor-4"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="585.01"
-            y1="390.16"
-            x2="592.23"
-            y2="385.82"
-          />
-          <path
-            id="cc-topfloor2-4"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m615.18,379.83l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility13">
-          <polygon
-            id="cc-left_top-5"
-            data-name="cc-left top"
-            className="cls-34"
-            points="623.31 324.12 623.36 316.24 627.52 313.35 630.89 320.55 630.89 328.46 623.31 324.12"
-          />
-          <polygon
-            id="cc-roof-5"
-            data-name="cc-roof"
-            className="cls-47"
-            points="627.52 313.35 649.95 300.81 654.61 307.31 631.31 321.06 627.52 313.35"
-          />
-          <polygon
-            id="cc-righttop-5"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="653.82 307.78 653.84 314.56 630.89 328.46 630.89 321.31 653.82 307.78"
-          />
-          <polygon
-            id="cc-rightbottom-5"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="653.84 314.56 653.83 324.57 630.89 338.88 630.89 328.47 653.84 314.56"
-          />
-          <polygon
-            id="cc_front-bottom-5"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="623.31 324.33 623.31 334.34 630.89 338.88 630.89 328.47 623.31 324.33"
-          />
-          <line
-            id="cc-overhang-5"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="622.95"
-            y1="316.56"
-            x2="623.67"
-            y2="316.07"
-          />
-          <line
-            id="cc-pipe2-5"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="629.26"
-            y1="322.27"
-            x2="629.26"
-            y2="335.62"
-          />
-          <polyline
-            id="cc-pipe1-5"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="628.29 335.3 628.29 323.69 630.08 324.33"
-          />
-          <polygon
-            id="cc-window-5"
-            data-name="cc-window"
-            className="cls-27"
-            points="644.2 321.61 647.13 319.79 647.13 323.61 644.2 325.58 644.2 321.61"
-          />
-          <polygon
-            id="cc-door-5"
-            data-name="cc-door"
-            className="cls-27"
-            points="638.94 327.73 641.07 326.41 641.07 330.44 638.94 331.71 638.94 327.73"
-          />
-          <polyline
-            id="cc-foundation-5"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="630.1 328.01 623.31 332.17 630.89 336.64 653.83 322.69 647.81 319.01"
-          />
-          <g id="cc-railing-5" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-5"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="639.44 332.52 656.19 322.15 656.19 324.49 639.5 334.96 639.44 332.52"
-            />
-            <line
-              id="cc-railing12-5"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="640.62"
-              y1="331.8"
-              x2="640.62"
-              y2="334.26"
-            />
-            <line
-              id="cc-railing11-5"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="642.2"
-              y1="330.81"
-              x2="642.2"
-              y2="335.79"
-            />
-            <line
-              id="cc-railing10-5"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="643.7"
-              y1="329.77"
-              x2="643.7"
-              y2="332.23"
-            />
-            <line
-              id="cc-railing9-5"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="645.07"
-              y1="328.9"
-              x2="645.07"
-              y2="334.09"
-            />
-            <line
-              id="cc-railing8-5"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="646.49"
-              y1="328.01"
-              x2="646.49"
-              y2="330.47"
-            />
-            <line
-              id="cc-railing7-5"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="647.89"
-              y1="327.02"
-              x2="647.89"
-              y2="332.33"
-            />
-            <line
-              id="cc-railing6-5"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="649.45"
-              y1="326.22"
-              x2="649.45"
-              y2="328.69"
-            />
-            <line
-              id="cc-railing5-5"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="651.03"
-              y1="325.24"
-              x2="651.03"
-              y2="330.57"
-            />
-            <line
-              id="cc-railing4-5"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="652.53"
-              y1="324.19"
-              x2="652.53"
-              y2="326.66"
-            />
-            <line
-              id="cc-railing3-5"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="654.99"
-              y1="322.96"
-              x2="654.99"
-              y2="325.43"
-            />
-            <line
-              id="cc-railing2-5"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="653.89"
-              y1="323.32"
-              x2="653.89"
-              y2="328.89"
-            />
-            <line
-              id="cc-railing1-5"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="656.19"
-              y1="322.26"
-              x2="656.19"
-              y2="327.5"
-            />
-          </g>
-          <line
-            id="cc-antena-1-5"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="632.72"
-            y1="314.56"
-            x2="632.72"
-            y2="307.05"
-          />
-          <line
-            id="cc-antena-2-5"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="642.2"
-            y1="305.03"
-            x2="642.2"
-            y2="301.64"
-          />
-          <g id="cc-stairs-5" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-5"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="636.39 333.3 639.5 334.96 639.5 337.59"
-            />
-            <line
-              id="cc-stairs15-5"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="636.3"
-              y1="334.12"
-              x2="638.83"
-              y2="335.64"
-            />
-            <line
-              id="cc-stairs14-5"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="635.87"
-              y1="335.03"
-              x2="638.39"
-              y2="336.56"
-            />
-            <line
-              id="cc-stairs13-5"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="635.12"
-              y1="335.88"
-              x2="637.94"
-              y2="337.4"
-            />
-            <line
-              id="cc-stairs12-5"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="639.5"
-              y1="334.96"
-              x2="637.94"
-              y2="337.4"
-            />
-            <line
-              id="cc-stairs11-5"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="636.53"
-              y1="333.66"
-              x2="634.98"
-              y2="336.1"
-            />
-          </g>
-          <line
-            id="cc-topfloor-5"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="623.67"
-            y1="324.88"
-            x2="630.89"
-            y2="320.55"
-          />
-          <path
-            id="cc-topfloor2-5"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m653.84,314.56l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility12">
-          <polygon
-            id="cc-left_top-6"
-            data-name="cc-left top"
-            className="cls-34"
-            points="553.15 371.84 553.21 363.95 557.36 361.07 560.74 368.26 560.74 376.18 553.15 371.84"
-          />
-          <polygon
-            id="cc-roof-6"
-            data-name="cc-roof"
-            className="cls-45"
-            points="557.36 361.07 579.79 348.52 584.45 355.03 561.15 368.78 557.36 361.07"
-          />
-          <polygon
-            id="cc-righttop-6"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="583.66 355.49 583.68 362.27 560.74 376.18 560.74 369.02 583.66 355.49"
-          />
-          <polygon
-            id="cc-rightbottom-6"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="583.68 362.27 583.68 372.28 560.74 386.6 560.74 376.19 583.68 362.27"
-          />
-          <polygon
-            id="cc_front-bottom-6"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="553.15 372.04 553.15 382.05 560.74 386.6 560.74 376.19 553.15 372.04"
-          />
-          <line
-            id="cc-overhang-6"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="552.79"
-            y1="364.28"
-            x2="553.52"
-            y2="363.79"
-          />
-          <line
-            id="cc-pipe2-6"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="559.1"
-            y1="369.99"
-            x2="559.1"
-            y2="383.34"
-          />
-          <polyline
-            id="cc-pipe1-6"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="558.13 383.01 558.13 371.4 559.93 372.04"
-          />
-          <polygon
-            id="cc-window-6"
-            data-name="cc-window"
-            className="cls-27"
-            points="574.04 369.32 576.97 367.51 576.97 371.32 574.04 373.3 574.04 369.32"
-          />
-          <polygon
-            id="cc-door-6"
-            data-name="cc-door"
-            className="cls-27"
-            points="568.79 375.45 570.91 374.12 570.91 378.15 568.79 379.42 568.79 375.45"
-          />
-          <polyline
-            id="cc-foundation-6"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="559.94 375.72 553.15 379.88 560.74 384.36 583.68 370.4 577.66 366.73"
-          />
-          <g id="cc-railing-6" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-6"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="569.28 380.23 586.03 369.87 586.03 372.21 569.34 382.68 569.28 380.23"
-            />
-            <line
-              id="cc-railing12-6"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="570.46"
-              y1="379.51"
-              x2="570.46"
-              y2="381.98"
-            />
-            <line
-              id="cc-railing11-6"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="572.05"
-              y1="378.53"
-              x2="572.05"
-              y2="383.5"
-            />
-            <line
-              id="cc-railing10-6"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="573.55"
-              y1="377.48"
-              x2="573.55"
-              y2="379.95"
-            />
-            <line
-              id="cc-railing9-6"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="574.91"
-              y1="376.61"
-              x2="574.91"
-              y2="381.81"
-            />
-            <line
-              id="cc-railing8-6"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="576.34"
-              y1="375.72"
-              x2="576.34"
-              y2="378.19"
-            />
-            <line
-              id="cc-railing7-6"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="577.73"
-              y1="374.73"
-              x2="577.73"
-              y2="380.04"
-            />
-            <line
-              id="cc-railing6-6"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="579.29"
-              y1="373.94"
-              x2="579.29"
-              y2="376.4"
-            />
-            <line
-              id="cc-railing5-6"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="580.87"
-              y1="372.95"
-              x2="580.87"
-              y2="378.29"
-            />
-            <line
-              id="cc-railing4-6"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="582.37"
-              y1="371.91"
-              x2="582.37"
-              y2="374.37"
-            />
-            <line
-              id="cc-railing3-6"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="584.83"
-              y1="370.68"
-              x2="584.83"
-              y2="373.14"
-            />
-            <line
-              id="cc-railing2-6"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="583.74"
-              y1="371.04"
-              x2="583.74"
-              y2="376.6"
-            />
-            <line
-              id="cc-railing1-6"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="586.03"
-              y1="369.98"
-              x2="586.03"
-              y2="375.22"
-            />
-          </g>
-          <line
-            id="cc-antena-1-6"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="562.56"
-            y1="362.27"
-            x2="562.56"
-            y2="354.76"
-          />
-          <line
-            id="cc-antena-2-6"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="572.05"
-            y1="352.74"
-            x2="572.05"
-            y2="349.35"
-          />
-          <g id="cc-stairs-6" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-6"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="566.23 381.01 569.34 382.68 569.34 385.31"
-            />
-            <line
-              id="cc-stairs15-6"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="566.15"
-              y1="381.83"
-              x2="568.67"
-              y2="383.36"
-            />
-            <line
-              id="cc-stairs14-6"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="565.71"
-              y1="382.75"
-              x2="568.24"
-              y2="384.27"
-            />
-            <line
-              id="cc-stairs13-6"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="564.96"
-              y1="383.59"
-              x2="567.79"
-              y2="385.12"
-            />
-            <line
-              id="cc-stairs12-6"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="569.34"
-              y1="382.68"
-              x2="567.79"
-              y2="385.12"
-            />
-            <line
-              id="cc-stairs11-6"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="566.38"
-              y1="381.38"
-              x2="564.82"
-              y2="383.82"
-            />
-          </g>
-          <line
-            id="cc-topfloor-6"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="553.52"
-            y1="372.6"
-            x2="560.74"
-            y2="368.26"
-          />
-          <path
-            id="cc-topfloor2-6"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m583.68,362.27l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility11">
-          <polygon
-            id="cc-left_top-7"
-            data-name="cc-left top"
-            className="cls-34"
-            points="594.29 305.09 594.35 297.2 598.5 294.32 601.88 301.51 601.88 309.42 594.29 305.09"
-          />
-          <polygon
-            id="cc-roof-7"
-            data-name="cc-roof"
-            className="cls-44"
-            points="598.5 294.32 620.93 281.77 625.59 288.27 602.29 302.03 598.5 294.32"
-          />
-          <polygon
-            id="cc-righttop-7"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="624.8 288.74 624.82 295.52 601.88 309.42 601.88 302.27 624.8 288.74"
-          />
-          <polygon
-            id="cc-rightbottom-7"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="624.82 295.52 624.82 305.53 601.88 319.85 601.88 309.43 624.82 295.52"
-          />
-          <polygon
-            id="cc_front-bottom-7"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="594.29 305.29 594.29 315.3 601.88 319.85 601.88 309.43 594.29 305.29"
-          />
-          <line
-            id="cc-overhang-7"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="593.93"
-            y1="297.52"
-            x2="594.65"
-            y2="297.04"
-          />
-          <line
-            id="cc-pipe2-7"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="600.24"
-            y1="303.23"
-            x2="600.24"
-            y2="316.59"
-          />
-          <polyline
-            id="cc-pipe1-7"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="599.27 316.26 599.27 304.65 601.07 305.29"
-          />
-          <polygon
-            id="cc-window-7"
-            data-name="cc-window"
-            className="cls-27"
-            points="615.18 302.57 618.11 300.75 618.11 304.57 615.18 306.54 615.18 302.57"
-          />
-          <polygon
-            id="cc-door-7"
-            data-name="cc-door"
-            className="cls-27"
-            points="609.93 308.7 612.05 307.37 612.05 311.4 609.93 312.67 609.93 308.7"
-          />
-          <polyline
-            id="cc-foundation-7"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="601.08 308.97 594.29 313.13 601.88 317.6 624.82 303.65 618.79 299.97"
-          />
-          <g id="cc-railing-7" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-7"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="610.42 313.48 627.17 303.11 627.17 305.46 610.48 315.93 610.42 313.48"
-            />
-            <line
-              id="cc-railing12-7"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="611.6"
-              y1="312.76"
-              x2="611.6"
-              y2="315.22"
-            />
-            <line
-              id="cc-railing11-7"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="613.18"
-              y1="311.77"
-              x2="613.18"
-              y2="316.75"
-            />
-            <line
-              id="cc-railing10-7"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="614.68"
-              y1="310.73"
-              x2="614.68"
-              y2="313.19"
-            />
-            <line
-              id="cc-railing9-7"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="616.05"
-              y1="309.86"
-              x2="616.05"
-              y2="315.06"
-            />
-            <line
-              id="cc-railing8-7"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="617.48"
-              y1="308.97"
-              x2="617.48"
-              y2="311.43"
-            />
-            <line
-              id="cc-railing7-7"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="618.87"
-              y1="307.98"
-              x2="618.87"
-              y2="313.29"
-            />
-            <line
-              id="cc-railing6-7"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="620.43"
-              y1="307.19"
-              x2="620.43"
-              y2="309.65"
-            />
-            <line
-              id="cc-railing5-7"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="622.01"
-              y1="306.2"
-              x2="622.01"
-              y2="311.53"
-            />
-            <line
-              id="cc-railing4-7"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="623.51"
-              y1="305.16"
-              x2="623.51"
-              y2="307.62"
-            />
-            <line
-              id="cc-railing3-7"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="625.97"
-              y1="303.92"
-              x2="625.97"
-              y2="306.39"
-            />
-            <line
-              id="cc-railing2-7"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="624.88"
-              y1="304.28"
-              x2="624.88"
-              y2="309.85"
-            />
-            <line
-              id="cc-railing1-7"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="627.17"
-              y1="303.23"
-              x2="627.17"
-              y2="308.46"
-            />
-          </g>
-          <line
-            id="cc-antena-1-7"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="603.7"
-            y1="295.52"
-            x2="603.7"
-            y2="288.01"
-          />
-          <line
-            id="cc-antena-2-7"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="613.18"
-            y1="285.99"
-            x2="613.18"
-            y2="282.6"
-          />
-          <g id="cc-stairs-7" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-7"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="607.37 314.26 610.48 315.93 610.48 318.56"
-            />
-            <line
-              id="cc-stairs15-7"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="607.28"
-              y1="315.08"
-              x2="609.81"
-              y2="316.6"
-            />
-            <line
-              id="cc-stairs14-7"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="606.85"
-              y1="315.99"
-              x2="609.38"
-              y2="317.52"
-            />
-            <line
-              id="cc-stairs13-7"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="606.1"
-              y1="316.84"
-              x2="608.93"
-              y2="318.37"
-            />
-            <line
-              id="cc-stairs12-7"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="610.48"
-              y1="315.93"
-              x2="608.93"
-              y2="318.37"
-            />
-            <line
-              id="cc-stairs11-7"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="607.52"
-              y1="314.62"
-              x2="605.96"
-              y2="317.06"
-            />
-          </g>
-          <line
-            id="cc-topfloor-7"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="594.65"
-            y1="305.84"
-            x2="601.88"
-            y2="301.51"
-          />
-          <path
-            id="cc-topfloor2-7"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m624.82,295.52l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility10">
-          <polygon
-            id="cc-left_top-8"
-            data-name="cc-left top"
-            className="cls-34"
-            points="521.16 352.13 521.21 344.24 525.37 341.36 528.74 348.55 528.74 356.47 521.16 352.13"
-          />
-          <polygon
-            id="cc-roof-8"
-            data-name="cc-roof"
-            className="cls-48"
-            points="525.37 341.36 547.79 328.81 552.46 335.31 529.15 349.07 525.37 341.36"
-          />
-          <polygon
-            id="cc-righttop-8"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="551.67 335.78 551.68 342.56 528.74 356.47 528.74 349.31 551.67 335.78"
-          />
-          <polygon
-            id="cc-rightbottom-8"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="551.68 342.56 551.68 352.57 528.74 366.89 528.74 356.47 551.68 342.56"
-          />
-          <polygon
-            id="cc_front-bottom-8"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="521.16 352.33 521.16 362.34 528.74 366.89 528.74 356.47 521.16 352.33"
-          />
-          <line
-            id="cc-overhang-8"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="520.79"
-            y1="344.57"
-            x2="521.52"
-            y2="344.08"
-          />
-          <line
-            id="cc-pipe2-8"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="527.11"
-            y1="350.28"
-            x2="527.11"
-            y2="363.63"
-          />
-          <polyline
-            id="cc-pipe1-8"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="526.14 363.3 526.14 351.69 527.93 352.33"
-          />
-          <polygon
-            id="cc-window-8"
-            data-name="cc-window"
-            className="cls-27"
-            points="542.04 349.61 544.98 347.8 544.98 351.61 542.04 353.58 542.04 349.61"
-          />
-          <polygon
-            id="cc-door-8"
-            data-name="cc-door"
-            className="cls-27"
-            points="536.79 355.74 538.91 354.41 538.91 358.44 536.79 359.71 536.79 355.74"
-          />
-          <polyline
-            id="cc-foundation-8"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="527.95 356.01 521.16 360.17 528.74 364.65 551.68 350.69 545.66 347.01"
-          />
-          <g id="cc-railing-8" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-8"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="537.28 360.52 554.03 350.16 554.03 352.5 537.34 362.97 537.28 360.52"
-            />
-            <line
-              id="cc-railing12-8"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="538.47"
-              y1="359.8"
-              x2="538.47"
-              y2="362.26"
-            />
-            <line
-              id="cc-railing11-8"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="540.05"
-              y1="358.82"
-              x2="540.05"
-              y2="363.79"
-            />
-            <line
-              id="cc-railing10-8"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="541.55"
-              y1="357.77"
-              x2="541.55"
-              y2="360.23"
-            />
-            <line
-              id="cc-railing9-8"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="542.92"
-              y1="356.9"
-              x2="542.92"
-              y2="362.1"
-            />
-            <line
-              id="cc-railing8-8"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="544.34"
-              y1="356.01"
-              x2="544.34"
-              y2="358.48"
-            />
-            <line
-              id="cc-railing7-8"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="545.74"
-              y1="355.02"
-              x2="545.74"
-              y2="360.33"
-            />
-            <line
-              id="cc-railing6-8"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="547.29"
-              y1="354.23"
-              x2="547.29"
-              y2="356.69"
-            />
-            <line
-              id="cc-railing5-8"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="548.87"
-              y1="353.24"
-              x2="548.87"
-              y2="358.58"
-            />
-            <line
-              id="cc-railing4-8"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="550.37"
-              y1="352.2"
-              x2="550.37"
-              y2="354.66"
-            />
-            <line
-              id="cc-railing3-8"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="552.83"
-              y1="350.97"
-              x2="552.83"
-              y2="353.43"
-            />
-            <line
-              id="cc-railing2-8"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="551.74"
-              y1="351.33"
-              x2="551.74"
-              y2="356.89"
-            />
-            <line
-              id="cc-railing1-8"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="554.03"
-              y1="350.27"
-              x2="554.03"
-              y2="355.51"
-            />
-          </g>
-          <line
-            id="cc-antena-1-8"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="530.57"
-            y1="342.56"
-            x2="530.57"
-            y2="335.05"
-          />
-          <line
-            id="cc-antena-2-8"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="540.05"
-            y1="333.03"
-            x2="540.05"
-            y2="329.64"
-          />
-          <g id="cc-stairs-8" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-8"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="534.24 361.3 537.34 362.97 537.34 365.6"
-            />
-            <line
-              id="cc-stairs15-8"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="534.15"
-              y1="362.12"
-              x2="536.67"
-              y2="363.65"
-            />
-            <line
-              id="cc-stairs14-8"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="533.71"
-              y1="363.03"
-              x2="536.24"
-              y2="364.56"
-            />
-            <line
-              id="cc-stairs13-8"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="532.96"
-              y1="363.88"
-              x2="535.79"
-              y2="365.41"
-            />
-            <line
-              id="cc-stairs12-8"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="537.34"
-              y1="362.97"
-              x2="535.79"
-              y2="365.41"
-            />
-            <line
-              id="cc-stairs11-8"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="534.38"
-              y1="361.66"
-              x2="532.83"
-              y2="364.1"
-            />
-          </g>
-          <line
-            id="cc-topfloor-8"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="521.52"
-            y1="352.89"
-            x2="528.74"
-            y2="348.55"
-          />
-          <path
-            id="cc-topfloor2-8"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m551.68,342.56l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility9">
-          <polygon
-            id="cc-left_top-9"
-            data-name="cc-left top"
-            className="cls-34"
-            points="332.91 265.94 332.97 258.05 337.12 255.17 340.5 262.36 340.5 270.28 332.91 265.94"
-          />
-          <polygon
-            id="cc-roof-9"
-            data-name="cc-roof"
-            className="cls-46"
-            points="337.12 255.17 359.55 242.62 364.21 249.13 340.91 262.88 337.12 255.17"
-          />
-          <polygon
-            id="cc-righttop-9"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="363.42 249.59 363.44 256.38 340.5 270.28 340.5 263.13 363.42 249.59"
-          />
-          <polygon
-            id="cc-rightbottom-9"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="363.44 256.38 363.44 266.39 340.5 280.7 340.5 270.29 363.44 256.38"
-          />
-          <polygon
-            id="cc_front-bottom-9"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="332.91 266.15 332.91 276.15 340.5 280.7 340.5 270.29 332.91 266.15"
-          />
-          <line
-            id="cc-overhang-9"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="332.55"
-            y1="258.38"
-            x2="333.28"
-            y2="257.89"
-          />
-          <line
-            id="cc-pipe2-9"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="338.86"
-            y1="264.09"
-            x2="338.86"
-            y2="277.44"
-          />
-          <polyline
-            id="cc-pipe1-9"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="337.89 277.12 337.89 265.5 339.69 266.15"
-          />
-          <polygon
-            id="cc-window-9"
-            data-name="cc-window"
-            className="cls-27"
-            points="353.8 263.43 356.73 261.61 356.73 265.42 353.8 267.4 353.8 263.43"
-          />
-          <polygon
-            id="cc-door-9"
-            data-name="cc-door"
-            className="cls-27"
-            points="348.55 269.55 350.67 268.22 350.67 272.26 348.55 273.52 348.55 269.55"
-          />
-          <polyline
-            id="cc-foundation-9"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="339.7 269.83 332.91 273.98 340.5 278.46 363.44 264.5 357.42 260.83"
-          />
-          <g id="cc-railing-9" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-9"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="349.04 274.33 365.79 263.97 365.79 266.31 349.1 276.78 349.04 274.33"
-            />
-            <line
-              id="cc-railing12-9"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="350.22"
-              y1="273.61"
-              x2="350.22"
-              y2="276.08"
-            />
-            <line
-              id="cc-railing11-9"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="351.81"
-              y1="272.63"
-              x2="351.81"
-              y2="277.6"
-            />
-            <line
-              id="cc-railing10-9"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="353.31"
-              y1="271.58"
-              x2="353.31"
-              y2="274.05"
-            />
-            <line
-              id="cc-railing9-9"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="354.67"
-              y1="270.71"
-              x2="354.67"
-              y2="275.91"
-            />
-            <line
-              id="cc-railing8-9"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="356.1"
-              y1="269.83"
-              x2="356.1"
-              y2="272.29"
-            />
-            <line
-              id="cc-railing7-9"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="357.49"
-              y1="268.84"
-              x2="357.49"
-              y2="274.15"
-            />
-            <line
-              id="cc-railing6-9"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="359.05"
-              y1="268.04"
-              x2="359.05"
-              y2="270.51"
-            />
-            <line
-              id="cc-railing5-9"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="360.63"
-              y1="267.06"
-              x2="360.63"
-              y2="272.39"
-            />
-            <line
-              id="cc-railing4-9"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="362.13"
-              y1="266.01"
-              x2="362.13"
-              y2="268.48"
-            />
-            <line
-              id="cc-railing3-9"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="364.59"
-              y1="264.78"
-              x2="364.59"
-              y2="267.24"
-            />
-            <line
-              id="cc-railing2-9"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="363.5"
-              y1="265.14"
-              x2="363.5"
-              y2="270.7"
-            />
-            <line
-              id="cc-railing1-9"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="365.79"
-              y1="264.08"
-              x2="365.79"
-              y2="269.32"
-            />
-          </g>
-          <line
-            id="cc-antena-1-9"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="342.32"
-            y1="256.38"
-            x2="342.32"
-            y2="248.87"
-          />
-          <line
-            id="cc-antena-2-9"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="351.81"
-            y1="246.84"
-            x2="351.81"
-            y2="243.45"
-          />
-          <g id="cc-stairs-9" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-9"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="345.99 275.12 349.1 276.78 349.1 279.41"
-            />
-            <line
-              id="cc-stairs15-9"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="345.91"
-              y1="275.93"
-              x2="348.43"
-              y2="277.46"
-            />
-            <line
-              id="cc-stairs14-9"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="345.47"
-              y1="276.85"
-              x2="348"
-              y2="278.37"
-            />
-            <line
-              id="cc-stairs13-9"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="344.72"
-              y1="277.7"
-              x2="347.55"
-              y2="279.22"
-            />
-            <line
-              id="cc-stairs12-9"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="349.1"
-              y1="276.78"
-              x2="347.55"
-              y2="279.22"
-            />
-            <line
-              id="cc-stairs11-9"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="346.14"
-              y1="275.48"
-              x2="344.58"
-              y2="277.92"
-            />
-          </g>
-          <line
-            id="cc-topfloor-9"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="333.28"
-            y1="266.7"
-            x2="340.5"
-            y2="262.36"
-          />
-          <path
-            id="cc-topfloor2-9"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m363.44,256.38l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility8">
-          <polygon
-            id="cc-left_top-10"
-            data-name="cc-left top"
-            className="cls-34"
-            points="366.31 226.79 366.95 218.93 363.06 215.69 359.07 222.56 358.37 230.45 366.31 226.79"
-          />
-          <polygon
-            id="cc-roof-10"
-            data-name="cc-roof"
-            className="cls-54"
-            points="363.06 215.69 341.83 201.22 336.61 207.29 358.61 223.04 363.06 215.69"
-          />
-          <polygon
-            id="cc-righttop-10"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="337.36 207.82 336.74 214.58 358.37 230.45 359 223.32 337.36 207.82"
-          />
-          <polygon
-            id="cc-rightbottom-10"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="336.74 214.58 335.86 224.55 357.46 240.83 358.37 230.46 336.74 214.58"
-          />
-          <polygon
-            id="cc_front-bottom-10"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="366.29 227 365.41 236.97 357.46 240.83 358.37 230.46 366.29 227"
-          />
-          <line
-            id="cc-overhang-10"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="367.34"
-            y1="219.29"
-            x2="366.66"
-            y2="218.74"
-          />
-          <line
-            id="cc-pipe2-10"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="360.55"
-            y1="224.43"
-            x2="359.37"
-            y2="237.73"
-          />
-          <polyline
-            id="cc-pipe1-10"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="360.37 237.49 361.39 225.92 359.54 226.4"
-          />
-          <polygon
-            id="cc-window-10"
-            data-name="cc-window"
-            className="cls-27"
-            points="345.72 222.45 342.96 220.38 342.63 224.18 345.38 226.41 345.72 222.45"
-          />
-          <polygon
-            id="cc-door-10"
-            data-name="cc-door"
-            className="cls-27"
-            points="350.42 229.01 348.42 227.51 348.07 231.52 350.07 232.97 350.42 229.01"
-          />
-          <polyline
-            id="cc-foundation-10"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="359.2 230.06 365.6 234.8 357.66 238.6 336.03 222.68 342.35 219.54"
-          />
-          <g id="cc-railing-10" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-10"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="349.51 233.73 333.73 221.94 333.53 224.27 349.23 236.17 349.51 233.73"
-            />
-            <line
-              id="cc-railing12-10"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="348.39"
-              y1="232.91"
-              x2="348.17"
-              y2="235.37"
-            />
-            <line
-              id="cc-railing11-10"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="346.9"
-              y1="231.79"
-              x2="346.47"
-              y2="236.75"
-            />
-            <line
-              id="cc-railing10-10"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="345.5"
-              y1="230.62"
-              x2="345.28"
-              y2="233.07"
-            />
-            <line
-              id="cc-railing9-10"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="344.22"
-              y1="229.63"
-              x2="343.76"
-              y2="234.81"
-            />
-            <line
-              id="cc-railing8-10"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="342.87"
-              y1="228.62"
-              x2="342.66"
-              y2="231.08"
-            />
-            <line
-              id="cc-railing7-10"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="341.57"
-              y1="227.51"
-              x2="341.1"
-              y2="232.8"
-            />
-            <line
-              id="cc-railing6-10"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="340.09"
-              y1="226.59"
-              x2="339.87"
-              y2="229.04"
-            />
-            <line
-              id="cc-railing5-10"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="338.6"
-              y1="225.47"
-              x2="338.13"
-              y2="230.78"
-            />
-            <line
-              id="cc-railing4-10"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="337.2"
-              y1="224.29"
-              x2="336.98"
-              y2="226.75"
-            />
-            <line
-              id="cc-railing3-10"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="334.86"
-              y1="222.85"
-              x2="334.64"
-              y2="225.3"
-            />
-            <line
-              id="cc-railing2-10"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="335.92"
-              y1="223.3"
-              x2="335.43"
-              y2="228.85"
-            />
-            <line
-              id="cc-railing1-10"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="333.72"
-              y1="222.05"
-              x2="333.26"
-              y2="227.27"
-            />
-          </g>
-          <line
-            id="cc-antena-1-10"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="357.78"
-            y1="216.44"
-            x2="358.44"
-            y2="208.96"
-          />
-          <line
-            id="cc-antena-2-10"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="349.17"
-            y1="206.11"
-            x2="349.47"
-            y2="202.73"
-          />
-          <g id="cc-stairs-10" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-10"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="352.47 234.78 349.23 236.17 349 238.79"
-            />
-            <line
-              id="cc-stairs15-10"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="352.49"
-              y1="235.6"
-              x2="349.84"
-              y2="236.9"
-            />
-            <line
-              id="cc-stairs14-10"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="352.84"
-              y1="236.55"
-              x2="350.19"
-              y2="237.85"
-            />
-            <line
-              id="cc-stairs13-10"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="353.52"
-              y1="237.46"
-              x2="350.57"
-              y2="238.73"
-            />
-            <line
-              id="cc-stairs12-10"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="349.23"
-              y1="236.17"
-              x2="350.57"
-              y2="238.73"
-            />
-            <line
-              id="cc-stairs11-10"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="352.3"
-              y1="235.13"
-              x2="353.63"
-              y2="237.7"
-            />
-          </g>
-          <line
-            id="cc-topfloor-10"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="365.88"
-            y1="227.52"
-            x2="359.07"
-            y2="222.56"
-          />
-          <path
-            id="cc-topfloor2-10"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m336.74,214.58l6.21-2.75s-.97,15.31-1.31,14.89"
-          />
-        </g>
-        <g id="carbon-capture-facility7">
-          <polygon
-            id="cc-left_top-11"
-            data-name="cc-left top"
-            className="cls-34"
-            points="334.94 239 334.89 231.12 330.73 228.24 327.36 235.43 327.36 243.34 334.94 239"
-          />
-          <polygon
-            id="cc-roof-11"
-            data-name="cc-roof"
-            className="cls-56"
-            points="330.73 228.24 308.31 215.69 303.64 222.19 326.95 235.95 330.73 228.24"
-          />
-          <polygon
-            id="cc-righttop-11"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="304.43 222.66 304.42 229.44 327.36 243.34 327.36 236.19 304.43 222.66"
-          />
-          <polygon
-            id="cc-rightbottom-11"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="304.42 229.44 304.42 239.45 327.36 253.77 327.36 243.35 304.42 229.44"
-          />
-          <polygon
-            id="cc_front-bottom-11"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="334.95 239.21 334.94 249.22 327.36 253.77 327.36 243.35 334.95 239.21"
-          />
-          <line
-            id="cc-overhang-11"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="335.31"
-            y1="231.44"
-            x2="334.58"
-            y2="230.96"
-          />
-          <line
-            id="cc-pipe2-11"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="328.99"
-            y1="237.15"
-            x2="328.99"
-            y2="250.51"
-          />
-          <polyline
-            id="cc-pipe1-11"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="329.96 250.18 329.96 238.57 328.17 239.21"
-          />
-          <polygon
-            id="cc-window-11"
-            data-name="cc-window"
-            className="cls-27"
-            points="314.06 236.49 311.12 234.67 311.12 238.49 314.06 240.46 314.06 236.49"
-          />
-          <polygon
-            id="cc-door-11"
-            data-name="cc-door"
-            className="cls-27"
-            points="319.31 242.62 317.19 241.29 317.19 245.32 319.31 246.59 319.31 242.62"
-          />
-          <polyline
-            id="cc-foundation-11"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="328.15 242.89 334.95 247.05 327.36 251.52 304.42 237.57 310.44 233.89"
-          />
-          <g id="cc-railing-11" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-11"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="318.82 247.4 302.07 237.03 302.07 239.38 318.76 249.85 318.82 247.4"
-            />
-            <line
-              id="cc-railing12-11"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="317.63"
-              y1="246.68"
-              x2="317.63"
-              y2="249.14"
-            />
-            <line
-              id="cc-railing11-11"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="316.05"
-              y1="245.69"
-              x2="316.05"
-              y2="250.67"
-            />
-            <line
-              id="cc-railing10-11"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="314.55"
-              y1="244.65"
-              x2="314.55"
-              y2="247.11"
-            />
-            <line
-              id="cc-railing9-11"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="313.19"
-              y1="243.78"
-              x2="313.19"
-              y2="248.98"
-            />
-            <line
-              id="cc-railing8-11"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="311.76"
-              y1="242.89"
-              x2="311.76"
-              y2="245.35"
-            />
-            <line
-              id="cc-railing7-11"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="310.36"
-              y1="241.9"
-              x2="310.36"
-              y2="247.21"
-            />
-            <line
-              id="cc-railing6-11"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="308.81"
-              y1="241.11"
-              x2="308.81"
-              y2="243.57"
-            />
-            <line
-              id="cc-railing5-11"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="307.23"
-              y1="240.12"
-              x2="307.23"
-              y2="245.45"
-            />
-            <line
-              id="cc-railing4-11"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="305.73"
-              y1="239.08"
-              x2="305.73"
-              y2="241.54"
-            />
-            <line
-              id="cc-railing3-11"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="303.27"
-              y1="237.84"
-              x2="303.27"
-              y2="240.31"
-            />
-            <line
-              id="cc-railing2-11"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="304.36"
-              y1="238.2"
-              x2="304.36"
-              y2="243.77"
-            />
-            <line
-              id="cc-railing1-11"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="302.07"
-              y1="237.15"
-              x2="302.07"
-              y2="242.38"
-            />
-          </g>
-          <line
-            id="cc-antena-1-11"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="325.54"
-            y1="229.44"
-            x2="325.54"
-            y2="221.93"
-          />
-          <line
-            id="cc-antena-2-11"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="316.05"
-            y1="219.91"
-            x2="316.05"
-            y2="216.52"
-          />
-          <g id="cc-stairs-11" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-11"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="321.86 248.18 318.76 249.85 318.76 252.48"
-            />
-            <line
-              id="cc-stairs15-11"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="321.95"
-              y1="249"
-              x2="319.43"
-              y2="250.52"
-            />
-            <line
-              id="cc-stairs14-11"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="322.39"
-              y1="249.91"
-              x2="319.86"
-              y2="251.44"
-            />
-            <line
-              id="cc-stairs13-11"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="323.14"
-              y1="250.76"
-              x2="320.31"
-              y2="252.29"
-            />
-            <line
-              id="cc-stairs12-11"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="318.76"
-              y1="249.85"
-              x2="320.31"
-              y2="252.29"
-            />
-            <line
-              id="cc-stairs11-11"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="321.72"
-              y1="248.54"
-              x2="323.27"
-              y2="250.98"
-            />
-          </g>
-          <line
-            id="cc-topfloor-11"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="334.58"
-            y1="239.76"
-            x2="327.36"
-            y2="235.43"
-          />
-          <path
-            id="cc-topfloor2-11"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m304.42,229.44l5.95-3.28s.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility6">
-          <polygon
-            id="cc-left_top-12"
-            data-name="cc-left top"
-            className="cls-34"
-            points="240.82 225.54 240.77 217.65 236.61 214.77 233.24 221.96 233.24 229.87 240.82 225.54"
-          />
-          <polygon
-            id="cc-roof-12"
-            data-name="cc-roof"
-            className="cls-60"
-            points="236.61 214.77 214.19 202.22 209.52 208.72 232.83 222.48 236.61 214.77"
-          />
-          <polygon
-            id="cc-righttop-12"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="210.31 209.19 210.3 215.97 233.24 229.87 233.24 222.72 210.31 209.19"
-          />
-          <polygon
-            id="cc-rightbottom-12"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="210.3 215.97 210.3 225.98 233.24 240.3 233.24 229.88 210.3 215.97"
-          />
-          <polygon
-            id="cc_front-bottom-12"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="240.83 225.74 240.82 235.75 233.24 240.3 233.24 229.88 240.83 225.74"
-          />
-          <line
-            id="cc-overhang-12"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="241.19"
-            y1="217.98"
-            x2="240.46"
-            y2="217.49"
-          />
-          <line
-            id="cc-pipe2-12"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="234.87"
-            y1="223.69"
-            x2="234.87"
-            y2="237.04"
-          />
-          <polyline
-            id="cc-pipe1-12"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="235.84 236.71 235.84 225.1 234.05 225.74"
-          />
-          <polygon
-            id="cc-window-12"
-            data-name="cc-window"
-            className="cls-27"
-            points="219.94 223.02 217 221.21 217 225.02 219.94 226.99 219.94 223.02"
-          />
-          <polygon
-            id="cc-door-12"
-            data-name="cc-door"
-            className="cls-27"
-            points="225.19 229.15 223.07 227.82 223.07 231.85 225.19 233.12 225.19 229.15"
-          />
-          <polyline
-            id="cc-foundation-12"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="234.03 229.42 240.83 233.58 233.24 238.05 210.3 224.1 216.32 220.42"
-          />
-          <g id="cc-railing-12" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-12"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="224.7 233.93 207.95 223.56 207.95 225.91 224.64 236.38 224.7 233.93"
-            />
-            <line
-              id="cc-railing12-12"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="223.51"
-              y1="233.21"
-              x2="223.51"
-              y2="235.67"
-            />
-            <line
-              id="cc-railing11-12"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="221.93"
-              y1="232.22"
-              x2="221.93"
-              y2="237.2"
-            />
-            <line
-              id="cc-railing10-12"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="220.43"
-              y1="231.18"
-              x2="220.43"
-              y2="233.64"
-            />
-            <line
-              id="cc-railing9-12"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="219.07"
-              y1="230.31"
-              x2="219.07"
-              y2="235.51"
-            />
-            <line
-              id="cc-railing8-12"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="217.64"
-              y1="229.42"
-              x2="217.64"
-              y2="231.89"
-            />
-            <line
-              id="cc-railing7-12"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="216.24"
-              y1="228.43"
-              x2="216.24"
-              y2="233.74"
-            />
-            <line
-              id="cc-railing6-12"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="214.69"
-              y1="227.64"
-              x2="214.69"
-              y2="230.1"
-            />
-            <line
-              id="cc-railing5-12"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="213.11"
-              y1="226.65"
-              x2="213.11"
-              y2="231.99"
-            />
-            <line
-              id="cc-railing4-12"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="211.61"
-              y1="225.61"
-              x2="211.61"
-              y2="228.07"
-            />
-            <line
-              id="cc-railing3-12"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="209.15"
-              y1="224.37"
-              x2="209.15"
-              y2="226.84"
-            />
-            <line
-              id="cc-railing2-12"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="210.24"
-              y1="224.74"
-              x2="210.24"
-              y2="230.3"
-            />
-            <line
-              id="cc-railing1-12"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="207.95"
-              y1="223.68"
-              x2="207.95"
-              y2="228.91"
-            />
-          </g>
-          <line
-            id="cc-antena-1-12"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="231.42"
-            y1="215.97"
-            x2="231.42"
-            y2="208.46"
-          />
-          <line
-            id="cc-antena-2-12"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="221.93"
-            y1="206.44"
-            x2="221.93"
-            y2="203.05"
-          />
-          <g id="cc-stairs-12" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-12"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="227.74 234.71 224.64 236.38 224.64 239.01"
-            />
-            <line
-              id="cc-stairs15-12"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="227.83"
-              y1="235.53"
-              x2="225.31"
-              y2="237.06"
-            />
-            <line
-              id="cc-stairs14-12"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="228.27"
-              y1="236.44"
-              x2="225.74"
-              y2="237.97"
-            />
-            <line
-              id="cc-stairs13-12"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="229.02"
-              y1="237.29"
-              x2="226.19"
-              y2="238.82"
-            />
-            <line
-              id="cc-stairs12-12"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="224.64"
-              y1="236.38"
-              x2="226.19"
-              y2="238.82"
-            />
-            <line
-              id="cc-stairs11-12"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="227.6"
-              y1="235.07"
-              x2="229.15"
-              y2="237.51"
-            />
-          </g>
-          <line
-            id="cc-topfloor-12"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="240.46"
-            y1="226.3"
-            x2="233.24"
-            y2="221.96"
-          />
-          <path
-            id="cc-topfloor2-12"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m210.3,215.97l5.95-3.28s.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility5">
-          <polygon
-            id="cc-left_top-13"
-            data-name="cc-left top"
-            className="cls-34"
-            points="266.96 189.96 267.01 182.07 271.17 179.19 274.54 186.38 274.54 194.29 266.96 189.96"
-          />
-          <polygon
-            id="cc-roof-13"
-            data-name="cc-roof"
-            className="cls-55"
-            points="271.17 179.19 293.59 166.64 298.26 173.14 274.95 186.9 271.17 179.19"
-          />
-          <polygon
-            id="cc-righttop-13"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="297.47 173.61 297.48 180.39 274.54 194.29 274.54 187.14 297.47 173.61"
-          />
-          <polygon
-            id="cc-rightbottom-13"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="297.48 180.39 297.48 190.4 274.54 204.72 274.54 194.3 297.48 180.39"
-          />
-          <polygon
-            id="cc_front-bottom-13"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="266.96 190.16 266.96 200.17 274.54 204.72 274.54 194.3 266.96 190.16"
-          />
-          <line
-            id="cc-overhang-13"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="266.6"
-            y1="182.4"
-            x2="267.32"
-            y2="181.91"
-          />
-          <line
-            id="cc-pipe2-13"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="272.91"
-            y1="188.1"
-            x2="272.91"
-            y2="201.46"
-          />
-          <polyline
-            id="cc-pipe1-13"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="271.94 201.13 271.94 189.52 273.73 190.16"
-          />
-          <polygon
-            id="cc-window-13"
-            data-name="cc-window"
-            className="cls-27"
-            points="287.85 187.44 290.78 185.63 290.78 189.44 287.85 191.41 287.85 187.44"
-          />
-          <polygon
-            id="cc-door-13"
-            data-name="cc-door"
-            className="cls-27"
-            points="282.59 193.57 284.71 192.24 284.71 196.27 282.59 197.54 282.59 193.57"
-          />
-          <polyline
-            id="cc-foundation-13"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="273.75 193.84 266.96 198 274.54 202.47 297.48 188.52 291.46 184.84"
-          />
-          <g id="cc-railing-13" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-13"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="283.08 198.35 299.84 187.98 299.84 190.33 283.14 200.8 283.08 198.35"
-            />
-            <line
-              id="cc-railing12-13"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="284.27"
-              y1="197.63"
-              x2="284.27"
-              y2="200.09"
-            />
-            <line
-              id="cc-railing11-13"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="285.85"
-              y1="196.64"
-              x2="285.85"
-              y2="201.62"
-            />
-            <line
-              id="cc-railing10-13"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="287.35"
-              y1="195.6"
-              x2="287.35"
-              y2="198.06"
-            />
-            <line
-              id="cc-railing9-13"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="288.72"
-              y1="194.73"
-              x2="288.72"
-              y2="199.93"
-            />
-            <line
-              id="cc-railing8-13"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="290.14"
-              y1="193.84"
-              x2="290.14"
-              y2="196.3"
-            />
-            <line
-              id="cc-railing7-13"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="291.54"
-              y1="192.85"
-              x2="291.54"
-              y2="198.16"
-            />
-            <line
-              id="cc-railing6-13"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="293.09"
-              y1="192.06"
-              x2="293.09"
-              y2="194.52"
-            />
-            <line
-              id="cc-railing5-13"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="294.67"
-              y1="191.07"
-              x2="294.67"
-              y2="196.41"
-            />
-            <line
-              id="cc-railing4-13"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="296.17"
-              y1="190.03"
-              x2="296.17"
-              y2="192.49"
-            />
-            <line
-              id="cc-railing3-13"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="298.64"
-              y1="188.79"
-              x2="298.64"
-              y2="191.26"
-            />
-            <line
-              id="cc-railing2-13"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="297.54"
-              y1="189.16"
-              x2="297.54"
-              y2="194.72"
-            />
-            <line
-              id="cc-railing1-13"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="299.84"
-              y1="188.1"
-              x2="299.84"
-              y2="193.33"
-            />
-          </g>
-          <line
-            id="cc-antena-1-13"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="276.37"
-            y1="180.39"
-            x2="276.37"
-            y2="172.88"
-          />
-          <line
-            id="cc-antena-2-13"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="285.85"
-            y1="170.86"
-            x2="285.85"
-            y2="167.47"
-          />
-          <g id="cc-stairs-13" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-13"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="280.04 199.13 283.14 200.8 283.14 203.43"
-            />
-            <line
-              id="cc-stairs15-13"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="279.95"
-              y1="199.95"
-              x2="282.48"
-              y2="201.47"
-            />
-            <line
-              id="cc-stairs14-13"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="279.52"
-              y1="200.86"
-              x2="282.04"
-              y2="202.39"
-            />
-            <line
-              id="cc-stairs13-13"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="278.76"
-              y1="201.71"
-              x2="281.59"
-              y2="203.24"
-            />
-            <line
-              id="cc-stairs12-13"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="283.14"
-              y1="200.8"
-              x2="281.59"
-              y2="203.24"
-            />
-            <line
-              id="cc-stairs11-13"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="280.18"
-              y1="199.49"
-              x2="278.63"
-              y2="201.93"
-            />
-          </g>
-          <line
-            id="cc-topfloor-13"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="267.32"
-            y1="190.72"
-            x2="274.54"
-            y2="186.38"
-          />
-          <path
-            id="cc-topfloor2-13"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m297.48,180.39l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility4">
-          <polygon
-            id="cc-left_top-14"
-            data-name="cc-left top"
-            className="cls-34"
-            points="240.44 172.87 240.49 164.98 244.65 162.1 248.02 169.29 248.02 177.2 240.44 172.87"
-          />
-          <polygon
-            id="cc-roof-14"
-            data-name="cc-roof"
-            className="cls-53"
-            points="244.65 162.1 267.07 149.55 271.74 156.05 248.43 169.81 244.65 162.1"
-          />
-          <polygon
-            id="cc-righttop-14"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="270.95 156.52 270.96 163.3 248.02 177.2 248.02 170.05 270.95 156.52"
-          />
-          <polygon
-            id="cc-rightbottom-14"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="270.96 163.3 270.96 173.31 248.02 187.63 248.02 177.21 270.96 163.3"
-          />
-          <polygon
-            id="cc_front-bottom-14"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="240.44 173.07 240.44 183.08 248.02 187.63 248.02 177.21 240.44 173.07"
-          />
-          <line
-            id="cc-overhang-14"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="240.08"
-            y1="165.31"
-            x2="240.8"
-            y2="164.82"
-          />
-          <line
-            id="cc-pipe2-14"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="246.39"
-            y1="171.02"
-            x2="246.39"
-            y2="184.37"
-          />
-          <polyline
-            id="cc-pipe1-14"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="245.42 184.04 245.42 172.43 247.21 173.07"
-          />
-          <polygon
-            id="cc-window-14"
-            data-name="cc-window"
-            className="cls-27"
-            points="261.33 170.35 264.26 168.54 264.26 172.35 261.33 174.32 261.33 170.35"
-          />
-          <polygon
-            id="cc-door-14"
-            data-name="cc-door"
-            className="cls-27"
-            points="256.07 176.48 258.19 175.15 258.19 179.18 256.07 180.45 256.07 176.48"
-          />
-          <polyline
-            id="cc-foundation-14"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="247.23 176.75 240.44 180.91 248.02 185.39 270.96 171.43 264.94 167.75"
-          />
-          <g id="cc-railing-14" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-14"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="256.56 181.26 273.32 170.89 273.32 173.24 256.62 183.71 256.56 181.26"
-            />
-            <line
-              id="cc-railing12-14"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="257.75"
-              y1="180.54"
-              x2="257.75"
-              y2="183"
-            />
-            <line
-              id="cc-railing11-14"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="259.33"
-              y1="179.55"
-              x2="259.33"
-              y2="184.53"
-            />
-            <line
-              id="cc-railing10-14"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="260.83"
-              y1="178.51"
-              x2="260.83"
-              y2="180.97"
-            />
-            <line
-              id="cc-railing9-14"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="262.2"
-              y1="177.64"
-              x2="262.2"
-              y2="182.84"
-            />
-            <line
-              id="cc-railing8-14"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="263.62"
-              y1="176.75"
-              x2="263.62"
-              y2="179.22"
-            />
-            <line
-              id="cc-railing7-14"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="265.02"
-              y1="175.76"
-              x2="265.02"
-              y2="181.07"
-            />
-            <line
-              id="cc-railing6-14"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="266.57"
-              y1="174.97"
-              x2="266.57"
-              y2="177.43"
-            />
-            <line
-              id="cc-railing5-14"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="268.15"
-              y1="173.98"
-              x2="268.15"
-              y2="179.32"
-            />
-            <line
-              id="cc-railing4-14"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="269.65"
-              y1="172.94"
-              x2="269.65"
-              y2="175.4"
-            />
-            <line
-              id="cc-railing3-14"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="272.12"
-              y1="171.71"
-              x2="272.12"
-              y2="174.17"
-            />
-            <line
-              id="cc-railing2-14"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="271.02"
-              y1="172.07"
-              x2="271.02"
-              y2="177.63"
-            />
-            <line
-              id="cc-railing1-14"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="273.32"
-              y1="171.01"
-              x2="273.32"
-              y2="176.24"
-            />
-          </g>
-          <line
-            id="cc-antena-1-14"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="249.85"
-            y1="163.3"
-            x2="249.85"
-            y2="155.79"
-          />
-          <line
-            id="cc-antena-2-14"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="259.33"
-            y1="153.77"
-            x2="259.33"
-            y2="150.38"
-          />
-          <g id="cc-stairs-14" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-14"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="253.52 182.04 256.62 183.71 256.62 186.34"
-            />
-            <line
-              id="cc-stairs15-14"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="253.43"
-              y1="182.86"
-              x2="255.96"
-              y2="184.39"
-            />
-            <line
-              id="cc-stairs14-14"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="253"
-              y1="183.77"
-              x2="255.52"
-              y2="185.3"
-            />
-            <line
-              id="cc-stairs13-14"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="252.24"
-              y1="184.62"
-              x2="255.07"
-              y2="186.15"
-            />
-            <line
-              id="cc-stairs12-14"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="256.62"
-              y1="183.71"
-              x2="255.07"
-              y2="186.15"
-            />
-            <line
-              id="cc-stairs11-14"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="253.66"
-              y1="182.4"
-              x2="252.11"
-              y2="184.84"
-            />
-          </g>
-          <line
-            id="cc-topfloor-14"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="240.8"
-            y1="173.63"
-            x2="248.02"
-            y2="169.29"
-          />
-          <path
-            id="cc-topfloor2-14"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m270.96,163.3l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility3">
-          <polygon
-            id="cc-left_top-15"
-            data-name="cc-left top"
-            className="cls-34"
-            points="326.72 159.68 326.67 151.8 322.51 148.92 319.14 156.11 319.14 164.02 326.72 159.68"
-          />
-          <polygon
-            id="cc-roof-15"
-            data-name="cc-roof"
-            className="cls-59"
-            points="322.51 148.92 300.09 136.37 295.42 142.87 318.73 156.63 322.51 148.92"
-          />
-          <polygon
-            id="cc-righttop-15"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="296.21 143.34 296.2 150.12 319.14 164.02 319.14 156.87 296.21 143.34"
-          />
-          <polygon
-            id="cc-rightbottom-15"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="296.2 150.12 296.2 160.13 319.14 174.44 319.14 164.03 296.2 150.12"
-          />
-          <polygon
-            id="cc_front-bottom-15"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="326.72 159.89 326.72 169.9 319.14 174.44 319.14 164.03 326.72 159.89"
-          />
-          <line
-            id="cc-overhang-15"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="327.09"
-            y1="152.12"
-            x2="326.36"
-            y2="151.63"
-          />
-          <line
-            id="cc-pipe2-15"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="320.77"
-            y1="157.83"
-            x2="320.77"
-            y2="171.19"
-          />
-          <polyline
-            id="cc-pipe1-15"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="321.74 170.86 321.74 159.25 319.95 159.89"
-          />
-          <polygon
-            id="cc-window-15"
-            data-name="cc-window"
-            className="cls-27"
-            points="305.84 157.17 302.9 155.35 302.9 159.17 305.84 161.14 305.84 157.17"
-          />
-          <polygon
-            id="cc-door-15"
-            data-name="cc-door"
-            className="cls-27"
-            points="311.09 163.29 308.97 161.97 308.97 166 311.09 167.27 311.09 163.29"
-          />
-          <polyline
-            id="cc-foundation-15"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="319.93 163.57 326.72 167.73 319.14 172.2 296.2 158.25 302.22 154.57"
-          />
-          <g id="cc-railing-15" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-15"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="310.6 168.08 293.85 157.71 293.85 160.06 310.54 170.53 310.6 168.08"
-            />
-            <line
-              id="cc-railing12-15"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="309.41"
-              y1="167.36"
-              x2="309.41"
-              y2="169.82"
-            />
-            <line
-              id="cc-railing11-15"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="307.83"
-              y1="166.37"
-              x2="307.83"
-              y2="171.35"
-            />
-            <line
-              id="cc-railing10-15"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="306.33"
-              y1="165.33"
-              x2="306.33"
-              y2="167.79"
-            />
-            <line
-              id="cc-railing9-15"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="304.96"
-              y1="164.46"
-              x2="304.96"
-              y2="169.66"
-            />
-            <line
-              id="cc-railing8-15"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="303.54"
-              y1="163.57"
-              x2="303.54"
-              y2="166.03"
-            />
-            <line
-              id="cc-railing7-15"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="302.14"
-              y1="162.58"
-              x2="302.14"
-              y2="167.89"
-            />
-            <line
-              id="cc-railing6-15"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="300.59"
-              y1="161.78"
-              x2="300.59"
-              y2="164.25"
-            />
-            <line
-              id="cc-railing5-15"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="299.01"
-              y1="160.8"
-              x2="299.01"
-              y2="166.13"
-            />
-            <line
-              id="cc-railing4-15"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="297.51"
-              y1="159.75"
-              x2="297.51"
-              y2="162.22"
-            />
-            <line
-              id="cc-railing3-15"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="295.05"
-              y1="158.52"
-              x2="295.05"
-              y2="160.99"
-            />
-            <line
-              id="cc-railing2-15"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="296.14"
-              y1="158.88"
-              x2="296.14"
-              y2="164.45"
-            />
-            <line
-              id="cc-railing1-15"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="293.85"
-              y1="157.83"
-              x2="293.85"
-              y2="163.06"
-            />
-          </g>
-          <line
-            id="cc-antena-1-15"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="317.31"
-            y1="150.12"
-            x2="317.31"
-            y2="142.61"
-          />
-          <line
-            id="cc-antena-2-15"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="307.83"
-            y1="140.59"
-            x2="307.83"
-            y2="137.2"
-          />
-          <g id="cc-stairs-15" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-15"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="313.64 168.86 310.54 170.53 310.54 173.15"
-            />
-            <line
-              id="cc-stairs15-15"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="313.73"
-              y1="169.68"
-              x2="311.21"
-              y2="171.2"
-            />
-            <line
-              id="cc-stairs14-15"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="314.16"
-              y1="170.59"
-              x2="311.64"
-              y2="172.12"
-            />
-            <line
-              id="cc-stairs13-15"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="314.92"
-              y1="171.44"
-              x2="312.09"
-              y2="172.97"
-            />
-            <line
-              id="cc-stairs12-15"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="310.54"
-              y1="170.53"
-              x2="312.09"
-              y2="172.97"
-            />
-            <line
-              id="cc-stairs11-15"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="313.5"
-              y1="169.22"
-              x2="315.05"
-              y2="171.66"
-            />
-          </g>
-          <line
-            id="cc-topfloor-15"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="326.36"
-            y1="160.44"
-            x2="319.14"
-            y2="156.11"
-          />
-          <path
-            id="cc-topfloor2-15"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m296.2,150.12l5.95-3.28s.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility2">
-          <polygon
-            id="cc-left_top-16"
-            data-name="cc-left top"
-            className="cls-34"
-            points="282.75 106.29 282.8 98.4 286.96 95.52 290.33 102.71 290.33 110.63 282.75 106.29"
-          />
-          <polygon
-            id="cc-roof-16"
-            data-name="cc-roof"
-            className="cls-57"
-            points="286.96 95.52 309.38 82.97 314.05 89.48 290.74 103.23 286.96 95.52"
-          />
-          <polygon
-            id="cc-righttop-16"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="313.26 89.94 313.28 96.73 290.33 110.63 290.33 103.48 313.26 89.94"
-          />
-          <polygon
-            id="cc-rightbottom-16"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="313.28 96.73 313.27 106.74 290.33 121.05 290.33 110.64 313.28 96.73"
-          />
-          <polygon
-            id="cc_front-bottom-16"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="282.75 106.5 282.75 116.5 290.33 121.05 290.33 110.64 282.75 106.5"
-          />
-          <line
-            id="cc-overhang-16"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="282.39"
-            y1="98.73"
-            x2="283.11"
-            y2="98.24"
-          />
-          <line
-            id="cc-pipe2-16"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="288.7"
-            y1="104.44"
-            x2="288.7"
-            y2="117.79"
-          />
-          <polyline
-            id="cc-pipe1-16"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="287.73 117.47 287.73 105.85 289.52 106.5"
-          />
-          <polygon
-            id="cc-window-16"
-            data-name="cc-window"
-            className="cls-27"
-            points="303.64 103.78 306.57 101.96 306.57 105.77 303.64 107.75 303.64 103.78"
-          />
-          <polygon
-            id="cc-door-16"
-            data-name="cc-door"
-            className="cls-27"
-            points="298.38 109.9 300.5 108.57 300.5 112.61 298.38 113.87 298.38 109.9"
-          />
-          <polyline
-            id="cc-foundation-16"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="289.54 110.18 282.75 114.33 290.33 118.81 313.27 104.85 307.25 101.18"
-          />
-          <g id="cc-railing-16" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-16"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="298.88 114.68 315.63 104.32 315.63 106.66 298.94 117.13 298.88 114.68"
-            />
-            <line
-              id="cc-railing12-16"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="300.06"
-              y1="113.96"
-              x2="300.06"
-              y2="116.43"
-            />
-            <line
-              id="cc-railing11-16"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="301.64"
-              y1="112.98"
-              x2="301.64"
-              y2="117.95"
-            />
-            <line
-              id="cc-railing10-16"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="303.14"
-              y1="111.93"
-              x2="303.14"
-              y2="114.4"
-            />
-            <line
-              id="cc-railing9-16"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="304.51"
-              y1="111.06"
-              x2="304.51"
-              y2="116.26"
-            />
-            <line
-              id="cc-railing8-16"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="305.93"
-              y1="110.18"
-              x2="305.93"
-              y2="112.64"
-            />
-            <line
-              id="cc-railing7-16"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="307.33"
-              y1="109.19"
-              x2="307.33"
-              y2="114.5"
-            />
-            <line
-              id="cc-railing6-16"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="308.88"
-              y1="108.39"
-              x2="308.88"
-              y2="110.85"
-            />
-            <line
-              id="cc-railing5-16"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="310.47"
-              y1="107.41"
-              x2="310.47"
-              y2="112.74"
-            />
-            <line
-              id="cc-railing4-16"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="311.97"
-              y1="106.36"
-              x2="311.97"
-              y2="108.83"
-            />
-            <line
-              id="cc-railing3-16"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="314.43"
-              y1="105.13"
-              x2="314.43"
-              y2="107.59"
-            />
-            <line
-              id="cc-railing2-16"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="313.33"
-              y1="105.49"
-              x2="313.33"
-              y2="111.05"
-            />
-            <line
-              id="cc-railing1-16"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="315.63"
-              y1="104.43"
-              x2="315.63"
-              y2="109.67"
-            />
-          </g>
-          <line
-            id="cc-antena-1-16"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="292.16"
-            y1="96.73"
-            x2="292.16"
-            y2="89.22"
-          />
-          <line
-            id="cc-antena-2-16"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="301.64"
-            y1="87.19"
-            x2="301.64"
-            y2="83.8"
-          />
-          <g id="cc-stairs-16" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-16"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="295.83 115.47 298.94 117.13 298.94 119.76"
-            />
-            <line
-              id="cc-stairs15-16"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="295.74"
-              y1="116.28"
-              x2="298.27"
-              y2="117.81"
-            />
-            <line
-              id="cc-stairs14-16"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="295.31"
-              y1="117.2"
-              x2="297.83"
-              y2="118.72"
-            />
-            <line
-              id="cc-stairs13-16"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="294.56"
-              y1="118.05"
-              x2="297.38"
-              y2="119.57"
-            />
-            <line
-              id="cc-stairs12-16"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="298.94"
-              y1="117.13"
-              x2="297.38"
-              y2="119.57"
-            />
-            <line
-              id="cc-stairs11-16"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="295.97"
-              y1="115.83"
-              x2="294.42"
-              y2="118.27"
-            />
-          </g>
-          <line
-            id="cc-topfloor-16"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="283.11"
-            y1="107.05"
-            x2="290.33"
-            y2="102.71"
-          />
-          <path
-            id="cc-topfloor2-16"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m313.28,96.73l-5.95-3.28s-.38,15.34,0,14.95"
-          />
-        </g>
-        <g id="carbon-capture-facility1">
-          <polygon
-            id="cc-left_top-17"
-            data-name="cc-left top"
-            className="cls-34"
-            points="260.13 110.98 260.07 103.09 255.92 100.21 252.54 107.4 252.54 115.32 260.13 110.98"
-          />
-          <polygon
-            id="cc-roof-17"
-            data-name="cc-roof"
-            className="cls-58"
-            points="255.92 100.21 233.49 87.66 228.83 94.17 252.13 107.92 255.92 100.21"
-          />
-          <polygon
-            id="cc-righttop-17"
-            data-name="cc-righttop"
-            className="cls-24"
-            points="229.62 94.63 229.6 101.41 252.54 115.32 252.54 108.16 229.62 94.63"
-          />
-          <polygon
-            id="cc-rightbottom-17"
-            data-name="cc-rightbottom"
-            className="cls-24"
-            points="229.6 101.41 229.6 111.42 252.54 125.74 252.54 115.33 229.6 101.41"
-          />
-          <polygon
-            id="cc_front-bottom-17"
-            data-name="cc_front-bottom"
-            className="cls-11"
-            points="260.13 111.18 260.13 121.19 252.54 125.74 252.54 115.33 260.13 111.18"
-          />
-          <line
-            id="cc-overhang-17"
-            data-name="cc-overhang"
-            className="cls-19"
-            x1="260.49"
-            y1="103.42"
-            x2="259.76"
-            y2="102.93"
-          />
-          <line
-            id="cc-pipe2-17"
-            data-name="cc-pipe2"
-            className="cls-12"
-            x1="254.18"
-            y1="109.13"
-            x2="254.18"
-            y2="122.48"
-          />
-          <polyline
-            id="cc-pipe1-17"
-            data-name="cc-pipe1"
-            className="cls-12"
-            points="255.15 122.15 255.15 110.54 253.35 111.18"
-          />
-          <polygon
-            id="cc-window-17"
-            data-name="cc-window"
-            className="cls-27"
-            points="239.24 108.46 236.31 106.65 236.31 110.46 239.24 112.44 239.24 108.46"
-          />
-          <polygon
-            id="cc-door-17"
-            data-name="cc-door"
-            className="cls-27"
-            points="244.49 114.59 242.37 113.26 242.37 117.29 244.49 118.56 244.49 114.59"
-          />
-          <polyline
-            id="cc-foundation-17"
-            data-name="cc-foundation"
-            className="cls-27"
-            points="253.34 114.86 260.13 119.02 252.54 123.5 229.6 109.54 235.62 105.87"
-          />
-          <g id="cc-railing-17" data-name="cc-railing">
-            <polyline
-              id="cc-railing13-17"
-              data-name="cc-railing13"
-              className="cls-12"
-              points="244 119.37 227.25 109.01 227.25 111.35 243.94 121.82 244 119.37"
-            />
-            <line
-              id="cc-railing12-17"
-              data-name="cc-railing12"
-              className="cls-12"
-              x1="242.82"
-              y1="118.65"
-              x2="242.82"
-              y2="121.11"
-            />
-            <line
-              id="cc-railing11-17"
-              data-name="cc-railing11"
-              className="cls-12"
-              x1="241.23"
-              y1="117.67"
-              x2="241.23"
-              y2="122.64"
-            />
-            <line
-              id="cc-railing10-17"
-              data-name="cc-railing10"
-              className="cls-12"
-              x1="239.73"
-              y1="116.62"
-              x2="239.73"
-              y2="119.09"
-            />
-            <line
-              id="cc-railing9-17"
-              data-name="cc-railing9"
-              className="cls-12"
-              x1="238.37"
-              y1="115.75"
-              x2="238.37"
-              y2="120.95"
-            />
-            <line
-              id="cc-railing8-17"
-              data-name="cc-railing8"
-              className="cls-12"
-              x1="236.94"
-              y1="114.86"
-              x2="236.94"
-              y2="117.33"
-            />
-            <line
-              id="cc-railing7-17"
-              data-name="cc-railing7"
-              className="cls-12"
-              x1="235.55"
-              y1="113.87"
-              x2="235.55"
-              y2="119.18"
-            />
-            <line
-              id="cc-railing6-17"
-              data-name="cc-railing6"
-              className="cls-12"
-              x1="233.99"
-              y1="113.08"
-              x2="233.99"
-              y2="115.54"
-            />
-            <line
-              id="cc-railing5-17"
-              data-name="cc-railing5"
-              className="cls-12"
-              x1="232.41"
-              y1="112.09"
-              x2="232.41"
-              y2="117.43"
-            />
-            <line
-              id="cc-railing4-17"
-              data-name="cc-railing4"
-              className="cls-12"
-              x1="230.91"
-              y1="111.05"
-              x2="230.91"
-              y2="113.51"
-            />
-            <line
-              id="cc-railing3-17"
-              data-name="cc-railing3"
-              className="cls-12"
-              x1="228.45"
-              y1="109.82"
-              x2="228.45"
-              y2="112.28"
-            />
-            <line
-              id="cc-railing2-17"
-              data-name="cc-railing2"
-              className="cls-12"
-              x1="229.54"
-              y1="110.18"
-              x2="229.54"
-              y2="115.74"
-            />
-            <line
-              id="cc-railing1-17"
-              data-name="cc-railing1"
-              className="cls-12"
-              x1="227.25"
-              y1="109.12"
-              x2="227.25"
-              y2="114.36"
-            />
-          </g>
-          <line
-            id="cc-antena-1-17"
-            data-name="cc-antena-1"
-            className="cls-27"
-            x1="250.72"
-            y1="101.41"
-            x2="250.72"
-            y2="93.9"
-          />
-          <line
-            id="cc-antena-2-17"
-            data-name="cc-antena-2"
-            className="cls-27"
-            x1="241.23"
-            y1="91.88"
-            x2="241.23"
-            y2="88.49"
-          />
-          <g id="cc-stairs-17" data-name="cc-stairs">
-            <polyline
-              id="cc-stairs16-17"
-              data-name="cc-stairs16"
-              className="cls-23"
-              points="247.05 120.15 243.94 121.82 243.94 124.45"
-            />
-            <line
-              id="cc-stairs15-17"
-              data-name="cc-stairs15"
-              className="cls-23"
-              x1="247.13"
-              y1="120.97"
-              x2="244.61"
-              y2="122.5"
-            />
-            <line
-              id="cc-stairs14-17"
-              data-name="cc-stairs14"
-              className="cls-23"
-              x1="247.57"
-              y1="121.89"
-              x2="245.04"
-              y2="123.41"
-            />
-            <line
-              id="cc-stairs13-17"
-              data-name="cc-stairs13"
-              className="cls-25"
-              x1="248.32"
-              y1="122.73"
-              x2="245.49"
-              y2="124.26"
-            />
-            <line
-              id="cc-stairs12-17"
-              data-name="cc-stairs12"
-              className="cls-23"
-              x1="243.94"
-              y1="121.82"
-              x2="245.49"
-              y2="124.26"
-            />
-            <line
-              id="cc-stairs11-17"
-              data-name="cc-stairs11"
-              className="cls-23"
-              x1="246.9"
-              y1="120.51"
-              x2="248.46"
-              y2="122.95"
-            />
-          </g>
-          <line
-            id="cc-topfloor-17"
-            data-name="cc-topfloor"
-            className="cls-27"
-            x1="259.76"
-            y1="111.74"
-            x2="252.54"
-            y2="107.4"
-          />
-          <path
-            id="cc-topfloor2-17"
-            data-name="cc-topfloor2"
-            className="cls-23"
-            d="m229.6,101.41l5.95-3.28s.38,15.34,0,14.95"
-          />
-        </g>
-        <line
-          id="map-connectpipe1"
-          className="cls-62"
-          x1="241.91"
-          y1="126.5"
-          x2="184.74"
-          y2="159.79"
+          id="main_pipline"
+          data-name="main pipline"
+          class="cls-9"
+          d="m389.09,406.31v-10.49c0-10.3,11.23-16.67,20.07-11.38l316.64,189.28c13.01,7.78,31.44,13.49,44.57,5.91l127.07-73.36c17.02-9.83,35.79-15.32,52.72-5.33l1011.82,596.93c8.77,5.17,14.15,14.6,14.15,24.79v16.32"
         />
         <line
-          id="map-connectpipe2"
-          className="cls-62"
-          x1="283.21"
-          y1="119.11"
-          x2="198.85"
-          y2="167.94"
+          id="map-connectpipe17"
+          class="cls-12"
+          x1="2042.62"
+          y1="1050.79"
+          x2="1966.56"
+          y2="1092.92"
         />
-        <line
-          id="map-connectpipe3"
-          className="cls-18"
-          x1="239.13"
-          y1="185.01"
-          x2="233.33"
-          y2="188.36"
-        />
-        <line
-          id="map-connectpipe4"
-          className="cls-18"
-          x1="245.32"
-          y1="201.15"
-          x2="229.93"
-          y2="210.06"
-        />
-        <line
-          id="map-connectpipe5"
-          className="cls-18"
-          x1="267.53"
-          y1="202.29"
-          x2="261.72"
-          y2="205.65"
-        />
-        <line
-          id="map-connectpipe6"
-          className="cls-63"
-          x1="303.68"
-          y1="221.61"
-          x2="291.2"
-          y2="212.84"
-        />
-        <line
-          id="map-connectpipe7"
-          className="cls-26"
-          x1="376.84"
-          y1="204.24"
-          x2="360.51"
-          y2="212.84"
-        />
-        <line
-          id="map-connectpipe7a"
-          className="cls-63"
-          x1="333.99"
-          y1="182.68"
-          x2="321.12"
-          y2="174.94"
-        />
-        <line
-          id="map-connectpipe8"
-          className="cls-28"
-          x1="411"
-          y1="225.2"
-          x2="367.34"
-          y2="250.2"
-        />
-        <line
-          id="map-connectpipe9"
-          className="cls-18"
-          x1="586.13"
-          y1="325.23"
-          x2="557.96"
-          y2="340.83"
-        />
-        <line
-          id="map-connectpipe10"
-          className="cls-18"
-          x1="592.27"
-          y1="320.86"
-          x2="584.97"
-          y2="325.07"
-        />
-        <line
-          id="map-connectpipe11"
-          className="cls-18"
-          x1="613.77"
-          y1="344.5"
-          x2="585.6"
-          y2="360.1"
-        />
-        <line
-          id="map-connectpipe12"
-          className="cls-18"
-          x1="624.91"
-          y1="337.37"
-          x2="617.61"
-          y2="341.59"
-        />
-        <line
-          id="map-connectpipe13"
-          className="cls-18"
-          x1="654.36"
-          y1="349.86"
-          x2="640.05"
-          y2="358.12"
-        />
-        <line
-          id="map-connectpipe14"
-          className="cls-18"
-          x1="646.89"
-          y1="363.76"
-          x2="618.73"
-          y2="379.36"
-        />
-        <line
-          id="map-connectpipe15"
-          className="cls-18"
-          x1="708.04"
-          y1="399.99"
-          x2="679.87"
-          y2="415.59"
-        />
-        <line
-          id="map-connectpipe16"
-          className="cls-18"
-          x1="730.15"
-          y1="398.3"
-          x2="720.36"
-          y2="404.74"
-        />
-        <g id="map-industrial-building3">
+        <g id="map-industrial-building17">
           <g id="cl-stack1">
             <ellipse
               id="cl-stack13"
-              className="cls-30"
-              cx="565.63"
-              cy="240.92"
-              rx="1.86"
-              ry="1.36"
+              class="cls-3"
+              cx="2056.3"
+              cy="936.68"
+              rx="5.02"
+              ry="3.68"
             />
             <path
               id="cl-stack12"
-              className="cls-30"
-              d="m563.11,263.91c.47-.59.66-22.55.66-22.55"
+              class="cls-3"
+              d="m2049.51,998.74c1.28-1.6,1.77-60.89,1.77-60.89"
             />
             <line
               id="cl-stack11"
-              className="cls-30"
-              x1="567.48"
-              y1="240.92"
-              x2="568.41"
-              y2="263.2"
+              class="cls-3"
+              x1="2061.32"
+              y1="936.68"
+              x2="2063.83"
+              y2="996.84"
             />
-            <path className="cls-30" d="m567.62,247.64s-1.29,1.6-3.94.37" />
-            <path className="cls-30" d="m567.62,250.2s-1.29,1.6-3.94.37" />
-            <path className="cls-30" d="m567.62,252.98s-1.29,1.6-3.94.37" />
+            <path class="cls-3" d="m2061.7,954.81s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m2061.7,961.72s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m2061.7,969.25s-3.49,4.31-10.64,1.01" />
           </g>
           <g id="cl-stack1-2" data-name="cl-stack1">
             <ellipse
               id="cl-stack13-2"
               data-name="cl-stack13"
-              className="cls-30"
-              cx="573.51"
-              cy="236.54"
-              rx="1.86"
-              ry="1.36"
+              class="cls-3"
+              cx="2077.59"
+              cy="924.84"
+              rx="5.02"
+              ry="3.68"
             />
             <path
               id="cl-stack12-2"
               data-name="cl-stack12"
-              className="cls-30"
-              d="m570.59,264.52c.47-.59,1.06-27.54,1.06-27.54"
+              class="cls-3"
+              d="m2069.7,1000.39c1.28-1.6,2.87-74.38,2.87-74.38"
             />
             <line
               id="cl-stack11-2"
               data-name="cl-stack11"
-              className="cls-30"
-              x1="575.37"
-              y1="236.54"
-              x2="576.36"
-              y2="261"
+              class="cls-3"
+              x1="2082.61"
+              y1="924.84"
+              x2="2085.3"
+              y2="990.9"
             />
-            <path className="cls-30" d="m575.51,243.25s-1.29,1.6-3.94.37" />
-            <path className="cls-30" d="m575.51,245.81s-1.29,1.6-3.94.37" />
-            <path className="cls-30" d="m575.51,248.6s-1.29,1.6-3.94.37" />
+            <path class="cls-3" d="m2082.99,942.97s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m2082.99,949.88s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m2082.99,957.41s-3.49,4.31-10.64,1.01" />
           </g>
-          <g id="cl-building2-2" data-name="cl-building2">
+          <g id="cl-building2">
             <polygon
               id="cl-building2-window2"
-              className="cls-31"
-              points="592.83 276.17 592.83 272.84 591.25 273.69 591.25 277 592.83 276.17"
+              class="cls-24"
+              points="2129.77 1031.87 2129.77 1022.87 2125.5 1025.17 2125.5 1034.09 2129.77 1031.87"
+            />
+            <polygon
+              id="cl-building2-window1"
+              class="cls-24"
+              points="2123.13 1035.84 2123.13 1026.83 2118.87 1029.14 2118.87 1038.05 2123.13 1035.84"
+            />
+            <polygon
+              id="cl-building2-window1-2"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="2090.75 1039.34 2090.75 1030.34 2086.48 1032.65 2086.48 1041.56 2090.75 1039.34"
+            />
+            <polygon
+              id="cl-building2-window1-3"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="2084.16 1042.51 2084.16 1033.51 2079.89 1035.81 2079.89 1044.73 2084.16 1042.51"
+            />
+            <path
+              id="cl-building2-frontwall"
+              class="cls-3"
+              d="m2134.45,1037.42v-24.87s-32.92,19.84-33.54,19.48c-.62-.36,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall"
+              class="cls-3"
+              points="2076.4 1033.96 2033.56 1008.01 2033.56 1044.41 2076.4 1070.94 2076.4 1033.96"
+            />
+            <polygon
+              id="cl-building2-roof2"
+              class="cls-43"
+              points="2100.91 1019.81 2076.4 1033.96 2033.56 1008.01 2058.31 993.82 2100.91 1019.81"
+            />
+            <polyline
+              id="cl-building2-roof1"
+              class="cls-3"
+              points="2134.45 1012.55 2089.54 989.4 2070.03 1000.97"
             />
             <polygon
               id="cl-building2-window1-4"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="590.37 277.64 590.37 274.31 588.79 275.16 588.79 278.46 590.37 277.64"
+              class="cls-24"
+              points="2037.09 1025.99 2037.09 1016.99 2041.36 1019.3 2041.36 1028.21 2037.09 1025.99"
             />
             <polygon
               id="cl-building2-window1-5"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="578.38 278.94 578.38 275.61 576.8 276.46 576.8 279.76 578.38 278.94"
-            />
-            <polygon
-              id="cl-building2-window1-6"
-              data-name="cl-building2-window1"
-              className="cls-31"
-              points="575.94 280.11 575.94 276.78 574.36 277.63 574.36 280.93 575.94 280.11"
-            />
-            <path
-              id="cl-building2-frontwall"
-              className="cls-30"
-              d="m594.56,278.23v-9.21s-12.19,7.35-12.42,7.22,0-4.53,0-4.53l-9.08,5.24v13.69s21.5-12.41,21.5-12.41Z"
-            />
-            <polygon
-              id="cl-building2-rightwall"
-              className="cls-30"
-              points="573.07 276.95 557.2 267.34 557.2 280.82 573.07 290.64 573.07 276.95"
-            />
-            <polygon
-              id="cl-building2-roof2"
-              className="cls-61"
-              points="582.14 271.71 573.07 276.95 557.2 267.34 566.37 262.08 582.14 271.71"
-            />
-            <polyline
-              id="cl-building2-roof1"
-              className="cls-30"
-              points="594.56 269.02 577.93 260.45 570.71 264.73"
-            />
-            <polygon
-              id="cl-building2-window1-7"
-              data-name="cl-building2-window1"
-              className="cls-31"
-              points="558.51 274 558.51 270.66 560.09 271.52 560.09 274.82 558.51 274"
-            />
-            <polygon
-              id="cl-building2-window1-8"
-              data-name="cl-building2-window1"
-              className="cls-31"
-              points="560.95 275.17 560.95 271.84 562.53 272.69 562.53 275.99 560.95 275.17"
+              class="cls-24"
+              points="2043.68 1029.16 2043.68 1020.16 2047.95 1022.46 2047.95 1031.38 2043.68 1029.16"
             />
           </g>
         </g>
-        <g id="map-industrial-building2">
+        <line
+          id="map-connectpipe16"
+          class="cls-12"
+          x1="1917.67"
+          y1="1076.62"
+          x2="1855.58"
+          y2="1112.97"
+        />
+        <g id="map-industrial-building16">
           <g id="cl-stack1-3" data-name="cl-stack1">
             <ellipse
               id="cl-stack13-3"
               data-name="cl-stack13"
-              className="cls-30"
-              cx="289.72"
-              cy="234"
-              rx="1.86"
-              ry="1.36"
+              class="cls-3"
+              cx="1796.12"
+              cy="1047.22"
+              rx="5.02"
+              ry="3.68"
             />
             <path
               id="cl-stack12-3"
               data-name="cl-stack12"
-              className="cls-30"
-              d="m292.23,256.99c-.47-.59-.66-22.55-.66-22.55"
+              class="cls-3"
+              d="m1789.33,1109.29c1.28-1.6,1.77-60.89,1.77-60.89"
             />
             <line
               id="cl-stack11-3"
               data-name="cl-stack11"
-              className="cls-30"
-              x1="287.86"
-              y1="234"
-              x2="286.93"
-              y2="256.28"
+              class="cls-3"
+              x1="1801.14"
+              y1="1047.22"
+              x2="1803.64"
+              y2="1107.39"
             />
-            <path className="cls-30" d="m287.72,240.72s1.29,1.6,3.94.37" />
-            <path className="cls-30" d="m287.72,243.28s1.29,1.6,3.94.37" />
-            <path className="cls-30" d="m287.72,246.07s1.29,1.6,3.94.37" />
+            <path class="cls-3" d="m1801.51,1065.36s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1801.51,1072.27s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1801.51,1079.8s-3.49,4.31-10.64,1.01" />
           </g>
           <g id="cl-stack1-4" data-name="cl-stack1">
             <ellipse
               id="cl-stack13-4"
               data-name="cl-stack13"
-              className="cls-30"
-              cx="281.84"
-              cy="229.62"
-              rx="1.86"
-              ry="1.36"
+              class="cls-3"
+              cx="1817.4"
+              cy="1035.39"
+              rx="5.02"
+              ry="3.68"
             />
             <path
               id="cl-stack12-4"
               data-name="cl-stack12"
-              className="cls-30"
-              d="m284.76,257.6c-.47-.59-1.06-27.54-1.06-27.54"
+              class="cls-3"
+              d="m1809.51,1110.94c1.28-1.6,2.87-74.38,2.87-74.38"
             />
             <line
               id="cl-stack11-4"
               data-name="cl-stack11"
-              className="cls-30"
-              x1="279.98"
-              y1="229.62"
-              x2="278.98"
-              y2="254.08"
+              class="cls-3"
+              x1="1822.42"
+              y1="1035.39"
+              x2="1825.12"
+              y2="1101.45"
             />
-            <path className="cls-30" d="m279.84,236.33s1.29,1.6,3.94.37" />
-            <path className="cls-30" d="m279.84,238.89s1.29,1.6,3.94.37" />
-            <path className="cls-30" d="m279.84,241.68s1.29,1.6,3.94.37" />
+            <path class="cls-3" d="m1822.8,1053.52s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1822.8,1060.43s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1822.8,1067.96s-3.49,4.31-10.64,1.01" />
           </g>
-          <g id="cl-building2-3" data-name="cl-building2">
+          <g id="cl-building2-2" data-name="cl-building2">
             <polygon
               id="cl-building2-window2-2"
               data-name="cl-building2-window2"
-              className="cls-31"
-              points="262.51 269.25 262.51 265.92 264.09 266.77 264.09 270.08 262.51 269.25"
+              class="cls-24"
+              points="1869.58 1142.42 1869.58 1133.42 1865.32 1135.72 1865.32 1144.64 1869.58 1142.42"
             />
             <polygon
-              id="cl-building2-window1-9"
+              id="cl-building2-window1-6"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="264.97 270.72 264.97 267.39 266.55 268.24 266.55 271.54 264.97 270.72"
+              class="cls-24"
+              points="1862.94 1146.38 1862.94 1137.38 1858.68 1139.68 1858.68 1148.6 1862.94 1146.38"
             />
             <polygon
-              id="cl-building2-window1-10"
+              id="cl-building2-window1-7"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="276.96 272.02 276.96 268.69 278.54 269.54 278.54 272.84 276.96 272.02"
+              class="cls-24"
+              points="1830.56 1149.89 1830.56 1140.89 1826.29 1143.19 1826.29 1152.11 1830.56 1149.89"
             />
             <polygon
-              id="cl-building2-window1-11"
+              id="cl-building2-window1-8"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="279.4 273.19 279.4 269.86 280.98 270.71 280.98 274.02 279.4 273.19"
+              class="cls-24"
+              points="1823.97 1153.06 1823.97 1144.05 1819.71 1146.36 1819.71 1155.27 1823.97 1153.06"
             />
             <path
               id="cl-building2-frontwall-2"
               data-name="cl-building2-frontwall"
-              className="cls-30"
-              d="m260.78,271.31v-9.21s12.19,7.35,12.42,7.22,0-4.53,0-4.53l9.08,5.24v13.69l-21.5-12.41Z"
+              class="cls-3"
+              d="m1874.26,1147.97v-24.87s-32.92,19.84-33.54,19.48,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
             />
             <polygon
               id="cl-building2-rightwall-2"
               data-name="cl-building2-rightwall"
-              className="cls-30"
-              points="282.28 270.03 298.14 260.42 298.14 273.9 282.28 283.72 282.28 270.03"
+              class="cls-3"
+              points="1816.21 1144.51 1773.37 1118.56 1773.37 1154.96 1816.21 1181.48 1816.21 1144.51"
             />
             <polygon
               id="cl-building2-roof2-2"
               data-name="cl-building2-roof2"
-              className="cls-42"
-              points="273.2 264.79 282.28 270.03 298.14 260.42 288.98 255.17 273.2 264.79"
+              class="cls-46"
+              points="1840.72 1130.36 1816.21 1144.51 1773.37 1118.56 1798.12 1104.37 1840.72 1130.36"
             />
             <polyline
               id="cl-building2-roof1-2"
               data-name="cl-building2-roof1"
-              className="cls-30"
-              points="260.78 262.1 277.41 253.53 284.64 257.81"
+              class="cls-3"
+              points="1874.26 1123.1 1829.35 1099.95 1809.84 1111.52"
             />
             <polygon
-              id="cl-building2-window1-12"
+              id="cl-building2-window1-9"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="296.83 267.08 296.83 263.75 295.25 264.6 295.25 267.9 296.83 267.08"
+              class="cls-24"
+              points="1776.9 1136.54 1776.9 1127.54 1781.17 1129.84 1781.17 1138.76 1776.9 1136.54"
             />
             <polygon
-              id="cl-building2-window1-13"
+              id="cl-building2-window1-10"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="294.39 268.25 294.39 264.92 292.81 265.77 292.81 269.07 294.39 268.25"
+              class="cls-24"
+              points="1783.49 1139.7 1783.49 1130.7 1787.76 1133.01 1787.76 1141.92 1783.49 1139.7"
             />
           </g>
         </g>
-        <g id="map-industrial-building1">
+        <line
+          id="map-connectpipe15"
+          class="cls-12"
+          x1="1792.01"
+          y1="958.75"
+          x2="1758.99"
+          y2="977.97"
+        />
+        <g id="map-industrial-building15">
           <g id="cl-stack1-5" data-name="cl-stack1">
             <ellipse
               id="cl-stack13-5"
               data-name="cl-stack13"
-              className="cls-30"
-              cx="395.9"
-              cy="142.36"
-              rx="1.86"
-              ry="1.36"
+              class="cls-3"
+              cx="1807.26"
+              cy="844.88"
+              rx="5.02"
+              ry="3.68"
             />
             <path
               id="cl-stack12-5"
               data-name="cl-stack12"
-              className="cls-30"
-              d="m398.41,165.35c-.47-.59-.66-22.55-.66-22.55"
+              class="cls-3"
+              d="m1800.47,906.94c1.28-1.6,1.77-60.89,1.77-60.89"
             />
             <line
               id="cl-stack11-5"
               data-name="cl-stack11"
-              className="cls-30"
-              x1="394.04"
-              y1="142.36"
-              x2="393.11"
-              y2="164.64"
+              class="cls-3"
+              x1="1812.28"
+              y1="844.88"
+              x2="1814.79"
+              y2="905.04"
             />
-            <path className="cls-30" d="m393.9,149.08s1.29,1.6,3.94.37" />
-            <path className="cls-30" d="m393.9,151.64s1.29,1.6,3.94.37" />
-            <path className="cls-30" d="m393.9,154.43s1.29,1.6,3.94.37" />
+            <path class="cls-3" d="m1812.66,863.01s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1812.66,869.92s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1812.66,877.45s-3.49,4.31-10.64,1.01" />
           </g>
           <g id="cl-stack1-6" data-name="cl-stack1">
             <ellipse
               id="cl-stack13-6"
               data-name="cl-stack13"
-              className="cls-30"
-              cx="388.01"
-              cy="137.98"
-              rx="1.86"
-              ry="1.36"
+              class="cls-3"
+              cx="1828.55"
+              cy="833.04"
+              rx="5.02"
+              ry="3.68"
             />
             <path
               id="cl-stack12-6"
               data-name="cl-stack12"
-              className="cls-30"
-              d="m390.94,165.96c-.47-.59-1.06-27.54-1.06-27.54"
+              class="cls-3"
+              d="m1820.66,908.59c1.28-1.6,2.87-74.38,2.87-74.38"
             />
             <line
               id="cl-stack11-6"
               data-name="cl-stack11"
-              className="cls-30"
-              x1="386.16"
-              y1="137.98"
-              x2="385.16"
-              y2="162.44"
+              class="cls-3"
+              x1="1833.57"
+              y1="833.04"
+              x2="1836.26"
+              y2="899.1"
             />
-            <path className="cls-30" d="m386.02,144.69s1.29,1.6,3.94.37" />
-            <path className="cls-30" d="m386.02,147.25s1.29,1.6,3.94.37" />
-            <path className="cls-30" d="m386.02,150.04s1.29,1.6,3.94.37" />
+            <path class="cls-3" d="m1833.95,851.17s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1833.95,858.08s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1833.95,865.61s-3.49,4.31-10.64,1.01" />
           </g>
-          <g id="cl-building2-4" data-name="cl-building2">
+          <g id="cl-building2-3" data-name="cl-building2">
             <polygon
               id="cl-building2-window2-3"
               data-name="cl-building2-window2"
-              className="cls-31"
-              points="368.69 177.61 368.69 174.28 370.27 175.13 370.27 178.44 368.69 177.61"
+              class="cls-24"
+              points="1880.73 940.07 1880.73 931.07 1876.46 933.37 1876.46 942.29 1880.73 940.07"
             />
             <polygon
-              id="cl-building2-window1-14"
+              id="cl-building2-window1-11"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="371.15 179.08 371.15 175.75 372.73 176.6 372.73 179.9 371.15 179.08"
+              class="cls-24"
+              points="1874.09 944.04 1874.09 935.03 1869.82 937.34 1869.82 946.25 1874.09 944.04"
             />
             <polygon
-              id="cl-building2-window1-15"
+              id="cl-building2-window1-12"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="383.14 180.38 383.14 177.05 384.72 177.9 384.72 181.2 383.14 180.38"
+              class="cls-24"
+              points="1841.71 947.55 1841.71 938.54 1837.44 940.85 1837.44 949.76 1841.71 947.55"
             />
             <polygon
-              id="cl-building2-window1-16"
+              id="cl-building2-window1-13"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="385.58 181.55 385.58 178.22 387.16 179.07 387.16 182.38 385.58 181.55"
+              class="cls-24"
+              points="1835.12 950.71 1835.12 941.71 1830.85 944.01 1830.85 952.93 1835.12 950.71"
             />
             <path
               id="cl-building2-frontwall-3"
               data-name="cl-building2-frontwall"
-              className="cls-30"
-              d="m366.96,179.67v-9.21s12.19,7.35,12.42,7.22,0-4.53,0-4.53l9.08,5.24v13.69l-21.5-12.41Z"
+              class="cls-3"
+              d="m1885.4,945.62v-24.87s-32.92,19.84-33.54,19.48,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
             />
             <polygon
               id="cl-building2-rightwall-3"
               data-name="cl-building2-rightwall"
-              className="cls-30"
-              points="388.46 178.39 404.32 168.78 404.32 182.26 388.46 192.08 388.46 178.39"
+              class="cls-3"
+              points="1827.35 942.16 1784.52 916.21 1784.52 952.61 1827.35 979.14 1827.35 942.16"
             />
             <polygon
               id="cl-building2-roof2-3"
               data-name="cl-building2-roof2"
-              className="cls-41"
-              points="379.38 173.15 388.46 178.39 404.32 168.78 395.16 163.53 379.38 173.15"
+              class="cls-41"
+              points="1851.87 928.01 1827.35 942.16 1784.52 916.21 1809.26 902.02 1851.87 928.01"
             />
             <polyline
               id="cl-building2-roof1-3"
               data-name="cl-building2-roof1"
-              className="cls-30"
-              points="366.96 170.46 383.59 161.89 390.82 166.17"
+              class="cls-3"
+              points="1885.4 920.75 1840.5 897.6 1820.99 909.17"
+            />
+            <polygon
+              id="cl-building2-window1-14"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1788.05 934.19 1788.05 925.19 1792.32 927.5 1792.32 936.41 1788.05 934.19"
+            />
+            <polygon
+              id="cl-building2-window1-15"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1794.64 937.36 1794.64 928.36 1798.9 930.66 1798.9 939.58 1794.64 937.36"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe14"
+          class="cls-12"
+          x1="1680.85"
+          y1="942.1"
+          x2="1493.15"
+          y2="1056.8"
+        />
+        <g id="map-industrial-building14">
+          <g id="cl-stack1-7" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-7"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1434.48"
+              cy="991.81"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-7"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1427.69,1053.87c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-7"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1439.5"
+              y1="991.81"
+              x2="1442"
+              y2="1051.97"
+            />
+            <path class="cls-3" d="m1439.88,1009.94s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1439.88,1016.85s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1439.88,1024.38s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-8" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-8"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1455.77"
+              cy="979.97"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-8"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1447.88,1055.53c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-8"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1460.79"
+              y1="979.97"
+              x2="1463.48"
+              y2="1046.03"
+            />
+            <path class="cls-3" d="m1461.17,998.1s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1461.17,1005.02s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1461.17,1012.54s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-4" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-4"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="1507.95 1087 1507.95 1078 1503.68 1080.3 1503.68 1089.22 1507.95 1087"
+            />
+            <polygon
+              id="cl-building2-window1-16"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1501.31 1090.97 1501.31 1081.97 1497.04 1084.27 1497.04 1093.19 1501.31 1090.97"
             />
             <polygon
               id="cl-building2-window1-17"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="403.01 175.44 403.01 172.11 401.43 172.96 401.43 176.26 403.01 175.44"
+              class="cls-24"
+              points="1468.92 1094.48 1468.92 1085.48 1464.66 1087.78 1464.66 1096.7 1468.92 1094.48"
             />
             <polygon
               id="cl-building2-window1-18"
               data-name="cl-building2-window1"
-              className="cls-31"
-              points="400.57 176.61 400.57 173.28 398.99 174.13 398.99 177.43 400.57 176.61"
+              class="cls-24"
+              points="1462.33 1097.64 1462.33 1088.64 1458.07 1090.94 1458.07 1099.86 1462.33 1097.64"
+            />
+            <path
+              id="cl-building2-frontwall-4"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m1512.62,1092.55v-24.87s-32.92,19.84-33.54,19.48c-.62-.36,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-4"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="1454.57 1089.09 1411.73 1063.14 1411.73 1099.54 1454.57 1126.07 1454.57 1089.09"
+            />
+            <polygon
+              id="cl-building2-roof2-4"
+              data-name="cl-building2-roof2"
+              class="cls-39"
+              points="1479.08 1074.94 1454.57 1089.09 1411.73 1063.14 1436.48 1048.96 1479.08 1074.94"
+            />
+            <polyline
+              id="cl-building2-roof1-4"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="1512.62 1067.68 1467.72 1044.53 1448.2 1056.11"
+            />
+            <polygon
+              id="cl-building2-window1-19"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1415.27 1081.13 1415.27 1072.13 1419.53 1074.43 1419.53 1083.35 1415.27 1081.13"
+            />
+            <polygon
+              id="cl-building2-window1-20"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1421.85 1084.29 1421.85 1075.29 1426.12 1077.59 1426.12 1086.51 1421.85 1084.29"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe13"
+          class="cls-12"
+          x1="1665.18"
+          y1="892.61"
+          x2="1645.48"
+          y2="903.98"
+        />
+        <g id="map-industrial-building13">
+          <g id="cl-stack1-9" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-9"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1684.83"
+              cy="780.86"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-9"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1678.04,842.92c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-9"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1689.85"
+              y1="780.86"
+              x2="1692.36"
+              y2="841.02"
+            />
+            <path class="cls-3" d="m1690.23,798.99s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1690.23,805.9s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1690.23,813.43s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-10" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-10"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1706.12"
+              cy="769.02"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-10"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1698.23,844.58c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-10"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1711.14"
+              y1="769.02"
+              x2="1713.83"
+              y2="835.08"
+            />
+            <path class="cls-3" d="m1711.52,787.15s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1711.52,794.06s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1711.52,801.59s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-5" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-5"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="1758.3 876.05 1758.3 867.05 1754.03 869.35 1754.03 878.27 1758.3 876.05"
+            />
+            <polygon
+              id="cl-building2-window1-21"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1751.66 880.02 1751.66 871.02 1747.39 873.32 1747.39 882.24 1751.66 880.02"
+            />
+            <polygon
+              id="cl-building2-window1-22"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1719.28 883.53 1719.28 874.52 1715.01 876.83 1715.01 885.74 1719.28 883.53"
+            />
+            <polygon
+              id="cl-building2-window1-23"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1712.69 886.69 1712.69 877.69 1708.42 879.99 1708.42 888.91 1712.69 886.69"
+            />
+            <path
+              id="cl-building2-frontwall-5"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m1762.97,881.6v-24.87s-32.92,19.84-33.54,19.48c-.62-.36,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-5"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="1704.92 878.14 1662.09 852.19 1662.09 888.59 1704.92 915.12 1704.92 878.14"
+            />
+            <polygon
+              id="cl-building2-roof2-5"
+              data-name="cl-building2-roof2"
+              class="cls-44"
+              points="1729.44 863.99 1704.92 878.14 1662.09 852.19 1686.83 838 1729.44 863.99"
+            />
+            <polyline
+              id="cl-building2-roof1-5"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="1762.97 856.73 1718.07 833.58 1698.56 845.15"
+            />
+            <polygon
+              id="cl-building2-window1-24"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1665.62 870.18 1665.62 861.17 1669.89 863.48 1669.89 872.39 1665.62 870.18"
+            />
+            <polygon
+              id="cl-building2-window1-25"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1672.21 873.34 1672.21 864.34 1676.48 866.64 1676.48 875.56 1672.21 873.34"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe12a"
+          class="cls-12"
+          x1="1604.04"
+          y1="893.5"
+          x2="1543.93"
+          y2="930.82"
+        />
+        <g id="map-industrial-building12">
+          <g id="cl-stack1-11" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-11"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1496.09"
+              cy="873"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-11"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1489.3,935.07c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-11"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1501.11"
+              y1="873"
+              x2="1503.61"
+              y2="933.16"
+            />
+            <path class="cls-3" d="m1501.49,891.13s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1501.49,898.05s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1501.49,905.58s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-12" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-12"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1517.38"
+              cy="861.16"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-12"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1509.49,936.72c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-12"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1522.4"
+              y1="861.16"
+              x2="1525.09"
+              y2="927.23"
+            />
+            <path class="cls-3" d="m1522.78,879.3s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1522.78,886.21s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1522.78,893.74s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-6" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-6"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="1569.56 968.2 1569.56 959.19 1565.29 961.5 1565.29 970.41 1569.56 968.2"
+            />
+            <polygon
+              id="cl-building2-window1-26"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1562.92 972.16 1562.92 963.16 1558.65 965.46 1558.65 974.38 1562.92 972.16"
+            />
+            <polygon
+              id="cl-building2-window1-27"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1530.53 975.67 1530.53 966.67 1526.27 968.97 1526.27 977.89 1530.53 975.67"
+            />
+            <polygon
+              id="cl-building2-window1-28"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1523.95 978.83 1523.95 969.83 1519.68 972.13 1519.68 981.05 1523.95 978.83"
+            />
+            <path
+              id="cl-building2-frontwall-6"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m1574.23,973.75v-24.87s-32.92,19.84-33.54,19.48,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-6"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="1516.18 970.29 1473.35 944.34 1473.35 980.73 1516.18 1007.26 1516.18 970.29"
+            />
+            <polygon
+              id="cl-building2-roof2-6"
+              data-name="cl-building2-roof2"
+              class="cls-45"
+              points="1540.7 956.13 1516.18 970.29 1473.35 944.34 1498.09 930.15 1540.7 956.13"
+            />
+            <polyline
+              id="cl-building2-roof1-6"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="1574.23 948.88 1529.33 925.72 1509.82 937.3"
+            />
+            <polygon
+              id="cl-building2-window1-29"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1476.88 962.32 1476.88 953.32 1481.15 955.62 1481.15 964.54 1476.88 962.32"
+            />
+            <polygon
+              id="cl-building2-window1-30"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1483.47 965.48 1483.47 956.48 1487.73 958.78 1487.73 967.7 1483.47 965.48"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe11a"
+          class="cls-12"
+          x1="1697.37"
+          y1="749.22"
+          x2="1536.7"
+          y2="842.77"
+        />
+        <g id="map-industrial-building11">
+          <g id="cl-stack1-13" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-13"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1710.87"
+              cy="634.94"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-13"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1704.08,697c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-13"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1715.89"
+              y1="634.94"
+              x2="1718.4"
+              y2="695.1"
+            />
+            <path class="cls-3" d="m1716.27,653.07s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1716.27,659.98s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1716.27,667.51s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-14" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-14"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1732.16"
+              cy="623.1"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-14"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1724.27,698.65c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-14"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1737.18"
+              y1="623.1"
+              x2="1739.87"
+              y2="689.16"
+            />
+            <path class="cls-3" d="m1737.56,641.23s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1737.56,648.14s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1737.56,655.67s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-7" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-7"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="1784.34 730.13 1784.34 721.13 1780.07 723.43 1780.07 732.35 1784.34 730.13"
+            />
+            <polygon
+              id="cl-building2-window1-31"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1777.7 734.09 1777.7 725.09 1773.44 727.4 1773.44 736.31 1777.7 734.09"
+            />
+            <polygon
+              id="cl-building2-window1-32"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1745.32 737.6 1745.32 728.6 1741.05 730.9 1741.05 739.82 1745.32 737.6"
+            />
+            <polygon
+              id="cl-building2-window1-33"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1738.73 740.77 1738.73 731.76 1734.46 734.07 1734.46 742.99 1738.73 740.77"
+            />
+            <path
+              id="cl-building2-frontwall-7"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m1789.02,735.68v-24.87s-32.92,19.84-33.54,19.48,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-7"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="1730.97 732.22 1688.13 706.27 1688.13 742.67 1730.97 769.19 1730.97 732.22"
+            />
+            <polygon
+              id="cl-building2-roof2-7"
+              data-name="cl-building2-roof2"
+              class="cls-40"
+              points="1755.48 718.07 1730.97 732.22 1688.13 706.27 1712.88 692.08 1755.48 718.07"
+            />
+            <polyline
+              id="cl-building2-roof1-7"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="1789.02 710.81 1744.11 687.66 1724.6 699.23"
+            />
+            <polygon
+              id="cl-building2-window1-34"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1691.66 724.25 1691.66 715.25 1695.93 717.55 1695.93 726.47 1691.66 724.25"
+            />
+            <polygon
+              id="cl-building2-window1-35"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1698.25 727.42 1698.25 718.41 1702.52 720.72 1702.52 729.63 1698.25 727.42"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe10"
+          class="cls-12"
+          x1="1512.71"
+          y1="835.71"
+          x2="1395.5"
+          y2="906.06"
+        />
+        <g id="map-industrial-building10">
+          <g id="cl-stack1-15" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-15"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1345.77"
+              cy="845.86"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-15"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1338.98,907.92c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-15"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1350.79"
+              y1="845.86"
+              x2="1353.29"
+              y2="906.02"
+            />
+            <path class="cls-3" d="m1351.17,863.99s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1351.17,870.9s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1351.17,878.43s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-16" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-16"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1367.06"
+              cy="834.02"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-16"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1359.17,909.58c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-16"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1372.08"
+              y1="834.02"
+              x2="1374.77"
+              y2="900.08"
+            />
+            <path class="cls-3" d="m1372.45,852.15s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1372.45,859.07s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1372.45,866.59s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-8" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-8"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="1419.24 941.05 1419.24 932.05 1414.97 934.35 1414.97 943.27 1419.24 941.05"
+            />
+            <polygon
+              id="cl-building2-window1-36"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1412.6 945.02 1412.6 936.02 1408.33 938.32 1408.33 947.24 1412.6 945.02"
+            />
+            <polygon
+              id="cl-building2-window1-37"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1380.21 948.53 1380.21 939.53 1375.95 941.83 1375.95 950.75 1380.21 948.53"
+            />
+            <polygon
+              id="cl-building2-window1-38"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1373.62 951.69 1373.62 942.69 1369.36 944.99 1369.36 953.91 1373.62 951.69"
+            />
+            <path
+              id="cl-building2-frontwall-8"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m1423.91,946.6v-24.87s-32.92,19.84-33.54,19.48c-.62-.36,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-8"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="1365.86 943.14 1323.02 917.19 1323.02 953.59 1365.86 980.12 1365.86 943.14"
+            />
+            <polygon
+              id="cl-building2-roof2-8"
+              data-name="cl-building2-roof2"
+              class="cls-42"
+              points="1390.37 928.99 1365.86 943.14 1323.02 917.19 1347.77 903.01 1390.37 928.99"
+            />
+            <polyline
+              id="cl-building2-roof1-8"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="1423.91 921.73 1379.01 898.58 1359.49 910.16"
+            />
+            <polygon
+              id="cl-building2-window1-39"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1326.56 935.18 1326.56 926.18 1330.82 928.48 1330.82 937.4 1326.56 935.18"
+            />
+            <polygon
+              id="cl-building2-window1-40"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1333.14 938.34 1333.14 929.34 1337.41 931.64 1337.41 940.56 1333.14 938.34"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe9"
+          class="cls-13"
+          x1="1004.22"
+          y1="458.06"
+          x2="941.32"
+          y2="498.29"
+        />
+        <g id="map-industrial-building9">
+          <g id="cl-stack1-17" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-17"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="993.96"
+              cy="329.65"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-17"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m987.17,391.72c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-17"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="998.98"
+              y1="329.65"
+              x2="1001.49"
+              y2="389.81"
+            />
+            <path class="cls-3" d="m999.36,347.79s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m999.36,354.7s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m999.36,362.23s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-18" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-18"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="1015.25"
+              cy="317.81"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-18"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m1007.36,393.37c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-18"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="1020.27"
+              y1="317.81"
+              x2="1022.96"
+              y2="383.88"
+            />
+            <path class="cls-3" d="m1020.65,335.95s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1020.65,342.86s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m1020.65,350.39s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-9" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-9"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="1067.43 424.85 1067.43 415.85 1063.16 418.15 1063.16 427.07 1067.43 424.85"
+            />
+            <polygon
+              id="cl-building2-window1-41"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1060.79 428.81 1060.79 419.81 1056.52 422.11 1056.52 431.03 1060.79 428.81"
+            />
+            <polygon
+              id="cl-building2-window1-42"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1028.41 432.32 1028.41 423.32 1024.14 425.62 1024.14 434.54 1028.41 432.32"
+            />
+            <polygon
+              id="cl-building2-window1-43"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="1021.82 435.48 1021.82 426.48 1017.55 428.79 1017.55 437.7 1021.82 435.48"
+            />
+            <path
+              id="cl-building2-frontwall-9"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m1072.1,430.4v-24.87s-32.92,19.84-33.54,19.48,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-9"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="1014.05 426.94 971.22 400.99 971.22 437.38 1014.05 463.91 1014.05 426.94"
+            />
+            <polygon
+              id="cl-building2-roof2-9"
+              data-name="cl-building2-roof2"
+              class="cls-32"
+              points="1038.57 412.78 1014.05 426.94 971.22 400.99 995.96 386.8 1038.57 412.78"
+            />
+            <polyline
+              id="cl-building2-roof1-9"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="1072.1 405.53 1027.2 382.37 1007.69 393.95"
+            />
+            <polygon
+              id="cl-building2-window1-44"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="974.75 418.97 974.75 409.97 979.02 412.27 979.02 421.19 974.75 418.97"
+            />
+            <polygon
+              id="cl-building2-window1-45"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="981.34 422.13 981.34 413.13 985.61 415.43 985.61 424.35 981.34 422.13"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe8"
+          class="cls-50"
+          x1="905.65"
+          y1="495.5"
+          x2="867.14"
+          y2="472.42"
+        />
+        <g id="map-industrial-building8">
+          <g id="cl-stack1-19" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-19"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="841.48"
+              cy="339.61"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-19"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m834.69,401.68c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-19"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="846.5"
+              y1="339.61"
+              x2="849"
+              y2="399.77"
+            />
+            <path class="cls-3" d="m846.87,357.74s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m846.87,364.66s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m846.87,372.18s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-20" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-20"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="862.76"
+              cy="327.77"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-20"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m854.87,403.33c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-20"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="867.79"
+              y1="327.77"
+              x2="870.48"
+              y2="393.84"
+            />
+            <path class="cls-3" d="m868.16,345.9s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m868.16,352.82s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m868.16,360.34s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-10" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-10"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="914.94 434.8 914.94 425.8 910.68 428.11 910.68 437.02 914.94 434.8"
+            />
+            <polygon
+              id="cl-building2-window1-46"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="908.31 438.77 908.31 429.77 904.04 432.07 904.04 440.99 908.31 438.77"
+            />
+            <polygon
+              id="cl-building2-window1-47"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="875.92 442.28 875.92 433.28 871.65 435.58 871.65 444.5 875.92 442.28"
+            />
+            <polygon
+              id="cl-building2-window1-48"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="869.33 445.44 869.33 436.44 865.07 438.74 865.07 447.66 869.33 445.44"
+            />
+            <path
+              id="cl-building2-frontwall-10"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m919.62,440.35v-24.87s-32.92,19.84-33.54,19.48,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-10"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="861.57 436.89 818.73 410.95 818.73 447.34 861.57 473.87 861.57 436.89"
+            />
+            <polygon
+              id="cl-building2-roof2-10"
+              data-name="cl-building2-roof2"
+              class="cls-33"
+              points="886.08 422.74 861.57 436.89 818.73 410.95 843.48 396.76 886.08 422.74"
+            />
+            <polyline
+              id="cl-building2-roof1-10"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="919.62 415.48 874.71 392.33 855.2 403.91"
+            />
+            <polygon
+              id="cl-building2-window1-49"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="822.26 428.93 822.26 419.93 826.53 422.23 826.53 431.15 822.26 428.93"
+            />
+            <polygon
+              id="cl-building2-window1-50"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="828.85 432.09 828.85 423.09 833.12 425.39 833.12 434.31 828.85 432.09"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe7"
+          class="cls-50"
+          x1="820.53"
+          y1="626.94"
+          x2="757.39"
+          y2="589.01"
+        />
+        <g id="map-industrial-building7">
+          <g id="cl-stack1-21" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-21"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="832.27"
+              cy="562.93"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-21"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m825.48,624.99c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-21"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="837.29"
+              y1="562.93"
+              x2="839.8"
+              y2="623.09"
+            />
+            <path class="cls-3" d="m837.67,581.06s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m837.67,587.97s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m837.67,595.5s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-22" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-22"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="853.56"
+              cy="551.09"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-22"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m845.67,626.64c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-22"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="858.58"
+              y1="551.09"
+              x2="861.27"
+              y2="617.15"
+            />
+            <path class="cls-3" d="m858.96,569.22s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m858.96,576.13s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m858.96,583.66s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-11" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-11"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="905.74 658.12 905.74 649.12 901.47 651.42 901.47 660.34 905.74 658.12"
+            />
+            <polygon
+              id="cl-building2-window1-51"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="899.1 662.09 899.1 653.08 894.84 655.39 894.84 664.31 899.1 662.09"
+            />
+            <polygon
+              id="cl-building2-window1-52"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="866.72 665.6 866.72 656.59 862.45 658.9 862.45 667.81 866.72 665.6"
+            />
+            <polygon
+              id="cl-building2-window1-53"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="860.13 668.76 860.13 659.76 855.86 662.06 855.86 670.98 860.13 668.76"
+            />
+            <path
+              id="cl-building2-frontwall-11"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m910.42,663.67v-24.87s-32.92,19.84-33.54,19.48,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-11"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="852.37 660.21 809.53 634.26 809.53 670.66 852.37 697.19 852.37 660.21"
+            />
+            <polygon
+              id="cl-building2-roof2-11"
+              data-name="cl-building2-roof2"
+              class="cls-29"
+              points="876.88 646.06 852.37 660.21 809.53 634.26 834.28 620.07 876.88 646.06"
+            />
+            <polyline
+              id="cl-building2-roof1-11"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="910.42 638.8 865.51 615.65 846 627.22"
+            />
+            <polygon
+              id="cl-building2-window1-54"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="813.06 652.24 813.06 643.24 817.33 645.55 817.33 654.46 813.06 652.24"
+            />
+            <polygon
+              id="cl-building2-window1-55"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="819.65 655.41 819.65 646.41 823.92 648.71 823.92 657.63 819.65 655.41"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe6"
+          class="cls-12"
+          x1="735.16"
+          y1="582.32"
+          x2="670.17"
+          y2="619.71"
+        />
+        <g id="map-industrial-building6">
+          <g id="cl-stack1-23" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-23"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="618.63"
+              cy="559.72"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-23"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m611.84,621.79c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-23"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="623.65"
+              y1="559.72"
+              x2="626.15"
+              y2="619.88"
+            />
+            <path class="cls-3" d="m624.02,577.85s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m624.02,584.77s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m624.02,592.29s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-24" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-24"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="639.91"
+              cy="547.88"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-24"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m632.02,623.44c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-24"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="644.93"
+              y1="547.88"
+              x2="647.63"
+              y2="613.94"
+            />
+            <path class="cls-3" d="m645.31,566.01s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m645.31,572.93s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m645.31,580.45s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-12" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-12"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="692.09 654.91 692.09 645.91 687.83 648.21 687.83 657.13 692.09 654.91"
+            />
+            <polygon
+              id="cl-building2-window1-56"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="685.45 658.88 685.45 649.88 681.19 652.18 681.19 661.1 685.45 658.88"
+            />
+            <polygon
+              id="cl-building2-window1-57"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="653.07 662.39 653.07 653.39 648.8 655.69 648.8 664.61 653.07 662.39"
+            />
+            <polygon
+              id="cl-building2-window1-58"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="646.48 665.55 646.48 656.55 642.22 658.85 642.22 667.77 646.48 665.55"
+            />
+            <path
+              id="cl-building2-frontwall-12"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m696.77,660.46v-24.87s-32.92,19.84-33.54,19.48c-.62-.36,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-12"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="638.72 657 595.88 631.06 595.88 667.45 638.72 693.98 638.72 657"
+            />
+            <polygon
+              id="cl-building2-roof2-12"
+              data-name="cl-building2-roof2"
+              class="cls-30"
+              points="663.23 642.85 638.72 657 595.88 631.06 620.63 616.87 663.23 642.85"
+            />
+            <polyline
+              id="cl-building2-roof1-12"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="696.77 635.59 651.86 612.44 632.35 624.02"
+            />
+            <polygon
+              id="cl-building2-window1-59"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="599.41 649.04 599.41 640.04 603.68 642.34 603.68 651.26 599.41 649.04"
+            />
+            <polygon
+              id="cl-building2-window1-60"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="606 652.2 606 643.2 610.27 645.5 610.27 654.42 606 652.2"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe5"
+          class="cls-12"
+          x1="725.13"
+          y1="543.8"
+          x2="706.76"
+          y2="555.34"
+        />
+        <g id="map-industrial-building5">
+          <g id="cl-stack1-25" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-25"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="778.64"
+              cy="428.39"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-25"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m785.43,490.45c-1.28-1.6-1.77-60.89-1.77-60.89"
+            />
+            <line
+              id="cl-stack11-25"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="773.62"
+              y1="428.39"
+              x2="771.11"
+              y2="488.55"
+            />
+            <path class="cls-3" d="m773.24,446.52s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m773.24,453.43s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m773.24,460.96s3.49,4.31,10.64,1.01" />
+          </g>
+          <g id="cl-stack1-26" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-26"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="757.35"
+              cy="416.55"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-26"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m765.24,492.11c-1.28-1.6-2.87-74.38-2.87-74.38"
+            />
+            <line
+              id="cl-stack11-26"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="752.33"
+              y1="416.55"
+              x2="749.64"
+              y2="482.61"
+            />
+            <path class="cls-3" d="m751.95,434.68s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m751.95,441.59s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m751.95,449.12s3.49,4.31,10.64,1.01" />
+          </g>
+          <g id="cl-building2-13" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-13"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="705.17 523.58 705.17 514.58 709.44 516.88 709.44 525.8 705.17 523.58"
+            />
+            <polygon
+              id="cl-building2-window1-61"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="711.81 527.55 711.81 518.55 716.08 520.85 716.08 529.77 711.81 527.55"
+            />
+            <polygon
+              id="cl-building2-window1-62"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="744.19 531.06 744.19 522.06 748.46 524.36 748.46 533.28 744.19 531.06"
+            />
+            <polygon
+              id="cl-building2-window1-63"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="750.78 534.22 750.78 525.22 755.05 527.52 755.05 536.44 750.78 534.22"
+            />
+            <path
+              id="cl-building2-frontwall-13"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m700.5,529.13v-24.87s32.92,19.84,33.54,19.48c.62-.36,0-12.23,0-12.23l24.51,14.15v36.97l-58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-13"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="758.55 525.67 801.38 499.72 801.38 536.12 758.55 562.65 758.55 525.67"
+            />
+            <polygon
+              id="cl-building2-roof2-13"
+              data-name="cl-building2-roof2"
+              class="cls-28"
+              points="734.03 511.52 758.55 525.67 801.38 499.72 776.64 485.54 734.03 511.52"
+            />
+            <polyline
+              id="cl-building2-roof1-13"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="700.5 504.26 745.4 481.11 764.91 492.69"
+            />
+            <polygon
+              id="cl-building2-window1-64"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="797.85 517.71 797.85 508.71 793.58 511.01 793.58 519.93 797.85 517.71"
+            />
+            <polygon
+              id="cl-building2-window1-65"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="791.26 520.87 791.26 511.87 787 514.17 787 523.09 791.26 520.87"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe4"
+          class="cls-12"
+          x1="641.12"
+          y1="526.92"
+          x2="576.13"
+          y2="564.31"
+        />
+        <g id="map-industrial-building4">
+          <g id="cl-stack1-27" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-27"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="501.43"
+              cy="493.33"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-27"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m494.64,555.4c1.28-1.6,1.77-60.89,1.77-60.89"
+            />
+            <line
+              id="cl-stack11-27"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="506.46"
+              y1="493.33"
+              x2="508.96"
+              y2="553.49"
+            />
+            <path class="cls-3" d="m506.83,511.46s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m506.83,518.38s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m506.83,525.91s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-stack1-28" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-28"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="522.72"
+              cy="481.49"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-28"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m514.83,557.05c1.28-1.6,2.87-74.38,2.87-74.38"
+            />
+            <line
+              id="cl-stack11-28"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="527.74"
+              y1="481.49"
+              x2="530.44"
+              y2="547.56"
+            />
+            <path class="cls-3" d="m528.12,499.62s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m528.12,506.54s-3.49,4.31-10.64,1.01" />
+            <path class="cls-3" d="m528.12,514.07s-3.49,4.31-10.64,1.01" />
+          </g>
+          <g id="cl-building2-14" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-14"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="574.9 588.53 574.9 579.52 570.64 581.83 570.64 590.74 574.9 588.53"
+            />
+            <polygon
+              id="cl-building2-window1-66"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="568.26 592.49 568.26 583.49 564 585.79 564 594.71 568.26 592.49"
+            />
+            <polygon
+              id="cl-building2-window1-67"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="535.88 596 535.88 587 531.61 589.3 531.61 598.22 535.88 596"
+            />
+            <polygon
+              id="cl-building2-window1-68"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="529.29 599.16 529.29 590.16 525.02 592.46 525.02 601.38 529.29 599.16"
+            />
+            <path
+              id="cl-building2-frontwall-14"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m579.58,594.08v-24.87s-32.92,19.84-33.54,19.48,0-12.23,0-12.23l-24.51,14.15v36.97s58.05-33.52,58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-14"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="521.53 590.62 478.69 564.67 478.69 601.06 521.53 627.59 521.53 590.62"
+            />
+            <polygon
+              id="cl-building2-roof2-14"
+              data-name="cl-building2-roof2"
+              class="cls-34"
+              points="546.04 576.46 521.53 590.62 478.69 564.67 503.44 550.48 546.04 576.46"
+            />
+            <polyline
+              id="cl-building2-roof1-14"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="579.58 569.21 534.67 546.05 515.16 557.63"
+            />
+            <polygon
+              id="cl-building2-window1-69"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="482.22 582.65 482.22 573.65 486.49 575.95 486.49 584.87 482.22 582.65"
+            />
+            <polygon
+              id="cl-building2-window1-70"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="488.81 585.81 488.81 576.81 493.08 579.11 493.08 588.03 488.81 585.81"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe3"
+          class="cls-48"
+          x1="606.43"
+          y1="417.85"
+          x2="540.93"
+          y2="455.67"
+        />
+        <g id="map-industrial-building3">
+          <g id="cl-stack1-29" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-29"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="679.18"
+              cy="311.86"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-29"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m685.97,373.92c-1.28-1.6-1.77-60.89-1.77-60.89"
+            />
+            <line
+              id="cl-stack11-29"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="674.16"
+              y1="311.86"
+              x2="671.65"
+              y2="372.02"
+            />
+            <path class="cls-3" d="m673.78,329.99s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m673.78,336.9s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m673.78,344.43s3.49,4.31,10.64,1.01" />
+          </g>
+          <g id="cl-stack1-30" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-30"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="657.89"
+              cy="300.02"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-30"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m665.78,375.58c-1.28-1.6-2.87-74.38-2.87-74.38"
+            />
+            <line
+              id="cl-stack11-30"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="652.87"
+              y1="300.02"
+              x2="650.18"
+              y2="366.08"
+            />
+            <path class="cls-3" d="m652.49,318.15s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m652.49,325.06s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m652.49,332.59s3.49,4.31,10.64,1.01" />
+          </g>
+          <g id="cl-building2-15" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-15"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="605.71 407.05 605.71 398.05 609.98 400.35 609.98 409.27 605.71 407.05"
+            />
+            <polygon
+              id="cl-building2-window1-71"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="612.35 411.02 612.35 402.02 616.62 404.32 616.62 413.24 612.35 411.02"
+            />
+            <polygon
+              id="cl-building2-window1-72"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="644.73 414.53 644.73 405.53 649 407.83 649 416.75 644.73 414.53"
+            />
+            <polygon
+              id="cl-building2-window1-73"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="651.32 417.69 651.32 408.69 655.59 410.99 655.59 419.91 651.32 417.69"
+            />
+            <path
+              id="cl-building2-frontwall-15"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m601.03,412.6v-24.87s32.92,19.84,33.54,19.48,0-12.23,0-12.23l24.51,14.15v36.97l-58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-15"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="659.08 409.14 701.92 383.19 701.92 419.59 659.08 446.12 659.08 409.14"
+            />
+            <polygon
+              id="cl-building2-roof2-15"
+              data-name="cl-building2-roof2"
+              class="cls-36"
+              points="634.57 394.99 659.08 409.14 701.92 383.19 677.18 369.01 634.57 394.99"
+            />
+            <polyline
+              id="cl-building2-roof1-15"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="601.03 387.73 645.94 364.58 665.45 376.16"
+            />
+            <polygon
+              id="cl-building2-window1-74"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="698.39 401.18 698.39 392.18 694.12 394.48 694.12 403.4 698.39 401.18"
+            />
+            <polygon
+              id="cl-building2-window1-75"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="691.8 404.34 691.8 395.34 687.53 397.64 687.53 406.56 691.8 404.34"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe2"
+          class="cls-48"
+          x1="556.46"
+          y1="374.05"
+          x2="471.88"
+          y2="424.35"
+        />
+        <g id="map-industrial-building2">
+          <g id="cl-stack1-31" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-31"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="593.15"
+              cy="249.94"
+              rx="5.02"
+              ry="3.68"
+              transform="translate(-1.95 4.68) rotate(-.45)"
+            />
+            <path
+              id="cl-stack12-31"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m600.43,311.95c-1.29-1.59-2.25-60.87-2.25-60.87"
+            />
+            <line
+              id="cl-stack11-31"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="588.13"
+              y1="249.98"
+              x2="586.1"
+              y2="310.16"
+            />
+            <path class="cls-3" d="m587.89,268.11s3.52,4.28,10.65.92" />
+            <path class="cls-3" d="m587.95,275.03s3.52,4.28,10.65.92" />
+            <path class="cls-3" d="m588.01,282.55s3.52,4.28,10.65.92" />
+          </g>
+          <g id="cl-stack1-32" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-32"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="571.77"
+              cy="238.27"
+              rx="5.02"
+              ry="3.68"
+              transform="translate(-1.86 4.52) rotate(-.45)"
+            />
+            <path
+              id="cl-stack12-32"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m580.25,313.76c-1.29-1.59-3.46-74.35-3.46-74.35"
+            />
+            <line
+              id="cl-stack11-32"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="566.75"
+              y1="238.31"
+              x2="564.58"
+              y2="304.39"
+            />
+            <path class="cls-3" d="m566.51,256.44s3.52,4.28,10.65.92" />
+            <path class="cls-3" d="m566.57,263.35s3.52,4.28,10.65.92" />
+            <path class="cls-3" d="m566.63,270.88s3.52,4.28,10.65.92" />
+          </g>
+          <g id="cl-building2-16" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-16"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="520.43 345.71 520.36 336.71 524.65 338.98 524.72 347.89 520.43 345.71"
+            />
+            <polygon
+              id="cl-building2-window1-76"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="527.1 349.62 527.03 340.62 531.32 342.89 531.39 351.81 527.1 349.62"
+            />
+            <polygon
+              id="cl-building2-window1-77"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="559.51 352.88 559.44 343.87 563.73 346.14 563.8 355.06 559.51 352.88"
+            />
+            <polygon
+              id="cl-building2-window1-78"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="566.13 355.99 566.06 346.99 570.34 349.25 570.41 358.17 566.13 355.99"
+            />
+            <path
+              id="cl-building2-frontwall-16"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m515.8,351.3l-.2-24.87s33.07,19.58,33.69,19.22-.1-12.22-.1-12.22l24.62,13.96.29,36.97-58.31-33.06Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-16"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="573.82 347.38 616.45 321.09 616.74 357.49 574.11 384.35 573.82 347.38"
+            />
+            <polygon
+              id="cl-building2-roof2-16"
+              data-name="cl-building2-roof2"
+              class="cls-35"
+              points="549.2 333.42 573.82 347.38 616.45 321.09 591.6 307.1 549.2 333.42"
+            />
+            <polyline
+              id="cl-building2-roof1-16"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="515.61 326.43 560.33 302.92 579.93 314.34"
+            />
+            <polygon
+              id="cl-building2-window1-79"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="613.06 339.1 612.99 330.1 608.74 332.44 608.81 341.36 613.06 339.1"
+            />
+            <polygon
+              id="cl-building2-window1-80"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="606.5 342.32 606.43 333.32 602.18 335.65 602.25 344.57 606.5 342.32"
+            />
+          </g>
+        </g>
+        <line
+          id="map-connectpipe1"
+          class="cls-12"
+          x1="448.68"
+          y1="417.24"
+          x2="365.69"
+          y2="467.73"
+        />
+        <g id="map-industrial-building1">
+          <g id="cl-stack1-33" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-33"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="349.44"
+              cy="400.82"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-33"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m356.23,462.88c-1.28-1.6-1.77-60.89-1.77-60.89"
+            />
+            <line
+              id="cl-stack11-33"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="344.42"
+              y1="400.82"
+              x2="341.92"
+              y2="460.98"
+            />
+            <path class="cls-3" d="m344.05,418.95s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m344.05,425.86s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m344.05,433.39s3.49,4.31,10.64,1.01" />
+          </g>
+          <g id="cl-stack1-34" data-name="cl-stack1">
+            <ellipse
+              id="cl-stack13-34"
+              data-name="cl-stack13"
+              class="cls-3"
+              cx="328.15"
+              cy="388.98"
+              rx="5.02"
+              ry="3.68"
+            />
+            <path
+              id="cl-stack12-34"
+              data-name="cl-stack12"
+              class="cls-3"
+              d="m336.04,464.54c-1.28-1.6-2.87-74.38-2.87-74.38"
+            />
+            <line
+              id="cl-stack11-34"
+              data-name="cl-stack11"
+              class="cls-3"
+              x1="323.13"
+              y1="388.98"
+              x2="320.44"
+              y2="455.04"
+            />
+            <path class="cls-3" d="m322.76,407.11s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m322.76,414.03s3.49,4.31,10.64,1.01" />
+            <path class="cls-3" d="m322.76,421.55s3.49,4.31,10.64,1.01" />
+          </g>
+          <g id="cl-building2-17" data-name="cl-building2">
+            <polygon
+              id="cl-building2-window2-17"
+              data-name="cl-building2-window2"
+              class="cls-24"
+              points="275.98 496.01 275.98 487.01 280.24 489.31 280.24 498.23 275.98 496.01"
+            />
+            <polygon
+              id="cl-building2-window1-81"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="282.61 499.98 282.61 490.98 286.88 493.28 286.88 502.2 282.61 499.98"
+            />
+            <polygon
+              id="cl-building2-window1-82"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="315 503.49 315 494.49 319.27 496.79 319.27 505.71 315 503.49"
+            />
+            <polygon
+              id="cl-building2-window1-83"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="321.59 506.65 321.59 497.65 325.85 499.95 325.85 508.87 321.59 506.65"
+            />
+            <path
+              id="cl-building2-frontwall-17"
+              data-name="cl-building2-frontwall"
+              class="cls-3"
+              d="m271.3,501.56v-24.87s32.92,19.84,33.54,19.48,0-12.23,0-12.23l24.51,14.15v36.97l-58.05-33.52Z"
+            />
+            <polygon
+              id="cl-building2-rightwall-17"
+              data-name="cl-building2-rightwall"
+              class="cls-3"
+              points="329.35 498.1 372.19 472.15 372.19 508.55 329.35 535.08 329.35 498.1"
+            />
+            <polygon
+              id="cl-building2-roof2-17"
+              data-name="cl-building2-roof2"
+              class="cls-31"
+              points="304.84 483.95 329.35 498.1 372.19 472.15 347.44 457.97 304.84 483.95"
+            />
+            <polyline
+              id="cl-building2-roof1-17"
+              data-name="cl-building2-roof1"
+              class="cls-3"
+              points="271.3 476.69 316.21 453.54 335.72 465.12"
+            />
+            <polygon
+              id="cl-building2-window1-84"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="368.65 490.14 368.65 481.14 364.39 483.44 364.39 492.36 368.65 490.14"
+            />
+            <polygon
+              id="cl-building2-window1-85"
+              data-name="cl-building2-window1"
+              class="cls-24"
+              points="362.07 493.3 362.07 484.3 357.8 486.6 357.8 495.52 362.07 493.3"
+            />
+          </g>
+        </g>
+        <g id="CCS">
+          <g id="FILL_PIPE2" data-name="FILL PIPE2">
+            <g class="cls-49">
+              <path
+                class="cls-26"
+                d="m2034.69,1175.66l-.31-8.03c-.01-4.15,4.55-6.7,8.08-4.5l37.59,23.37"
+              />
+            </g>
+          </g>
+          <path
+            id="cl-mpipe2"
+            class="cls-14"
+            d="m2075.51,1187.79l-33.74-22.48c-1.2-.35-2.33.12-2.76.36-.43.24-1.42.94-1.42,2.36l.09,7.2-6.16-3.78-.36-3.42c0-3.21,1.73-6.09,4.63-7.7,2.9-1.61,6.37-1.61,9.27-.01l37.99,23.75"
+          />
+          <g id="FILL_PIPE1" data-name="FILL PIPE1">
+            <g class="cls-51">
+              <path
+                class="cls-26"
+                d="m2018.84,1184.86l-.31-8.03c-.01-4.15,4.55-6.7,8.08-4.5l37.59,23.37"
+              />
+            </g>
+          </g>
+          <path
+            id="cl-mpipe1"
+            class="cls-14"
+            d="m2059.32,1196.99l-33.66-21.8c-1.2-.69-2.26-.23-2.65,0-.4.23-1.33.92-1.33,2.3v7.35s-.64,2.62-3,2.6c-2.36-.01-3-2.6-3-2.6v-7.35c0-3.12,1.61-5.92,4.32-7.49,2.7-1.56,5.93-1.57,8.64-.01l38.21,23.17"
+          />
+          <g id="cl-building2-18" data-name="cl-building2">
+            <path
+              id="cl-building2-side"
+              class="cls-15"
+              d="m2050.79,1241.87c0-1.82.3-39.6.3-39.6l19.83-11.45,17.83,31.34v41.63l-37.96-21.91Z"
+            />
+            <polygon
+              id="cl-building2-roof"
+              class="cls-38"
+              points="2124.79 1159.72 2150.2 1186.68 2088.75 1222.16 2070.92 1190.82 2124.79 1159.72"
+            />
+            <polygon
+              id="cl-building2-front"
+              class="cls-15"
+              points="2088.75 1222.16 2150.2 1186.68 2150.2 1227.3 2088.75 1263.79 2088.75 1222.16"
+            />
+            <line
+              id="cl-building2-antenea2"
+              class="cls-15"
+              x1="2106.36"
+              y1="1175.79"
+              x2="2106.36"
+              y2="1137.95"
+            />
+            <line
+              id="cl-building2-antenea1"
+              class="cls-25"
+              x1="2087.47"
+              y1="1186.06"
+              x2="2087.47"
+              y2="1169.1"
+            />
+            <polygon
+              id="cl-building2-window1-86"
+              data-name="cl-building2-window1"
+              class="cls-25"
+              points="2140.73 1213.37 2140.73 1199.39 2134.1 1202.97 2134.1 1216.82 2140.73 1213.37"
+            />
+            <polygon
+              id="cl-building2-window1-87"
+              data-name="cl-building2-window1"
+              class="cls-25"
+              points="2126.8 1241.4 2126.8 1210.1 2112.66 1218.11 2112.66 1249.12 2126.8 1241.4"
+            />
+            <g id="cl-building2-box">
+              <polygon
+                id="cl-building2-box3"
+                class="cls-25"
+                points="2092.65 1242.03 2092.65 1251.96 2094.9 1253.15 2094.9 1241.37 2092.65 1240.02 2092.65 1242.03"
+              />
+              <polygon
+                id="cl-building2-box2"
+                class="cls-25"
+                points="2094.83 1241.37 2094.83 1253.15 2101.53 1249.54 2101.53 1237.31 2094.83 1241.37"
+              />
+              <polygon
+                id="cl-building2-box1"
+                class="cls-25"
+                points="2092.67 1239.91 2099.4 1236.06 2101.6 1237.31 2094.87 1241.18 2092.67 1239.91"
+              />
+            </g>
+            <polygon
+              id="cl-building2-window1-88"
+              data-name="cl-building2-window1"
+              class="cls-25"
+              points="2055.9 1224.61 2055.9 1210.63 2062.53 1214.2 2062.53 1228.06 2055.9 1224.61"
+            />
+          </g>
+          <path
+            id="FILL_cl-mpipe4"
+            data-name="FILL cl-mpipe4"
+            class="cls-7"
+            d="m2167.07,1247.37l-.58-6.28c0-2.83-2.97-4.68-5.51-3.42l-4.67,2.31c-2.04,1.01-3.33,3.09-3.33,5.36v.22c0,1.52,1.8,4.59,3.14,5.31l44.47,24.07c2.15,1.25,3.54,3.49,3.72,5.97l-.08,13.36"
+          />
+          <path
+            id="cl-mpipe4"
+            class="cls-4"
+            d="m2207.13,1295.16s.14,1.99-2.59,1.99-2.58-1.99-2.58-1.99v-12.08c0-4.53-2.44-5.85-6.36-8.12l-40.4-21.83c-2.74-1.58-4.37-4.42-4.36-7.59.01-3.17,1.66-5.99,4.42-7.56l3.74-2.12c2.2-1.25,4.83-1.24,7.02.04,2.19,1.28,3.5,3.55,3.5,6.09v6.39s0,2.08-2.74,1.84-2.43-1.84-2.43-1.84v-6.39c0-.97-.65-1.46-.93-1.62-.28-.16-1.02-.49-1.87-.01l-3.74,2.12c-1.12.64-1.8,1.79-1.8,3.08,0,1.29.66,2.45,1.78,3.09l40.4,21.83c5.52,3.19,8.95,6.22,8.95,12.59v12.08Z"
+          />
+          <path
+            id="FILL_cl-mpipe3"
+            data-name="FILL cl-mpipe3"
+            class="cls-7"
+            d="m2136.23,1268.95l.26-8.46c.12-4.06,4.56-6.5,8.06-4.43l50.34,29.81.72,15.78"
+          />
+          <path
+            id="cl-mpipe3"
+            class="cls-4"
+            d="m2198.28,1301.61s.04,2.4-2.87,2.4c-1.7,0-2.9-.79-2.87-2.4v-9.59c0-7.18-3.87-6.96-10.09-10.53l-39.56-22.62c-1.15-.66-2.16-.22-2.54,0-.38.22-1.27.88-1.27,2.2v7.05s-.61,2.51-2.87,2.49c-2.26-.01-2.87-2.49-2.87-2.49v-7.05c0-2.99,1.55-5.68,4.14-7.17,2.59-1.5,5.69-1.5,8.28-.01l39.56,22.62c8,4.6,12.97,6.29,12.97,15.51v9.59Z"
+          />
+          <g id="FILL_cl-mpipe5" data-name="FILL cl-mpipe5">
+            <g class="cls-52">
+              <path
+                id="FILL_cl-mpipe5-2"
+                data-name="FILL cl-mpipe5"
+                class="cls-22"
+                d="m2224.81,1306.38l-.05-6.67c-.02-3.99,4.35-6.44,7.75-4.35l15.84,10.42"
+              />
+            </g>
+          </g>
+          <path
+            id="cl-mpipe5"
+            class="cls-14"
+            d="m2249.13,1309.06l-18.01-11.14c-1.09-.63-2.05-.21-2.41,0-.36.21-1.21.83-1.21,2.09v6.68s-.58,2.38-2.73,2.36c-2.14-.01-2.73-2.36-2.73-2.36v-6.68c0-2.84,1.47-5.39,3.93-6.81,2.46-1.42,5.4-1.43,7.86-.01l15.46,9.64"
+          />
+          <path
+            id="FILL_cl-mpipe6"
+            data-name="FILL cl-mpipe6"
+            class="cls-27"
+            d="m2266.49,1313.75l10.82,6.24c2.31,1.33,5.2-.33,5.2-3v-26.87c0-2.52,2.74-4.07,4.9-2.78l11.54,7.14"
+          />
+          <path
+            id="cl-mpipe6"
+            class="cls-19"
+            d="m2279.34,1321.93c-.83,0-1.65-.21-2.4-.64l-10.99-6.23s-.9-1.4-.05-2.5c.86-1.1,1.66-.34,1.66-.34l10.99,6.23c.72.41,1.36.13,1.59,0,.24-.14.8-.55.81-1.37l.34-27.08c.02-1.59.85-3.03,2.23-3.83,1.38-.81,3.04-.83,4.43-.06l13.46,8.01-1.9,2.53-13.13-7.67c-.55-.3-1.03-.09-1.22.02-.18.11-.6.42-.61,1.05l-.34,27.08c-.02,1.74-.94,3.3-2.45,4.17-.76.44-1.59.65-2.43.65Z"
+          />
+          <g id="cl-sm_pipe4">
+            <ellipse
+              id="cl-sm_pipe45"
+              class="cls-25"
+              cx="2176.7"
+              cy="1242.05"
+              rx="2.84"
+              ry="2.08"
+            />
+            <ellipse
+              id="cl-sm_pipe44"
+              class="cls-25"
+              cx="2176.7"
+              cy="1227.43"
+              rx="2.84"
+              ry="2.08"
+            />
+            <path
+              id="cl-sm_pipe43"
+              class="cls-25"
+              d="m2179.54,1227.76c0,1.15-1.27,2.08-2.84,2.08s-2.84-.93-2.84-2.08"
+            />
+            <line
+              id="cl-sm_pipe42"
+              class="cls-25"
+              x1="2173.86"
+              y1="1242.05"
+              x2="2173.86"
+              y2="1227.31"
+            />
+            <path
+              id="cl-sm_pipe41"
+              class="cls-25"
+              d="m2179.54,1242.05v-14.73"
+            />
+          </g>
+          <g id="cl-sm_pipe3">
+            <ellipse
+              id="cl-sm_pipe35"
+              class="cls-25"
+              cx="2189.43"
+              cy="1242.05"
+              rx="2.84"
+              ry="2.08"
+            />
+            <ellipse
+              id="cl-sm_pipe34"
+              class="cls-25"
+              cx="2189.43"
+              cy="1227.43"
+              rx="2.84"
+              ry="2.08"
+            />
+            <path
+              id="cl-sm_pipe33"
+              class="cls-25"
+              d="m2192.27,1227.76c0,1.15-1.27,2.08-2.84,2.08s-2.84-.93-2.84-2.08"
+            />
+            <line
+              id="cl-sm_pipe32"
+              class="cls-25"
+              x1="2186.59"
+              y1="1242.05"
+              x2="2186.59"
+              y2="1227.31"
+            />
+            <path
+              id="cl-sm_pipe31"
+              class="cls-25"
+              d="m2192.27,1242.05v-14.73"
+            />
+          </g>
+          <g id="cl-sm_pipe2">
+            <ellipse
+              id="cl-sm_pipe25"
+              class="cls-25"
+              cx="2121.05"
+              cy="1281.05"
+              rx="2.84"
+              ry="2.08"
+            />
+            <ellipse
+              id="cl-sm_pipe24"
+              class="cls-25"
+              cx="2121.05"
+              cy="1266.43"
+              rx="2.84"
+              ry="2.08"
+            />
+            <path
+              id="cl-sm_pipe23"
+              class="cls-25"
+              d="m2123.89,1266.76c0,1.15-1.27,2.08-2.84,2.08s-2.84-.93-2.84-2.08"
+            />
+            <line
+              id="cl-sm_pipe22"
+              class="cls-25"
+              x1="2118.2"
+              y1="1281.05"
+              x2="2118.2"
+              y2="1266.31"
+            />
+            <path
+              id="cl-sm_pipe21"
+              class="cls-25"
+              d="m2123.89,1281.05v-14.73"
+            />
+          </g>
+          <g id="cl-sm_pipe1">
+            <ellipse
+              id="cl-sm_pipe15"
+              class="cls-25"
+              cx="2109.88"
+              cy="1291.27"
+              rx="2.84"
+              ry="2.08"
+            />
+            <ellipse
+              id="cl-sm_pipe14"
+              class="cls-25"
+              cx="2109.88"
+              cy="1276.65"
+              rx="2.84"
+              ry="2.08"
+            />
+            <path
+              id="cl-sm_pipe13"
+              class="cls-25"
+              d="m2112.72,1276.99c0,1.15-1.27,2.08-2.84,2.08s-2.84-.93-2.84-2.08"
+            />
+            <line
+              id="cl-sm_pipe12"
+              class="cls-25"
+              x1="2107.04"
+              y1="1291.27"
+              x2="2107.04"
+              y2="1276.54"
+            />
+            <path
+              id="cl-sm_pipe11"
+              class="cls-25"
+              d="m2112.72,1291.27v-14.73"
+            />
+          </g>
+          <g id="cl-injection-box">
+            <polygon
+              id="cl-injection-box5"
+              class="cls-37"
+              points="2249.19 1300.55 2264.49 1291.46 2274.4 1297.28 2259.39 1306.2 2249.19 1300.55"
+            />
+            <polygon
+              id="cl-injection-box4"
+              class="cls-25"
+              points="2249.13 1300.56 2249.13 1322.63 2258.96 1328.68 2259.33 1306.2 2249.13 1300.56"
+            />
+            <polyline
+              id="cl-injection-box3"
+              class="cls-20"
+              points="2265.58 1314.32 2264.47 1313.64 2248.57 1322.84"
+            />
+            <line
+              id="cl-injection-box2"
+              class="cls-20"
+              x1="2264.55"
+              y1="1313.64"
+              x2="2264.55"
+              y2="1291.99"
+            />
+            <polyline
+              id="cl-injection-box1"
+              class="cls-25"
+              points="2274.55 1315.83 2274.55 1297.22 2259.33 1306.2 2258.96 1328.68 2273.59 1319.59"
+            />
+          </g>
+          <polyline
+            class="cls-23"
+            points="1980.6 1266.63 2090.91 1329.14 2177.93 1278.88"
+          />
+          <line
+            class="cls-23"
+            x1="2051.03"
+            y1="1223.93"
+            x2="1980.6"
+            y2="1266.63"
+          />
+          <polyline
+            class="cls-23"
+            points="2135.8 1172.56 2151.12 1163.98 2263.11 1227.25 2193.86 1268.62"
+          />
+          <line
+            class="cls-23"
+            x1="2189.44"
+            y1="1271.68"
+            x2="2183.77"
+            y2="1275.18"
+          />
+          <g id="christmas_tree" data-name="christmas tree">
+            <ellipse
+              class="cls-4"
+              cx="2307.76"
+              cy="1298.6"
+              rx="9.03"
+              ry="7.01"
+              transform="translate(-267.32 681.27) rotate(-15.89)"
+            />
+            <g id="cl-sm_pipe1-2" data-name="cl-sm_pipe1">
+              <ellipse
+                id="cl-sm_pipe15-2"
+                data-name="cl-sm_pipe15"
+                class="cls-25"
+                cx="2307.43"
+                cy="1294.03"
+                rx="2.84"
+                ry="2.08"
+              />
+              <ellipse
+                id="cl-sm_pipe14-2"
+                data-name="cl-sm_pipe14"
+                class="cls-25"
+                cx="2307.43"
+                cy="1282.51"
+                rx="2.84"
+                ry="2.08"
+              />
+              <path
+                id="cl-sm_pipe13-2"
+                data-name="cl-sm_pipe13"
+                class="cls-25"
+                d="m2310.28,1282.84c0,1.15-1.27,2.08-2.84,2.08s-2.84-.93-2.84-2.08"
+              />
+              <line
+                id="cl-sm_pipe12-2"
+                data-name="cl-sm_pipe12"
+                class="cls-25"
+                x1="2304.59"
+                y1="1294.03"
+                x2="2304.59"
+                y2="1282.39"
+              />
+              <path
+                id="cl-sm_pipe11-2"
+                data-name="cl-sm_pipe11"
+                class="cls-25"
+                d="m2310.28,1294.03v-11.64"
+              />
+            </g>
+            <g id="cl-sm_pipe1-3" data-name="cl-sm_pipe1">
+              <ellipse
+                id="cl-sm_pipe14-3"
+                data-name="cl-sm_pipe14"
+                class="cls-25"
+                cx="2307.64"
+                cy="1313.03"
+                rx="2.84"
+                ry="2.08"
+              />
+              <path
+                id="cl-sm_pipe13-3"
+                data-name="cl-sm_pipe13"
+                class="cls-25"
+                d="m2310.48,1313.37c0,1.15-1.27,2.08-2.84,2.08s-2.84-.93-2.84-2.08"
+              />
+            </g>
+            <path
+              class="cls-25"
+              d="m2304.58,1305.91v6.08s.1,2.38,1.62,3.09,4.57-.23,4.57-2.88v-6.85"
+            />
+            <line
+              class="cls-16"
+              x1="2315.82"
+              y1="1293.72"
+              x2="2322.91"
+              y2="1289.36"
+            />
+            <line
+              class="cls-16"
+              x1="2291.73"
+              y1="1307.31"
+              x2="2299.57"
+              y2="1302.84"
+            />
+            <path
+              id="cl-sm_pipe35-2"
+              data-name="cl-sm_pipe35"
+              class="cls-11"
+              d="m2307.61,1343.96c-2.77,0-5.02-1.65-5.02-3.69s2.25-3.69,5.02-3.69,5.02,1.65,5.02,3.69-2.25,3.69-5.02,3.69"
+            />
+            <ellipse
+              id="cl-sm_pipe34-2"
+              data-name="cl-sm_pipe34"
+              class="cls-11"
+              cx="2307.61"
+              cy="1314.45"
+              rx="5.02"
+              ry="3.69"
+            />
+            <path
+              id="cl-sm_pipe33-2"
+              data-name="cl-sm_pipe33"
+              class="cls-11"
+              d="m2312.63,1315.03c0,2.04-2.25,3.69-5.02,3.69s-5.02-1.65-5.02-3.69"
+            />
+            <path
+              id="cl-sm_pipe31-2"
+              data-name="cl-sm_pipe31"
+              class="cls-11"
+              d="m2312.63,1340.28v-26.04"
+            />
+            <line
+              class="cls-10"
+              x1="2323.4"
+              y1="1276.62"
+              x2="2323.4"
+              y2="1295.42"
+            />
+            <line
+              class="cls-10"
+              x1="2307.36"
+              y1="1263.34"
+              x2="2307.36"
+              y2="1282.13"
+            />
+            <line
+              class="cls-10"
+              x1="2291.32"
+              y1="1295.23"
+              x2="2291.32"
+              y2="1314.02"
+            />
+            <line
+              id="cl-sm_pipe32-2"
+              data-name="cl-sm_pipe32"
+              class="cls-11"
+              x1="2302.59"
+              y1="1340.28"
+              x2="2302.59"
+              y2="1314.24"
+            />
+          </g>
+          <g id="monitor_3" data-name="monitor 3">
+            <g id="cl-sm_pipe1-4" data-name="cl-sm_pipe1">
+              <ellipse
+                id="cl-sm_pipe15-3"
+                data-name="cl-sm_pipe15"
+                class="cls-10"
+                cx="2364.63"
+                cy="1296.63"
+                rx="3.56"
+                ry="2.61"
+              />
+              <ellipse
+                id="cl-sm_pipe14-4"
+                data-name="cl-sm_pipe14"
+                class="cls-10"
+                cx="2364.63"
+                cy="1283.96"
+                rx="3.56"
+                ry="2.61"
+              />
+              <path
+                id="cl-sm_pipe13-4"
+                data-name="cl-sm_pipe13"
+                class="cls-10"
+                d="m2368.2,1284.37c0,1.44-1.59,2.61-3.56,2.61s-3.56-1.17-3.56-2.61"
+              />
+              <line
+                id="cl-sm_pipe12-3"
+                data-name="cl-sm_pipe12"
+                class="cls-10"
+                x1="2361.07"
+                y1="1296.63"
+                x2="2361.07"
+                y2="1283.81"
+              />
+              <path
+                id="cl-sm_pipe11-3"
+                data-name="cl-sm_pipe11"
+                class="cls-10"
+                d="m2368.2,1296.63v-12.82"
+              />
+            </g>
+            <path
+              id="cl-sm_pipe15-4"
+              data-name="cl-sm_pipe15"
+              class="cls-10"
+              d="m2371.18,1302.73c0,2.64-2.92,4.78-6.52,4.78s-6.52-2.14-6.52-4.78"
+            />
+            <path
+              id="cl-sm_pipe14-5"
+              data-name="cl-sm_pipe14"
+              class="cls-10"
+              d="m2368.45,1293.19c1.62.87,2.66,2.27,2.66,3.86,0,2.64-2.92,4.78-6.52,4.78s-6.52-2.14-6.52-4.78c0-1.71,1.22-3.21,3.06-4.06"
+            />
+            <line
+              id="cl-sm_pipe12-4"
+              data-name="cl-sm_pipe12"
+              class="cls-10"
+              x1="2358.14"
+              y1="1302.73"
+              x2="2358.14"
+              y2="1297.04"
+            />
+            <path
+              id="cl-sm_pipe11-4"
+              data-name="cl-sm_pipe11"
+              class="cls-10"
+              d="m2371.18,1302.73c0-6.58,0-5.68,0-5.68"
+            />
+            <line
+              class="cls-10"
+              x1="2368.74"
+              y1="1288.26"
+              x2="2373.7"
+              y2="1285.4"
+            />
+          </g>
+          <g id="monitor_4" data-name="monitor 4">
+            <g id="cl-sm_pipe1-5" data-name="cl-sm_pipe1">
+              <ellipse
+                id="cl-sm_pipe15-5"
+                data-name="cl-sm_pipe15"
+                class="cls-10"
+                cx="2419.48"
+                cy="1266.63"
+                rx="3.56"
+                ry="2.61"
+              />
+              <ellipse
+                id="cl-sm_pipe14-6"
+                data-name="cl-sm_pipe14"
+                class="cls-10"
+                cx="2419.48"
+                cy="1253.97"
+                rx="3.56"
+                ry="2.61"
+              />
+              <path
+                id="cl-sm_pipe13-5"
+                data-name="cl-sm_pipe13"
+                class="cls-10"
+                d="m2423.05,1254.38c0,1.44-1.59,2.61-3.56,2.61s-3.56-1.17-3.56-2.61"
+              />
+              <line
+                id="cl-sm_pipe12-5"
+                data-name="cl-sm_pipe12"
+                class="cls-10"
+                x1="2415.92"
+                y1="1266.63"
+                x2="2415.92"
+                y2="1253.82"
+              />
+              <path
+                id="cl-sm_pipe11-5"
+                data-name="cl-sm_pipe11"
+                class="cls-10"
+                d="m2423.05,1266.63v-12.82"
+              />
+            </g>
+            <path
+              id="cl-sm_pipe15-6"
+              data-name="cl-sm_pipe15"
+              class="cls-10"
+              d="m2426.03,1272.73c0,2.64-2.92,4.78-6.52,4.78s-6.52-2.14-6.52-4.78"
+            />
+            <path
+              id="cl-sm_pipe14-7"
+              data-name="cl-sm_pipe14"
+              class="cls-10"
+              d="m2423.3,1263.2c1.62.87,2.66,2.27,2.66,3.86,0,2.64-2.92,4.78-6.52,4.78s-6.52-2.14-6.52-4.78c0-1.71,1.22-3.21,3.06-4.06"
+            />
+            <line
+              id="cl-sm_pipe12-6"
+              data-name="cl-sm_pipe12"
+              class="cls-10"
+              x1="2412.99"
+              y1="1272.73"
+              x2="2412.99"
+              y2="1267.05"
+            />
+            <path
+              id="cl-sm_pipe11-6"
+              data-name="cl-sm_pipe11"
+              class="cls-10"
+              d="m2426.03,1272.73c0-6.58,0-5.68,0-5.68"
+            />
+            <line
+              class="cls-10"
+              x1="2423.59"
+              y1="1258.27"
+              x2="2428.55"
+              y2="1255.41"
+            />
+          </g>
+          <g id="monitor_1" data-name="monitor 1">
+            <g id="cl-sm_pipe1-6" data-name="cl-sm_pipe1">
+              <ellipse
+                id="cl-sm_pipe15-7"
+                data-name="cl-sm_pipe15"
+                class="cls-10"
+                cx="2187.99"
+                cy="1401.83"
+                rx="3.56"
+                ry="2.61"
+              />
+              <ellipse
+                id="cl-sm_pipe14-8"
+                data-name="cl-sm_pipe14"
+                class="cls-10"
+                cx="2187.99"
+                cy="1389.16"
+                rx="3.56"
+                ry="2.61"
+              />
+              <path
+                id="cl-sm_pipe13-6"
+                data-name="cl-sm_pipe13"
+                class="cls-10"
+                d="m2191.55,1389.57c0,1.44-1.59,2.61-3.56,2.61s-3.56-1.17-3.56-2.61"
+              />
+              <line
+                id="cl-sm_pipe12-7"
+                data-name="cl-sm_pipe12"
+                class="cls-10"
+                x1="2184.42"
+                y1="1401.83"
+                x2="2184.42"
+                y2="1389.01"
+              />
+              <path
+                id="cl-sm_pipe11-7"
+                data-name="cl-sm_pipe11"
+                class="cls-10"
+                d="m2191.55,1401.83v-12.82"
+              />
+            </g>
+            <path
+              id="cl-sm_pipe15-8"
+              data-name="cl-sm_pipe15"
+              class="cls-10"
+              d="m2194.53,1407.93c0,2.64-2.92,4.78-6.52,4.78s-6.52-2.14-6.52-4.78"
+            />
+            <path
+              id="cl-sm_pipe14-9"
+              data-name="cl-sm_pipe14"
+              class="cls-10"
+              d="m2191.8,1398.39c1.62.87,2.66,2.27,2.66,3.86,0,2.64-2.92,4.78-6.52,4.78s-6.52-2.14-6.52-4.78c0-1.71,1.22-3.21,3.06-4.06"
+            />
+            <line
+              id="cl-sm_pipe12-8"
+              data-name="cl-sm_pipe12"
+              class="cls-10"
+              x1="2181.49"
+              y1="1407.93"
+              x2="2181.49"
+              y2="1402.24"
+            />
+            <path
+              id="cl-sm_pipe11-8"
+              data-name="cl-sm_pipe11"
+              class="cls-10"
+              d="m2194.53,1407.93c0-6.58,0-5.68,0-5.68"
+            />
+            <line
+              class="cls-10"
+              x1="2192.09"
+              y1="1393.46"
+              x2="2197.05"
+              y2="1390.6"
+            />
+          </g>
+          <g id="monitor_2" data-name="monitor 2">
+            <g id="cl-sm_pipe1-7" data-name="cl-sm_pipe1">
+              <ellipse
+                id="cl-sm_pipe15-9"
+                data-name="cl-sm_pipe15"
+                class="cls-10"
+                cx="2243.87"
+                cy="1367.71"
+                rx="3.56"
+                ry="2.61"
+              />
+              <ellipse
+                id="cl-sm_pipe14-10"
+                data-name="cl-sm_pipe14"
+                class="cls-10"
+                cx="2243.87"
+                cy="1355.04"
+                rx="3.56"
+                ry="2.61"
+              />
+              <path
+                id="cl-sm_pipe13-7"
+                data-name="cl-sm_pipe13"
+                class="cls-10"
+                d="m2247.43,1355.46c0,1.44-1.59,2.61-3.56,2.61s-3.56-1.17-3.56-2.61"
+              />
+              <line
+                id="cl-sm_pipe12-9"
+                data-name="cl-sm_pipe12"
+                class="cls-10"
+                x1="2240.3"
+                y1="1367.71"
+                x2="2240.3"
+                y2="1354.9"
+              />
+              <path
+                id="cl-sm_pipe11-9"
+                data-name="cl-sm_pipe11"
+                class="cls-10"
+                d="m2247.43,1367.71v-12.82"
+              />
+            </g>
+            <path
+              id="cl-sm_pipe15-10"
+              data-name="cl-sm_pipe15"
+              class="cls-10"
+              d="m2250.41,1373.81c0,2.64-2.92,4.78-6.52,4.78s-6.52-2.14-6.52-4.78"
+            />
+            <path
+              id="cl-sm_pipe14-11"
+              data-name="cl-sm_pipe14"
+              class="cls-10"
+              d="m2247.68,1364.28c1.62.87,2.66,2.27,2.66,3.86,0,2.64-2.92,4.78-6.52,4.78s-6.52-2.14-6.52-4.78c0-1.71,1.22-3.21,3.06-4.06"
+            />
+            <line
+              id="cl-sm_pipe12-10"
+              data-name="cl-sm_pipe12"
+              class="cls-10"
+              x1="2237.37"
+              y1="1373.81"
+              x2="2237.37"
+              y2="1368.13"
+            />
+            <path
+              id="cl-sm_pipe11-10"
+              data-name="cl-sm_pipe11"
+              class="cls-10"
+              d="m2250.41,1373.81c0-6.58,0-5.68,0-5.68"
+            />
+            <line
+              class="cls-10"
+              x1="2247.97"
+              y1="1359.35"
+              x2="2252.93"
+              y2="1356.49"
             />
           </g>
         </g>
