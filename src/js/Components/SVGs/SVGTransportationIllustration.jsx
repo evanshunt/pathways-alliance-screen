@@ -2,7 +2,6 @@ import { forwardRef } from "react";
 export default forwardRef((props, ref) => {
   return (
     <svg
-      width="75%"
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
