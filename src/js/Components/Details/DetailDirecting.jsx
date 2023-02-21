@@ -1,4 +1,5 @@
 import AnimSlideUpFadeIn from "../Animations/AnimSlideUpFadeIn";
+import SVGWorldMapIllustration from "../SVGs/SVGWorldMapIllustration";
 
 export default ({ t }) => {
   return (
@@ -18,10 +19,11 @@ export default ({ t }) => {
         </AnimSlideUpFadeIn>
       </div>
       <div className="illustration">
-        <img
-          src="/images/details/detail-directing-illustration.svg"
-          width="100%"
-        />
+        <AnimSlideUpFadeIn delay={0.4}>
+          <div>
+            <SVGWorldMapIllustration />
+          </div>
+        </AnimSlideUpFadeIn>
       </div>
     </div>
   );

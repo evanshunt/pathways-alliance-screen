@@ -5,7 +5,7 @@ export default ({ t }) => {
         <h2>{t("details.innovation.heading")}</h2>
       </div>
       <div className="buckets">
-        <div className="bucket">
+        <div className="bucket hydrogen">
           <div className="illustration">
             <img
               src="/images/details/detail-innovation-hydrogen.png"
@@ -17,7 +17,7 @@ export default ({ t }) => {
             <p>{t("details.innovation.bucket1Text")}</p>
           </div>
         </div>
-        <div className="bucket">
+        <div className="bucket electrification">
           <div className="illustration">
             <img
               src="/images/details/detail-innovation-electrification.png"
@@ -29,7 +29,7 @@ export default ({ t }) => {
             <p>{t("details.innovation.bucket2Text")}</p>
           </div>
         </div>
-        <div className="bucket">
+        <div className="bucket capture">
           <div className="illustration">
             <img
               src="/images/details/detail-innovation-capture.png"
@@ -41,7 +41,7 @@ export default ({ t }) => {
             <p>{t("details.innovation.bucket3Text")}</p>
           </div>
         </div>
-        <div className="bucket">
+        <div className="bucket reactors">
           <div className="illustration">
             <img
               src="/images/details/detail-innovation-reactors.png"

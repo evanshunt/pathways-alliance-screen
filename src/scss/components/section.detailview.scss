@@ -5,7 +5,6 @@ section.detailview {
   opacity: 0;
   transition: 0.6s all 0.3s;
   font-size: 1vw;
-  padding: 8rem;
 
   &.active {
     opacity: 1;
