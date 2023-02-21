@@ -21,7 +21,7 @@ export default () => {
   return (
     <Hud>
       <PerspectiveCamera makeDefault position={[0, 0, 1]} />
-      <Html fullscreen zIndexRange={[300, 100]}>
+      <Html fullscreen zIndexRange={[100, 0]}>
         <button
           id="swipe"
           className="swipe"
