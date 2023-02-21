@@ -1,4 +1,3 @@
-import { useFrame } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 

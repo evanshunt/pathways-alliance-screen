@@ -1,0 +1,19 @@
+div.wire {
+  width: 30em;
+  position: absolute;
+  bottom: -0.25em;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.storage {
+    width: 29em;
+  }
+
+  img {
+    width: 100%;
+  }
+}

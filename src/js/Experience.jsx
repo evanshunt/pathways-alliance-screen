@@ -14,6 +14,7 @@ import Waves from "./Components/Waves";
 import Screensaver from "./Components/Screensaver";
 import Bubbles from "./Components/Bubbles";
 import Headline from "./Components/Headline";
+import WireDrawing from "./Components/WireDrawing";
 import Payoff from "./Components/Payoff";
 import Details from "./Components/Details";
 
@@ -91,6 +92,14 @@ export default ({ debug }) => {
       {mode === MODE.Pathway && (
         <Payoff position={new THREE.Vector3(sceneLength - 20, 0, -2)} />
       )}
+      <WireDrawing
+        position={new THREE.Vector3(38, 0, -3.5)}
+        wireType="capture"
+      />
+      <WireDrawing
+        position={new THREE.Vector3(79, 0, -3.5)}
+        wireType="storage"
+      />
       <Bubbles
         distance={15}
         setSceneLength={setSceneLength}
