@@ -13,13 +13,9 @@ button#swipe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 14vw;
+  min-width: 12vw;
 
   &:disabled {
     opacity: 0;
-
-    span:first-child {
-      width: 0;
-    }
   }
 }
