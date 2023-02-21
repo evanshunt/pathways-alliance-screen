@@ -1,5 +1,5 @@
 import { useState, useLayoutEffect, useRef } from "react";
-import { useThree, useFrame } from "@react-three/fiber";
+import { useThree } from "@react-three/fiber";
 import { Perf } from "r3f-perf";
 import * as THREE from "three";
 
@@ -33,7 +33,6 @@ export default ({ debug }) => {
   const [moveToIndex, setMoveToIndex] = useState(-1);
   const [maxSceneLength, setMaxSceneLength] = useState(0);
   const [sceneLength, setSceneLength] = useState(0);
-  const [hasSwiped, setHasSwiped] = useState(false);
 
   const globalContextValue = {
     MODE,
@@ -57,14 +56,6 @@ export default ({ debug }) => {
     }
   }, [mode]);
 
-  useFrame((state, delta) => {
-    if (state.camera.position.x >= 0.1 && !hasSwiped) {
-      setHasSwiped(true);
-    } else if (state.camera.position.x < 0.1 && hasSwiped) {
-      setHasSwiped(false);
-    }
-  });
-
   return (
     <GlobalContext.Provider value={globalContextValue}>
       {debug && <Perf position="top-left" />}
@@ -80,11 +71,7 @@ export default ({ debug }) => {
           setMode(MODE.Pathway);
         }}
       />
-      <SwipeControl
-        isDisabled={
-          mode !== MODE.Pathway || (mode === MODE.Pathway && hasSwiped)
-        }
-      />
+      <SwipeControl />
       <Logo />
       <Background sceneLength={sceneLength} />
       <Waves maxSceneLength={maxSceneLength} />
