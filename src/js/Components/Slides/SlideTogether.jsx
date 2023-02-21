@@ -22,7 +22,7 @@ export default ({ t, isActive }) => {
       timelineRef.current = gsap.timeline().to(circleRef.current, {
         drawSVG: "0% 100%",
         delay: 0.8 + 0.5,
-        duration: 1,
+        duration: 2.5,
       });
     }, circleRef);
 
@@ -71,6 +71,7 @@ export default ({ t, isActive }) => {
                   number={95}
                   isActive={isActive}
                   toFixed={0}
+                  duration={2.5}
                   delay={0.5}
                 />
                 %
@@ -84,53 +85,53 @@ export default ({ t, isActive }) => {
       </div>
       <div className="stats">
         <div className="bucket">
-          <AnimSlideUpFadeIn isActive={isActive} delay={0.5}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={4}>
             <h2>
               $
               <AnimNumberAccumulator
                 number={16.5}
                 isActive={isActive}
                 toFixed={1}
-                delay={0.7}
+                delay={4.2}
               />{" "}
               {t("slides.together.bucket1Heading")}
             </h2>
           </AnimSlideUpFadeIn>
-          <AnimSlideUpFadeIn isActive={isActive} delay={0.7}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={4.4}>
             <p>{t("slides.together.bucket1Text")}</p>
           </AnimSlideUpFadeIn>
         </div>
 
         <div className="bucket">
-          <AnimSlideUpFadeIn isActive={isActive} delay={0.9}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={6}>
             <h2>
               $
               <AnimNumberAccumulator
                 number={7.6}
                 isActive={isActive}
                 toFixed={1}
-                delay={1.1}
+                delay={6.2}
               />{" "}
               {t("slides.together.bucket2Heading")}
             </h2>
           </AnimSlideUpFadeIn>
-          <AnimSlideUpFadeIn isActive={isActive} delay={1.1}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={6.4}>
             <p>{t("slides.together.bucket2Text")}</p>
           </AnimSlideUpFadeIn>
         </div>
         <div className="bucket reverse">
-          <AnimSlideUpFadeIn isActive={isActive} delay={1.3}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={8}>
             <h2>
               <AnimNumberAccumulator
                 number={35000}
                 isActive={isActive}
                 toFixed={0}
-                delay={1.5}
+                delay={8.2}
               />{" "}
               {t("slides.together.bucket3Heading")}
             </h2>
           </AnimSlideUpFadeIn>
-          <AnimSlideUpFadeIn isActive={isActive} delay={1.5}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={8.4}>
             <p>{t("slides.together.bucket3Text")}</p>
           </AnimSlideUpFadeIn>
         </div>

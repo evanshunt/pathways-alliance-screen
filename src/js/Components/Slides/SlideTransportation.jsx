@@ -115,41 +115,41 @@ export default ({ t, isActive }) => {
           </AnimSlideUpFadeIn>
         </div>
         <div className="bucket bucket2">
-          <AnimSlideUpFadeIn isActive={isActive} delay={1.4}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={2}>
             <h2>
               <AnimNumberAccumulator
                 number={10}
                 isActive={isActive}
                 toFixed={0}
-                delay={1.6}
+                delay={2.2}
               />
               {" - "}
               <AnimNumberAccumulator
                 number={12}
                 isActive={isActive}
                 toFixed={0}
-                delay={1.8}
+                delay={2.4}
               />{" "}
               {t("slides.transportation.headline2")}
             </h2>
           </AnimSlideUpFadeIn>
-          <AnimSlideUpFadeIn isActive={isActive} delay={2}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={2.6}>
             <p>{t("slides.transportation.description2")}</p>
           </AnimSlideUpFadeIn>
         </div>
         <div className="bucket bucket3">
-          <AnimSlideUpFadeIn isActive={isActive} delay={2.2}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={1.4}>
             <h2>
               <AnimNumberAccumulator
                 number={14}
                 isActive={isActive}
                 toFixed={0}
-                delay={2.4}
+                delay={1.6}
               />
               + {t("slides.transportation.headline3")}
             </h2>
           </AnimSlideUpFadeIn>
-          <AnimSlideUpFadeIn isActive={isActive} delay={2.6}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={1.8}>
             <p>{t("slides.transportation.description3")}</p>
           </AnimSlideUpFadeIn>
         </div>
