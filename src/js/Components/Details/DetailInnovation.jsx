@@ -44,25 +44,13 @@ export default ({ t }) => {
         <div className="bucket">
           <div className="illustration">
             <img
-              src="/images/details/detail-innovation-geothermal.png"
+              src="/images/details/detail-innovation-reactors.png"
               width="100%"
             />
           </div>
           <div className="text">
             <h3>{t("details.innovation.bucket4Heading")}</h3>
             <p>{t("details.innovation.bucket4Text")}</p>
-          </div>
-        </div>
-        <div className="bucket">
-          <div className="illustration">
-            <img
-              src="/images/details/detail-innovation-reactors.png"
-              width="100%"
-            />
-          </div>
-          <div className="text">
-            <h3>{t("details.innovation.bucket5Heading")}</h3>
-            <p>{t("details.innovation.bucket5Text")}</p>
           </div>
         </div>
       </div>
