@@ -5,7 +5,8 @@
   },
   "controls": {
     "back": "Back",
-    "tap": "Tap anywhere to start"
+    "tap": "Tap anywhere to start",
+    "swipe": "Swipe to explore"
   },
   "bubbles": {
     "industry": {

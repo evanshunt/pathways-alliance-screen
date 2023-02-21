@@ -5,7 +5,8 @@
   },
   "controls": {
     "back": "Dos",
-    "tap": "Appuyez n'importe où pour commencer"
+    "tap": "Appuyez n'importe où pour commencer",
+    "swipe": "Balayez pour explorer"
   },
   "bubbles": {
     "industry": {

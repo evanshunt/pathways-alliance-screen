@@ -6,6 +6,7 @@ import * as THREE from "three";
 import { GlobalContext } from "./Context/GlobalContext";
 import DragControl from "./Controls/DragControl";
 import BackControl from "./Controls/BackControl";
+import SwipeControl from "./Controls/SwipeControl";
 import Camera from "./Components/Camera";
 import Logo from "./Components/Logo";
 import Background from "./Components/Background";
@@ -70,6 +71,7 @@ export default ({ debug }) => {
           setMode(MODE.Pathway);
         }}
       />
+      <SwipeControl />
       <Logo />
       <Background sceneLength={sceneLength} />
       <Waves maxSceneLength={maxSceneLength} />
