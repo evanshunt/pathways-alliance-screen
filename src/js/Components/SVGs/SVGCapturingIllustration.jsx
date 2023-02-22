@@ -113,17 +113,17 @@ export default forwardRef((props, ref) => {
           y2="552.9"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#00eefa" />
-          <stop offset=".33" stop-color="#02eefa" stop-opacity=".99" />
-          <stop offset=".46" stop-color="#09eefa" stop-opacity=".96" />
-          <stop offset=".57" stop-color="#15effa" stop-opacity=".91" />
-          <stop offset=".65" stop-color="#27f0fa" stop-opacity=".84" />
-          <stop offset=".72" stop-color="#3ff2fb" stop-opacity=".75" />
-          <stop offset=".79" stop-color="#5cf4fb" stop-opacity=".64" />
-          <stop offset=".85" stop-color="#7ef6fc" stop-opacity=".5" />
-          <stop offset=".9" stop-color="#a6f9fd" stop-opacity=".35" />
-          <stop offset=".95" stop-color="#d2fcfe" stop-opacity=".17" />
-          <stop offset="1" stop-color="#fff" stop-opacity="0" />
+          <stop offset="0" stopColor="#00eefa" />
+          <stop offset=".33" stopColor="#02eefa" stopOpacity=".99" />
+          <stop offset=".46" stopColor="#09eefa" stopOpacity=".96" />
+          <stop offset=".57" stopColor="#15effa" stopOpacity=".91" />
+          <stop offset=".65" stopColor="#27f0fa" stopOpacity=".84" />
+          <stop offset=".72" stopColor="#3ff2fb" stopOpacity=".75" />
+          <stop offset=".79" stopColor="#5cf4fb" stopOpacity=".64" />
+          <stop offset=".85" stopColor="#7ef6fc" stopOpacity=".5" />
+          <stop offset=".9" stopColor="#a6f9fd" stopOpacity=".35" />
+          <stop offset=".95" stopColor="#d2fcfe" stopOpacity=".17" />
+          <stop offset="1" stopColor="#fff" stopOpacity="0" />
         </linearGradient>
       </defs>
       <g
