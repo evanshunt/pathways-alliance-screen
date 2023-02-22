@@ -27,25 +27,18 @@ export default ({ onPointerDown }) => {
         >
           <span>
             <svg
-              width="100"
-              height="25"
-              viewBox="0 0 100 46"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              width="46"
+              height="50"
+              fill="none"
+              viewBox="0 0 46 50"
+              preserveAspectRatio="xMinYMin meet"
             >
               <path
-                d="M22.8333 43.6667L2 22.8333L22.8333 2"
-                stroke="white"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M2 22.834H97.8333"
-                stroke="white"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                fill="#07EDF8"
+                fillRule="evenodd"
+                d="M42.606 23.894a1.5 1.5 0 1 0 2.121-2.121L24.39 1.435a1.5 1.5 0 0 0-1.474-.933 1.506 1.506 0 0 0-1.143.437L.939 21.773a1.5 1.5 0 1 0 2.122 2.121L21.5 5.455V48a1.5 1.5 0 1 0 3 0V5.788l18.106 18.106Z"
+                clipRule="evenodd"
               />
             </svg>
           </span>
