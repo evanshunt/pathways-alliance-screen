@@ -6,8 +6,8 @@ div.bubble {
   & > button {
     display: block;
     position: absolute;
-    width: 16vw;
-    height: 16vw;
+    width: 18vw;
+    height: 18vw;
     transition: 0.3s all;
     transform: translate(-50%, -50%);
     background: none;
@@ -167,7 +167,7 @@ div.bubble {
 
   &.active {
     & > button {
-      transform: translate(-50%, -50%) scale(2);
+      transform: translate(-50%, -50%) scale(1.6);
       opacity: 1;
 
       &::before {
