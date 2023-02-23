@@ -9,9 +9,10 @@ export default ({ t }) => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const mainTimeline = gsap.timeline();
-      const mapTimeline = gsap.timeline();
-      const labelTimeline = gsap.timeline();
+      const delayOffset = 1.5;
+      const mainTimeline = gsap.timeline({ delay: delayOffset });
+      const mapTimeline = gsap.timeline({ delay: delayOffset });
+      const labelTimeline = gsap.timeline({ delay: delayOffset });
 
       const buildings = [
         "#Fort_Mac_facility",
@@ -48,7 +49,13 @@ export default ({ t }) => {
       });
 
       const pipes = [
-        { id: "#main_pipline", drawSVG: "100%", duration: 2 },
+        { id: "#main_pipline", drawSVG: "100%", duration: 4, delay: 1 },
+        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
+        { id: "#FILL_PIPE2 path", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe5-2", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe6", drawSVG: "100%" },
         { id: "#map-connectpipe1", drawSVG: "100%" },
         { id: "#map-connectpipe2", drawSVG: "-100%" },
         { id: "#map-connectpipe3", drawSVG: "-100%" },
@@ -66,12 +73,6 @@ export default ({ t }) => {
         { id: "#map-connectpipe15", drawSVG: "-100%" },
         { id: "#map-connectpipe16", drawSVG: "100%" },
         { id: "#map-connectpipe17", drawSVG: "-100%" },
-        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
-        { id: "#FILL_PIPE2 path", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe5-2", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe6", drawSVG: "100%" },
       ];
 
       pipes.map((pipe) => {
@@ -80,30 +81,31 @@ export default ({ t }) => {
           drawSVG: pipe.drawSVG,
           stagger: 0.05,
           duration: pipe.duration ? pipe.duration : 0.1,
+          delay: pipe.delay ? pipe.delay : 0,
         });
       });
 
       gsap.set("#map-alberta-connectinigline", { drawSVG: 0 });
       mapTimeline.to("#map-alberta-connectinigline", {
         drawSVG: "100%",
-        duration: 2,
-        delay: 2,
+        duration: 4,
+        delay: 3,
       });
 
       const labels = [
-        { id: ".titles .fort-mcmurray", delay: 0.5 },
-        { id: ".titles .in-situ", delay: 0.5 },
-        { id: ".titles .cold-lake", delay: 0.5 },
-        { id: ".steps .step-1", delay: 0.5 },
-        { id: ".steps .step-2", delay: 0.5 },
-        { id: ".steps .step-3", delay: 0.5 },
-        { id: ".steps .step-4", delay: 0.5 },
+        { id: ".titles .fort-mcmurray", delay: 0 },
+        { id: ".titles .in-situ", delay: 0 },
+        { id: ".titles .cold-lake", delay: 0 },
+        { id: ".steps .step-1", delay: 2.8 },
+        { id: ".steps .step-2", delay: 1 },
+        { id: ".steps .step-3", delay: 1 },
+        { id: ".steps .step-4", delay: 1 },
       ];
 
       labels.map((label) => {
         labelTimeline.from(label.id, {
           autoAlpha: 0,
-          y: "-=5",
+          y: "+=5",
           duration: 0.1,
           delay: label.delay,
         });
