@@ -49,7 +49,18 @@
     },
     "transport": {
       "heading": "Une ligne de transport pour la région",
-      "text": "Notre projet de captage et de stockage du carbone desservira simultanément plusieurs installations de sables bitumineux. Une ligne de transport relie chaque installation à un centre de stockage central. Cette ligne transporte le CO2 capturé sous forme liquide vers un endroit où il peut être stocké sous terre.\nLa ligne de transport fait plus de 400 km de long. Dans la première phase, il connectera 14 installations de sables bitumineux au centre de stockage, pour en desservir éventuellement plus de 20.\nLe réseau n'est pas réservé aux sables bitumineux. À l'avenir, cette ligne de transport pourra aider d'autres industries de la région à capter et à stocker le CO2."
+      "text": "Notre projet de captage et de stockage du carbone desservira simultanément plusieurs installations de sables bitumineux. Une ligne de transport relie chaque installation à un centre de stockage central. Cette ligne transporte le CO2 capturé sous forme liquide vers un endroit où il peut être stocké sous terre.\nLa ligne de transport fait plus de 400 km de long. Dans la première phase, il connectera 14 installations de sables bitumineux au centre de stockage, pour en desservir éventuellement plus de 20.\nLe réseau n'est pas réservé aux sables bitumineux. À l'avenir, cette ligne de transport pourra aider d'autres industries de la région à capter et à stocker le CO2.",
+      "labels": {
+        "fortMac": "FORT McMURRAY",
+        "inSitu": "IN-SITU SITES",
+        "coldLake": "COLD LAKE REGION"
+      },
+      "steps": {
+        "one": "Oil sands upgraders, mining and in-situ area",
+        "two": "400+ km CO₂ transportation line",
+        "three": "Oil sands in-situ recovery area",
+        "four": "Joint carbon storage hub"
+      }
     },
     "storage": {
       "heading": "Une voûte géologique",

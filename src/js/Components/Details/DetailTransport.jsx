@@ -133,22 +133,26 @@ export default ({ t }) => {
       <div className="illustration" ref={illustrationRef}>
         <div className="labels">
           <div className="titles">
-            <h3 className="fort-mcmurray">Fort McMurray Region</h3>
-            <h3 className="in-situ">In-situ Sites</h3>
-            <h3 className="cold-lake">Cold Lake Region</h3>
+            <h3 className="fort-mcmurray">
+              {t("details.transport.labels.fortMac")}
+            </h3>
+            <h3 className="in-situ">{t("details.transport.labels.inSitu")}</h3>
+            <h3 className="cold-lake">
+              {t("details.transport.labels.coldLake")}
+            </h3>
           </div>
           <div className="steps">
             <div className="step-1">
-              <span>1</span> Oil sands upgraders, mining and in-situ area
+              <span>1</span> {t("details.transport.steps.one")}
             </div>
             <div className="step-2">
-              <span>2</span> 400+ km CO₂ transportation line
+              <span>2</span> {t("details.transport.steps.two")}
             </div>
             <div className="step-3">
-              <span>3</span> Oil sands in-situ recovery area
+              <span>3</span> {t("details.transport.steps.three")}
             </div>
             <div className="step-4">
-              <span>4</span> Joint carbon storage hub
+              <span>4</span> {t("details.transport.steps.four")}
             </div>
           </div>
         </div>

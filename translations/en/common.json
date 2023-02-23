@@ -49,7 +49,18 @@
     },
     "transport": {
       "heading": "A transportation line for the region",
-      "text": "Our planned carbon capture and storage project will serve multiple oil sands facilities, all at once. A transportation line connects each facility to a central storage hub. This line carries captured CO₂ in liquid form to a location where it can be stored underground.\nIn the future, the proposed transportation line will be more than 400 km long. In Phase 1, it will connect 14 oil sands facilities to the storage hub, with plans to eventually serve more than 20.\nThe network isn’t just for the oil sands. In the future, this transportation line can help other industries in the region capture and store CO₂.\n*Visuals for illustrative purposes only. Map not to scale."
+      "text": "Our planned carbon capture and storage project will serve multiple oil sands facilities, all at once. A transportation line connects each facility to a central storage hub. This line carries captured CO₂ in liquid form to a location where it can be stored underground.\nIn the future, the proposed transportation line will be more than 400 km long. In Phase 1, it will connect 14 oil sands facilities to the storage hub, with plans to eventually serve more than 20.\nThe network isn’t just for the oil sands. In the future, this transportation line can help other industries in the region capture and store CO₂.\n*Visuals for illustrative purposes only. Map not to scale.",
+      "labels": {
+        "fortMac": "FORT McMURRAY",
+        "inSitu": "IN-SITU SITES",
+        "coldLake": "COLD LAKE REGION"
+      },
+      "steps": {
+        "one": "Oil sands upgraders, mining and in-situ area",
+        "two": "400+ km CO₂ transportation line",
+        "three": "Oil sands in-situ recovery area",
+        "four": "Joint carbon storage hub"
+      }
     },
     "storage": {
       "heading": "A geological vault",
