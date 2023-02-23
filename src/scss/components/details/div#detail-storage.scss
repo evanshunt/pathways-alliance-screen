@@ -3,15 +3,21 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding: 2vw;
 
   .text {
-    width: 35%;
+    width: 33%;
+    margin-left: 6vw;
+
+    .paragraph-wrapper {
+      padding-right: 5vw;
+    }
   }
 
   .illustration {
     display: flex;
     justify-content: center;
-    width: 65%;
+    width: 66%;
     height: 100%;
     padding-left: 4em;
 

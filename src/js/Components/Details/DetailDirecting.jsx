@@ -1,19 +1,29 @@
+import AnimSlideUpFadeIn from "../Animations/AnimSlideUpFadeIn";
+import SVGWorldMapIllustration from "../SVGs/SVGWorldMapIllustration";
+
 export default ({ t }) => {
   return (
     <div id="detail-directing">
       <div className="text">
-        <h2>{t("details.directing.heading")}</h2>
-        {t("details.directing.text")
-          .split("\n")
-          .map((paragraph, i) => (
-            <p key={`detail-directing-paragraph-${i}`}>{paragraph}</p>
-          ))}
+        <AnimSlideUpFadeIn>
+          <h2>{t("details.directing.heading")}</h2>
+        </AnimSlideUpFadeIn>
+        <AnimSlideUpFadeIn delay={0.2}>
+          <div>
+            {t("details.directing.text")
+              .split("\n")
+              .map((paragraph, i) => (
+                <p key={`detail-directing-paragraph-${i}`}>{paragraph}</p>
+              ))}
+          </div>
+        </AnimSlideUpFadeIn>
       </div>
       <div className="illustration">
-        <img
-          src="/images/details/detail-directing-illustration.svg"
-          width="100%"
-        />
+        <AnimSlideUpFadeIn delay={0.4}>
+          <div>
+            <SVGWorldMapIllustration />
+          </div>
+        </AnimSlideUpFadeIn>
       </div>
     </div>
   );

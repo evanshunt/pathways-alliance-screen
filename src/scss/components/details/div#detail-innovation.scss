@@ -2,14 +2,20 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 8vw;
 
   .heading {
-    width: 35%;
-    margin-bottom: 4em;
+    width: 35vw;
+    h2 {
+      font-size: 2.8vw;
+      margin-bottom: 0;
+    }
   }
 
   .buckets {
     display: flex;
+    align-items: baseline;
+    margin-top: 2vw;
 
     .bucket {
       padding-right: 3em;
@@ -20,17 +26,22 @@
 
       .illustration {
         display: flex;
+        justify-content: center;
         align-items: flex-end;
-        height: 12em;
-        padding: 4em 4em 2em;
+        padding: 2vw 2vw 1vw;
 
         img {
+          width: 6vw;
           object-fit: contain;
         }
       }
+    }
 
-      .text {
-        font-size: 1.2vw;
+    .reactors {
+      .illustration {
+        img {
+          width: 2.5vw;
+        }
       }
     }
   }

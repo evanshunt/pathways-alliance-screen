@@ -49,6 +49,12 @@ export default ({ t, isActive }) => {
 
       const pipes = [
         { id: "#main_pipline", drawSVG: "100%", duration: 2 },
+        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
+        { id: "#FILL_PIPE2 path", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe5-2", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe6", drawSVG: "100%" },
         { id: "#map-connectpipe1", drawSVG: "100%" },
         { id: "#map-connectpipe2", drawSVG: "-100%" },
         { id: "#map-connectpipe3", drawSVG: "-100%" },
@@ -66,12 +72,6 @@ export default ({ t, isActive }) => {
         { id: "#map-connectpipe15", drawSVG: "-100%" },
         { id: "#map-connectpipe16", drawSVG: "100%" },
         { id: "#map-connectpipe17", drawSVG: "-100%" },
-        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
-        { id: "#FILL_PIPE2 path", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe5-2", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe6", drawSVG: "100%" },
       ];
 
       pipes.map((pipe) => {
@@ -115,41 +115,41 @@ export default ({ t, isActive }) => {
           </AnimSlideUpFadeIn>
         </div>
         <div className="bucket bucket2">
-          <AnimSlideUpFadeIn isActive={isActive} delay={1.4}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={2}>
             <h2>
               <AnimNumberAccumulator
                 number={10}
                 isActive={isActive}
                 toFixed={0}
-                delay={1.6}
+                delay={2.2}
               />
               {" - "}
               <AnimNumberAccumulator
                 number={12}
                 isActive={isActive}
                 toFixed={0}
-                delay={1.8}
+                delay={2.4}
               />{" "}
               {t("slides.transportation.headline2")}
             </h2>
           </AnimSlideUpFadeIn>
-          <AnimSlideUpFadeIn isActive={isActive} delay={2}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={2.6}>
             <p>{t("slides.transportation.description2")}</p>
           </AnimSlideUpFadeIn>
         </div>
         <div className="bucket bucket3">
-          <AnimSlideUpFadeIn isActive={isActive} delay={2.2}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={1.4}>
             <h2>
               <AnimNumberAccumulator
                 number={14}
                 isActive={isActive}
                 toFixed={0}
-                delay={2.4}
+                delay={1.6}
               />
               + {t("slides.transportation.headline3")}
             </h2>
           </AnimSlideUpFadeIn>
-          <AnimSlideUpFadeIn isActive={isActive} delay={2.6}>
+          <AnimSlideUpFadeIn isActive={isActive} delay={1.8}>
             <p>{t("slides.transportation.description3")}</p>
           </AnimSlideUpFadeIn>
         </div>

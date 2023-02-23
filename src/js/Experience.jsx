@@ -82,7 +82,7 @@ export default ({ debug }) => {
         maxSceneLength={maxSceneLength}
         setMaxSceneLength={setMaxSceneLength}
         activeTimeout={30} // How long before Screensaver starts
-        intervalTimeout={10} // How long between slides
+        intervalTimeout={20} // How long between slides
         onScreensaverStart={() => {
           setMode(MODE.Screensaver);
         }}
