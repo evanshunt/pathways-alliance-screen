@@ -49,6 +49,12 @@ export default ({ t, isActive }) => {
 
       const pipes = [
         { id: "#main_pipline", drawSVG: "100%", duration: 2 },
+        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
+        { id: "#FILL_PIPE2 path", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe5-2", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe6", drawSVG: "100%" },
         { id: "#map-connectpipe1", drawSVG: "100%" },
         { id: "#map-connectpipe2", drawSVG: "-100%" },
         { id: "#map-connectpipe3", drawSVG: "-100%" },
@@ -66,12 +72,6 @@ export default ({ t, isActive }) => {
         { id: "#map-connectpipe15", drawSVG: "-100%" },
         { id: "#map-connectpipe16", drawSVG: "100%" },
         { id: "#map-connectpipe17", drawSVG: "-100%" },
-        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
-        { id: "#FILL_PIPE2 path", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe5-2", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe6", drawSVG: "100%" },
       ];
 
       pipes.map((pipe) => {

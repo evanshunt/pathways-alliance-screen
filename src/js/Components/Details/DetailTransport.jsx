@@ -50,8 +50,8 @@ export default ({ t }) => {
 
       const pipes = [
         { id: "#main_pipline", drawSVG: "100%", duration: 4, delay: 1 },
-        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
-        { id: "#FILL_PIPE2 path", drawSVG: "100%" },
+        { id: "#FILL_PIPE1", drawSVG: "100%" },
+        { id: "#FILL_PIPE2", drawSVG: "100%" },
         { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
         { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
         { id: "#FILL_cl-mpipe5-2", drawSVG: "100%" },

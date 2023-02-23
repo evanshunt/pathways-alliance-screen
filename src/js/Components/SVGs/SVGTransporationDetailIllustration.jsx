@@ -5608,20 +5608,15 @@ export default forwardRef((props, ref) => {
           </g>
         </g>
         <g id="CCS">
-          <g
+          <path
             id="FILL_PIPE2"
-            clipPath="url(#clippath-126)"
-            data-name="FILL PIPE2"
-          >
-            <path
-              fill="none"
-              stroke="#00eefa"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="6"
-              d="m2034.69 1504.33-.31-8.03c-.01-4.15 4.55-6.7 8.08-4.5l37.59 23.37"
-            />
-          </g>
+            fill="none"
+            stroke="#00eefa"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="6"
+            d="m2034.69 1504.33-.31-8.03c-.01-4.15 4.55-6.7 8.08-4.5l37.59 23.37"
+          />
           <path
             id="cl-mpipe2"
             fill="none"
@@ -5630,20 +5625,15 @@ export default forwardRef((props, ref) => {
             strokeWidth="1.48"
             d="m2075.51 1516.46-33.74-22.48c-1.2-.35-2.33.12-2.76.36-.43.24-1.42.94-1.42 2.36l.09 7.2-6.16-3.78-.36-3.42c0-3.21 1.73-6.09 4.63-7.7a9.525 9.525 0 0 1 9.27-.01l37.99 23.75"
           />
-          <g
+          <path
             id="FILL_PIPE1"
-            clipPath="url(#clippath-127)"
-            data-name="FILL PIPE1"
-          >
-            <path
-              fill="none"
-              stroke="#00eefa"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="6"
-              d="m2018.84 1513.53-.31-8.03c-.01-4.15 4.55-6.7 8.08-4.5l37.59 23.37"
-            />
-          </g>
+            fill="none"
+            stroke="#00eefa"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="6"
+            d="m2018.84 1513.53-.31-8.03c-.01-4.15 4.55-6.7 8.08-4.5l37.59 23.37"
+          />
           <path
             id="cl-mpipe1"
             fill="none"
@@ -5899,22 +5889,17 @@ export default forwardRef((props, ref) => {
             strokeWidth="1.48"
             d="M2198.28 1630.28s.04 2.4-2.87 2.4c-1.7 0-2.9-.79-2.87-2.4v-9.59c0-7.18-3.87-6.96-10.09-10.53l-39.56-22.62c-1.15-.66-2.16-.22-2.54 0-.38.22-1.27.88-1.27 2.2v7.05s-.61 2.51-2.87 2.49c-2.26-.01-2.87-2.49-2.87-2.49v-7.05c0-2.99 1.55-5.68 4.14-7.17 2.59-1.5 5.69-1.5 8.28-.01l39.56 22.62c8 4.6 12.97 6.29 12.97 15.51v9.59Z"
           />
-          <g
-            id="FILL_cl-mpipe5"
-            clipPath="url(#clippath-141)"
+
+          <path
+            id="FILL_cl-mpipe5-2"
+            fill="none"
+            stroke="#00eefa"
+            strokeLinecap="round"
+            strokeMiterlimit="10"
+            strokeWidth="5"
+            d="m2224.81 1635.05-.05-6.67c-.02-3.99 4.35-6.44 7.75-4.35l15.84 10.42"
             data-name="FILL cl-mpipe5"
-          >
-            <path
-              id="FILL_cl-mpipe5-2"
-              fill="none"
-              stroke="#00eefa"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              strokeWidth="5"
-              d="m2224.81 1635.05-.05-6.67c-.02-3.99 4.35-6.44 7.75-4.35l15.84 10.42"
-              data-name="FILL cl-mpipe5"
-            />
-          </g>
+          />
           <path
             id="cl-mpipe5"
             fill="none"
