@@ -49,11 +49,11 @@
     },
     "transport": {
       "heading": "A transportation line for the region",
-      "text": "Our planned carbon capture and storage project will serve multiple oil sands facilities, all at once. A transportation line connects each facility to a central storage hub. This line carries captured CO₂ in liquid form to a location where it can be stored underground.\nIn the future, the proposed transportation line will be more than 400 km long. In phase one, it will connect 14 oil sands facilities to the storage hub, with plans to eventually serve more than 20.\nThe network isn’t just for the oil sands. In the future, this transportation line can help other industries in the region capture and store CO₂.\n*Visuals for illustrative purposes only. Map not to scale."
+      "text": "Our planned carbon capture and storage project will serve multiple oil sands facilities, all at once. A transportation line connects each facility to a central storage hub. This line carries captured CO₂ in liquid form to a location where it can be stored underground.\nIn the future, the proposed transportation line will be more than 400 km long. In Phase 1, it will connect 14 oil sands facilities to the storage hub, with plans to eventually serve more than 20.\nThe network isn’t just for the oil sands. In the future, this transportation line can help other industries in the region capture and store CO₂.\n*Visuals for illustrative purposes only. Map not to scale."
     },
     "storage": {
       "heading": "A geological vault",
-      "text": "Once CO₂ is captured and transported, it’s stored deep underground. Only certain places have the right geological formations for CO₂ storage. The proposed Pathways Alliance storage hub near Cold Lake is ideal.\nThis location has a deep layer of sandstone. Sandstone is porous, which means it’s full of small spaces, like a sponge. When injected underground in liquid form, CO₂  fills these miniscule spaces in the rock. The layer could eventually store more than 1.1 billion tonnes  of CO₂.\nAbove the sandstone layer lies hundreds of metres of rock salt, which act as a natural seal. Beneath is Precambrian metamorphic basement rock, which is impermeable (it has no pore spaces).\nRigorous monitoring at every depth ensures stored CO₂  remains secure and stable.\n*Visuals for illustrative purposes only."
+      "text": "Once CO₂ is captured and transported, it’s stored deep underground. Only certain places have the right geological formations for CO₂ storage. The proposed Pathways Alliance storage hub near Cold Lake is ideal.\nThis location has a deep layer of sandstone. Sandstone is porous, which means it’s full of small spaces, like a sponge. When injected underground in liquid form, CO₂  fills these miniscule spaces in the rock. The layer could eventually store more than 1.1 billion tonnes  of CO₂.\nAbove the sandstone layer lie hundreds of metres of rock salt, which act as a natural seal. Under the sandstone layer is Precambrian metamorphic basement rock, which is impermeable (it has no pore spaces).\nRigorous monitoring at every depth ensures stored CO₂  remains secure and stable.\n*Visuals for illustrative purposes only."
     },
     "innovation": {
       "heading": "Innovation opens more paths to net zero",
@@ -64,7 +64,7 @@
       "bucket3Heading": "Direct air capture",
       "bucket3Text": "A new technology that can remove CO₂ directly from the air, transport it and store it permanently underground.",
       "bucket4Heading": "Small modular reactors",
-      "bucket4Text": "A safe, scalable source of zero-emissions energy for heat, steam, and electricity applications."
+      "bucket4Text": "A safe, scalable source of zero-emissions energy for heat, steam and electricity applications."
     }
   },
   "slides": {
