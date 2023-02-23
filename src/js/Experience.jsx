@@ -93,11 +93,11 @@ export default ({ debug }) => {
         <Payoff position={new THREE.Vector3(sceneLength - 20, 0, -2)} />
       )}
       <WireDrawing
-        position={new THREE.Vector3(38, 0, -3.5)}
+        position={new THREE.Vector3(44, 0, -3.5)}
         wireType="capture"
       />
       <WireDrawing
-        position={new THREE.Vector3(79, 0, -3.5)}
+        position={new THREE.Vector3(81, 0, -3.5)}
         wireType="storage"
       />
       <Bubbles
