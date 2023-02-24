@@ -22,8 +22,7 @@ export default ({ t }) => {
         mainTimeline.from(structure.id, {
           autoAlpha: 0,
           y: "-=10",
-          duration: 0.25,
-          delay: 0.1,
+          duration: 0.2,
         });
       });
 
@@ -40,17 +39,16 @@ export default ({ t }) => {
         gsap.set(pipe.id, { drawSVG: 0 });
         mainTimeline.to(pipe.id, {
           drawSVG: pipe.drawSVG,
-          duration: pipe.duration ? pipe.duration : 0.3,
-          delay: pipe.delay ? pipe.delay : 0.2,
+          duration: pipe.duration ? pipe.duration : 0.2,
         });
       });
 
       const gases = [
         { id: "#Emissions", delay: 0 },
         { id: ".tooltip-amine", delay: 0 },
-        { id: "#Amine", delay: 2 },
+        { id: "#Amine", delay: 2.5 },
         { id: ".tooltip-heat", delay: 0 },
-        { id: "#CO2", delay: 2 },
+        { id: "#CO2", delay: 2.5 },
         { id: ".tooltip-pressure", delay: 0 },
       ];
       gases.map((gas) => {
