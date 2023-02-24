@@ -8,13 +8,10 @@ div#slide-transportation {
 
   .illustration {
     position: absolute;
+    top: 0;
     left: 50%;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 65vw;
-    transform: translateX(-45%);
+    width: 90%;
+    transform: translateX(-50%);
   }
 
   .text {
@@ -25,33 +22,35 @@ div#slide-transportation {
 
     h2 {
       font-family: agenda, sans-serif;
-      font-size: 3vw;
+      font-size: 2.5vw;
       margin-top: 0;
       margin-bottom: 0.5vw;
     }
 
     p {
+      font-size: 1vw;
       margin-top: 0;
       margin-bottom: 0;
-      max-width: 11em;
+      max-width: 10vw;
     }
 
     .bucket1 {
       position: absolute;
       top: 0;
-      left: 0;
+      left: -1%;
     }
 
     .bucket2 {
       position: absolute;
-      top: 0;
+      top: 10%;
       right: 25%;
     }
 
     .bucket3 {
       position: absolute;
-      bottom: 15%;
-      left: 40%;
+      bottom: 10%;
+      left: 35%;
+      max-width: 8vw;
     }
   }
 }

@@ -13,13 +13,14 @@ export default ({ t, isActive }) => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
+      timelineRef.current = gsap.timeline();
       gsap.set(circleRef.current, {
         drawSVG: 0,
         rotation: -90,
         transformOrigin: "center center",
       });
 
-      timelineRef.current = gsap.timeline().to(circleRef.current, {
+      timelineRef.current.to(circleRef.current, {
         drawSVG: "0% 100%",
         delay: 0.8 + 0.5,
         duration: 2.5,

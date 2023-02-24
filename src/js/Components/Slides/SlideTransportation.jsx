@@ -17,7 +17,6 @@ export default ({ t, isActive }) => {
       timelineRef.current = gsap.timeline();
 
       const buildings = [
-        "#Fort_Mac_facility",
         "#map-industrial-building1",
         "#map-industrial-building2",
         "#map-industrial-building3",
@@ -35,7 +34,6 @@ export default ({ t, isActive }) => {
         "#map-industrial-building15",
         "#map-industrial-building16",
         "#map-industrial-building17",
-        "#CCS",
       ];
 
       buildings.map((building) => {
@@ -49,12 +47,6 @@ export default ({ t, isActive }) => {
 
       const pipes = [
         { id: "#main_pipline", drawSVG: "100%", duration: 2 },
-        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
-        { id: "#FILL_PIPE2 path", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe5-2", drawSVG: "100%" },
-        { id: "#FILL_cl-mpipe6", drawSVG: "100%" },
         { id: "#map-connectpipe1", drawSVG: "100%" },
         { id: "#map-connectpipe2", drawSVG: "-100%" },
         { id: "#map-connectpipe3", drawSVG: "-100%" },
