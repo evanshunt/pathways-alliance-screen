@@ -1,7 +1,29 @@
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+
 import AnimSlideUpFadeIn from "../Animations/AnimSlideUpFadeIn";
 import SVGStorageIllustration from "../SVGs/SVGStorageIllustration";
 
 export default ({ t }) => {
+  const illustrationRef = useRef();
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const delayOffset = 1.5;
+      const mainTimeline = gsap.timeline({ delay: delayOffset });
+
+      // const structures = [{ id: "#earthlayers" }];
+      // structures.map((structure) => {
+      //   mainTimeline.from(structure.id, {
+      //     autoAlpha: 0,
+      //     y: "-=10",
+      //     duration: 0.2,
+      //   });
+      // });
+    }, illustrationRef.current);
+    return () => ctx.revert();
+  }, []);
+
   return (
     <div id="detail-storage">
       <div className="text">
@@ -18,7 +40,7 @@ export default ({ t }) => {
           </div>
         </AnimSlideUpFadeIn>
       </div>
-      <div className="illustration">
+      <div className="illustration" ref={illustrationRef}>
         <SVGStorageIllustration />
       </div>
     </div>
