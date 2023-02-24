@@ -1,7 +1,90 @@
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+
 import AnimSlideUpFadeIn from "../Animations/AnimSlideUpFadeIn";
 import SVGCapturingIllustration from "../SVGs/SVGCapturingIllustration";
 
 export default ({ t }) => {
+  const illustrationRef = useRef();
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const delayOffset = 1.5;
+      const mainTimeline = gsap.timeline({ delay: delayOffset });
+
+      const structures = [
+        { id: "#amine-tank1-2" },
+        { id: "#amine-tank1" },
+        { id: "#compression-tank2" },
+        { id: "#compressor" },
+      ];
+      structures.map((structure) => {
+        mainTimeline.from(structure.id, {
+          autoAlpha: 0,
+          y: "-=10",
+          duration: 0.25,
+          delay: 0.1,
+        });
+      });
+
+      const pipes = [
+        { id: "#intake1 path", drawSVG: "-100%" },
+        { id: "#feed_into_compressor path", drawSVG: "100%" },
+        { id: "#feed_into_compressor circle", drawSVG: "100%" },
+        { id: "#amine_return path", drawSVG: "100%" },
+        { id: "#amine_return circle", drawSVG: "100%" },
+        { id: "#pipe_into_compressor", drawSVG: "100%" },
+        { id: "#collection_pipe_pipe", drawSVG: "100%" },
+      ];
+      pipes.map((pipe) => {
+        gsap.set(pipe.id, { drawSVG: 0 });
+        mainTimeline.to(pipe.id, {
+          drawSVG: pipe.drawSVG,
+          duration: pipe.duration ? pipe.duration : 0.3,
+          delay: pipe.delay ? pipe.delay : 0.2,
+        });
+      });
+
+      const gases = [
+        { id: "#Emissions", delay: 0 },
+        { id: ".tooltip-amine", delay: 0 },
+        { id: "#Amine", delay: 2 },
+        { id: ".tooltip-heat", delay: 0 },
+        { id: "#CO2", delay: 2 },
+        { id: ".tooltip-pressure", delay: 0 },
+      ];
+      gases.map((gas) => {
+        mainTimeline.from(gas.id, {
+          autoAlpha: 0,
+          y: "-=10",
+          duration: 0.25,
+          delay: gas.delay,
+        });
+      });
+
+      const arrows = [
+        { id: "#arrow_5 path", drawSVG: "-100%" },
+        { id: "#arrow_6 path", drawSVG: "-100%" },
+        { id: "#arrow_7 path", drawSVG: "100%" },
+      ];
+      arrows.map((arrow) => {
+        gsap.set(arrow.id, { drawSVG: 0 });
+        mainTimeline.to(arrow.id, {
+          drawSVG: arrow.drawSVG,
+          duration: arrow.duration ? arrow.duration : 0.3,
+          delay: arrow.delay ? arrow.delay : 0,
+        });
+      });
+
+      gsap.set("#collection_pipe_fluid", { drawSVG: 0 });
+      mainTimeline.to("#collection_pipe_fluid", {
+        drawSVG: "100%",
+        duration: 0.3,
+      });
+    }, illustrationRef.current);
+    return () => ctx.revert();
+  }, []);
+
   return (
     <div id="detail-capturing">
       <div className="text">
@@ -18,8 +101,24 @@ export default ({ t }) => {
           </div>
         </AnimSlideUpFadeIn>
       </div>
-      <div className="illustration">
+      <div className="illustration" ref={illustrationRef}>
         <SVGCapturingIllustration />
+        <div className="tooltips">
+          <div className="tooltip tooltip-amine tip-top-right">
+            <p>
+              A chemical compound such as an amine captures CO₂ from emissions
+            </p>
+          </div>
+          <div className="tooltip tooltip-heat alt-rounded tip-left-top">
+            <p>Using heat, the CO₂ is separated from the amine</p>
+          </div>
+          <div className="tooltip tooltip-pressure tip-bottom-left">
+            <p>
+              CO₂ is pressurized and turned into liquid form, which can flow
+              through the pipeline
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

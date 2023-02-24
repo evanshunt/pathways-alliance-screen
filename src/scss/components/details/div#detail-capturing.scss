@@ -17,5 +17,29 @@
   .illustration {
     width: 66%;
     padding-left: 6vw;
+
+    .tooltips {
+      position: relative;
+
+      .tooltip {
+        position: absolute;
+      }
+
+      .tooltip-amine {
+        bottom: 1vw;
+        left: 14vw;
+      }
+
+      .tooltip-heat {
+        bottom: 12.5vw;
+        right: 8.4vw;
+      }
+
+      .tooltip-pressure {
+        bottom: 33vw;
+        right: 1vw;
+        max-width: 12.5vw;
+      }
+    }
   }
 }
