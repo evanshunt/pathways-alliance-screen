@@ -45,7 +45,12 @@
     },
     "capturing": {
       "heading": "A ready, reliable CO₂ solution",
-      "text": "CCS means carbon capture and storage. It’s a technology that captures, transports and stores industrial CO₂ emissions so they never end up in the atmosphere.\nLarge-scale projects in Norway, the U.S. and Canada have shown that CCS can reduce emissions safely and reliably.\nThe Pathways proposed CCS project could reduce net CO₂ emissions by 10 to 12 million tonnes per year by 2030, from 14 oil sands facilities. And that’s only the beginning.\nIt’s a big step forward on the path to net zero.\n*Visuals for illustrative purposes only."
+      "text": "CCS means carbon capture and storage. It’s a technology that captures, transports and stores industrial CO₂ emissions so they never end up in the atmosphere.\nLarge-scale projects in Norway, the U.S. and Canada have shown that CCS can reduce emissions safely and reliably.\nThe Pathways proposed CCS project could reduce net CO₂ emissions by 10 to 12 million tonnes per year by 2030, from 14 oil sands facilities. And that’s only the beginning.\nIt’s a big step forward on the path to net zero.\n*Visuals for illustrative purposes only.",
+      "tooltips": {
+        "amine": "A chemical compound such as an amine captures CO₂ from emissions",
+        "heat": "Using heat, the CO₂ is separated from the amine",
+        "pressure": "CO₂ is pressurized and turned into liquid form, which can flow through the pipeline"
+      }
     },
     "transport": {
       "heading": "A transportation line for the region",

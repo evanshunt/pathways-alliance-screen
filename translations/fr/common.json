@@ -45,7 +45,12 @@
     },
     "capturing": {
       "heading": "Une solution CO2 prête et fiable",
-      "text": "CCS signifie captage et stockage du carbone. Il s'agit d'une technologie qui piège, transporte et stocke les émissions de CO2 industrielles afin qu'elles ne se retrouvent jamais dans l'atmosphère.\nDes projets à grande échelle en Norvège et aux États-Unis ont montré que le CCS peut réduire les émissions de manière sûre et fiable.\nLe projet Pathways CCS pourrait réduire Émissions de CO2 de 10 à 12 millions de tonnes par an d'ici 2030, à partir de 14 installations de production de sables bitumineux. Et ce n'est que le début.\nC'est un grand pas en avant sur la voie du net zéro."
+      "text": "CCS signifie captage et stockage du carbone. Il s'agit d'une technologie qui piège, transporte et stocke les émissions de CO2 industrielles afin qu'elles ne se retrouvent jamais dans l'atmosphère.\nDes projets à grande échelle en Norvège et aux États-Unis ont montré que le CCS peut réduire les émissions de manière sûre et fiable.\nLe projet Pathways CCS pourrait réduire Émissions de CO2 de 10 à 12 millions de tonnes par an d'ici 2030, à partir de 14 installations de production de sables bitumineux. Et ce n'est que le début.\nC'est un grand pas en avant sur la voie du net zéro.",
+      "tooltips": {
+        "amine": "A chemical compound such as an amine captures CO₂ from emissions",
+        "heat": "Using heat, the CO₂ is separated from the amine",
+        "pressure": "CO₂ is pressurized and turned into liquid form, which can flow through the pipeline"
+      }
     },
     "transport": {
       "heading": "Une ligne de transport pour la région",

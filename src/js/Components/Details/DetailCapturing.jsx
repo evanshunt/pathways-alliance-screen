@@ -103,18 +103,27 @@ export default ({ t }) => {
         <SVGCapturingIllustration />
         <div className="tooltips">
           <div className="tooltip tooltip-amine tip-top-right">
-            <p>
-              A chemical compound such as an amine captures CO₂ from emissions
-            </p>
+            {t("details.capturing.tooltips.amine")
+              .split("\n")
+              .map((paragraph, i) => (
+                <p key={`detail-capturing-amine-paragraph-${i}`}>{paragraph}</p>
+              ))}
           </div>
           <div className="tooltip tooltip-heat alt-rounded tip-left-top">
-            <p>Using heat, the CO₂ is separated from the amine</p>
+            {t("details.capturing.tooltips.heat")
+              .split("\n")
+              .map((paragraph, i) => (
+                <p key={`detail-capturing-heat-paragraph-${i}`}>{paragraph}</p>
+              ))}
           </div>
           <div className="tooltip tooltip-pressure tip-bottom-left">
-            <p>
-              CO₂ is pressurized and turned into liquid form, which can flow
-              through the pipeline
-            </p>
+            {t("details.capturing.tooltips.pressure")
+              .split("\n")
+              .map((paragraph, i) => (
+                <p key={`detail-capturing-pressure-paragraph-${i}`}>
+                  {paragraph}
+                </p>
+              ))}
           </div>
         </div>
       </div>
