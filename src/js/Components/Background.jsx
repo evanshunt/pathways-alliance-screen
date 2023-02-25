@@ -7,10 +7,10 @@ import { GlobalContext } from "../Context/GlobalContext";
 const Background = ({ sceneLength }) => {
   const backgroundRef = useRef();
 
-  const backgroundStartColour = new THREE.Color(0x252154);
-  const backgroundEarlyMidColour = new THREE.Color(0x163bae);
-  const backgroundLateMidColour = new THREE.Color(0x0c4eea);
-  const backgroundEndColour = new THREE.Color(0x00eefa);
+  const backgroundStartColour = new THREE.Color(0x1D308A);
+  const backgroundEarlyMidColour = new THREE.Color(0x0F46D6);
+  const backgroundLateMidColour = new THREE.Color(0x0C4DE9);
+  const backgroundEndColour = new THREE.Color(0x0698F1);
 
   const GLOBAL = useContext(GlobalContext);
 
