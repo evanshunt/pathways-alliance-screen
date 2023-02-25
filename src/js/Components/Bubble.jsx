@@ -51,7 +51,7 @@ export default forwardRef(function (
       the HTML button itself doesn't work because the drag control can
       no longer stop its activation. Turn on visibility to see how
       crummy this is. In real life usage though it should be decent. */}
-      <Circle args={[2.2, 64]} position={index % 2 ? [13.8,1.6,0] : [13.8,-1.3,0]} onPointerUp={active && handlePointerUp}>
+      <Circle args={[2.2, 64]} position={index % 2 ? [12.1,1.6,0] : [12.1,-1.3,0]} onPointerUp={active && handlePointerUp}>
         <meshStandardMaterial visible={false} />
       </Circle>
       <Html
