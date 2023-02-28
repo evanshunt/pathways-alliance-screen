@@ -33,7 +33,8 @@ export default ({ t }) => {
         { id: "#amine_return path", drawSVG: "100%" },
         { id: "#amine_return circle", drawSVG: "100%" },
         { id: "#pipe_into_compressor", drawSVG: "100%" },
-        { id: "#collection_pipe_pipe", drawSVG: "100%" },
+        { id: "#collection_pipe line", drawSVG: "100%" },
+        { id: "#collection_pipe polyline", drawSVG: "100%" },
       ];
       pipes.map((pipe) => {
         gsap.set(pipe.id, { drawSVG: 0 });
@@ -62,8 +63,11 @@ export default ({ t }) => {
 
       const arrows = [
         { id: "#arrow_5 path", drawSVG: "-100%" },
+        { id: "#arrow_5 polyline", drawSVG: "-100%" },
         { id: "#arrow_6 path", drawSVG: "-100%" },
-        { id: "#arrow_7 path", drawSVG: "100%" },
+        { id: "#arrow_6 polyline", drawSVG: "-100%" },
+        { id: "#arrow_7 line", drawSVG: "100%" },
+        { id: "#arrow_7 polyline", drawSVG: "100%" },
       ];
       arrows.map((arrow) => {
         gsap.set(arrow.id, { drawSVG: 0 });

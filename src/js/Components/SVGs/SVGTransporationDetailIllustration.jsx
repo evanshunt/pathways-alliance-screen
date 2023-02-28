@@ -2,10 +2,11 @@ import { forwardRef } from "react";
 export default forwardRef((props, ref) => {
   return (
     <svg
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlns="http://www.w3.org/2000/svg"
       id="Layer_2"
       data-name="Layer 2"
-      viewBox="0 0 2429.16 1742"
+      viewBox="0 0 2429 1742"
       ref={ref}
     >
       <defs>

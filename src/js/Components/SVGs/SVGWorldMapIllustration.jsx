@@ -2,8 +2,6 @@ import { forwardRef } from "react";
 export default forwardRef((props, ref) => {
   return (
     <svg
-      width="2440"
-      height="1669"
       viewBox="0 0 2440 1669"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
