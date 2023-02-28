@@ -139,7 +139,7 @@ const Screensaver = (props) => {
       } else {
         // Reset to beginning slide
         setActiveSlide(0);
-        GLOBAL.cameraPositionTarget.current.y = 15;
+        GLOBAL.cameraPositionTarget.current.y = 16;
       }
     }
   }, [activeSlide]);
@@ -147,27 +147,27 @@ const Screensaver = (props) => {
   return (
     <>
       <TapControl />
-      <group position={new THREE.Vector3()}>
-        {slides.map((slide, i) => {
-          return (
-            <Html
-              fullscreen
-              zIndexRange={[100, 0]}
-              position={[0 + slideDistance * i, 16, 0]}
-              key={`slide-${i}`}
-            >
-              <section className={"slide"}>
-                {cloneElement(slide, {
-                  t,
-                  isActive:
-                    GLOBAL.mode === GLOBAL.MODE.Screensaver &&
-                    activeSlide === i,
-                })}
-              </section>
-            </Html>
-          );
-        })}
-      </group>
+      {GLOBAL.mode === GLOBAL.MODE.Screensaver && (
+        <group position={new THREE.Vector3()}>
+          {slides.map((slide, i) => {
+            return (
+              <Html
+                fullscreen
+                zIndexRange={[100, 0]}
+                position={[0 + slideDistance * i, 16, 0]}
+                key={`slide-${i}`}
+              >
+                <section className={"slide"}>
+                  {cloneElement(slide, {
+                    t,
+                    isActive: activeSlide === i,
+                  })}
+                </section>
+              </Html>
+            );
+          })}
+        </group>
+      )}
     </>
   );
 };
