@@ -115,7 +115,7 @@ export default ({ t, isActive }) => {
                 toFixed={0}
                 delay={2.2}
               />
-              {" - "}
+              {"–"}
               <AnimNumberAccumulator
                 number={12}
                 isActive={isActive}
