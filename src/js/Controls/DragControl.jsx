@@ -6,35 +6,35 @@ import { GlobalContext } from "../Context/GlobalContext";
 export default ({ sceneLength, isDragDisabled }) => {
   const GLOBAL = useContext(GlobalContext);
   const controlRef = useRef();
-  const [dragPointer, setDragPointer] = useState(false);
-  const [currentDragPosition, setCurrentDragPosition] = useState(false);
-  const [dragLength, setDragLength] = useState(0);
+  const dragPointer = useRef(null);
+  const currentDragPosition = useRef(null);
+  const dragLength = useRef(0);
 
   const pointerDown = (event) => {
     // Only start a drag on the first finger press
     // And only if drag hasn't been disabled
-    if (!dragPointer && !isDragDisabled) {
-      setDragPointer(event.pointerId);
-      setDragLength(0);
-      setCurrentDragPosition(null);
+    if (!dragPointer.current && !isDragDisabled) {
+      dragPointer.current = event.pointerId;
+      dragLength.current = 0;
+      currentDragPosition.current = null;
     }
   };
 
   const pointerMove = (event) => {
     // Considering dragging calculations if the pointer
     // that's moving is the one that started the drag
-    if (dragPointer === event.pointerId) {
+    if (dragPointer.current === event.pointerId) {
       const newDragPosition = {
         x: (event.clientX / window.innerWidth) * 2 - 1,
         y: (event.clientY / window.innerHeight) * 2 - 1,
       };
-      if (currentDragPosition) {
+      if (currentDragPosition.current) {
         const dragMovement = {
-          x: newDragPosition.x - currentDragPosition.x,
-          y: newDragPosition.y - currentDragPosition.y,
+          x: newDragPosition.x - currentDragPosition.current.x,
+          y: newDragPosition.y - currentDragPosition.current.y,
         };
         GLOBAL.cameraPositionTarget.current.x -= dragMovement.x * 50;
-        setDragLength(dragLength + Math.abs(dragMovement.x));
+        dragLength.current = dragLength.current + Math.abs(dragMovement.x);
 
         // Bounds of drag
         if (GLOBAL.cameraPositionTarget.current.x < 0)
@@ -42,18 +42,18 @@ export default ({ sceneLength, isDragDisabled }) => {
         if (GLOBAL.cameraPositionTarget.current.x > sceneLength)
           GLOBAL.cameraPositionTarget.current.x = sceneLength;
       }
-      setCurrentDragPosition(newDragPosition);
+      currentDragPosition.current = newDragPosition;
     }
   };
 
   const pointerUp = (event) => {
-    if (dragPointer === event.pointerId) {
+    if (dragPointer.current === event.pointerId) {
       // If the user is in a proper drag, don't issue events to bubbles underneath
       // 0.02 is 2% of the viewport
-      if (dragLength > 0.02) {
+      if (dragLength.current > 0.02) {
         event.stopPropagation();
       }
-      setDragPointer(false);
+      dragPointer.current = null;
     }
   };
 
