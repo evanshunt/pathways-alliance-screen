@@ -2,7 +2,6 @@ div#slide-companies {
   .stats {
     display: flex;
     justify-content: space-between;
-    font-size: 3vw;
     margin-bottom: 4vw;
 
     h1 {
@@ -17,6 +16,23 @@ div#slide-companies {
       position: relative;
       text-shadow: 0 0 80px rgba($highlight, 0.8);
     }
+
+    .text {
+      font-size: 4vw;
+    }
+
+    .companies {
+      .text {
+        max-width: 30vw;
+      }
+    }
+
+    .goal {
+      .text {
+        margin-right: 10vw;
+        max-width: 10vw;
+      }
+    }
   }
 
   .logos {
@@ -30,7 +46,7 @@ div#slide-companies {
 
     li {
       display: block;
-      padding: 0 2vw;
+      padding: 0 2.4vw;
       height: 100%;
 
       img {
@@ -38,6 +54,10 @@ div#slide-companies {
         width: 100%;
         height: 100%;
         object-fit: contain;
+      }
+
+      .logo-imperial {
+        margin-top: -2vw;
       }
 
       &:first-child {
