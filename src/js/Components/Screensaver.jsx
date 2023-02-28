@@ -41,12 +41,16 @@ const Screensaver = (props) => {
     <SlideNetZero />,
   ];
   const [{ isTimerPaused, activeTimeout, intervalTimeout, slideDistance }] =
-    useControls("Screensaver", () => ({
-      isTimerPaused: false,
-      activeTimeout: props.activeTimeout,
-      intervalTimeout: props.intervalTimeout,
-      slideDistance: 35,
-    }));
+    useControls(
+      "Screensaver",
+      () => ({
+        isTimerPaused: false,
+        activeTimeout: props.activeTimeout,
+        intervalTimeout: props.intervalTimeout,
+        slideDistance: 35,
+      }),
+      { collapsed: true }
+    );
 
   const handleCanvasClick = (event) => {
     setIsTimerActive(false);
