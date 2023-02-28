@@ -27,12 +27,12 @@ const Camera = ({ sceneLength }) => {
   useLayoutEffect(() => {
     if (GLOBAL.mode === GLOBAL.MODE.Screensaver) {
       GLOBAL.cameraPositionTarget.current.x = 0;
-      GLOBAL.cameraPositionTarget.current.y = 15;
+      GLOBAL.cameraPositionTarget.current.y = 16;
     } else if (GLOBAL.mode === GLOBAL.MODE.Pathway) {
       GLOBAL.cameraPositionTarget.current.x = GLOBAL.lastPathwayPosition;
       GLOBAL.cameraPositionTarget.current.y = 0;
     } else if (GLOBAL.mode === GLOBAL.MODE.Detail) {
-      GLOBAL.cameraPositionTarget.current.y = -20;
+      GLOBAL.cameraPositionTarget.current.y = -13;
     }
   }, [GLOBAL.mode]);
 };

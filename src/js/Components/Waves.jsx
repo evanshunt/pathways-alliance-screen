@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import { extend, useFrame } from "@react-three/fiber";
 import { MeshLine, MeshLineMaterial } from "three.meshline";
 import { useControls } from "leva";
@@ -24,7 +24,6 @@ const Waves = ({ maxSceneLength }) => {
       yOffsetMultiplier,
       zOffset,
     },
-    set,
   ] = useControls(
     "Waves",
     () => ({

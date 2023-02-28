@@ -153,7 +153,7 @@ const Screensaver = (props) => {
             <Html
               fullscreen
               zIndexRange={[100, 0]}
-              position={[0 + slideDistance * i, 15, 0]}
+              position={[0 + slideDistance * i, 16, 0]}
               key={`slide-${i}`}
             >
               <section className={"slide"}>
