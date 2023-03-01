@@ -40,11 +40,12 @@ const Screensaver = (props) => {
     <SlideTransportation />,
     <SlideNetZero />,
   ];
-  const [{ isTimerPaused, activeTimeout, intervalTimeout, slideDistance }] =
+  const [{ isPaused, activeTimeout, intervalTimeout, slideDistance }, set] =
     useControls(
       "Screensaver",
       () => ({
-        isTimerPaused: false,
+        isPaused: false,
+        time: timeElapsed.current, // Only used to display time elapsed in leva
         activeTimeout: props.activeTimeout,
         intervalTimeout: props.intervalTimeout,
         slideDistance: 35,
@@ -52,23 +53,24 @@ const Screensaver = (props) => {
       { collapsed: true }
     );
 
-  const handleCanvasClick = (event) => {
+  const onCanvasClick = (event) => {
     setIsTimerActive(false);
     setIsActiveTimeoutComplete(false);
     setActiveSlide(-1);
-  };
-
-  const resetTimeElapsed = () => {
-    timeElapsed.current = 0;
   };
 
   const onIntervalTimeoutComplete = () => {
     setActiveSlide(activeSlide + 1);
   };
 
+  const resetTimeElapsed = () => {
+    timeElapsed.current = 0;
+  };
+
   useFrame((state, delta) => {
-    if (isTimerActive && !isTimerPaused) {
+    if (isTimerActive && !isPaused) {
       timeElapsed.current = timeElapsed.current + delta;
+      set({ time: timeElapsed.current }); // Only used to display time elapsed in leva
 
       if (isActiveTimeoutComplete) {
         if (timeElapsed.current >= intervalTimeout) {
@@ -88,7 +90,7 @@ const Screensaver = (props) => {
   useLayoutEffect(() => {
     document
       .getElementById("canvas")
-      .addEventListener("pointerdown", handleCanvasClick);
+      .addEventListener("pointerdown", onCanvasClick);
 
     const calculatedMaxSceneLength = slides * slideDistance;
     if (calculatedMaxSceneLength > maxSceneLength) {
@@ -98,7 +100,7 @@ const Screensaver = (props) => {
     return () => {
       document
         .getElementById("canvas")
-        .removeEventListener("pointerdown", handleCanvasClick);
+        .removeEventListener("pointerdown", onCanvasClick);
     };
   }, []);
 
@@ -107,6 +109,12 @@ const Screensaver = (props) => {
       setSceneLength(slides.length * slideDistance);
     }
   }, [GLOBAL.mode]);
+
+  useLayoutEffect(() => {
+    if (props.activeTimeout) {
+      set({ activeTimeout: props.activeTimeout });
+    }
+  }, [props.activeTimeout]);
 
   useLayoutEffect(() => {
     if (!isTimerActive) {

@@ -54,9 +54,11 @@ export default ({ debug }) => {
 
     if (mode === MODE.Detail) {
       setLastPathwayPosition(camera.position.x);
+      setScreensaverActiveTimeout(300);
     } else {
       setLastPathwayPosition(0);
       setOpenItemIndex(-1);
+      setScreensaverActiveTimeout(30);
     }
   }, [mode]);
 

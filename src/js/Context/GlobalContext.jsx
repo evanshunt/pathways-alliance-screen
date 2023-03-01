@@ -8,5 +8,7 @@ export const GlobalContext = createContext({
   setMode: () => {},
   cameraPositionTarget: null,
   cameraPositionLerped: null,
-  lastPathwayPosition: 0
+  lastPathwayPosition: 0,
+  screensaverActiveTimeout: null,
+  setScreensaverActiveTimeout: () => {},
 });
