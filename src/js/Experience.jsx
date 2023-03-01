@@ -34,6 +34,7 @@ export default ({ debug }) => {
   const [moveToIndex, setMoveToIndex] = useState(-1);
   const [maxSceneLength, setMaxSceneLength] = useState(0);
   const [sceneLength, setSceneLength] = useState(0);
+  const [screensaverActiveTimeout, setScreensaverActiveTimeout] = useState(30);
 
   const globalContextValue = {
     MODE,
@@ -42,6 +43,8 @@ export default ({ debug }) => {
     cameraPositionTarget,
     cameraPositionLerped,
     lastPathwayPosition,
+    screensaverActiveTimeout,
+    setScreensaverActiveTimeout,
   };
 
   useLayoutEffect(() => {
@@ -81,7 +84,7 @@ export default ({ debug }) => {
         setSceneLength={setSceneLength}
         maxSceneLength={maxSceneLength}
         setMaxSceneLength={setMaxSceneLength}
-        activeTimeout={30} // How long before Screensaver starts
+        activeTimeout={screensaverActiveTimeout} // How long before Screensaver starts
         intervalTimeout={20} // How long between slides
         onScreensaverStart={() => {
           setMode(MODE.Screensaver);
