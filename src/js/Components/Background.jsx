@@ -1,5 +1,4 @@
 import { useRef, useContext, useMemo } from "react";
-import { EffectComposer, Vignette } from "@react-three/postprocessing";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { GlobalContext } from "../Context/GlobalContext";
@@ -9,14 +8,14 @@ const Background = ({ sceneLength }) => {
   const backgroundMaterialRef = useRef();
   const backgroundMeshRef = useRef();
 
-  const backgroundStartColour = new THREE.Color(0x1D308A);
-  const backgroundEarlyMidColour = new THREE.Color(0x0F46D6);
-  const backgroundLateMidColour = new THREE.Color(0x0C4DE9);
-  const backgroundEndColour = new THREE.Color(0x0698F1);
+  const backgroundStartColour = new THREE.Color(0x1d308a);
+  const backgroundEarlyMidColour = new THREE.Color(0x0f46d6);
+  const backgroundLateMidColour = new THREE.Color(0x0c4de9);
+  const backgroundEndColour = new THREE.Color(0x0698f1);
 
   const uniforms = useMemo(
     () => ({
-      colour: {value: backgroundStartColour}
+      colour: { value: backgroundStartColour },
     }),
     []
   );
@@ -28,7 +27,7 @@ const Background = ({ sceneLength }) => {
     let backgroundColour = new THREE.Color();
     let sceneTravelled = state.camera.position.x / sceneLength;
     // Unless we're in screensaver, then lock the background colour
-    if (GLOBAL.mode === GLOBAL.MODE.Screensaver) { 
+    if (GLOBAL.mode === GLOBAL.MODE.Screensaver) {
       sceneTravelled = 0.5;
     }
     if (sceneTravelled <= -0.5) backgroundColour.copy(backgroundEndColour);
@@ -62,8 +61,10 @@ const Background = ({ sceneLength }) => {
     backgroundMaterialRef.current.uniforms.colour.value.g = backgroundColour.g;
     backgroundMaterialRef.current.uniforms.colour.value.b = backgroundColour.b;
 
-    backgroundMeshRef.current.position.x = GLOBAL.cameraPositionLerped.current.x;
-    backgroundMeshRef.current.position.y = GLOBAL.cameraPositionLerped.current.y;
+    backgroundMeshRef.current.position.x =
+      GLOBAL.cameraPositionLerped.current.x;
+    backgroundMeshRef.current.position.y =
+      GLOBAL.cameraPositionLerped.current.y;
   });
 
   return (
@@ -72,7 +73,7 @@ const Background = ({ sceneLength }) => {
          <Vignette eskil={true} offset={0.5} darkness={0.5} />
        </EffectComposer> */}
       <ambientLight intensity={1} />
-      <mesh ref={backgroundMeshRef} position={[0,0,-50]}>
+      <mesh ref={backgroundMeshRef} position={[0, 0, -50]}>
         <planeGeometry args={[180, 120]} />
         <shaderMaterial
           ref={backgroundMaterialRef}
