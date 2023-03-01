@@ -1,16 +1,25 @@
-import { useRef, useContext } from "react";
+import { useRef, useContext, useMemo } from "react";
 import { EffectComposer, Vignette } from "@react-three/postprocessing";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { GlobalContext } from "../Context/GlobalContext";
+import BackgroundShader from "../Shaders/BackgroundShader";
 
 const Background = ({ sceneLength }) => {
-  const backgroundRef = useRef();
+  const backgroundMaterialRef = useRef();
+  const backgroundMeshRef = useRef();
 
   const backgroundStartColour = new THREE.Color(0x1D308A);
   const backgroundEarlyMidColour = new THREE.Color(0x0F46D6);
   const backgroundLateMidColour = new THREE.Color(0x0C4DE9);
   const backgroundEndColour = new THREE.Color(0x0698F1);
+
+  const uniforms = useMemo(
+    () => ({
+      colour: {value: backgroundStartColour}
+    }),
+    []
+  );
 
   const GLOBAL = useContext(GlobalContext);
 
@@ -49,18 +58,31 @@ const Background = ({ sceneLength }) => {
       );
     else backgroundColour.copy(backgroundEndColour);
 
-    backgroundRef.current.r = backgroundColour.r;
-    backgroundRef.current.g = backgroundColour.g;
-    backgroundRef.current.b = backgroundColour.b;
+    console.log(backgroundColour);
+    backgroundMaterialRef.current.uniforms.colour.value.r = backgroundColour.r;
+    backgroundMaterialRef.current.uniforms.colour.value.g = backgroundColour.g;
+    backgroundMaterialRef.current.uniforms.colour.value.b = backgroundColour.b;
+
+    backgroundMeshRef.current.position.x = GLOBAL.cameraPositionLerped.current.x;
+    backgroundMeshRef.current.position.y = GLOBAL.cameraPositionLerped.current.y;
   });
 
   return (
     <>
-      <EffectComposer>
+      {/* <EffectComposer>
          <Vignette eskil={true} offset={0.5} darkness={0.5} />
-       </EffectComposer>
+       </EffectComposer> */}
       <ambientLight intensity={1} />
-      <color ref={backgroundRef} attach="background" />
+      <mesh ref={backgroundMeshRef} position={[0,0,-50]}>
+        <planeGeometry args={[180, 120]} />
+        <shaderMaterial
+          ref={backgroundMaterialRef}
+          attach="material"
+          fragmentShader={BackgroundShader.fragmentShader}
+          vertexShader={BackgroundShader.vertexShader}
+          uniforms={uniforms}
+        />
+      </mesh>
     </>
   );
 };

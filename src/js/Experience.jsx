@@ -59,7 +59,7 @@ export default ({ debug }) => {
 
   return (
     <GlobalContext.Provider value={globalContextValue}>
-      {debug && <Perf position="top-left" />}
+      {debug && <Perf position="bottom-right" />}
 
       <Camera sceneLength={sceneLength} />
       <DragControl
