@@ -3,6 +3,7 @@ div#slide-net-zero {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: 100%;
 
   span {
     display: block;
@@ -11,13 +12,13 @@ div#slide-net-zero {
   .text {
     font-size: 5vw;
     font-weight: normal;
-    margin-top: 5vw;
   }
   .number {
-    font-size: agenda, sans-serif;
     display: block;
-    font-size: 15vw;
     position: relative;
+    font-family: agenda, sans-serif;
+    font-size: 15vw;
+    font-weight: 600;
     text-shadow: 0 0 80px rgba($highlight, 0.8);
   }
 }

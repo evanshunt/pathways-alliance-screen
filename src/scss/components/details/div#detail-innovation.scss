@@ -12,10 +12,28 @@
     }
   }
 
+  .tooltip {
+    top: -40%;
+    left: 110%;
+    max-width: 20vw;
+    font-size: 1vw;
+    line-height: 1.6;
+
+    &::before {
+      top: 2vw;
+      left: -4vw;
+      width: 4.3vw;
+      height: 1px;
+    }
+    &::after {
+      top: 2vw;
+      left: -4.3vw;
+    }
+  }
+
   .buckets {
     display: flex;
     align-items: baseline;
-    margin-top: 2vw;
 
     .bucket {
       padding-right: 3em;
@@ -33,6 +51,22 @@
         img {
           width: 6vw;
           object-fit: contain;
+        }
+      }
+    }
+
+    .electrification {
+      .illustration {
+        img {
+          width: 8vw;
+        }
+      }
+    }
+
+    .capture {
+      .illustration {
+        img {
+          width: 8vw;
         }
       }
     }
