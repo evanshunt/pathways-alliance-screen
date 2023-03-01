@@ -93,6 +93,7 @@ export default ({ t, isActive }) => {
                 number={16.5}
                 isActive={isActive}
                 toFixed={1}
+                duration={2}
                 delay={4.2}
               />{" "}
               {t("slides.together.bucket1Heading")}
@@ -111,6 +112,7 @@ export default ({ t, isActive }) => {
                 number={7.6}
                 isActive={isActive}
                 toFixed={1}
+                duration={2}
                 delay={6.2}
               />{" "}
               {t("slides.together.bucket2Heading")}
@@ -127,6 +129,7 @@ export default ({ t, isActive }) => {
                 number={35000}
                 isActive={isActive}
                 toFixed={0}
+                duration={2}
                 delay={8.2}
               />{" "}
               {t("slides.together.bucket3Heading")}

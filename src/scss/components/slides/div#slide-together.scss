@@ -2,6 +2,7 @@ div#slide-together {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 
   .highlight {
     flex: 1;
@@ -31,24 +32,25 @@ div#slide-together {
         text-align: center;
         background: white;
         margin: 0;
-        padding: 4vw;
+        padding: 2vw;
         border-radius: 50%;
-        min-height: 10em;
-        font-family: sans-serif;
+        min-height: 19vw;
+        font-family: agenda, sans-serif;
       }
 
       .number {
         display: block;
-        font-family: agenda, sans-serif;
+        font-weight: 800;
         font-size: 7vw;
         min-width: 15vw;
+        padding: 1vw 0;
       }
 
       .text {
         display: block;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
         font-weight: normal;
-        max-width: 10em;
+        max-width: 11vw;
       }
     }
   }
@@ -57,20 +59,20 @@ div#slide-together {
     flex: 2;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2em;
+    margin-left: 6vw;
 
     div {
       flex: 1 0 50%;
-      font-size: 0.8em;
-      padding-left: 2em;
+      font-size: 1.2vw;
+      padding-left: 2vw;
     }
     .bucket {
-      margin-bottom: 1em;
+      margin-bottom: 1vw;
       h2 {
         font-family: agenda, sans-serif;
-        font-size: 2.7em;
+        font-size: 4vw;
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0.25vw;
       }
     }
 
@@ -83,7 +85,7 @@ div#slide-together {
       }
       p {
         order: 1;
-        margin-bottom: 1rem;
+        margin-bottom: 0.25vw;
       }
     }
   }
