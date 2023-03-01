@@ -9,8 +9,7 @@ export default ({ t }) => {
         </AnimSlideUpFadeIn>
         <AnimSlideUpFadeIn delay={0.2}>
           <div className="tooltip tip-left-top">
-            Over 10 years, Pathways Alliance members invested $10 billion in
-            implementing and advancing tomorrow’s technologies.
+            <p>{t("details.innovation.tooltip")}</p>
           </div>
         </AnimSlideUpFadeIn>
       </div>

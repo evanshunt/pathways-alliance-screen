@@ -47,9 +47,9 @@
       "heading": "Une solution CO2 prête et fiable",
       "text": "CCS signifie captage et stockage du carbone. Il s'agit d'une technologie qui piège, transporte et stocke les émissions de CO2 industrielles afin qu'elles ne se retrouvent jamais dans l'atmosphère.\nDes projets à grande échelle en Norvège et aux États-Unis ont montré que le CCS peut réduire les émissions de manière sûre et fiable.\nLe projet Pathways CCS pourrait réduire Émissions de CO2 de 10 à 12 millions de tonnes par an d'ici 2030, à partir de 14 installations de production de sables bitumineux. Et ce n'est que le début.\nC'est un grand pas en avant sur la voie du net zéro.",
       "tooltips": {
-        "amine": "A chemical compound such as an amine captures CO₂ from emissions",
-        "heat": "Using heat, the CO₂ is separated from the amine",
-        "pressure": "CO₂ is pressurized and turned into liquid form, which can flow through the pipeline"
+        "amine": "Un composé chimique tel qu'une amine capte le CO₂ des émissions",
+        "heat": "Grâce à la chaleur, le CO₂ est séparé de l'amine",
+        "pressure": "Le CO₂ est pressurisé et transformé en liquide, qui peut s'écouler à travers le pipeline"
       }
     },
     "transport": {
@@ -57,14 +57,14 @@
       "text": "Notre projet de captage et de stockage du carbone desservira simultanément plusieurs installations de sables bitumineux. Une ligne de transport relie chaque installation à un centre de stockage central. Cette ligne transporte le CO2 capturé sous forme liquide vers un endroit où il peut être stocké sous terre.\nLa ligne de transport fait plus de 400 km de long. Dans la première phase, il connectera 14 installations de sables bitumineux au centre de stockage, pour en desservir éventuellement plus de 20.\nLe réseau n'est pas réservé aux sables bitumineux. À l'avenir, cette ligne de transport pourra aider d'autres industries de la région à capter et à stocker le CO2.",
       "labels": {
         "fortMac": "FORT McMURRAY",
-        "inSitu": "IN-SITU SITES",
-        "coldLake": "COLD LAKE REGION"
+        "inSitu": "SITES IN-SITU",
+        "coldLake": "RÉGION DU LAC FROID"
       },
       "steps": {
-        "one": "Oil sands upgraders, mining and in-situ area",
-        "two": "400+ km CO₂ transportation line",
-        "three": "Oil sands in-situ recovery area",
-        "four": "Joint carbon storage hub"
+        "one": "Valorisateurs de sables bitumineux, exploitation minière et zone in situ",
+        "two": "400+ km CO₂ ligne de transport",
+        "three": "Zone de récupération in situ des sables bitumineux",
+        "four": "Hub commun de stockage de carbone"
       }
     },
     "storage": {
@@ -73,6 +73,7 @@
     },
     "innovation": {
       "heading": "L'innovation ouvre davantage de voies vers le net zéro",
+      "tooltip": "En 10 ans, les membres de Pathways Alliance ont investi 10 milliards de dollars dans la mise en œuvre et le développement des technologies de demain.",
       "bucket1Heading": "Hydrogène",
       "bucket1Text": "Une source de carburant alternative qui pourrait réduire le besoin de gaz naturel dans les procédés industriels.",
       "bucket2Heading": "Électrification",
@@ -80,9 +81,7 @@
       "bucket3Heading": "Capture d'air directe",
       "bucket3Text": "Une nouvelle technologie qui permet d'extraire le CO2 directement de l'air, de le transporter et de le stocker en permanence sous terre.",
       "bucket4Heading": "Géothermie",
-      "bucket4Text": "Une source d'eau chaude et de vapeur à faible émission de carbone pour la production de bitume, afin de réduire l'utilisation du gaz naturel.",
-      "bucket5Heading": "Petits réacteurs modulaires",
-      "bucket5Text": "Une source sûre et évolutive d'énergie à zéro émission pour des applications telles que la chaleur, la vapeur et l'électricité."
+      "bucket4Text": "Une source d'eau chaude et de vapeur à faible émission de carbone pour la production de bitume, afin de réduire l'utilisation du gaz naturel."
     }
   },
   "slides": {

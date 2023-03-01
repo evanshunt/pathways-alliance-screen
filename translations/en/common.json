@@ -69,10 +69,11 @@
     },
     "storage": {
       "heading": "A geological vault",
-      "text": "Once CO₂ is captured and transported, it’s stored deep underground. Only certain places have the right geological formations for CO₂ storage. The proposed Pathways Alliance storage hub near Cold Lake is ideal.\nThis location has a deep layer of sandstone. Sandstone is porous, which means it’s full of small spaces, like a sponge. When injected underground in liquid form, CO₂  fills these miniscule spaces in the rock. The layer could eventually store more than 1.1 billion tonnes  of CO₂.\nAbove the sandstone layer lie hundreds of metres of rock salt, which act as a natural seal. Under the sandstone layer is Precambrian metamorphic basement rock, which is impermeable (it has no pore spaces).\nRigorous monitoring at every depth ensures stored CO₂  remains secure and stable.\n*Visuals for illustrative purposes only."
+      "text": "Once CO₂ is captured and transported, it’s stored deep underground. Only certain places have the right geological formations for CO₂ storage. The proposed Pathways Alliance storage hub near Cold Lake is ideal.\nThis location has a deep layer of sandstone. Sandstone is porous, which means it’s full of small spaces, like a sponge. When injected underground in liquid form, CO₂  fills these miniscule spaces in the rock. The layer could eventually store more than 1.1 billion tonnes of CO₂.\nAbove the sandstone layer lie hundreds of metres of rock salt, which act as a natural seal. Under the sandstone layer is Precambrian metamorphic basement rock, which is impermeable (it has no pore spaces).\nRigorous monitoring at every depth ensures stored CO₂  remains secure and stable.\n*Visuals for illustrative purposes only."
     },
     "innovation": {
       "heading": "Innovation opens more paths to net zero",
+      "tooltip": "Over 10 years, Pathways Alliance members invested $10 billion in implementing and advancing tomorrow’s technologies.",
       "bucket1Heading": "Hydrogen",
       "bucket1Text": "An alternative fuel source that could reduce the need for natural gas in industrial processes.",
       "bucket2Heading": "Electrification",
