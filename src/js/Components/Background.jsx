@@ -58,7 +58,6 @@ const Background = ({ sceneLength }) => {
       );
     else backgroundColour.copy(backgroundEndColour);
 
-    console.log(backgroundColour);
     backgroundMaterialRef.current.uniforms.colour.value.r = backgroundColour.r;
     backgroundMaterialRef.current.uniforms.colour.value.g = backgroundColour.g;
     backgroundMaterialRef.current.uniforms.colour.value.b = backgroundColour.b;
