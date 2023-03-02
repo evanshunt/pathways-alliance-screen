@@ -144,10 +144,10 @@ const Screensaver = (props) => {
         // Tease the Pathway mode
         GLOBAL.cameraPositionTarget.current.x = 0;
         GLOBAL.cameraPositionTarget.current.y = 0;
-      } else {
-        // Reset to beginning slide
-        setActiveSlide(0);
-        GLOBAL.cameraPositionTarget.current.y = 16;
+        timeElapsed.current = activeTimeout - intervalTimeout;
+        setIsActiveTimeoutComplete(false);
+        setActiveSlide(-1);
+        onScreensaverEnd();
       }
     }
   }, [activeSlide]);
