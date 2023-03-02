@@ -37,6 +37,9 @@ export default ({ t }) => {
               .map((paragraph, i) => (
                 <p key={`detail-storage-paragraph-${i}`}>{paragraph}</p>
               ))}
+            <p>
+              <em>*{t("details.storage.disclaimer")}</em>
+            </p>
           </div>
         </AnimSlideUpFadeIn>
       </div>

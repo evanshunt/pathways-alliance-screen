@@ -127,6 +127,9 @@ export default ({ t }) => {
               .map((paragraph, i) => (
                 <p key={`detail-transport-paragraph-${i}`}>{paragraph}</p>
               ))}
+            <p>
+              <em>*{t("details.transport.disclaimer")}</em>
+            </p>
           </div>
         </AnimSlideUpFadeIn>
       </div>

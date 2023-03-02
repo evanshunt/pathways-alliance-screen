@@ -100,6 +100,9 @@ export default ({ t }) => {
               .map((paragraph, i) => (
                 <p key={`detail-capturing-paragraph-${i}`}>{paragraph}</p>
               ))}
+            <p>
+              <em>*{t("details.capturing.disclaimer")}</em>
+            </p>
           </div>
         </AnimSlideUpFadeIn>
       </div>
