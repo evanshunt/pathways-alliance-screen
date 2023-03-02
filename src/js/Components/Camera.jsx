@@ -8,7 +8,11 @@ const Camera = ({ sceneLength }) => {
 
   useFrame((state, delta) => {
     // Update camera position to target, smoothly
-    if (GLOBAL.cameraPositionLerped.current.distanceTo(GLOBAL.cameraPositionTarget.current) > 0.1) {
+    if (
+      GLOBAL.cameraPositionLerped.current.distanceTo(
+        GLOBAL.cameraPositionTarget.current
+      ) > 0.0001
+    ) {
       GLOBAL.cameraPositionLerped.current.lerp(
         GLOBAL.cameraPositionTarget.current,
         4 * delta
