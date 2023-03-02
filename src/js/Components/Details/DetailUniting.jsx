@@ -19,32 +19,32 @@ export default ({ t }) => {
       </div>
       <div className="logos">
         <ul>
-          <li>
+          <li className="canadian-natural">
             <AnimSlideUpFadeIn delay={0.4}>
               <img src="/images/logos/canadian-natural.svg" />
             </AnimSlideUpFadeIn>
           </li>
-          <li>
+          <li className="cenovus">
             <AnimSlideUpFadeIn delay={0.5}>
               <img src="/images/logos/cenovus.svg" />
             </AnimSlideUpFadeIn>
           </li>
-          <li>
+          <li className="conoco-phillips">
             <AnimSlideUpFadeIn delay={0.6}>
               <img src="/images/logos/conoco-phillips.svg" />
             </AnimSlideUpFadeIn>
           </li>
-          <li>
+          <li className="imperial">
             <AnimSlideUpFadeIn delay={0.7}>
               <img src="/images/logos/imperial.svg" />
             </AnimSlideUpFadeIn>
           </li>
-          <li>
+          <li className="meg">
             <AnimSlideUpFadeIn delay={0.8}>
               <img src="/images/logos/meg.svg" />
             </AnimSlideUpFadeIn>
           </li>
-          <li>
+          <li className="suncor">
             <AnimSlideUpFadeIn delay={0.9}>
               <img src="/images/logos/suncor.svg" />
             </AnimSlideUpFadeIn>

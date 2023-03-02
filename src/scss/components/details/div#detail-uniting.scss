@@ -1,12 +1,12 @@
 #detail-uniting {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 100%;
   padding: 8vw;
 
   .text {
-    width: 33%;
-    padding-top: 2.5vw;
+    width: 30%;
 
     .paragraph-wrapper {
       padding-right: 3vw;
@@ -14,7 +14,7 @@
   }
 
   .logos {
-    width: 66%;
+    width: 70%;
 
     ul {
       display: flex;
@@ -24,13 +24,55 @@
       li {
         display: block;
         width: 50%;
-        padding: 0 7vw 7vw;
+        padding: 0 8vw;
+        margin-bottom: 5vw;
 
         img {
           display: block;
           width: 100%;
           height: 100%;
           object-fit: contain;
+          margin: 0 auto;
+        }
+
+        &.canadian-natural {
+          img {
+            width: 95%;
+            height: 95%;
+          }
+        }
+
+        &.conoco-phillips {
+          img {
+            width: 95%;
+            height: 95%;
+          }
+        }
+
+        &.meg {
+          margin-bottom: 0;
+        }
+
+        &.cenovus {
+          img {
+            width: 92%;
+            height: 92%;
+          }
+        }
+
+        &.imperial {
+          img {
+            width: 90%;
+            height: 90%;
+          }
+        }
+
+        &.suncor {
+          margin-bottom: 0;
+          img {
+            width: 95%;
+            height: 95%;
+          }
         }
       }
     }
