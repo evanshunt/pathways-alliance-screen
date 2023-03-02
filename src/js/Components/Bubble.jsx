@@ -1,6 +1,6 @@
 import { forwardRef, useRef, useImperativeHandle } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Circle, Html } from "@react-three/drei";
+import { Plane, Circle, Html } from "@react-three/drei";
 import { useTranslation } from "react-i18next";
 
 export default forwardRef(function (
@@ -51,14 +51,18 @@ export default forwardRef(function (
       the HTML button itself doesn't work because the drag control can
       no longer stop its activation. Turn on visibility to see how
       crummy this is. In real life usage though it should be decent. */}
-      <Circle args={[2.2, 64]} position={index % 2 ? [12.1,1.6,0] : [12.1,-1.3,0]} onPointerUp={active && handlePointerUp}>
+      <Plane
+        args={[13, 2.5]}
+        position={index % 2 ? [9, 1.5, 0] : [9, -1.5, 0]}
+        onPointerUp={active && handlePointerUp}
+      >
         <meshStandardMaterial visible={false} />
-      </Circle>
+      </Plane>
       <Html
         zIndexRange={[300, 200]}
         className={active ? "bubble active" : "bubble inactive"}
       >
-        <button id={view} />
+        <button id={view} onPointerUp={handlePointerUp} />
         <div className={index % 2 ? "bubbletext up" : "bubbletext down"}>
           <div className="text">
             <div>
