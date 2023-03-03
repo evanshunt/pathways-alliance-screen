@@ -1,7 +1,7 @@
 {
   "main": {
     "title": "Nous construisons de nombreux chemins vers le net zéro",
-    "payoff": "Net zéro en"
+    "payoff": "Net Zéro en"
   },
   "controls": {
     "back": "Dos",
@@ -111,7 +111,7 @@
       "description3": "installations de sables bitumineux à desservir"
     },
     "netZero": {
-      "text": "Net zéro par"
+      "text": "Net Zéro par"
     }
   }
 }

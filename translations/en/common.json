@@ -1,7 +1,7 @@
 {
   "main": {
     "title": "We’re building many paths to net zero",
-    "payoff": "Net Zero By"
+    "payoff": "Net Zero by"
   },
   "controls": {
     "back": "Back",
@@ -111,7 +111,7 @@
       "description3": "oil sands facilities to be served"
     },
     "netZero": {
-      "text": "Net zero by"
+      "text": "Net Zero by"
     }
   }
 }
