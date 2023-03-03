@@ -1,5 +1,5 @@
 import { useRef, useContext, useLayoutEffect } from "react";
-import { useFrame, useThree } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 
 import { GlobalContext } from "../Context/GlobalContext";
 import Bubble from "./Bubble.jsx";
@@ -18,7 +18,7 @@ const Bubbles = ({
 }) => {
   const GLOBAL = useContext(GlobalContext);
   const bubblesRef = useRef([]);
-  const state = useThree();
+  const bubblePositionOffset = 3;
 
   const bubbles = [
     "industry",
@@ -47,7 +47,7 @@ const Bubbles = ({
     if (GLOBAL.mode === GLOBAL.MODE.Pathway) {
       if (bubblesRef.current[moveToIndex] != null) {
         GLOBAL.cameraPositionTarget.current.x =
-          bubblesRef.current[moveToIndex].position.x + 3;
+          bubblesRef.current[moveToIndex].position.x + bubblePositionOffset;
         setMoveToIndex(-1);
       }
     }
@@ -55,16 +55,31 @@ const Bubbles = ({
 
   useFrame((state, delta) => {
     // Check if camera is near a bubble and activate it if not already open
-    if (GLOBAL.mode === GLOBAL.MODE.Pathway && openItemIndex == -1) {
-      let closeMatch = false;
-      bubblesRef.current.forEach((element, index) => {
-        if (Math.abs(state.camera.position.x - (element.position.x + 3)) < 6) {
-          setActiveItemIndex(index);
-          closeMatch = true;
+    if (GLOBAL.mode === GLOBAL.MODE.Pathway) {
+      for (let i = 0; i <= bubblesRef.current.length - 1; i++) {
+        if (activeItemIndex !== i) {
+          if (
+            Math.abs(
+              state.camera.position.x -
+                (bubblesRef.current[i].position.x + bubblePositionOffset)
+            ) < 6
+          ) {
+            setActiveItemIndex(i);
+            break;
+          }
         }
-      });
-      // Otherwise close the bubbles
-      if (!closeMatch) {
+      }
+
+      // Close if camera hasn't reached bubbles or has moved past all of them
+      if (
+        (activeItemIndex !== -1 &&
+          state.camera.position.x <
+            bubblesRef.current[0].position.x - bubblePositionOffset) ||
+        (activeItemIndex !== -1 &&
+          state.camera.position.x >
+            bubblesRef.current[bubblesRef.current.length - 1].position.x +
+              bubblePositionOffset * 3)
+      ) {
         setActiveItemIndex(-1);
       }
     }

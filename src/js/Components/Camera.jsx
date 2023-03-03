@@ -11,7 +11,7 @@ const Camera = ({ sceneLength }) => {
     if (
       GLOBAL.cameraPositionLerped.current.distanceTo(
         GLOBAL.cameraPositionTarget.current
-      ) > 0.0001
+      ) > 0.1
     ) {
       GLOBAL.cameraPositionLerped.current.lerp(
         GLOBAL.cameraPositionTarget.current,
