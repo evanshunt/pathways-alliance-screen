@@ -21,7 +21,7 @@ export default ({ t }) => {
       <div className="illustration">
         <AnimSlideUpFadeIn delay={0.4}>
           <div>
-            <SVGWorldMapIllustration />
+            <img src="/images/details/detail-directing-illustration.png" />
           </div>
         </AnimSlideUpFadeIn>
       </div>
