@@ -10,9 +10,21 @@ export default ({ t }) => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const delayOffset = 1.5;
-      const mainTimeline = gsap.timeline({ delay: delayOffset });
-      const mapTimeline = gsap.timeline({ delay: delayOffset });
-      const labelTimeline = gsap.timeline({ delay: delayOffset });
+      const mainTimeline = gsap.timeline({
+        delay: delayOffset,
+        repeat: -1,
+        repeatDelay: 30,
+      });
+      const mapTimeline = gsap.timeline({
+        delay: delayOffset,
+        repeat: -1,
+        repeatDelay: 30,
+      });
+      const labelTimeline = gsap.timeline({
+        delay: delayOffset,
+        repeat: -1,
+        repeatDelay: 30,
+      });
 
       const buildings = [
         "#Fort_Mac_facility",

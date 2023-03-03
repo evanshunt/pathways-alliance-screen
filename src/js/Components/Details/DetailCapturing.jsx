@@ -10,7 +10,11 @@ export default ({ t }) => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const delayOffset = 1.5;
-      const mainTimeline = gsap.timeline({ delay: delayOffset });
+      const mainTimeline = gsap.timeline({
+        delay: delayOffset,
+        repeat: -1,
+        repeatDelay: 30,
+      });
 
       const structures = [
         { id: "#amine-tank1-2" },
