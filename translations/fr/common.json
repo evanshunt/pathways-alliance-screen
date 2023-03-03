@@ -77,14 +77,14 @@
     "innovation": {
       "heading": "L'innovation ouvre davantage de voies vers le net zéro",
       "tooltip": "En 10 ans, les membres de Pathways Alliance ont investi 10 milliards de dollars dans la mise en œuvre et le développement des technologies de demain.",
-      "bucket1Heading": "Hydrogène",
-      "bucket1Text": "Une source de carburant alternative qui pourrait réduire le besoin de gaz naturel dans les procédés industriels.",
-      "bucket2Heading": "Électrification",
-      "bucket2Text": "Une source de carburant alternative et efficace pour les camions de transport minier, afin de réduire leur dépendance au diesel.",
-      "bucket3Heading": "Capture d'air directe",
-      "bucket3Text": "Une nouvelle technologie qui permet d'extraire le CO2 directement de l'air, de le transporter et de le stocker en permanence sous terre.",
-      "bucket4Heading": "Géothermie",
-      "bucket4Text": "Une source d'eau chaude et de vapeur à faible émission de carbone pour la production de bitume, afin de réduire l'utilisation du gaz naturel."
+      "bucket1Heading": "Électrification",
+      "bucket1Text": "Une source de carburant alternative et efficace pour les camions de transport minier, afin de réduire leur dépendance au diesel.",
+      "bucket2Heading": "Hydrogène",
+      "bucket2Text": "Une source de carburant alternative qui pourrait réduire le besoin de gaz naturel dans les procédés industriels.",
+      "bucket3Heading": "Géothermie",
+      "bucket3Text": "Une source d'eau chaude et de vapeur à faible émission de carbone pour la production de bitume, afin de réduire l'utilisation du gaz naturel.",
+      "bucket4Heading": "Capture d'air directe",
+      "bucket4Text": "Une nouvelle technologie qui permet d'extraire le CO2 directement de l'air, de le transporter et de le stocker en permanence sous terre."
     }
   },
   "slides": {

@@ -77,14 +77,14 @@
     "innovation": {
       "heading": "Innovation opens more paths to net zero",
       "tooltip": "Over 10 years, Pathways Alliance members invested $10 billion in implementing and advancing tomorrow’s technologies.",
-      "bucket1Heading": "Hydrogen",
-      "bucket1Text": "An alternative fuel source that could reduce the need for natural gas in industrial processes.",
-      "bucket2Heading": "Electrification",
-      "bucket2Text": "An alternative, efficient fuel source for mine haul trucks, to reduce their reliance on diesel.",
-      "bucket3Heading": "Direct air capture",
-      "bucket3Text": "A new technology that can remove CO₂ directly from the air, transport it and store it permanently underground.",
-      "bucket4Heading": "Small modular reactors",
-      "bucket4Text": "A safe, scalable source of zero-emissions energy for heat, steam and electricity applications."
+      "bucket1Heading": "Electrification",
+      "bucket1Text": "An alternative, efficient fuel source for mine haul trucks, to reduce their reliance on diesel.",
+      "bucket2Heading": "Hydrogen",
+      "bucket2Text": "An alternative fuel source that could reduce the need for natural gas in industrial processes.",
+      "bucket3Heading": "Small modular reactors",
+      "bucket3Text": "A safe, scalable source of zero-emissions energy for heat, steam and electricity applications.",
+      "bucket4Heading": "Direct air capture",
+      "bucket4Text": "A new technology that can remove CO₂ directly from the air, transport it and store it permanently underground."
     }
   },
   "slides": {

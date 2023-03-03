@@ -14,11 +14,11 @@ export default ({ t }) => {
         </AnimSlideUpFadeIn>
       </div>
       <div className="buckets">
-        <div className="bucket hydrogen">
+        <div className="bucket electrification">
           <div className="illustration">
             <AnimSlideUpFadeIn delay={0.4}>
               <img
-                src="/images/details/detail-innovation-hydrogen.png"
+                src="/images/details/detail-innovation-electrification.png"
                 width="100%"
               />
             </AnimSlideUpFadeIn>
@@ -32,11 +32,12 @@ export default ({ t }) => {
             </AnimSlideUpFadeIn>
           </div>
         </div>
-        <div className="bucket electrification">
+
+        <div className="bucket hydrogen">
           <div className="illustration">
             <AnimSlideUpFadeIn delay={0.5}>
               <img
-                src="/images/details/detail-innovation-electrification.png"
+                src="/images/details/detail-innovation-hydrogen.png"
                 width="100%"
               />
             </AnimSlideUpFadeIn>
@@ -50,11 +51,12 @@ export default ({ t }) => {
             </AnimSlideUpFadeIn>
           </div>
         </div>
-        <div className="bucket capture">
+
+        <div className="bucket reactors">
           <div className="illustration">
             <AnimSlideUpFadeIn delay={0.6}>
               <img
-                src="/images/details/detail-innovation-capture.png"
+                src="/images/details/detail-innovation-reactors.png"
                 width="100%"
               />
             </AnimSlideUpFadeIn>
@@ -68,11 +70,12 @@ export default ({ t }) => {
             </AnimSlideUpFadeIn>
           </div>
         </div>
-        <div className="bucket reactors">
+
+        <div className="bucket capture">
           <div className="illustration">
             <AnimSlideUpFadeIn delay={0.7}>
               <img
-                src="/images/details/detail-innovation-reactors.png"
+                src="/images/details/detail-innovation-capture.png"
                 width="100%"
               />
             </AnimSlideUpFadeIn>
