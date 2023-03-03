@@ -9,7 +9,7 @@ export default ({ t }) => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const delayOffset = 1.5;
+      const delayOffset = 2;
       const mainTimeline = gsap.timeline({
         delay: delayOffset,
         repeat: -1,
