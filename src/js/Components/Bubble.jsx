@@ -17,9 +17,9 @@ export default forwardRef(function (
   ref
 ) {
   const bubbleRef = useRef();
-  useImperativeHandle(ref, () => bubbleRef.current);
   const bubbleTime = useRef(0);
   const { t } = useTranslation("common");
+  const hitboxMaterial = <meshStandardMaterial visible={false} />;
 
   const handlePointerUp = (event) => {
     if (active) {
@@ -29,6 +29,8 @@ export default forwardRef(function (
       setMoveToIndex(index);
     }
   };
+
+  useImperativeHandle(ref, () => bubbleRef.current);
 
   useFrame((state, delta) => {
     if (!active) {
@@ -40,9 +42,11 @@ export default forwardRef(function (
 
   return (
     <group ref={bubbleRef} position={position}>
-      <Circle args={[4, 64]} onPointerUp={handlePointerUp}>
-        <meshStandardMaterial visible={false} />
-      </Circle>
+      <Circle
+        args={[4, 64]}
+        onPointerUp={handlePointerUp}
+        material={hitboxMaterial}
+      />
       {/* I don't love the manual positioning here for this button hot
       spot. It lines up with the HTML button well enough to be suitable, 
       but it has to be made bigger to encompass the range of flexible
@@ -55,9 +59,8 @@ export default forwardRef(function (
         args={[13, 2.5]}
         position={index % 2 ? [9, 1.5, 0] : [9, -1.5, 0]}
         onPointerUp={active && handlePointerUp}
-      >
-        <meshStandardMaterial visible={false} />
-      </Plane>
+        material={hitboxMaterial}
+      />
       <Html
         zIndexRange={[300, 200]}
         className={active ? "bubble active" : "bubble inactive"}
