@@ -8,11 +8,12 @@ div.bubble {
     position: absolute;
     width: 18vw;
     height: 18vw;
-    transition: 0.3s all;
+    transition: 0.3s transform, 0.3s opacity;
     transform: translate(-50%, -50%);
     background: none;
     border: 0;
 
+    // Glow
     &::before {
       content: "";
       display: block;
@@ -30,6 +31,7 @@ div.bubble {
       );
     }
 
+    // Bubble image
     &::after {
       content: "";
       display: block;
@@ -73,7 +75,7 @@ div.bubble {
     width: $bubbleTextWidth;
     color: white;
     opacity: 0;
-    transition: 0.6s all;
+    transition: 0.6s transform, 0.6s opacity;
     position: relative;
 
     .text {
@@ -104,12 +106,12 @@ div.bubble {
 
         .plus::before,
         .plus::after {
+          position: absolute;
+          left: 50%;
+          top: 50%;
           content: "";
           display: block;
           background-color: white;
-          left: 50%;
-          top: 50%;
-          position: absolute;
         }
 
         .plus::before {
@@ -143,7 +145,7 @@ div.bubble {
       right: $bubbleTextWidth + 1.7vw;
       top: 1.4vw;
       width: 0;
-      transition: 0.6s all;
+      transition: 0.6s transform, 0.6s opacity;
       transform: translateY(-50%);
     }
 
@@ -178,7 +180,14 @@ div.bubble {
 
     .bubbletext {
       opacity: 1;
-      margin-left: 23.5vw;
+
+      &.up {
+        transform: translate(23.5vw, -9vw);
+      }
+
+      &.down {
+        transform: translate(23.5vw, 3vw);
+      }
 
       &::before {
         width: 8.7vw;
