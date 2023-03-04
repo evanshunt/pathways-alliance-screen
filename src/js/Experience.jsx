@@ -34,7 +34,7 @@ export default ({ debug }) => {
   const [moveToIndex, setMoveToIndex] = useState(-1);
   const [maxSceneLength, setMaxSceneLength] = useState(0);
   const [sceneLength, setSceneLength] = useState(0);
-  const [screensaverActiveTimeout, setScreensaverActiveTimeout] = useState(30);
+  const [screensaverActiveTimeout, setScreensaverActiveTimeout] = useState(90);
 
   const globalContextValue = {
     MODE,
