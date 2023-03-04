@@ -7,6 +7,14 @@ import SVGStorageIllustration from "../SVGs/SVGStorageIllustration";
 export default ({ t }) => {
   const illustrationRef = useRef();
 
+  // The storage illustration is created using a combination of a PNG and an SVG overlapping.
+  // A PNG for the earth layers was used because it's a very complicated graphic and really bogs
+  // down the browser when attempting to import as a React component.
+  // An SVG was used for all the animated pieces (structures, pipes, labels, close ups, etc.)
+  // I'm not sure how this actually looks on the touch screen display so I've added a backup plan incase
+  // the PNG and SVG aren't lining up correctly. There's a PNG of the entire illustration that can be swapped in.
+
+  // Animation code (Comment this entire useLayoutEffect if the static illustration PNG is used in div.illustration)
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const delayOffset = 1.5;
@@ -165,12 +173,20 @@ export default ({ t }) => {
         </AnimSlideUpFadeIn>
       </div>
       <div className="illustration" ref={illustrationRef}>
+        {/* Animated PNG + SVG illustration */}
         <SVGStorageIllustration />
         <AnimSlideUpFadeIn delay={0.4}>
           <div>
             <img src="/images/details/detail-storage-earth-layers-illustration.png" />
           </div>
         </AnimSlideUpFadeIn>
+
+        {/* Static PNG of entire illustration Backup */}
+        {/* <AnimSlideUpFadeIn delay={0.4}>
+          <div>
+            <img src="/images/details/detail-storage-illustration.png" />
+          </div>
+        </AnimSlideUpFadeIn> */}
       </div>
     </div>
   );
