@@ -13,27 +13,25 @@ export default ({ t }) => {
       const mainTimeline = gsap.timeline({
         delay: delayOffset,
         repeat: -1,
-        repeatDelay: 3,
+        repeatDelay: 30,
       });
 
       const fadeIn = [
-        { id: "#earthlayers", duration: 0.3 },
-        { id: "#CCS", duration: 0.3, delay: 1 },
-        { id: "#_03_storage-labels-FPO", duration: 0.3, delay: 2 },
+        { id: "#CCS", duration: 0.3, delay: 0.5 },
+        { id: "#_03_storage-labels-FPO", duration: 0.3, delay: 1.5 },
       ];
 
       fadeIn.map((item) => {
         mainTimeline.from(item.id, {
           autoAlpha: 0,
           y: "-=10",
-          stagger: item.stagger ? item.duration : 0.3,
           duration: item.duration ? item.duration : 0.3,
           delay: item.delay,
         });
       });
 
       const pipes = [
-        { id: "#cl-injection-monitoring1", drawSVG: "100%" },
+        { id: "#cl-injection-monitoring1", drawSVG: "100%", delay: 2 },
         { id: "#cl-injection-monitoring2", drawSVG: "100%" },
         { id: "#cl-injection-monitoring3", drawSVG: "100%" },
         { id: "#cl-injection-monitoring4", drawSVG: "100%" },
@@ -44,13 +42,14 @@ export default ({ t }) => {
         gsap.set(item.id, { drawSVG: 0 });
         mainTimeline.to(item.id, {
           drawSVG: item.drawSVG,
-          duration: item.duration ? item.duration : 0.3,
+          duration: 0.3,
           delay: item.delay ? item.delay : 0,
         });
       });
 
+      // CO2 Injection Path
       const co2Path = [
-        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
+        { id: "#FILL_PIPE1 path", drawSVG: "100%", delay: 1 },
         { id: "#FILL_PIPE2 path", drawSVG: "100%" },
         { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
         { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
@@ -72,17 +71,58 @@ export default ({ t }) => {
         });
       });
 
+      mainTimeline.from(
+        "#Co2injection-label",
+        {
+          autoAlpha: 0,
+          y: "-=10",
+          duration: 0.2,
+        },
+        "-=3"
+      );
+
       mainTimeline.from("#layer_fill", {
         autoAlpha: 0,
         y: "-=10",
         duration: 0.2,
       });
 
-      gsap.set("FILL_cl-injection_monitoring_copy_6 path", { drawSVG: 0 });
-      mainTimeline.to("FILL_cl-injection_monitoring_copy_6 path", {
-        drawSVG: "100%",
-        duration: 0.3,
+      // Closeups
+      const closeUps = [
+        { id: "#impermiable_lyer", delay: 2 },
+        { id: "#porous_rock_labels-2" },
+        { id: "#impermiable_layers_ines" },
+        { id: "#impermiable_lyer-2" },
+        { id: "#porous_rock_callout" },
+        { id: "#porous_rock_labels" },
+        { id: "#porous_rock_lines" },
+        { id: "#porous_rock_callout-2" },
+      ];
+
+      closeUps.map((item) => {
+        mainTimeline.from(item.id, {
+          autoAlpha: 0,
+          y: "-=10",
+          duration: 0.3,
+          delay: item.delay ? item.delay : 0,
+        });
       });
+
+      // Monitoring system
+      gsap.set("#FILL_cl-injection_monitoring_copy_6 path", { drawSVG: 0 });
+      mainTimeline.to("#FILL_cl-injection_monitoring_copy_6 path", {
+        drawSVG: "100%",
+        duration: 3,
+        delay: 2,
+      });
+      mainTimeline.from(
+        "#monitoring_systems_label",
+        {
+          autoAlpha: 0,
+          duration: 0.3,
+        },
+        "-=3"
+      );
 
       const storageMonitors = [
         { id: "#Storage-monitor_1" },
