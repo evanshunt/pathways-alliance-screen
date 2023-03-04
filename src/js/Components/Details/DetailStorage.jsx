@@ -10,16 +10,55 @@ export default ({ t }) => {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const delayOffset = 1.5;
-      const mainTimeline = gsap.timeline({ delay: delayOffset });
+      const mainTimeline = gsap.timeline({
+        delay: delayOffset,
+        repeat: -1,
+        repeatDelay: 30,
+      });
 
-      // const structures = [{ id: "#earthlayers" }];
-      // structures.map((structure) => {
-      //   mainTimeline.from(structure.id, {
-      //     autoAlpha: 0,
-      //     y: "-=10",
-      //     duration: 0.2,
-      //   });
-      // });
+      const structures = [{ id: "#earthlayers" }];
+      structures.map((structure) => {
+        mainTimeline.from(structure.id, {
+          autoAlpha: 0,
+          y: "-=10",
+          duration: 0.2,
+        });
+      });
+
+      const pipes = [
+        { id: "#FILL_PIPE1 path", drawSVG: "100%" },
+        { id: "#FILL_PIPE2 path", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe3", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe4", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe5-2", drawSVG: "100%" },
+        { id: "#FILL_cl-mpipe6", drawSVG: "100%" },
+        {
+          id: "#FILL_cl-injection-main-pipe_copy_7",
+          drawSVG: "100%",
+          duration: 3,
+        },
+        {
+          id: "#FILL_cl-injection_monitoring_copy_6 path",
+          drawSVG: "100%",
+          duration: 1,
+        },
+      ];
+
+      pipes.map((pipe) => {
+        gsap.set(pipe.id, { drawSVG: 0 });
+        mainTimeline.to(pipe.id, {
+          drawSVG: pipe.drawSVG,
+          stagger: 0.05,
+          duration: pipe.duration ? pipe.duration : 0.1,
+          delay: pipe.delay ? pipe.delay : 0,
+        });
+      });
+
+      mainTimeline.from("#_03_storage-labels-FPO", {
+        autoAlpha: 0,
+        y: "-=10",
+        duration: 0.2,
+      });
     }, illustrationRef.current);
     return () => ctx.revert();
   }, []);
