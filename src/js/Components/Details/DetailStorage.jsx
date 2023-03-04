@@ -45,6 +45,11 @@ export default ({ t }) => {
       </div>
       <div className="illustration" ref={illustrationRef}>
         <SVGStorageIllustration />
+        <AnimSlideUpFadeIn delay={0.4}>
+          <div>
+            <img src="/images/details/detail-storage-earth-layers-illustration.png" />
+          </div>
+        </AnimSlideUpFadeIn>
       </div>
     </div>
   );
