@@ -10,8 +10,10 @@ export default ({ onPointerDown }) => {
   const controlRef = useRef();
   const { t } = useTranslation("common");
   useFrame((state, delta) => {
-    controlRef.current.position.x = GLOBAL.cameraPositionTarget.current.x;
-    controlRef.current.position.y = GLOBAL.cameraPositionTarget.current.y;
+    if (GLOBAL.mode === GLOBAL.MODE.Detail) {
+      controlRef.current.position.x = GLOBAL.cameraPositionTarget.current.x;
+      controlRef.current.position.y = GLOBAL.cameraPositionTarget.current.y;
+    }
   }, 1);
 
   return (

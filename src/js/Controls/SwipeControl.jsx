@@ -11,10 +11,12 @@ export default () => {
   const [hasSwiped, setHasSwiped] = useState(false);
 
   useFrame((state, delta) => {
-    if (state.camera.position.x >= 0.1 && !hasSwiped) {
-      setHasSwiped(true);
-    } else if (state.camera.position.x < 0.1 && hasSwiped) {
-      setHasSwiped(false);
+    if (GLOBAL.mode === GLOBAL.MODE.Pathway) {
+      if (state.camera.position.x >= 0.1 && !hasSwiped) {
+        setHasSwiped(true);
+      } else if (state.camera.position.x < 0.1 && hasSwiped) {
+        setHasSwiped(false);
+      }
     }
   });
 
