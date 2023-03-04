@@ -42,15 +42,15 @@ export default ({ t }) => {
         { id: "#cl-injection-monitoring1", drawSVG: "100%", delay: 2 },
         { id: "#cl-injection-monitoring2", drawSVG: "100%" },
         { id: "#cl-injection-monitoring3", drawSVG: "100%" },
-        { id: "#cl-injection-monitoring4", drawSVG: "100%" },
-        { id: "#cl-injection-main-pipe", drawSVG: "100%" },
+        { id: "#cl-injection-monitoring4", drawSVG: "100%", duration: 0.6 },
+        { id: "#cl-injection-main-pipe", drawSVG: "100%", duration: 0.8 },
       ];
 
       pipes.map((item) => {
         gsap.set(item.id, { drawSVG: 0 });
         mainTimeline.to(item.id, {
           drawSVG: item.drawSVG,
-          duration: 0.3,
+          duration: item.duration ? item.duration : 0.3,
           delay: item.delay ? item.delay : 0,
         });
       });
@@ -92,7 +92,7 @@ export default ({ t }) => {
       mainTimeline.from("#layer_fill", {
         autoAlpha: 0,
         y: "-=10",
-        duration: 0.2,
+        duration: 2,
       });
 
       // Closeups
