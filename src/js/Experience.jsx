@@ -58,7 +58,7 @@ export default ({ debug }) => {
     } else {
       setLastPathwayPosition(0);
       setOpenItemIndex(-1);
-      setScreensaverActiveTimeout(30);
+      setScreensaverActiveTimeout(90);
     }
   }, [mode]);
 
