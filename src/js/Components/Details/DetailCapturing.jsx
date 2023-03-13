@@ -21,6 +21,7 @@ export default ({ t }) => {
         { id: "#amine-tank1" },
         { id: "#compression-tank2" },
         { id: "#compressor" },
+        { id: ".illustration .legend" },
       ];
       structures.map((structure) => {
         mainTimeline.from(structure.id, {
@@ -136,6 +137,13 @@ export default ({ t }) => {
                 </p>
               ))}
           </div>
+        </div>
+        <div className="legend">
+          <div className="emissions">
+            {t("details.capturing.legend.emissions")}
+          </div>
+          <div className="amine">{t("details.capturing.legend.amine")}</div>
+          <div className="co2">{t("details.capturing.legend.co2")}</div>
         </div>
       </div>
     </div>

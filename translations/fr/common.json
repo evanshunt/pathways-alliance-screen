@@ -51,6 +51,11 @@
         "amine": "Un composé chimique tel qu'une amine capte le CO₂ des émissions",
         "heat": "Grâce à la chaleur, le CO₂ est séparé de l'amine",
         "pressure": "Le CO₂ est pressurisé et transformé en liquide, qui peut s'écouler à travers le pipeline"
+      },
+      "legend": {
+        "emissions": "Emissions",
+        "amine": "Amine",
+        "co2": "CO₂"
       }
     },
     "transport": {
